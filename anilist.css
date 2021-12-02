@@ -3,7 +3,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
     :root {
-        /*Colors*/
+        /*Color Scheme*/
         --hachi-cyan: 125, 190, 203;
         --hachi-darkred: 200, 42, 50;
         --hachi-gold: 249, 189, 4;
@@ -13,8 +13,8 @@
         --hachi-white: 255, 255, 255;
         --hachi-dirty-white: 219, 219, 219;
         --hachi-transparent: rgb(0 0 0 / 0%);
-        /*Images*/
-        --hachi-background: url(https://files.catbox.moe/q3meo7.png);
+        /*images*/
+        --hachi-background: url(-);
         --hachi-cursor: url(https://files.catbox.moe/ptm263.png);
         --hachi-avatar: url(https://s4.anilist.co/file/anilistcdn/user/avatar/large/b5568712-RgclhQh1K0aE.png);
         /*Icons*/
@@ -25,7 +25,8 @@
         --hachi-manga-icon: url(https://files.catbox.moe/y3fyrt.svg);
     }
 
-     /*Dark Theme*/
+
+    /*Dark Theme*/
     :root,
     body,
     .site-theme-dark,
@@ -70,7 +71,7 @@
     body {
         /*cursor: var(--hachi-cursor), auto;*/
         overflow: overlay;
-        background: linear-gradient(rgba(21, 31, 46, .95),
+        background: linear-gradient(rgba(21, 31, 46, .54),
         rgba(0, 0, 0, .69)), rgb(var(--color-background)) var(--hachi-background) center/100% fixed;
         -webkit-background-size: cover!important;
         -moz-background-size: cover!important;
@@ -119,10 +120,10 @@
 
 
     /*Profile Header*/
-    /*profile avatar*/
+    /*profile avatar
     .page-content > div > div.header-wrap > div.banner > div.container > div > img {
         content: var(--hachi-avatar);
-    }
+    }*/
 
     /* Removed Banner Shadow */
     .banner .shadow {
@@ -188,7 +189,7 @@
     }
 
     .mod-badge-wrap.follower-badge {
-        background: rgb(var(--hachi-cyan));
+        background: rgb(var(--hachi-gray));
         padding: 8px 8px 7px 8px;
         margin-bottom: 33px;
         margin-left: -11px;
@@ -332,11 +333,11 @@
         -webkit-filter: blur(1.7px);
     }
 
-    .activity-anime_list .wrap,
+    /* .activity-anime_list .wrap,
     .activity-manga_list .wrap {
         background: linear-gradient(90deg, rgba(2, 0, 36, 0) -3%, rgba(19, 28, 45, 0.6558998599439776) 10%, rgba(21, 31, 46, 0.9836309523809523) 19%, rgba(21, 31, 46, 1) 100%);
         transition: 0.5s;
-    }
+    }*/
     .activity-anime_list .wrap:hover {
         color: rgba(255, 255, 255, 1);
         box-shadow: 0px 4px 0px rgba(107, 119, 255, .08);
@@ -410,7 +411,7 @@
         width: 600px;
     }
 
-    /*Activity Users Profile*/
+    /*Activity Users Profile
     a[href="/user/Hachiman/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
         content: '';
         mask: var(--hachi-owner-icon) no-repeat 50% 50%;
@@ -434,7 +435,7 @@
         background-color: rgb(var(--hachi-gray));
         margin-left: 8px;
     }
-
+*/
     .activity-message > .wrap > .time,
     .activity-text > .wrap > .time {
         left: 72px;
@@ -775,10 +776,7 @@
     .header-wrap > div.banner > div.container > div > img {
         transition: 0.2s;
     }
-    .page-content > div > div.header-wrap > div.banner > div.container > div > img {
-        animation: slideInLeft;
-        animation-duration: 1s;
-    }
+
     .button.liked > svg {
         animation: rubberBand;
         animation-duration: 1s;
@@ -802,6 +800,9 @@
     .activity-entry .like-wrap .users {
         transition: 0.5s
     }
+    .markdown .markdown-spoiler.spoiler-visible .hide-spoiler, .markdown .markdown-spoiler.spoiler-visible span {
+    background: none;
+}
     /*Mobile Menu*/
     .hamburger svg[data-v-8aeb5e9a] {
         color: rgb(var(--hachi--light-gray));
