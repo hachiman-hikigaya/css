@@ -1,8 +1,4 @@
-    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-    @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-    :root {
+:root {
         /*Color Scheme*/
         --hachi-cyan: 125, 190, 203;
         --hachi-darkred: 200, 42, 50;
@@ -71,8 +67,8 @@
     body {
         /*cursor: var(--hachi-cursor), auto;*/
         overflow: overlay;
-        background: linear-gradient(rgba(21, 31, 46, .54),
-        rgba(0, 0, 0, .69)), rgb(var(--color-background)) var(--hachi-background) center/100% fixed;
+/*          background: linear-gradient(rgba(21, 31, 46, .54),
+        rgba(0, 0, 0, .69)), rgb(var(--color-background))var(--hachi-background) center/100% fixed; */
         -webkit-background-size: cover!important;
         -moz-background-size: cover!important;
         -o-background-size: cover!important;
