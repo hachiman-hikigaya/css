@@ -183,9 +183,9 @@
     }
 
     /*Genres*/
-.name[data-v-63cd3b41]{
+    .name[data-v-63cd3b41]{
     color: #ffffffcc;
-}
+    }
     div.genres:first-child > div.genre:first-child > div.name:first-child {
         background: #7ba3d747!important
     }
@@ -239,8 +239,6 @@
         transform: scale(1) !important;
     }
 
-
-
     .history-day {
         border-radius: 6px !important;
     }
@@ -265,9 +263,9 @@
         border-bottom: 1px solid rgba(var(--hachi-light-gray), 0.2);
     }
 
-.el-dropdown {margin-bottom: -5px;}
-.activity-entry > .wrap > .time .action{margin-bottom: -5px;}
-svg[class="svg-inline--fa fa-ellipsis-h fa-w-16"]{margin-bottom:-2px}
+    .el-dropdown {margin-bottom: -5px;}
+    .activity-entry > .wrap > .time .action{margin-bottom: -5px;}
+    svg[class="svg-inline--fa fa-ellipsis-h fa-w-16"]{margin-bottom:-2px}
 
     @media (min-width: 1540px) {
         .cover,
@@ -432,7 +430,6 @@ svg[class="svg-inline--fa fa-ellipsis-h fa-w-16"]{margin-bottom:-2px}
         backdrop-filter: blur(2px) !important;
     }
 
-
     /*Bio stretched to max-height*/
     .content-wrap {
         max-height: none !important;
@@ -484,7 +481,6 @@ svg[class="svg-inline--fa fa-ellipsis-h fa-w-16"]{margin-bottom:-2px}
         border: 3px solid rgb(var(--color-foreground));
     }
 
-
     .favourites.preview .favourites-wrap .favourite,
     .favourites.preview .favourites-wrap > div {
         overflow: visible;
@@ -524,7 +520,6 @@ svg[class="svg-inline--fa fa-ellipsis-h fa-w-16"]{margin-bottom:-2px}
     .overview .favourite.studio::after {
         display: none !important;
     }
-
 
     /*Removed Elements*/
     .activity-manga_list > div > div > div > div > .title,
@@ -577,7 +572,6 @@ svg[class="svg-inline--fa fa-ellipsis-h fa-w-16"]{margin-bottom:-2px}
         display: none !important;
     }
 
-
     /*Animations*/
     .activity-entry {
         animation: fadeIn;
@@ -607,7 +601,6 @@ svg[class="svg-inline--fa fa-ellipsis-h fa-w-16"]{margin-bottom:-2px}
         animation-duration: .5s;
     }
 
-
     .header-wrap .actions .nav-btn:hover,
     .banner-content h1.name:hover,
     .header-wrap > div.banner > div.container > div > img:hover {
@@ -624,7 +617,7 @@ svg[class="svg-inline--fa fa-ellipsis-h fa-w-16"]{margin-bottom:-2px}
         animation: rubberBand;
         animation-duration: 1s;
     }
-
+    .markdown-spoiler:before{content: "Click to View"!important;}
     .markdown .markdown-spoiler.spoiler-visible .hide-spoiler,
     .markdown .markdown-spoiler.spoiler-visible/*span*/
     {
@@ -636,8 +629,6 @@ svg[class="svg-inline--fa fa-ellipsis-h fa-w-16"]{margin-bottom:-2px}
         animation: zoomIn;
         animation-duration: 1s;
     }
-
-
 
     .progress .bar {
         animation: slideInLeft;
