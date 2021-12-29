@@ -1,28 +1,22 @@
- @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
     @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-:root {
+    :root {
         /*Color Scheme*/
         --hachi-cyan: 125, 190, 203;
         --hachi-darkred: 200, 42, 50;
-        --hachi-gold: 249, 189, 4;
         --hachi-gray: 40, 56, 77;
         --hachi-light-gray: 88, 88, 88, .29;
         --hachi-dark-gray: 40, 56, 77;
         --hachi-white: 255, 255, 255;
         --hachi-dirty-white: 219, 219, 219;
         --hachi-transparent: rgb(0 0 0 / 0%);
-        /*images*/
-        --hachi-background: url(-);
+        /*Cursor*/
         --hachi-cursor: url(https://files.catbox.moe/ptm263.png);
-        --hachi-avatar: url(https://s4.anilist.co/file/anilistcdn/user/avatar/large/b5568712-RgclhQh1K0aE.png);
         /*Icons*/
         --hachi-anilist-logo: url(https://files.catbox.moe/nyzorc.svg);
-        --hachi-owner-icon: url(https://files.catbox.moe/lsmor7.svg);
-        --hachi-friends-icon: url(https://files.catbox.moe/cnsbi0.svg);
         --hachi-anime-icon: url(https://files.catbox.moe/1wx9ha.png);
-        --hachi-manga-icon: url(https://files.catbox.moe/y3fyrt.svg);
     }
 
 
@@ -71,15 +65,13 @@
     body {
         /*cursor: var(--hachi-cursor), auto;*/
         overflow: overlay;
-/*          background: linear-gradient(rgba(21, 31, 46, .54),
-        rgba(0, 0, 0, .69)), rgb(var(--color-background))var(--hachi-background) center/100% fixed; */
+
         -webkit-background-size: cover!important;
         -moz-background-size: cover!important;
         -o-background-size: cover!important;
         background-size: cover!important;
         background-repeat: no-repeat!important;
         background-position: center!important;
-        /*font-family: 'Poppins';*/
     }
 
     /*Scroll bar*/
@@ -107,23 +99,10 @@
         background: rgb(var(--hachi-transparent));
     }
 
-    .text .markdown {
-        margin-right: 6px;
-        margin-left: 8px;
-        margin-bottom: 20px !important;
-    }
 
     .page-content > div > div.content.container > div > div:nth-child(1) > h2 {
         margin-top: 30px;
     }
-
-
-
-    /*Profile Header*/
-    /*profile avatar
-    .page-content > div > div.header-wrap > div.banner > div.container > div > img {
-        content: var(--hachi-avatar);
-    }*/
 
     /* Removed Banner Shadow */
     .banner .shadow {
@@ -145,7 +124,7 @@
     }
 
     .banner-content h1.name {
-        margin-top: -40px;
+
         filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
     }
 
@@ -187,39 +166,37 @@
         border-bottom: 3px solid rgb(var(--color-gray-400));
         color: rgb(var(--hachi-dirty-white));
     }
-
+    /*Follows You*/
     .mod-badge-wrap.follower-badge {
-        background: rgb(var(--hachi-gray));
+        background: rgb(var(--hachi-light-gray));
         padding: 8px 8px 7px 8px;
-        margin-bottom: 33px;
-        margin-left: -11px;
-        font-size: 0rem;
+
         border-radius: 780px;
+        font-size: 1.4rem;
     }
 
     .mod-badge-wrap.follower-badge:after {
-        content: "\f00c" !important;
-        font-family: 'FontAwesome';
-        font-size: 1rem;
+
+
         color: rgb(var(--color-white));
         font-weight: lighter;
     }
 
     /*Genres*/
     div.genres:first-child > div.genre:first-child > div.name:first-child {
-        background: #58585878!important
+        background: #7ba3d747!important
     }
     div.genres:first-child > div.genre:nth-child(2) > div.name:first-child {
-        background: #ff000054!important
+        background: #7ba3d747!important
     }
     div.genres:first-child > div.genre:nth-child(3) > div.name:first-child {
-        background: #e8d73373!important
+        background: #7ba3d747!important
     }
     div.genres:first-child > div.genre:nth-child(4) > div.name:first-child {
         background: #7ba3d747!important
     }
     div.genres:first-child > div.genre:nth-child(5) > div.name:first-child {
-        background: #583131!important
+        background: #7ba3d747!important
     }
     /*Genre Amount*/
     div.genres:first-child > div.genre:first-child > div.amount:last-child {
@@ -288,13 +265,12 @@
         border-bottom: 1px solid rgba(var(--hachi-light-gray), 0.2);
     }
 
-    .activity-message .wrap > .actions,
+    /* .activity-message .wrap > .actions,
     .activity-text .wrap > .actions {
         position: relative;
         display: flex;
         justify-content: flex-end;
-    }
-
+    }*/
     @media (min-width: 1540px) {
         .cover,
         .activity-anime_list .wrap,
@@ -333,17 +309,6 @@
         -webkit-filter: blur(1.7px);
     }
 
-    /* .activity-anime_list .wrap,
-    .activity-manga_list .wrap {
-        background: linear-gradient(90deg, rgba(2, 0, 36, 0) -3%, rgba(19, 28, 45, 0.6558998599439776) 10%, rgba(21, 31, 46, 0.9836309523809523) 19%, rgba(21, 31, 46, 1) 100%);
-        transition: 0.5s;
-    }*/
-    .activity-anime_list .wrap:hover {
-        color: rgba(255, 255, 255, 1);
-        box-shadow: 0px 4px 0px rgba(107, 119, 255, .08);
-        transition: 0.5s;
-    }
-
     .activity-entry.full-width.activity-anime_list > div.wrap,
     .activity-entry.full-width.activity-manga_list > div.wrap {
         background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, rgba(19, 28, 45, 0.6559) 10%, rgba(21, 31, 46, 0.999631) 20%, rgba(21, 31, 46, 1) 100%);
@@ -362,7 +327,6 @@
         left: 16px;
         -webkit-filter: blur(1.7px);
     }
-
     /*Activity cover background*/
     @media (min-width: 1540px) {
         .activity-feed > div > div.wrap > div.list.small > a::before {
@@ -411,31 +375,6 @@
         width: 600px;
     }
 
-    /*Activity Users Profile
-    a[href="/user/Hachiman/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
-        content: '';
-        mask: var(--hachi-owner-icon) no-repeat 50% 50%;
-        position: relative;
-        top: -2px;
-        -webkit-mask: var(--hachi-owner-icon) no-repeat 50% 50%;
-        mask-size: cover;
-    }
-
-    .text > .header > .name::after,
-    .reply > .header > .name::after {
-        content: '';
-        mask: var(--hachi-friends-icon) no-repeat 50% 50%;
-        position: relative;
-        top: -2px;
-        -webkit-mask: var(--hachi-friends-icon) no-repeat 50% 50%;
-        mask-size: cover;
-        -webkit-mask-size: auto;
-
-        padding: 10px 8px;
-        background-color: rgb(var(--hachi-gray));
-        margin-left: 8px;
-    }
-*/
     .activity-message > .wrap > .time,
     .activity-text > .wrap > .time {
         left: 72px;
@@ -460,7 +399,7 @@
 
     .header > div.donator-badge {
         left: -2px;
-        margin-top: -10px;
+        margin-top: -15px;
         display: flex;
     }
 
@@ -469,117 +408,14 @@
         color: rgb(var(--hachi-light-gray));
         letter-spacing: 0.03em;
     }
-    /*Stats*/
-    .stats-wrap[data-v-815ccddc] {
-        display: grid;
-        grid-auto-flow: row;
-        grid-row-gap: 20px;
-        grid-template-columns: auto auto;
-        padding: 20px 30px;
-        text-align: left;
-    }
-
-    .stat .value[data-v-815ccddc] {
-        color: rgb(var(--color-text-lighter));
-        font-size: 2rem;
-        font-weight: 700;
-        padding-bottom: 0px;
-    }
-
-    .stat .label[data-v-815ccddc] {
-        color: rgb(var(--color-text-lighter));
-        font-size: 1.1rem;
-        font-weight: 700;
-        padding-bottom: 0px;
-    }
-
-    .stat:nth-child(1) .value[data-v-815ccddc] {
-        font-weight: 700;
-        margin-left: 30px;
-        font-size: 5.5rem;
-    }
-
-
-    .stat:nth-child(1) .label {
-        font-weight: 700;
-        font-size: 2rem;
-        margin-left: 30px;
-    }
-
-    .stat[data-v-815ccddc]:nth-child(1) {
-        grid-row-start: span 2;
-    }
-
-    .stat:nth-child(1) .value[data-v-815ccddc] {
-        font-size: 5.5rem;
-        margin-top: 2px
-    }
-
-    .stat:nth-child(1) .label[data-v-815ccddc] {
-        font-size: 2rem;
-    }
-
-    .progress[data-v-815ccddc] {
-        background: rgb(var(--color-foreground-grey-dark), 0);
-        height: 11px;
-        padding: 0 16.5%;
-    }
-
-    .progress .bar[data-v-815ccddc] {
-        background: rgb(var(--hachi-gray));
-    }
-
-    .list-stats {
-        font-weight: 600;
-        overflow: hidden;
-        padding: 0!important;
-    }
-
-    .milestones[data-v-815ccddc] {
-        font-family: Overpass;
-        font-size: 1rem;
-        font-weight: 900;
-        padding: 6px 0;
-        border-radius: 0!important;
-    }
-
-    .stats-wrap > div:nth-child(1) > div.footer {
-        border-radius: 0 0 0 4px;
-    }
-
-    .section > .stats-wrap > .list-stats:nth-child(2) .stat:nth-child(2) .value,
-    .section > .stats-wrap > .list-stats:nth-child(1) .stat:nth-child(2) .value {
-        display: flex;
-    }
-
-    .section > .stats-wrap > .list-stats:nth-child(1) .stat:nth-child(2) .value:after {
-        content: '';
-        background: var(--hachi-anime-icon) no-repeat 50% 50%;
-        opacity: 80%;
-        background-size: 50px;
-        transform: scaleX(-1);
-        width: 53px;
-        height: 90px;
-        position: absolute;
-        right: 6.5%;
-    }
-
-    .section > .stats-wrap > .list-stats:nth-child(2) .stat:nth-child(2) .value:after {
-        content: '';
-        background: var(--hachi-manga-icon) no-repeat 50% 50%;
-        background-size: 50px;
-        transform: scaleX(-1);
-        width: 53px;
-        height: 90px;
-        position: absolute;
-        right: 6.5%;
-    }
 
     /*Anime list and manga list cover*/
     .lists > div > div > div.list-entries > div > div.cover {
         max-height: 250px;
     }
-
+    .progress .bar[data-v-815ccddc] {
+        background: rgb(var(--hachi-gray));
+    }
     /*Unfollow botton*/
     .unfollow[data-v-39573fe2] {
         background: rgb(var(--hachi-light-gray));
@@ -617,7 +453,7 @@
         border-radius: 20%;
         position: static;
         overflow: visible;
-        height: 140px;
+        height: 120px;
     }
 
     /*Bio Favourites*/
@@ -706,6 +542,10 @@
         display: none;
     }
 
+    div.nav.container > a.link:nth-child(3),
+    div.links:nth-child(2) > a.link:nth-child(4) {
+        display: none;
+    }
     .hohRewatchSuffix {
         display: none;
     }
@@ -734,7 +574,7 @@
         visibility: hidden;
     }
 
-    .circle,
+    div[class="count circle"],
     .emoji-spinner {
         display: none !important;
     }
@@ -742,13 +582,18 @@
 
     /*Animations*/
     .activity-entry {
-        animation: zoomIn;
+        animation: fadeIn;
+        animation-duration: 1.0s;
+    }
+    .lists,
+    .stats-wrap,
+    div[class="user-follow"] {
+        animation: fadeIn;
         animation-duration: 1.0s;
     }
 
-
     .page-content > div > div.content.container > div > div:nth-child(1) {
-        animation: zoomIn;
+        animation: fadeIn;
         animation-duration: 1.0s;
         animation-iteration-count: 1;
     }
@@ -782,6 +627,13 @@
         animation-duration: 1s;
     }
 
+    .markdown .markdown-spoiler.spoiler-visible .hide-spoiler,
+    .markdown .markdown-spoiler.spoiler-visible/*span*/
+    {
+        animation: zoomIn;
+        animation-duration: 1s;
+    }
+
     .medialist.cards .entry-card {
         animation: zoomIn;
         animation-duration: 1s;
@@ -800,9 +652,11 @@
     .activity-entry .like-wrap .users {
         transition: 0.5s
     }
-    .markdown .markdown-spoiler.spoiler-visible .hide-spoiler, .markdown .markdown-spoiler.spoiler-visible span {
-    background: none;
-}
+    .markdown .markdown-spoiler.spoiler-visible .hide-spoiler,
+    .markdown .markdown-spoiler.spoiler-visible span {
+        background: none;
+    }
+
     /*Mobile Menu*/
     .hamburger svg[data-v-8aeb5e9a] {
         color: rgb(var(--hachi--light-gray));
