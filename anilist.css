@@ -811,7 +811,7 @@
     div.footer > div.container:before {
         width: 300px!important;
         content: ' | CSS by Hachiman';
-        position: absolute;
+        position: relative;
         text-indent: 5px;
     }
 
