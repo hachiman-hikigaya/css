@@ -1,7 +1,12 @@
+    /*===============================================
+    Import Fonts and Animations
+=================================================*/
     @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
     @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
+    /*===============================================
+    Colors
+=================================================*/
     :root {
         /*Color Scheme*/
         --hachi-cyan: 125, 190, 203;
@@ -16,10 +21,11 @@
         --hachi-cursor: url(https://files.catbox.moe/ptm263.png);
         /*Icons*/
         --hachi-anilist-logo: url(https://files.catbox.moe/nyzorc.svg);
-        --hachi-anime-icon: url(https://files.catbox.moe/1wx9ha.png);
+        --hachi-yukino-icon: url(https://files.catbox.moe/1wx9ha.png);
     }
-
-    /*Dark Theme*/
+    /*===============================================
+    Force Dark Theme
+=================================================*/
     :root,
     body,
     .site-theme-dark,
@@ -59,8 +65,10 @@
         --color-gray-100: 21, 31, 46 !important;
         --color-gray-200: 11, 22, 34 !important;
     }
-
-    /*Scroll bar*/
+    /*===============================================
+   Remove Scrollbars
+=================================================*/
+    /*Scrollbar*/
     ::-webkit-scrollbar {
         width: 8px;
         background: rgb(var(--hachi-transparent));
@@ -79,6 +87,7 @@
     .about .content-wrap::-webkit-scrollbar {
         display: none !important;
     }
+
     /*Nav Scrollbar*/
     .nav::-webkit-scrollbar {
         display: none;
@@ -92,10 +101,17 @@
         margin-top: 30px;
     }
 
-    /* Removed Banner Shadow 
+    /*===============================================
+    Banner Shadow
+=================================================*/
+    /* -Disabled-
+    
     .banner .shadow {
         display: none;
     }*/
+    /*===============================================
+    Navigation
+=================================================*/
     .header-wrap .nav-wrap {
         background-color: rgb(var(--color-foreground));
         position: relative;
@@ -117,7 +133,9 @@
         color: rgb(var(--hachi-dirty-white));
     }
 
-    /*Genres*/
+    /*===============================================
+    Genre Overview
+=================================================*/
     .name[data-v-63cd3b41] {
         color: #ffffffcc;
     }
@@ -136,7 +154,10 @@
     div.genres:first-child > div.genre:nth-child(5) > div.name:first-child {
         background: #7ba3d747!important
     }
-    /*Genre Amount*/
+
+    /*===============================================
+    Genre Overview Entries
+=================================================*/
     div.genres:first-child > div.genre:first-child > div.amount:last-child {
         color: #ffffff9e!important;
         text-shadow: 0 0 1px;
@@ -157,6 +178,10 @@
         color: #ffffff9e!important;
         text-shadow: 0 0 1px;
     }
+
+    /*===============================================
+    Genre Overview Percentage
+=================================================*/
     div.percentage-bar:last-child {
         display: none
     }
@@ -170,10 +195,30 @@
         animation-duration: 1s;
     }
 
+    /*===============================================
+    Overview Stats
+=================================================*/
     .stats-wrap {
         transform: scale(1) !important;
     }
 
+    /*===============================================
+    Overview Stats Progress Bar
+=================================================*/
+    .progress .bar[data-v-815ccddc] {
+        background: rgb(var(--hachi-gray));
+    }
+
+    /*===============================================
+    Stats - Counter
+=================================================*/
+    div[class="count circle"],
+    .emoji-spinner {
+        display: none !important;
+    }
+    /*===============================================
+    Activity History
+=================================================*/
     .history-day {
         border-radius: 6px !important;
     }
@@ -182,57 +227,145 @@
         border-radius: 6px;
     }
 
+    /* Change History Lv-3 Color */
+    .history-day.lv-3 {
+        background: rgb(var(--hachi-dark-gray)) !important;
+    }
+
+    /* Hide History */
+    .desktop:nth-of-type(2) {
+        height: 0;
+        visibility: hidden;
+    }
+
+    /*===============================================
+    Favourites
+=================================================*/
     .favourites .favourite {
         border-radius: 9px !important;
     }
 
-    .activity-message .wrap > .actions,
-    .activity-text .wrap > .actions {
-        right: 0;
-        bottom: 0;
-        font-size: 1.35rem;
-        margin: -10px 10px 10px 15px;
+    .markdown hr {
+        border: solid 1px rgba(var(--hachi-gray), .5);
+        border-radius: 5px;
     }
 
-    .wrap > div.text > div.activity-markdown {
-        border-bottom: 1px solid rgba(var(--hachi-light-gray), 0.2);
+    /*===============================================
+    Activity
+=================================================*/
+    /*Horizontal Line*/
+    .markdown hr {
+        border: solid 1px rgba(var(--hachi-gray), .5);
+        border-radius: 5px;
     }
-    /*Activity time,dropdown and bell*/
-    .el-dropdown {
-        margin-bottom: -5px;
+
+    /*===============================================
+    Activity Gaps
+=================================================*/
+    .text[data-v-77aecf0c] .markdown p:first-of-type {
+        margin-top: 0;
     }
+    .text[data-v-77aecf0c] .markdown p:last-of-type {
+        margin-bottom: 0;
+    }
+
+    /*===============================================
+    Activity Like & Comment Button
+=================================================*/
+    .activity-message .wrap > .actions,
+    .activity-text .wrap > .actions {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /*===============================================
+    Activity Time
+=================================================*/
     .activity-entry > .wrap > .time .action {
         margin-bottom: 5px;
     }
+
     div.activity-entry.activity-anime_list > div.wrap:first-child > div.time:nth-child(2) > time:last-child {
         margin-top: -5px;
     }
-    /*fix dropdown and bell*/
-    div.activity-entry.activity-anime_list > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2) {
-        position: relative;
-        top: 3px;  left: 2.5px;
-    }
-    
-    div.activity-entry.activity-anime_list > div.wrap:first-child > div.time:nth-child(2) > span.action.has-label:first-child {
-        position: relative;
-        top: -26px;
-        left: 15px;
-    }
-    
-    /*fix dropdown and bell -  Home*/
-div.activity-entry.activity-manga_list > div.wrap:first-child > div.time:nth-child(2) > span.action.has-label:first-child{        position: relative;
-        top: -28px;
-        left: 15px;}
-    
-div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2) > span.el-dropdown-link.action.el-dropdown-selfdefine:first-child{  position: relative;
-        top: 3px;  left: 2.5px;}
-    
-    
 
+    .activity-message > .wrap > .time,
+    .activity-text > .wrap > .time {
+        left: 72px;
+        top: 42px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .time {
+        font-weight: 700;
+    }
+
+    /*===============================================
+    Activity Dropdown
+=================================================*/
+    .el-dropdown {
+        margin-bottom: -5px;
+    }
+
+    /*Dropdown Hover Colors*/
+    li.el-dropdown-menu__item:first-child:hover,
+    li.el-dropdown-menu__item:first-child:focus {
+        background: rgba(var(--hachi-cyan), 0.2)
+    }
+    li.el-dropdown-menu__item:hover,
+    li.el-dropdown-menu__item:focus {
+        background: rgba(var(--hachi-cyan), 0.2)
+    }
+    li.el-dropdown-menu__item:nth-child(2):hover,
+    li.el-dropdown-menu__item:nth-child(2):focus,
+    li.el-dropdown-menu__item:nth-child(3):hover,
+    li.el-dropdown-menu__item:nth-child(3):focus,
+    li.el-dropdown-menu__item:nth-child(4):hover,
+    li.el-dropdown-menu__item:nth-child(4):focus {
+        background: rgba(var(--hachi-cyan), 0.2)
+    }
+    .el-dropdown-menu__item--divided {
+        border-top: 1px solid rgba(var(--hachi-cyan), 0.2)
+    }
+    a.el-dropdown-menu__item:first-child:hover,
+    a.el-dropdown-menu__item:first-child:focus {
+        background: rgba(var(--hachi-cyan), 0.2)
+    }
+    a.el-dropdown-menu__item:hover,
+    a.el-dropdown-menu__item:focus {
+        background: rgba(var(--hachi-cyan), 0.2)
+    }
+    div.el-dropdown-menu__item:nth-child(1):hover,
+    div.el-dropdown-menu__item:nth-child(1):focus,
+    div.el-dropdown-menu__item:nth-child(2):hover,
+    div.el-dropdown-menu__item:nth-child(2):focus,
+    div.el-dropdown-menu__item:nth-child(3):hover,
+    div.el-dropdown-menu__item:nth-child(3):focus {
+        background: rgba(var(--hachi-cyan), 0.2)
+    }
+
+    /*===============================================
+    Activity Dropdown Button
+=================================================*/
     svg[class="svg-inline--fa fa-ellipsis-h fa-w-16"] {
         margin-bottom: 10%;
         height: 11px;
     }
+
+    /*===============================================
+    Activity Dropdown Popup
+=================================================*/
+    .activity-extras-dropdown.el-popper[x-placement^=bottom][data-v-77aecf0c] {
+        margin-top: 5px;
+    }
+
+    /*===============================================
+    Activity Bell Button
+=================================================*/
     svg[class="svg-inline--fa fa-bell fa-w-14"] {
         margin-bottom: -25%;
         height: 10px;
@@ -240,8 +373,50 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
         right: 5px;
     }
 
-    .activity-extras-dropdown.el-popper[x-placement^=bottom][data-v-77aecf0c] {
-        margin-top: 5px;
+    /*===============================================
+    Activity Dropdown and Bell Position Fixes
+=================================================*/
+    div.activity-entry.activity-anime_list > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2) {
+        position: relative;
+        top: 3px;
+        left: 2.5px;
+    }
+
+    div.activity-entry.activity-anime_list > div.wrap:first-child > div.time:nth-child(2) > span.action.has-label:first-child {
+        position: relative;
+        top: -26px;
+        left: 15px;
+    }
+
+    /*===============================================
+    Activity Dropdown and Bell Position Fixes - Home
+=================================================*/
+    div.activity-entry.activity-manga_list > div.wrap:first-child > div.time:nth-child(2) > span.action.has-label:first-child {
+        position: relative;
+        top: -28px;
+        left: 15px;
+    }
+
+    div.activity-entry.activity-manga_list > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2) > span.el-dropdown-link.action.el-dropdown-selfdefine:first-child {
+        position: relative;
+        top: 3px;
+        left: 2.5px;
+    }
+
+    /*===============================================
+    Activity Top Markdown
+=================================================*/
+    /*Disabled
+    
+    .wrap > div.text > div.activity-markdown {
+        margin-top: 10px;
+        border-top: 1px solid rgba(var(--hachi-gray), 0.2);
+    }*/
+    /*===============================================
+    Activity Bottom Markdown
+=================================================*/
+    .wrap > div.text > div.activity-markdown {
+        border-bottom: 1px solid rgba(var(--hachi-gray), 0.2);
     }
 
     @media (min-width: 1540px) {
@@ -269,6 +444,9 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
         }
     }
 
+    /*===============================================
+    Activity Background Blur
+=================================================*/
     .activity-feed > div > div.wrap > div.list.small > a::before {
         content: "";
         background: inherit;
@@ -284,7 +462,7 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
 
     .activity-entry.full-width.activity-anime_list > div.wrap,
     .activity-entry.full-width.activity-manga_list > div.wrap {
-        background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, rgba(19, 28, 45, 0.6559) 10%, rgba(21, 31, 46, 0.999631) 20%, rgba(21, 31, 46, 1) 100%);
+        background: linear-gradient( 90deg, rgba(2, 0, 36, 0) -3%, rgba(19, 28, 45, 0.6558998599439776) 10%, rgba(21, 31, 46, 0.9836309523809523) 19%, rgba(21, 31, 46, 1) 100%);
     }
 
     .activity-entry.full-width.activity-manga_list > div.wrap > div.list.small > a > a::before,
@@ -300,7 +478,7 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
         left: 16px;
         -webkit-filter: blur(1.7px);
     }
-    /*Activity cover background*/
+
     @media (min-width: 1540px) {
         .activity-feed > div > div.wrap > div.list.small > a::before {
             content: "";
@@ -319,7 +497,7 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
     @media (min-width: 1540px) {
         .activity-anime_list .wrap,
         .activity-manga_list .wrap {
-            background: linear-gradient(90deg, rgba(2, 0, 36, 0) -2%, rgba(19, 28, 45, 0.6558998599439776) 15%, rgba(21, 31, 46, 0.983631) 25%, rgba(21, 31, 46, 1) 100%);
+            background: linear-gradient( 90deg, rgba(2, 0, 36, 0) -3%, rgba(19, 28, 45, 0.6558998599439776) 10%, rgba(21, 31, 46, 0.9836309523809523) 19%, rgba(21, 31, 46, 1) 100%);
         }
     }
 
@@ -327,7 +505,10 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
         box-shadow: 0px 0 10px 20px rgb(0 0 0 / 10%);
     }
 
-    /* Activity Title-overflow fixed */
+
+    /*===============================================
+    Activity - Fix Title Overflow
+=================================================*/
     @media (min-width: 1540px) {
         .list.small > div > div.status > a {
             white-space: nowrap;
@@ -337,6 +518,7 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
             text-overflow: ellipsis;
         }
     }
+
 
     .activity-anime_list .wrap:hover .list.small > div > div.status > a,
     .activity-manga_list .wrap:hover .list.small > div > div.status > a {
@@ -348,20 +530,9 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
         width: 600px;
     }
 
-    .activity-message > .wrap > .time,
-    .activity-text > .wrap > .time {
-        left: 72px;
-        top: 42px;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .time {
-        font-weight: 700;
-    }
-
+    /*===============================================
+    Activity - Username
+=================================================*/
     .text > div.header > a.name {
         display: inline-block;
         height: 35px;
@@ -370,37 +541,45 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
         vertical-align: top;
     }
 
+    /*===============================================
+   Activity - Username Spacing
+=================================================*/
+    a[href="/user/Hachiman/"]:not(.avatar):not(.user):not(.link):not(.primary-link) {
+        letter-spacing: 0.03em;
+    }
+
+    /*===============================================
+    Activity - Donator Badge
+=================================================*/
     .header > div.donator-badge {
         left: -2px;
         margin-top: -15px;
         display: flex;
+        margin-left:
     }
 
-    /* Change name spacing*/
-    a[href="/user/Hachiman/"]:not(.avatar):not(.user):not(.link):not(.primary-link) {
-        letter-spacing: 0.03em;
-    }
-    /* Dropdown */
+    /*===============================================
+    Activity - Circle Avatar
+=================================================*/
+    /*DISABLED
+        a[class="avatar"],a[class="avatar router-link-exact-active router-link-active"]{
+        border: 1px solid rgb(49,67,93,1)!important;
+        -webkit-border-radius: 20px!important;
+     }*/
+    /*===============================================
+    Dropdown - TOP
+=================================================*/
     .dropdown[data-v-04b245e6] {
         width: 175px!important
-    }
-    .footer[data-v-04b245e6] a:nth-child(1),
-    .footer[data-v-04b245e6] a:nth-child(2),
-    .footer[data-v-04b245e6] a:nth-child(3) {
-        display: none!important;
-    }
-    .footer[data-v-04b245e6] a:nth-child(4) {
-        margin-left: 35%!important;
-        font-size: 1.4rem!important;
     }
     /*Anime list and manga list cover*/
     .lists > div > div > div.list-entries > div > div.cover {
         max-height: 250px;
     }
-    .progress .bar[data-v-815ccddc] {
-        background: rgb(var(--hachi-gray));
-    }
-    /*Unfollow botton*/
+
+    /*===============================================
+    Unfollow Button Color
+=================================================*/
     .unfollow[data-v-39573fe2] {
         background: rgb(var(--hachi-light-gray));
     }
@@ -414,11 +593,9 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
         background: rgb(var(--hachi-light-gray)) !important;
     }
 
-    .tooltip {
-        backdrop-filter: blur(2px) !important;
-    }
-
-    /*Bio stretched to max-height*/
+    /*===============================================
+    Bio - Max Height
+=================================================*/
     .content-wrap {
         max-height: none !important;
     }
@@ -430,7 +607,9 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
         margin-top: 0 !important;
     }
 
-    /* favourite enlarge while hover*/
+    /*===============================================
+    Favourites - Hover
+=================================================*/
     .favourite[data-v-0317d914] {
         transition: transform .2s;
         border-radius: 20%;
@@ -439,7 +618,6 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
         height: 120px;
     }
 
-    /*Bio Favourites*/
     .about a:nth-child(1) > img,
     .about a:nth-child(2) > img,
     .about a:nth-child(3) > img,
@@ -478,7 +656,16 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
         overflow: visible;
     }
 
-    /* Favourite Studio */
+    /*===============================================
+    Favourites Hover Info
+=================================================*/
+    .tooltip {
+        backdrop-filter: blur(2px) !important;
+    }
+
+    /*===============================================
+    Favourite Studios
+=================================================*/
     .overview .favourite.studio {
         min-height: 35px !important;
         max-height: 35px !important;
@@ -509,26 +696,44 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
         display: none !important;
     }
 
-    /*Removed Elements*/
+    /*===============================================
+    Remove Elements
+=================================================*/
     .activity-manga_list > div > div > div > div > .title,
     .hohPinned .list .title[href^="/manga/"] {
         color: rgb(var(--color-blue)) !important;
     }
 
+    /* Previously Known As*/
+    /*.prev-name-container {
+        content: url(https://files.catbox.moe/1wx9ha.png);
+        height: 100px;
+        margin: auto
+    }*/
+    /*Remove Unsubscribe Text*/
+    .has-label:hover.has-label[data-v-77aecf0c]::before {
+        content: none
+    }
+
+    /*Remove DL */
     .hohDownload {
         display: none;
     }
 
+    /*Remove Activity Score */
     .hohScore {
         display: none;
     }
 
+    /*Remove Nav Items*/
     div.nav.container > a.link:nth-child(3),
     div.links:nth-child(2) > a.link:nth-child(4),
     .header-wrap .nav-wrap .nav .link:nth-child(7),
     .header-wrap .nav-wrap .nav .link:nth-child(8) {
         display: none!important;
     }
+
+    /*Remove Rewatch */
     .hohRewatchSuffix {
         display: none;
     }
@@ -537,15 +742,9 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
         display: none;
     }
 
-    /* Change History level 3 color */
-    .history-day.lv-3 {
-        background: rgb(var(--hachi-dark-gray)) !important;
-    }
-
-    /* Hide History */
-    .desktop:nth-of-type(2) {
-        height: 0;
-        visibility: hidden;
+    /*Remove Block and Report */
+    div.dropdown.el-dropdown {
+        display: none
     }
 
     /*link under header-wrap*/
@@ -557,12 +756,68 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
         visibility: hidden;
     }
 
-    div[class="count circle"],
-    .emoji-spinner {
-        display: none !important;
+    /*===============================================
+    Spoiler
+=================================================*/
+    .markdown-spoiler:before {
+        content: "Click to View"!important;
+        font-weight: bold;
     }
 
-    /*Animations*/
+    /*===============================================
+    Spoiler - Background Remove
+=================================================*/
+    .markdown .markdown-spoiler.spoiler-visible .hide-spoiler,
+    .markdown .markdown-spoiler.spoiler-visible span {
+        background: none;
+    }
+
+    /*===============================================
+    Footer - TOP
+=================================================*/
+    .footer[data-v-04b245e6] a:nth-child(1),
+    .footer[data-v-04b245e6] a:nth-child(2),
+    .footer[data-v-04b245e6] a:nth-child(3) {
+        display: none!important;
+    }
+    .footer[data-v-04b245e6] a:nth-child(4) {
+        margin-left: 35%!important;
+        font-size: 1.4rem!important;
+    }
+
+    /*===============================================
+    Footer - Bottom Remove Elements
+=================================================*/
+    div.theme-selector:first-child {
+        display: none
+    }
+    div.footer > div.container > div.links:last-child > section:first-child > a:nth-child(2),
+    div.footer > div.container > div.links:last-child > section:first-child > a:nth-child(3),
+    div.footer > div.container > div.links:last-child > section:first-child > a:nth-child(4),
+    div.footer > div.container > div.links:last-child > section:nth-child(2) > a:last-child,
+    div.footer > div.container > div.links:last-child > section:nth-child(3) > a:first-child,
+    div.footer > div.container > div.links:last-child > section:nth-child(3) > a:nth-child(2),
+    div.footer > div.container > div.links:last-child > section:nth-child(3) > a:last-child,
+    div.footer > div.container > div.links:last-child > section:nth-child(3) > a:nth-child(3),
+    div.footer > div.container > div.links:last-child > section:last-child > a:last-child,
+    div.footer > div.container > div.links:last-child > section:last-child > a:nth-child(4),
+    div.footer > div.container > div.links:last-child > section:first-child > a:first-child {
+        display: None
+    }
+
+    /*===============================================
+    Footer - Bottom Copyright
+=================================================*/
+    div.footer > div.container:before {
+        width: 300px!important;
+        content: ' | CSS by Hachiman';
+        position: absolute;
+        text-indent: 5px;
+    }
+
+    /*===============================================
+    Animations
+=================================================*/
     .activity-entry {
         animation: fadeIn;
         animation-duration: 1.0s;
@@ -609,9 +864,7 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
         animation: rubberBand;
         animation-duration: 1s;
     }
-    .markdown-spoiler:before {
-        content: "Click to View"!important;
-    }
+
     .markdown .markdown-spoiler.spoiler-visible .hide-spoiler,
     .markdown .markdown-spoiler.spoiler-visible/*span*/
     {
@@ -628,19 +881,14 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
         animation: slideInLeft;
         animation-duration: 2s;
     }
-    .markdown hr {
-        border: solid 1px rgba(var(--hachi-gray), .5);
-        border-radius: 5px;
-    }
+
     .activity-entry .like-wrap .users {
         transition: 0.5s
     }
-    .markdown .markdown-spoiler.spoiler-visible .hide-spoiler,
-    .markdown .markdown-spoiler.spoiler-visible span {
-        background: none;
-    }
 
-    /*Mobile Menu*/
+    /*===============================================
+    Mobile Menu
+=================================================*/
     .hamburger svg[data-v-8aeb5e9a] {
         color: rgb(var(--hachi--light-gray));
     }
@@ -652,4 +900,9 @@ div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-chil
     div.menu.visible:last-child > :hover {
         color: rgb(var(--hachi-gray));
         transition: 0.2s
+    }
+
+    .medialist.table .entry:hover .cover .image {
+        animation: fadeIn;
+        animation-duration: 1.0s;
     }
