@@ -906,8 +906,7 @@
         animation: fadeIn;
         animation-duration: 1.0s;
     }
- 
- /*----------------
+        /*----------------
         NEW STYLE
 ----------------*/
         @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
@@ -1053,7 +1052,11 @@
             position: relative;
             margin: auto;
             overflow: hidden;
-            padding: 5px 38%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
             font-size: 130%;
             border-top-left-radius: 25px;
             border-top-right-radius: 25px;
@@ -1068,8 +1071,12 @@
             position: relative;
             margin: auto;
             overflow: hidden;
-            padding: 5px 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             font-size: 130%;
+            padding-top: 10px;
             border-top-left-radius: 25px;
             border-top-right-radius: 25px;
             border-bottom: 1px solid #4b4b4b1f;
@@ -1084,8 +1091,12 @@
             position: relative;
             margin: auto;
             overflow: hidden;
-            padding: 5px 42%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             font-size: 130%;
+            padding-top: 10px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             border-bottom: 1px solid #4b4b4b1f;
@@ -1098,17 +1109,18 @@
         }
         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap:before {
             content: "Welcome!";
-            font-family:Arial; 
+            font-family: Arial;
             background: #0000;
-            width: 112%;
-            left: -20px;
+            width: 100%;
             height: 40px;
             top: -20px;
             position: relative;
-            text-indent: 5px;
-            overflow: visible;
-            padding: 10px 42%;
+            margin: auto;
+            overflow: hidden;
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             font-size: 150%;
             font-weight: bold;
             border-top-left-radius: 25px;
@@ -1125,7 +1137,11 @@
             position: relative;
             margin: auto;
             overflow: hidden;
-            padding: 10px 42%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 15px;
             font-size: 130%;
             font-weight: bold;
             border-top-left-radius: 6px;
@@ -1135,8 +1151,14 @@
         /*Activity Filter*/
         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown {
             position: relative;
-            left: 262%;
-            top: -20px
+            margin: auto;
+            left: 44%;
+            top: -15px;
+            overflow: visible;
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            align-items: right;
         }
 
         /*Activity Editor*/
@@ -1198,7 +1220,11 @@
             position: relative;
             margin: auto;
             overflow: hidden;
-            padding: 5px 43%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 25px;
             font-size: 130%;
             border-top-left-radius: 25px;
             border-top-right-radius: 25px;
@@ -1396,47 +1422,17 @@
         /*Dropped->*/
         #Hachiman > div.lists:last-child > div.list-wrap:nth-child(11) > h3.section-name:first-child,
         /*Planning->*/
-        #Hachiman > div.lists:last-child > div.list-wrap:last-child > h3.section-name:first-child {
-            backdrop-filter: blur(var(--blur));
-            background: rgba(var(--color-main));
-            width: 100%;
-            height: 45px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            padding: 8px 43%;
-            font-size: 150%;
-            font-weight: bold;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom: 1px solid #4b4b4b1f;
-        }
-        /*Completed TV*/
-        #Hachiman > div.lists:last-child > div.list-wrap:nth-child(3) > h3.section-name:first-child {
-            backdrop-filter: blur(var(--blur));
-            background: rgba(var(--color-main));
-            width: 100%;
-            height: 45px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            padding: 8px 40%;
-            font-size: 150%;
-            font-weight: bold;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom: 1px solid #4b4b4b1f;
-        }
-
-
-        /*Completed Movie*/
+        #Hachiman > div.lists:last-child > div.list-wrap:last-child > h3.section-name:first-child,
+        #Hachiman > div.lists:last-child > div.list-wrap:nth-child(3) > h3.section-name:first-child,
         #Hachiman > div.lists:last-child > div.list-wrap:nth-child(4) > h3.section-name:first-child,
         /*Completed OVA*/
         #Hachiman > div.lists:last-child > div.list-wrap:nth-child(5) > h3.section-name:first-child,
         /*Completed ONA*/
         #Hachiman > div.lists:last-child > div.list-wrap:nth-child(6) > h3.section-name:first-child,
         /*Completed Music*/
-        #Hachiman > div.lists:last-child > div.list-wrap:nth-child(9) > h3.section-name:first-child {
+        #Hachiman > div.lists:last-child > div.list-wrap:nth-child(9) > h3.section-name:first-child,
+        #Hachiman > div.lists:last-child > div.list-wrap:nth-child(7) > h3.section-name:first-child,
+        #Hachiman > div.lists:last-child > div.list-wrap:nth-child(8) > h3.section-name:first-child {
             backdrop-filter: blur(var(--blur));
             background: rgba(var(--color-main));
             width: 100%;
@@ -1444,38 +1440,10 @@
             position: relative;
             margin: auto;
             overflow: hidden;
-            padding: 8px 38%;
-            font-size: 150%;
-            font-weight: bold;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom: 1px solid #4b4b4b1f;
-        }
-
-        /*TV Short*/
-        #Hachiman > div.lists:last-child > div.list-wrap:nth-child(7) > h3.section-name:first-child {
-            background: rgba(var(--color-main));
-            width: 100%;
-            height: 45px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            padding: 8px 36%;
-            font-size: 150%;
-            font-weight: bold;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom: 1px solid #4b4b4b1f;
-        }
-        /*Special*/
-        #Hachiman > div.lists:last-child > div.list-wrap:nth-child(8) > h3.section-name:first-child {
-            background: rgba(var(--color-main));
-            width: 100%;
-            height: 45px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            padding: 8px 37%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             font-size: 150%;
             font-weight: bold;
             border-top-left-radius: 25px;
@@ -1495,7 +1463,15 @@
             background: rgba(var(--color-main));
             padding: 10px;
             border-radius: 10px;
-            width: 200px;
+            width: 100%;
+        }
+        @media (max-width: 720px) {
+            #Hachiman > div.filters-wrap:first-child {
+                background: rgba(var(--color-main));
+                padding: 10px;
+                border-radius: 10px;
+                width: 100%;
+            }
         }
         #Hachiman > div.filters-wrap:first-child > div.filters.mobile-nav-hidden:nth-child(2) > div.filter-group:nth-child(3) > div.el-slider:last-child {
             width: 120px;
@@ -1509,6 +1485,14 @@
             width: 90px;
             background: rgba(var(--color-main));
         }
+        @media (max-width: 720px) {
+            #Hachiman > div.lists:last-child > div.actions:first-child > div.theme-switch {
+                top: -150px;
+                height: 30px;
+                width: 90px;
+                background: rgba(var(--color-main));
+            }
+        }
 
         /*Anime List Style 3*/
         #Hachiman > div.lists > div.list-wrap > div.list-section {
@@ -1517,6 +1501,15 @@
             width: 100%;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
+        }
+        @media (max-width: 720px) {
+            #Hachiman > div.lists > div.list-wrap > div.list-section {
+                background: rgba(var(--color-main));
+                padding: 0px 0px;
+                width: 100%;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
         }
 
         /*----------------\
@@ -1532,7 +1525,11 @@
             position: relative;
             margin: auto;
             overflow: hidden;
-            padding: 5px 46.5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 40px;
             font-size: 150%;
             font-weight: bold;
             border-top-left-radius: 25px;
@@ -1547,7 +1544,11 @@
             position: relative;
             margin: auto;
             overflow: hidden;
-            padding: 5px 44%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 40px;
             font-size: 150%;
             font-weight: bold;
             border-top-left-radius: 25px;
@@ -1563,7 +1564,11 @@
             position: relative;
             margin: auto;
             overflow: hidden;
-            padding: 5px 47%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 40px;
             font-size: 150%;
             font-weight: bold;
             border-top-left-radius: 25px;
@@ -1578,7 +1583,11 @@
             position: relative;
             margin: auto;
             overflow: hidden;
-            padding: 5px 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 40px;
             font-size: 150%;
             font-weight: bold;
             border-top-left-radius: 25px;
@@ -1602,8 +1611,13 @@
             background: rgba(var(--color-main));
             padding: 10px;
             border-radius: 10px;
-            width: 170px;
-            height: 360px
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: left;
         }
         /*Background*/
         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.stats {
@@ -1627,8 +1641,13 @@
             background: rgba(var(--color-main));
             padding: 10px;
             border-radius: 10px;
-            width: 170px;
-            height: 360px
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: left;
         }
         /*Background*/
         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
@@ -1658,23 +1677,10 @@
                 position: relative;
                 left: 6px
             }
-            /*About Me*/
-        }
-        @media (max-width: 1080px) {
-            /*About Me*/
-            #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap:before {
-                left: -15px;
-                padding: 10px 41%;
-            }
         }
 
-        @media (max-width: 900px) {
-            /*About Me*/
-            #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap:before {
-                left: 8px;
-                padding: 10px 41%;
-            }
-        }
+
+
         /*PC - WIDE*/
         @media (max-width: 1580px)/*Favorites Fix*/
         {
@@ -1699,11 +1705,11 @@
                 max-height: 219px;
                 max-width: 158px;
             }
-
-            /*About Me*/
-            #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap:before {
-                left: -5px;
+            .banner-content .name {
+                font-size: 2.7rem;
             }
+
+
             /*stats*/
             .list-stats:nth-child(1):hover,
             .list-stats:nth-child(2):hover {
