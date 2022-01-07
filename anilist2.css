@@ -1510,7 +1510,7 @@
         padding: 10px;
         border-radius: 10px;
         width: 100%;
-        height: 4.05%;
+        height: 740px;
     }
     @media (max-width: 720px) {
         #Hachiman > div.filters-wrap:first-child {
@@ -1704,8 +1704,7 @@
         align-items: left;
     }
     /*Background*/
-    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.user-follow:nth-child(2),
-    {
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
         background: rgba(var(--color-main));
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
