@@ -104,7 +104,12 @@
      .page-content > div > div.content.container > div > div:nth-child(1) > h2 {
          margin-top: 30px;
      }
-     /*header
+/*NEED WORK*/
+     .content.container {
+         max-width: 82.5%;
+         padding-left: 0px;
+         padding-right: 0px;}
+         /*header
     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.header-wrap:first-child {
         bottom: -10px;
         position: relative;
@@ -115,779 +120,779 @@
         margin-bottom: -80px;
     }
     /*nav search*/
-     #nav > div.quick-search.visible:first-child {
-         background: none;
-         margin-left: -50px
-     }
+         #nav > div.quick-search.visible:first-child {
+             background: none;
+             margin-left: -50px
+         }
 
-     /*===============================================
+         /*===============================================
     Banner Shadow
 =================================================*/
-     /* -Disabled-
+         /* -Disabled-
     
     .banner .shadow {
         display: none;
     }*/
-     /*===============================================
+         /*===============================================
     Navigation
 =================================================*/
-     .header-wrap .nav-wrap {
-         background-color: rgb(var(--color-foreground));
-         position: relative;
-         z-index: 2;
-     }
+         .header-wrap .nav-wrap {
+             background-color: rgb(var(--color-foreground));
+             position: relative;
+             z-index: 2;
+         }
 
-     .header-wrap .nav-wrap .nav .link {
-         margin: 0 30px;
-         font-size: 1.4rem;
-         border-bottom: 2px solid rgba(var(--hachi-transparent));
-     }
+         .header-wrap .nav-wrap .nav .link {
+             margin: 0 30px;
+             font-size: 1.4rem;
+             border-bottom: 2px solid rgba(var(--hachi-transparent));
+         }
 
-     .header-wrap .nav-wrap .nav .link:hover {
-         border-bottom: 3px solid rgba(var(--color-text), 0.7);
-     }
+         .header-wrap .nav-wrap .nav .link:hover {
+             border-bottom: 3px solid rgba(var(--color-text), 0.7);
+         }
 
-     .header-wrap .nav-wrap .nav .link.router-link-active {
-         border-bottom: 3px solid rgb(var(--color-gray-400));
-         color: rgb(var(--hachi-dirty-white));
-     }
-     .header-wrap[data-v-1cc2919e] {
-         filter: drop-shadow(5px 5px 0.4rem #00000045);
-     }
-     /*===============================================
+         .header-wrap .nav-wrap .nav .link.router-link-active {
+             border-bottom: 3px solid rgb(var(--color-gray-400));
+             color: rgb(var(--hachi-dirty-white));
+         }
+         .header-wrap[data-v-1cc2919e] {
+             filter: drop-shadow(5px 5px 0.4rem #00000045);
+         }
+         /*===============================================
     Genre Overview
 =================================================*/
-     .name[data-v-63cd3b41] {
-         color: #ffffffcc;
-     }
-     div.genres:first-child > div.genre:first-child > div.name:first-child {
-         background: #7ba3d747!important
-     }
-     div.genres:first-child > div.genre:nth-child(2) > div.name:first-child {
-         background: #7ba3d747!important
-     }
-     div.genres:first-child > div.genre:nth-child(3) > div.name:first-child {
-         background: #7ba3d747!important
-     }
-     div.genres:first-child > div.genre:nth-child(4) > div.name:first-child {
-         background: #7ba3d747!important
-     }
-     div.genres:first-child > div.genre:nth-child(5) > div.name:first-child {
-         background: #7ba3d747!important
-     }
+         .name[data-v-63cd3b41] {
+             color: #ffffffcc;
+         }
+         div.genres:first-child > div.genre:first-child > div.name:first-child {
+             background: #7ba3d747!important
+         }
+         div.genres:first-child > div.genre:nth-child(2) > div.name:first-child {
+             background: #7ba3d747!important
+         }
+         div.genres:first-child > div.genre:nth-child(3) > div.name:first-child {
+             background: #7ba3d747!important
+         }
+         div.genres:first-child > div.genre:nth-child(4) > div.name:first-child {
+             background: #7ba3d747!important
+         }
+         div.genres:first-child > div.genre:nth-child(5) > div.name:first-child {
+             background: #7ba3d747!important
+         }
 
-     /*===============================================
+         /*===============================================
     Genre Overview Entries
 =================================================*/
-     div.genres:first-child > div.genre:first-child > div.amount:last-child {
-         color: #ffffff9e!important;
-         text-shadow: 0 0 1px;
-     }
-     div.genres:first-child > div.genre:nth-child(2) > div.amount:last-child {
-         color: #ffffff9e!important;
-         text-shadow: 0 0 1px;
-     }
-     div.genres:first-child > div.genre:nth-child(3) > div.amount:last-child {
-         color: #ffffff9e!important;
-         text-shadow: 0 0 1px;
-     }
-     div.genres:first-child > div.genre:nth-child(4) > div.amount:last-child {
-         color: #ffffff9e!important;
-         text-shadow: 0 0 1px;
-     }
-     div.genres:first-child > div.genre:nth-child(5) > div.amount:last-child {
-         color: #ffffff9e!important;
-         text-shadow: 0 0 1px;
-     }
+         div.genres:first-child > div.genre:first-child > div.amount:last-child {
+             color: #ffffff9e!important;
+             text-shadow: 0 0 1px;
+         }
+         div.genres:first-child > div.genre:nth-child(2) > div.amount:last-child {
+             color: #ffffff9e!important;
+             text-shadow: 0 0 1px;
+         }
+         div.genres:first-child > div.genre:nth-child(3) > div.amount:last-child {
+             color: #ffffff9e!important;
+             text-shadow: 0 0 1px;
+         }
+         div.genres:first-child > div.genre:nth-child(4) > div.amount:last-child {
+             color: #ffffff9e!important;
+             text-shadow: 0 0 1px;
+         }
+         div.genres:first-child > div.genre:nth-child(5) > div.amount:last-child {
+             color: #ffffff9e!important;
+             text-shadow: 0 0 1px;
+         }
 
-     /*===============================================
+         /*===============================================
     Genre Overview Percentage
 =================================================*/
-     div.percentage-bar:last-child {
-         display: none
-     }
-     .time .action.active[data-v-1bf2cf4e] {
-         color: rgb(var(--hachi-cyan));
-     }
+         div.percentage-bar:last-child {
+             display: none
+         }
+         .time .action.active[data-v-1bf2cf4e] {
+             color: rgb(var(--hachi-cyan));
+         }
 
-     .time .action.active[data-v-e4d6521c] {
-         color: rgba(var(--hachi-cyan));
-         animation: swing;
-         animation-duration: 1s;
-     }
+         .time .action.active[data-v-e4d6521c] {
+             color: rgba(var(--hachi-cyan));
+             animation: swing;
+             animation-duration: 1s;
+         }
 
-     /*===============================================
+         /*===============================================
     Overview Stats
 =================================================*/
-     .stats-wrap {
-         transform: scale(1) !important;
-     }
+         .stats-wrap {
+             transform: scale(1) !important;
+         }
 
-     /*===============================================
+         /*===============================================
     Overview Stats Progress Bar
 =================================================*/
-     .progress .bar[data-v-815ccddc] {
-         background: rgb(var(--hachi-gray));
-     }
+         .progress .bar[data-v-815ccddc] {
+             background: rgb(var(--hachi-gray));
+         }
 
-     /*===============================================
+         /*===============================================
     Stats - Counter
 =================================================*/
-     div[class="count circle"],
-     .emoji-spinner {
-         display: none !important;
-     }
-     /*===============================================
+         div[class="count circle"],
+         .emoji-spinner {
+             display: none !important;
+         }
+         /*===============================================
     Activity History
 =================================================*/
-     .history-day {
-         border-radius: 6px !important;
-     }
+         .history-day {
+             border-radius: 6px !important;
+         }
 
-     .overview .content-wrap {
-         border-radius: 6px;
-     }
+         .overview .content-wrap {
+             border-radius: 6px;
+         }
 
-     /* Change History Lv-3 Color */
-     .history-day.lv-3 {
-         background: rgb(var(--hachi-dark-gray)) !important;
-     }
+         /* Change History Lv-3 Color */
+         .history-day.lv-3 {
+             background: rgb(var(--hachi-dark-gray)) !important;
+         }
 
-     /* Hide History */
-     .desktop:nth-of-type(2) {
-         height: 0;
-         visibility: hidden;
-     }
+         /* Hide History */
+         .desktop:nth-of-type(2) {
+             height: 0;
+             visibility: hidden;
+         }
 
-     /*===============================================
+         /*===============================================
     Favourites
 =================================================*/
-     .favourites .favourite {
-         border-radius: 9px !important;
-     }
+         .favourites .favourite {
+             border-radius: 9px !important;
+         }
 
-     .markdown hr {
-         border: solid 1px rgba(var(--hachi-gray), .5);
-         border-radius: 5px;
-     }
+         .markdown hr {
+             border: solid 1px rgba(var(--hachi-gray), .5);
+             border-radius: 5px;
+         }
 
-     /*===============================================
+         /*===============================================
     Activity
 =================================================*/
-     /*Horizontal Line*/
-     .markdown hr {
-         border: solid 1px rgba(var(--hachi-gray), .5);
-         border-radius: 5px;
-     }
+         /*Horizontal Line*/
+         .markdown hr {
+             border: solid 1px rgba(var(--hachi-gray), .5);
+             border-radius: 5px;
+         }
 
-     /*===============================================
+         /*===============================================
     Activity Gaps
 =================================================*/
-     .text[data-v-77aecf0c] .markdown p:first-of-type {
-         margin-top: 0;
-     }
-     .text[data-v-77aecf0c] .markdown p:last-of-type {
-         margin-bottom: 0;
-     }
+         .text[data-v-77aecf0c] .markdown p:first-of-type {
+             margin-top: 0;
+         }
+         .text[data-v-77aecf0c] .markdown p:last-of-type {
+             margin-bottom: 0;
+         }
 
-     /*Activity text gaps
+         /*Activity text gaps
   .wrap > div.text > div.activity-markdown  h1{position:relative;margin-top:-10px!important}
       .wrap > div.text > div.activity-markdown  h2{position:relative;margin-top:-10px!important}
       .wrap > div.text > div.activity-markdown  h3{position:relative;margin-top:-10px!important}
       .wrap > div.text > div.activity-markdown  h4{position:relative;margin-top:-10px!important}
       .wrap > div.text > div.activity-markdown  h5{position:relative;margin-top:-10px!important}
       .wrap > div.text > div.activity-markdown  h6{position:relative;margin-top:-10px!important}*/
-     /*===============================================
+         /*===============================================
     Activity Like & Comment Button
 =================================================*/
-     .activity-message .wrap > .actions,
-     .activity-text .wrap > .actions {
-         position: relative;
-         display: flex;
-         justify-content: flex-end;
-     }
+         .activity-message .wrap > .actions,
+         .activity-text .wrap > .actions {
+             position: relative;
+             display: flex;
+             justify-content: flex-end;
+         }
 
-     /*===============================================
+         /*===============================================
     Activity Time
 =================================================*/
-     .activity-entry > .wrap > .time .action {
-         margin-bottom: 5px;
-     }
+         .activity-entry > .wrap > .time .action {
+             margin-bottom: 5px;
+         }
 
-     div.activity-entry.activity-anime_list > div.wrap:first-child > div.time:nth-child(2) > time:last-child {
-         margin-top: -5px;
-     }
+         div.activity-entry.activity-anime_list > div.wrap:first-child > div.time:nth-child(2) > time:last-child {
+             margin-top: -5px;
+         }
 
-     .activity-message > .wrap > .time,
-     .activity-text > .wrap > .time {
-         left: 72px;
-         top: 42px;
-         display: flex;
-         flex-direction: row-reverse;
-         justify-content: flex-end;
-         align-items: center;
-     }
+         .activity-message > .wrap > .time,
+         .activity-text > .wrap > .time {
+             left: 72px;
+             top: 42px;
+             display: flex;
+             flex-direction: row-reverse;
+             justify-content: flex-end;
+             align-items: center;
+         }
 
-     .time {
-         font-weight: 700;
-     }
+         .time {
+             font-weight: 700;
+         }
 
-     /*===============================================
+         /*===============================================
     Activity Dropdown
 =================================================*/
-     .el-dropdown {
-         margin-bottom: -5px;
-     }
+         .el-dropdown {
+             margin-bottom: -5px;
+         }
 
-     /*Dropdown Hover Colors*/
-     li.el-dropdown-menu__item:first-child:hover,
-     li.el-dropdown-menu__item:first-child:focus {
-         background: rgba(var(--hachi-cyan), 0.2)
-     }
-     li.el-dropdown-menu__item:hover,
-     li.el-dropdown-menu__item:focus {
-         background: rgba(var(--hachi-cyan), 0.2)
-     }
-     li.el-dropdown-menu__item:nth-child(2):hover,
-     li.el-dropdown-menu__item:nth-child(2):focus,
-     li.el-dropdown-menu__item:nth-child(3):hover,
-     li.el-dropdown-menu__item:nth-child(3):focus,
-     li.el-dropdown-menu__item:nth-child(4):hover,
-     li.el-dropdown-menu__item:nth-child(4):focus {
-         background: rgba(var(--hachi-cyan), 0.2)
-     }
-     .el-dropdown-menu__item--divided {
-         border-top: 1px solid rgba(var(--hachi-cyan), 0.2)
-     }
-     a.el-dropdown-menu__item:first-child:hover,
-     a.el-dropdown-menu__item:first-child:focus {
-         background: rgba(var(--hachi-cyan), 0.2)
-     }
-     a.el-dropdown-menu__item:hover,
-     a.el-dropdown-menu__item:focus {
-         background: rgba(var(--hachi-cyan), 0.2)
-     }
-     div.el-dropdown-menu__item:nth-child(1):hover,
-     div.el-dropdown-menu__item:nth-child(1):focus,
-     div.el-dropdown-menu__item:nth-child(2):hover,
-     div.el-dropdown-menu__item:nth-child(2):focus,
-     div.el-dropdown-menu__item:nth-child(3):hover,
-     div.el-dropdown-menu__item:nth-child(3):focus {
-         background: rgba(var(--hachi-cyan), 0.2)
-     }
+         /*Dropdown Hover Colors*/
+         li.el-dropdown-menu__item:first-child:hover,
+         li.el-dropdown-menu__item:first-child:focus {
+             background: rgba(var(--hachi-cyan), 0.2)
+         }
+         li.el-dropdown-menu__item:hover,
+         li.el-dropdown-menu__item:focus {
+             background: rgba(var(--hachi-cyan), 0.2)
+         }
+         li.el-dropdown-menu__item:nth-child(2):hover,
+         li.el-dropdown-menu__item:nth-child(2):focus,
+         li.el-dropdown-menu__item:nth-child(3):hover,
+         li.el-dropdown-menu__item:nth-child(3):focus,
+         li.el-dropdown-menu__item:nth-child(4):hover,
+         li.el-dropdown-menu__item:nth-child(4):focus {
+             background: rgba(var(--hachi-cyan), 0.2)
+         }
+         .el-dropdown-menu__item--divided {
+             border-top: 1px solid rgba(var(--hachi-cyan), 0.2)
+         }
+         a.el-dropdown-menu__item:first-child:hover,
+         a.el-dropdown-menu__item:first-child:focus {
+             background: rgba(var(--hachi-cyan), 0.2)
+         }
+         a.el-dropdown-menu__item:hover,
+         a.el-dropdown-menu__item:focus {
+             background: rgba(var(--hachi-cyan), 0.2)
+         }
+         div.el-dropdown-menu__item:nth-child(1):hover,
+         div.el-dropdown-menu__item:nth-child(1):focus,
+         div.el-dropdown-menu__item:nth-child(2):hover,
+         div.el-dropdown-menu__item:nth-child(2):focus,
+         div.el-dropdown-menu__item:nth-child(3):hover,
+         div.el-dropdown-menu__item:nth-child(3):focus {
+             background: rgba(var(--hachi-cyan), 0.2)
+         }
 
-     /*===============================================
+         /*===============================================
     Activity Dropdown Button
 =================================================*/
-     svg[class="svg-inline--fa fa-ellipsis-h fa-w-16"] {
-         margin-bottom: 10%;
-         height: 11px;
-     }
+         svg[class="svg-inline--fa fa-ellipsis-h fa-w-16"] {
+             margin-bottom: 10%;
+             height: 11px;
+         }
 
-     /*===============================================
+         /*===============================================
     Activity Dropdown Popup
 =================================================*/
-     .activity-extras-dropdown.el-popper[x-placement^=bottom][data-v-77aecf0c] {
-         margin-top: 5px;
-     }
+         .activity-extras-dropdown.el-popper[x-placement^=bottom][data-v-77aecf0c] {
+             margin-top: 5px;
+         }
 
-     /*===============================================
+         /*===============================================
     Activity Bell Button
 =================================================*/
-     svg[class="svg-inline--fa fa-bell fa-w-14"] {
-         margin-bottom: -25%;
-         height: 10px;
-         position: relative;
-         right: 5px;
-     }
+         svg[class="svg-inline--fa fa-bell fa-w-14"] {
+             margin-bottom: -25%;
+             height: 10px;
+             position: relative;
+             right: 5px;
+         }
 
-     /*===============================================
+         /*===============================================
     Activity Dropdown and Bell Position Fixes
 =================================================*/
-     div.activity-entry.activity-anime_list > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2) {
-         position: relative;
-         top: 3px;
-         left: 2.5px;
-     }
+         div.activity-entry.activity-anime_list > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2) {
+             position: relative;
+             top: 3px;
+             left: 2.5px;
+         }
 
-     div.activity-entry.activity-anime_list > div.wrap:first-child > div.time:nth-child(2) > span.action.has-label:first-child {
-         position: relative;
-         top: -26px;
-         left: 15px;
-     }
+         div.activity-entry.activity-anime_list > div.wrap:first-child > div.time:nth-child(2) > span.action.has-label:first-child {
+             position: relative;
+             top: -26px;
+             left: 15px;
+         }
 
-     /*===============================================
+         /*===============================================
     Activity Dropdown and Bell Position Fixes - Home
 =================================================*/
-     div.activity-entry.activity-manga_list > div.wrap:first-child > div.time:nth-child(2) > span.action.has-label:first-child {
-         position: relative;
-         top: -28px;
-         left: 15px;
-     }
+         div.activity-entry.activity-manga_list > div.wrap:first-child > div.time:nth-child(2) > span.action.has-label:first-child {
+             position: relative;
+             top: -28px;
+             left: 15px;
+         }
 
-     div.activity-entry.activity-manga_list > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2) > span.el-dropdown-link.action.el-dropdown-selfdefine:first-child {
-         position: relative;
-         top: 3px;
-         left: 2.5px;
-     }
+         div.activity-entry.activity-manga_list > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2) > span.el-dropdown-link.action.el-dropdown-selfdefine:first-child {
+             position: relative;
+             top: 3px;
+             left: 2.5px;
+         }
 
-     /*===============================================
+         /*===============================================
     Activity Top Markdown
 =================================================*/
-     /*Disabled
+         /*Disabled
     
     .wrap > div.text > div.activity-markdown {
         margin-top: 10px;
         border-top: 1px solid rgba(var(--hachi-gray), 0.2);
     }*/
-     /*===============================================
+         /*===============================================
     Activity Bottom Markdown
 =================================================*/
-     .wrap > div.text > div.activity-markdown {
-         border-bottom: 1px solid rgba(var(--hachi-gray), 0.2);
-     }
-
-     @media (min-width: 1540px) {
-         .cover,
-         .activity-anime_list .wrap,
-         .activity-manga_list .wrap {
-             max-height: 70px;
-             overflow: hidden;
-             transition: 0.2s;
+         .wrap > div.text > div.activity-markdown {
+             border-bottom: 1px solid rgba(var(--hachi-gray), 0.2);
          }
-     }
 
-     @media (min-width: 1540px) {
-         .activity-anime_list .wrap:hover,
-         .activity-manga_list .wrap:hover {
-             max-height: 150px;
+         @media (min-width: 1540px) {
+             .cover,
+             .activity-anime_list .wrap,
+             .activity-manga_list .wrap {
+                 max-height: 70px;
+                 overflow: hidden;
+                 transition: 0.2s;
+             }
          }
-     }
 
-     @media (min-width: 1540px) {
-         .activity-anime_list .wrap:hover .cover,
-         .activity-manga_list .wrap:hover .cover {
-             max-height: 150px;
-             transition: 0.2s;
+         @media (min-width: 1540px) {
+             .activity-anime_list .wrap:hover,
+             .activity-manga_list .wrap:hover {
+                 max-height: 150px;
+             }
          }
-     }
 
-     /*===============================================
+         @media (min-width: 1540px) {
+             .activity-anime_list .wrap:hover .cover,
+             .activity-manga_list .wrap:hover .cover {
+                 max-height: 150px;
+                 transition: 0.2s;
+             }
+         }
+
+         /*===============================================
     Activity Background Blur
 =================================================*/
-     .activity-feed > div > div.wrap > div.list.small > a::before {
-         content: "";
-         background: inherit;
-         width: 17%;
-         height: 113%;
-         display: block;
-         z-index: -3;
-         position: absolute;
-         top: -5px;
-         left: 14px;
-         -webkit-filter: blur(1.7px);
-     }
-
-     .activity-entry.full-width.activity-anime_list > div.wrap,
-     .activity-entry.full-width.activity-manga_list > div.wrap {
-         background: linear-gradient( 90deg, rgba(2, 0, 36, 0) -3%, rgba(19, 28, 45, 0.6558998599439776) 10%, rgba(21, 31, 46, 0.9836309523809523) 19%, rgba(21, 31, 46, 1) 100%);
-     }
-
-     .activity-entry.full-width.activity-manga_list > div.wrap > div.list.small > a > a::before,
-     .activity-entry.full-width.activity-anime_list > div.wrap > div.list.small > a > a::before {
-         content: "";
-         background: inherit;
-         width: 20%;
-         height: 110%;
-         display: block;
-         z-index: -3;
-         position: absolute;
-         top: -5px;
-         left: 16px;
-         -webkit-filter: blur(1.7px);
-     }
-
-     @media (min-width: 1540px) {
          .activity-feed > div > div.wrap > div.list.small > a::before {
              content: "";
              background: inherit;
-             width: 20%;
+             width: 17%;
              height: 113%;
              display: block;
              z-index: -3;
              position: absolute;
              top: -5px;
-             left: 25px;
+             left: 14px;
              -webkit-filter: blur(1.7px);
          }
-     }
 
-     @media (min-width: 1540px) {
-         .activity-anime_list .wrap,
-         .activity-manga_list .wrap {
+         .activity-entry.full-width.activity-anime_list > div.wrap,
+         .activity-entry.full-width.activity-manga_list > div.wrap {
              background: linear-gradient( 90deg, rgba(2, 0, 36, 0) -3%, rgba(19, 28, 45, 0.6558998599439776) 10%, rgba(21, 31, 46, 0.9836309523809523) 19%, rgba(21, 31, 46, 1) 100%);
          }
-     }
 
-     .wrap > div.list.small > a {
-         box-shadow: 0px 0 10px 20px rgb(0 0 0 / 10%);
-     }
+         .activity-entry.full-width.activity-manga_list > div.wrap > div.list.small > a > a::before,
+         .activity-entry.full-width.activity-anime_list > div.wrap > div.list.small > a > a::before {
+             content: "";
+             background: inherit;
+             width: 20%;
+             height: 110%;
+             display: block;
+             z-index: -3;
+             position: absolute;
+             top: -5px;
+             left: 16px;
+             -webkit-filter: blur(1.7px);
+         }
+
+         @media (min-width: 1540px) {
+             .activity-feed > div > div.wrap > div.list.small > a::before {
+                 content: "";
+                 background: inherit;
+                 width: 20%;
+                 height: 113%;
+                 display: block;
+                 z-index: -3;
+                 position: absolute;
+                 top: -5px;
+                 left: 25px;
+                 -webkit-filter: blur(1.7px);
+             }
+         }
+
+         @media (min-width: 1540px) {
+             .activity-anime_list .wrap,
+             .activity-manga_list .wrap {
+                 background: linear-gradient( 90deg, rgba(2, 0, 36, 0) -3%, rgba(19, 28, 45, 0.6558998599439776) 10%, rgba(21, 31, 46, 0.9836309523809523) 19%, rgba(21, 31, 46, 1) 100%);
+             }
+         }
+
+         .wrap > div.list.small > a {
+             box-shadow: 0px 0 10px 20px rgb(0 0 0 / 10%);
+         }
 
 
-     /*===============================================
+         /*===============================================
     Activity - Fix Title Overflow
 =================================================*/
-     @media (min-width: 1540px) {
-         .list.small > div > div.status > a {
-             white-space: nowrap;
-             width: 230px;
-             overflow: hidden;
-             display: block;
-             text-overflow: ellipsis;
+         @media (min-width: 1540px) {
+             .list.small > div > div.status > a {
+                 white-space: nowrap;
+                 width: 230px;
+                 overflow: hidden;
+                 display: block;
+                 text-overflow: ellipsis;
+             }
          }
-     }
 
 
-     .activity-anime_list .wrap:hover .list.small > div > div.status > a,
-     .activity-manga_list .wrap:hover .list.small > div > div.status > a {
-         white-space: normal;
-     }
+         .activity-anime_list .wrap:hover .list.small > div > div.status > a,
+         .activity-manga_list .wrap:hover .list.small > div > div.status > a {
+             white-space: normal;
+         }
 
-     .full-width.activity-anime_list > .wrap > .list.small > div > div.status > a,
-     .full-width.activity-manga_list > .wrap > .list.small > div > div.status > a {
-         width: 600px;
-     }
+         .full-width.activity-anime_list > .wrap > .list.small > div > div.status > a,
+         .full-width.activity-manga_list > .wrap > .list.small > div > div.status > a {
+             width: 600px;
+         }
 
-     /*===============================================
+         /*===============================================
     Activity - Username
 =================================================*/
-     .text > div.header > a.name {
-         display: inline-block;
-         height: 35px;
-         line-height: 25px;
-         margin-left: 12px;
-         vertical-align: top;
-     }
+         .text > div.header > a.name {
+             display: inline-block;
+             height: 35px;
+             line-height: 25px;
+             margin-left: 12px;
+             vertical-align: top;
+         }
 
-     /*===============================================
+         /*===============================================
    Activity - Username Spacing
 =================================================*/
-     a[href="/user/Hachiman/"]:not(.avatar):not(.user):not(.link):not(.primary-link) {
-         letter-spacing: 0.03em;
-     }
+         a[href="/user/Hachiman/"]:not(.avatar):not(.user):not(.link):not(.primary-link) {
+             letter-spacing: 0.03em;
+         }
 
-     /*===============================================
+         /*===============================================
     Activity - Donator Badge
 =================================================*/
-     .header > div.donator-badge {
-         left: -2px;
-         margin-top: -15px;
-         position: relative;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-     }
+         .header > div.donator-badge {
+             left: -2px;
+             margin-top: -15px;
+             position: relative;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+         }
 
-     /*===============================================
+         /*===============================================
     Activity - Circle Avatar
 =================================================*/
-     a[class="avatar"],
-     a[class="avatar router-link-exact-active router-link-active"] {
-         /*
+         a[class="avatar"],
+         a[class="avatar router-link-exact-active router-link-active"] {
+             /*
             border: 1px solid #7b7b7c!important;background:#405d9e0d;backdrop-filter:blur(5px);
         -webkit-border-radius: 20px!important;
      */
-         transform: scale(1.25);
-         border-bottom-left-radius: 6px!important;
-         border-bottom-right-radius: 6px!important;
-         filter: drop-shadow(0 0 0.10rem #09090978);
-     }
-     /*===============================================
+             transform: scale(1.25);
+             border-bottom-left-radius: 6px!important;
+             border-bottom-right-radius: 6px!important;
+             filter: drop-shadow(0 0 0.10rem #09090978);
+         }
+         /*===============================================
     Dropdown - TOP
 =================================================*/
-     .dropdown[data-v-04b245e6] {
-         width: 175px!important
-     }
-     /*Anime list and manga list cover*/
-     .lists > div > div > div.list-entries > div > div.cover {
-         max-height: 250px;
-     }
+         .dropdown[data-v-04b245e6] {
+             width: 175px!important
+         }
+         /*Anime list and manga list cover*/
+         .lists > div > div > div.list-entries > div > div.cover {
+             max-height: 250px;
+         }
 
-     /*===============================================
+         /*===============================================
     Unfollow Button Color
 =================================================*/
-     .unfollow[data-v-39573fe2] {
-         background: rgb(var(--hachi-light-gray));
-     }
+         .unfollow[data-v-39573fe2] {
+             background: rgb(var(--hachi-light-gray));
+         }
 
-     .medialist.cards .entry-card .title {
-         background: rgba(var(--color-foreground), .8) !important;
-         backdrop-filter: blur(2px) !important;
-     }
+         .medialist.cards .entry-card .title {
+             background: rgba(var(--color-foreground), .8) !important;
+             backdrop-filter: blur(2px) !important;
+         }
 
-     .medialist.cards .entry-card .edit {
-         background: rgb(var(--hachi-light-gray)) !important;
-     }
+         .medialist.cards .entry-card .edit {
+             background: rgb(var(--hachi-light-gray)) !important;
+         }
 
-     /*===============================================
+         /*===============================================
     Bio - Max Height
 =================================================*/
-     .content-wrap {
-         max-height: none !important;
-     }
-     .cover {
-         border-radius: 0px !important;
-     }
+         .content-wrap {
+             max-height: none !important;
+         }
+         .cover {
+             border-radius: 0px !important;
+         }
 
-     .favourites {
-         margin-top: 0 !important;
-     }
+         .favourites {
+             margin-top: 0 !important;
+         }
 
-     /*===============================================
+         /*===============================================
     Favourites - Hover
 =================================================*/
-     .favourite[data-v-0317d914] {
-         transition: transform .2s;
-         border-radius: 20%;
-         position: static;
-         overflow: visible;
-         height: 120px;
-     }
-     /*hover title bg*/
-     .tooltip.animate-position[data-v-366e5d34] > .title[data-v-366e5d34] {
-         background: none;
-     }
-     .about a:nth-child(1) > img,
-     .about a:nth-child(2) > img,
-     .about a:nth-child(3) > img,
-     .about a:nth-child(4) > img {
-         transition: .5s;
-     }
+         .favourite[data-v-0317d914] {
+             transition: transform .2s;
+             border-radius: 20%;
+             position: static;
+             overflow: visible;
+             height: 120px;
+         }
+         /*hover title bg*/
+         .tooltip.animate-position[data-v-366e5d34] > .title[data-v-366e5d34] {
+             background: none;
+         }
+         .about a:nth-child(1) > img,
+         .about a:nth-child(2) > img,
+         .about a:nth-child(3) > img,
+         .about a:nth-child(4) > img {
+             transition: .5s;
+         }
 
-     .about a:nth-child(1) > img:hover,
-     .about a:nth-child(2) > img:hover,
-     .about a:nth-child(3) > img:hover,
-     .about a:nth-child(4) > img:hover {
-         transform: scale(1.05);
-         transition: .5s;
-     }
+         .about a:nth-child(1) > img:hover,
+         .about a:nth-child(2) > img:hover,
+         .about a:nth-child(3) > img:hover,
+         .about a:nth-child(4) > img:hover {
+             transform: scale(1.05);
+             transition: .5s;
+         }
 
-     .favourite:hover {
-         transform: scale(1.2);
+         .favourite:hover {
+             transform: scale(1.2);
 
-         border: 2px solid rgb(var(--color-foreground));
-     }
-     .favourite.studio:hover {
-         transform: scale(1.2);
-         background: none;
-         position: static;
-         overflow: visible;
-         border: 3px solid rgb(var(--color-foreground));
-     }
+             border: 2px solid rgb(var(--color-foreground));
+         }
+         .favourite.studio:hover {
+             transform: scale(1.2);
+             background: none;
+             position: static;
+             overflow: visible;
+             border: 3px solid rgb(var(--color-foreground));
+         }
 
-     .favourites.preview .favourites-wrap .favourite,
-     .favourites.preview .favourites-wrap > div {
-         overflow: visible;
-     }
+         .favourites.preview .favourites-wrap .favourite,
+         .favourites.preview .favourites-wrap > div {
+             overflow: visible;
+         }
 
-     .favourites-wrap[data-v-ddf96a3c] {
-         overflow: visible;
-     }
+         .favourites-wrap[data-v-ddf96a3c] {
+             overflow: visible;
+         }
 
-     /*===============================================
+         /*===============================================
     Favourites Hover Info
 =================================================*/
-     .tooltip {
-         backdrop-filter: blur(2px) !important;
-     }
+         .tooltip {
+             backdrop-filter: blur(2px) !important;
+         }
 
-     /*===============================================
+         /*===============================================
     Favourite Studios
 =================================================*/
-     .overview .favourite.studio {
-         min-height: 35px !important;
-         max-height: 35px !important;
-     }
+         .overview .favourite.studio {
+             min-height: 35px !important;
+             max-height: 35px !important;
+         }
 
-     .page-content > div > div.content.container > div > div:nth-child(1) > div:nth-child(8) > div {
-         grid-template-columns: repeat(auto-fill, 85px);
-         grid-template-rows: repeat(auto-fill, 50px);
-     }
+         .page-content > div > div.content.container > div > div:nth-child(1) > div:nth-child(8) > div {
+             grid-template-columns: repeat(auto-fill, 85px);
+             grid-template-rows: repeat(auto-fill, 50px);
+         }
 
-     body .overview .favourite.studio,
-     .site-theme-contrast .overview .favourite.studio,
-     .site-theme-dark .overview .favourite.studio {
-         background: none!important;
-         border: 1px !important;
-         border-radius: 5.6px !important;
-     }
+         body .overview .favourite.studio,
+         .site-theme-contrast .overview .favourite.studio,
+         .site-theme-dark .overview .favourite.studio {
+             background: none!important;
+             border: 1px !important;
+             border-radius: 5.6px !important;
+         }
 
-     .overview .favourite.studio {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-         font-size: 1.2rem;
-     }
+         .overview .favourite.studio {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+             font-size: 1.2rem;
+         }
 
-     .overview .favourite.studio::after {
-         display: none !important;
-     }
+         .overview .favourite.studio::after {
+             display: none !important;
+         }
 
-     /*===============================================
+         /*===============================================
     Remove Elements
 =================================================*/
-     .activity-manga_list > div > div > div > div > .title,
-     .hohPinned .list .title[href^="/manga/"] {
-         color: rgb(var(--color-blue)) !important;
-     }
+         .activity-manga_list > div > div > div > div > .title,
+         .hohPinned .list .title[href^="/manga/"] {
+             color: rgb(var(--color-blue)) !important;
+         }
 
-     /* Previously Known As*/
-     /*.prev-name-container {
+         /* Previously Known As*/
+         /*.prev-name-container {
         content: url(https://files.catbox.moe/1wx9ha.png);
         height: 100px;
         margin: auto
     }*/
-     /*Remove Unsubscribe Text*/
-     .has-label:hover.has-label[data-v-77aecf0c]::before {
-         content: none
-     }
+         /*Remove Unsubscribe Text*/
+         .has-label:hover.has-label[data-v-77aecf0c]::before {
+             content: none
+         }
 
-     /*Remove DL */
-     .hohDownload {
-         display: none;
-     }
+         /*Remove DL */
+         .hohDownload {
+             display: none;
+         }
 
-     /*Remove Activity Score */
-     .hohScore {
-         display: none;
-     }
+         /*Remove Activity Score */
+         .hohScore {
+             display: none;
+         }
 
-     /*Remove Nav Items*/
-     div.nav.container > a.link:nth-child(3),
-     div.links:nth-child(2) > a.link:nth-child(4),
-     .header-wrap .nav-wrap .nav .link:nth-child(7),
-     .header-wrap .nav-wrap .nav .link:nth-child(8) {
-         display: none!important;
-     }
+         /*Remove Nav Items*/
+         div.nav.container > a.link:nth-child(3),
+         div.links:nth-child(2) > a.link:nth-child(4),
+         .header-wrap .nav-wrap .nav .link:nth-child(7),
+         .header-wrap .nav-wrap .nav .link:nth-child(8) {
+             display: none!important;
+         }
 
-     /*Remove Rewatch */
-     .hohRewatchSuffix {
-         display: none;
-     }
+         /*Remove Rewatch */
+         .hohRewatchSuffix {
+             display: none;
+         }
 
-     .page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div:nth-child(2) > div > div.text {
-         display: none;
-     }
+         .page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div:nth-child(2) > div > div.text {
+             display: none;
+         }
 
-     /*Remove Block and Report */
-     div.dropdown.el-dropdown {
-         display: none
-     }
+         /*Remove Block and Report */
+         div.dropdown.el-dropdown {
+             display: none
+         }
 
-     /*link under header-wrap*/
-     .header-wrap .nav-wrap .nav .link:nth-child(7),
-     .header-wrap .nav-wrap .nav .link:nth-child(8) {
-         width: 0;
-         margin: 0;
-         padding: 0;
-         visibility: hidden;
-     }
+         /*link under header-wrap*/
+         .header-wrap .nav-wrap .nav .link:nth-child(7),
+         .header-wrap .nav-wrap .nav .link:nth-child(8) {
+             width: 0;
+             margin: 0;
+             padding: 0;
+             visibility: hidden;
+         }
 
-     /*===============================================
+         /*===============================================
     Spoiler
 =================================================*/
-     .markdown-spoiler:before {
-         content: "Click to View"!important;
-         font-weight: bold;
-     }
+         .markdown-spoiler:before {
+             content: "Click to View"!important;
+             font-weight: bold;
+         }
 
-     /*===============================================
+         /*===============================================
     Spoiler - Background Remove
 =================================================*/
-     .markdown .markdown-spoiler.spoiler-visible .hide-spoiler,
-     .markdown .markdown-spoiler.spoiler-visible span {
-         background: none;
-     }
+         .markdown .markdown-spoiler.spoiler-visible .hide-spoiler,
+         .markdown .markdown-spoiler.spoiler-visible span {
+             background: none;
+         }
 
-     /*===============================================
+         /*===============================================
     Footer - TOP
 =================================================*/
-     .footer[data-v-04b245e6] a:nth-child(1),
-     .footer[data-v-04b245e6] a:nth-child(2),
-     .footer[data-v-04b245e6] a:nth-child(3) {
-         display: none!important;
-     }
-     .footer[data-v-04b245e6] a:nth-child(4) {
-         margin-left: 35%!important;
-         font-size: 1.4rem!important;
-     }
+         .footer[data-v-04b245e6] a:nth-child(1),
+         .footer[data-v-04b245e6] a:nth-child(2),
+         .footer[data-v-04b245e6] a:nth-child(3) {
+             display: none!important;
+         }
+         .footer[data-v-04b245e6] a:nth-child(4) {
+             margin-left: 35%!important;
+             font-size: 1.4rem!important;
+         }
 
-     /*===============================================
+         /*===============================================
     Footer - Bottom Remove Elements
 =================================================*/
-     div.theme-selector:first-child {
-         display: none
-     }
-     div.footer > div.container > div.links:last-child > section:first-child > a:nth-child(2),
-     div.footer > div.container > div.links:last-child > section:first-child > a:nth-child(3),
-     div.footer > div.container > div.links:last-child > section:first-child > a:nth-child(4),
-     div.footer > div.container > div.links:last-child > section:nth-child(2) > a:last-child,
-     div.footer > div.container > div.links:last-child > section:nth-child(3) > a:first-child,
-     div.footer > div.container > div.links:last-child > section:nth-child(3) > a:nth-child(2),
-     div.footer > div.container > div.links:last-child > section:nth-child(3) > a:last-child,
-     div.footer > div.container > div.links:last-child > section:nth-child(3) > a:nth-child(3),
-     div.footer > div.container > div.links:last-child > section:last-child > a:last-child,
-     div.footer > div.container > div.links:last-child > section:last-child > a:nth-child(4),
-     div.footer > div.container > div.links:last-child > section:first-child > a:first-child {
-         display: None
-     }
+         div.theme-selector:first-child {
+             display: none
+         }
+         div.footer > div.container > div.links:last-child > section:first-child > a:nth-child(2),
+         div.footer > div.container > div.links:last-child > section:first-child > a:nth-child(3),
+         div.footer > div.container > div.links:last-child > section:first-child > a:nth-child(4),
+         div.footer > div.container > div.links:last-child > section:nth-child(2) > a:last-child,
+         div.footer > div.container > div.links:last-child > section:nth-child(3) > a:first-child,
+         div.footer > div.container > div.links:last-child > section:nth-child(3) > a:nth-child(2),
+         div.footer > div.container > div.links:last-child > section:nth-child(3) > a:last-child,
+         div.footer > div.container > div.links:last-child > section:nth-child(3) > a:nth-child(3),
+         div.footer > div.container > div.links:last-child > section:last-child > a:last-child,
+         div.footer > div.container > div.links:last-child > section:last-child > a:nth-child(4),
+         div.footer > div.container > div.links:last-child > section:first-child > a:first-child {
+             display: None
+         }
 
-     /*===============================================
+         /*===============================================
     Footer - Bottom Copyright
 =================================================*/
-     div.footer > div.container:before {
-         width: 300px!important;
-         content: ' | CSS by Hachiman';
-         position: relative;
-         text-indent: 5px;
-     }
+         div.footer > div.container:before {
+             width: 300px!important;
+             content: ' | CSS by Hachiman';
+             position: relative;
+             text-indent: 5px;
+         }
 
-     /*===============================================
+         /*===============================================
     Animations
 =================================================*/
-     .activity-entry {
-         animation: fadeIn;
-         animation-duration: 1.0s;
-     }
-     .lists,
-     .stats-wrap,
-     .overview[data-v-5c30286e] .section-header,
-     div[class="activity-edit"],
-     div[class="user-follow"] {
-         animation: fadeIn;
-         animation-duration: 1.0s;
-     }
+         .activity-entry {
+             animation: fadeIn;
+             animation-duration: 1.0s;
+         }
+         .lists,
+         .stats-wrap,
+         .overview[data-v-5c30286e] .section-header,
+         div[class="activity-edit"],
+         div[class="user-follow"] {
+             animation: fadeIn;
+             animation-duration: 1.0s;
+         }
 
-     .page-content > div > div.content.container > div > div:nth-child(1) {
-         animation: fadeIn;
-         animation-duration: 1.0s;
-         animation-iteration-count: 1;
-     }
+         .page-content > div > div.content.container > div > div:nth-child(1) {
+             animation: fadeIn;
+             animation-duration: 1.0s;
+             animation-iteration-count: 1;
+         }
 
-     .about a:nth-child(17)::after {
-         animation: fadeInBottomLeft;
-         animation-duration: 1.5s;
-     }
-     .activity-replies,
-     .reply {
-         transition: (1s);
-         animation: fadeIn;
-         animation-duration: .5s;
-     }
-     /* Hover Zoom Avatar  and Name - Disabled
+         .about a:nth-child(17)::after {
+             animation: fadeInBottomLeft;
+             animation-duration: 1.5s;
+         }
+         .activity-replies,
+         .reply {
+             transition: (1s);
+             animation: fadeIn;
+             animation-duration: .5s;
+         }
+         /* Hover Zoom Avatar  and Name - Disabled
     .header-wrap .actions .nav-btn:hover,
     .banner-content h1.name:hover,
     .header-wrap > div.banner > div.container > div > img:hover {
@@ -895,1125 +900,377 @@
         transition: 0.2s;
     }
 */
-     .banner-content h1.name,
-     .header-wrap > div.banner > div.container > div > img {
-         /*transition: 0.2s;*/
-         /*Avatar and Name Animation*/
-         filter: drop-shadow(-5px 3px 0.25rem #0000003b);
-         animation: fadeIn 2.5s;
-         animation-iteration-count: 1
-     }
+         .banner-content h1.name,
+         .header-wrap > div.banner > div.container > div > img {
+             /*transition: 0.2s;*/
+             /*Avatar and Name Animation*/
+             filter: drop-shadow(-5px 3px 0.25rem #0000003b);
+             animation: fadeIn 2.5s;
+             animation-iteration-count: 1
+         }
 
-     .button.liked > svg {
-         animation: rubberBand;
-         animation-duration: 1s;
-     }
+         .button.liked > svg {
+             animation: rubberBand;
+             animation-duration: 1s;
+         }
 
-     .markdown .markdown-spoiler.spoiler-visible .hide-spoiler,
-     .markdown .markdown-spoiler.spoiler-visible/*span*/
-     {
-         animation: zoomIn;
-         animation-duration: 1s;
-     }
+         .markdown .markdown-spoiler.spoiler-visible .hide-spoiler,
+         .markdown .markdown-spoiler.spoiler-visible/*span*/
+         {
+             animation: zoomIn;
+             animation-duration: 1s;
+         }
 
-     .medialist.cards .entry-card {
-         animation: zoomIn;
-         animation-duration: 1s;
-     }
+         .medialist.cards .entry-card {
+             animation: zoomIn;
+             animation-duration: 1s;
+         }
 
-     .progress .bar {
-         animation: slideInLeft;
-         animation-duration: 2s;
-     }
+         .progress .bar {
+             animation: slideInLeft;
+             animation-duration: 2s;
+         }
 
-     .activity-entry .like-wrap .users {
-         transition: 0.5s
-     }
+         .activity-entry .like-wrap .users {
+             transition: 0.5s
+         }
 
-     /*===============================================
+         /*===============================================
     Mobile Menu
 =================================================*/
-     .hamburger svg[data-v-8aeb5e9a] {
-         color: rgb(var(--hachi--light-gray));
-     }
-     .hamburger svg[data-v-8aeb5e9a]:hover {
-         color: rgb(var(--hachi-gray));
-         transition: 0.2s
-     }
+         .hamburger svg[data-v-8aeb5e9a] {
+             color: rgb(var(--hachi--light-gray));
+         }
+         .hamburger svg[data-v-8aeb5e9a]:hover {
+             color: rgb(var(--hachi-gray));
+             transition: 0.2s
+         }
 
-     div.menu.visible:last-child > :hover {
-         color: rgb(var(--hachi-gray));
-         transition: 0.2s
-     }
+         div.menu.visible:last-child > :hover {
+             color: rgb(var(--hachi-gray));
+             transition: 0.2s
+         }
 
-     .medialist.table .entry:hover .cover .image {
-         animation: fadeIn;
-         animation-duration: 1.0s;
-     }
-     /*----------------
+         .medialist.table .entry:hover .cover .image {
+             animation: fadeIn;
+             animation-duration: 1.0s;
+         }
+         /*----------------
         NEW STYLE
 ----------------*/
-     @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-     @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
-     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-     :root {
-         --blur: 2px;
-         --color-main: 11, 14, 24, .8;
-     }
+         @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+         @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+         :root {
+             --blur: 2px;
+             --color-main: 11, 14, 24, .8;
+         }
 
-     /*----------------\
+         /*----------------\
         |..................|
         |   Profile Page   |
         |..................|
         \-----------------*/
-     /*|   Nav   |*/
-     div[class="nav nav-unscoped transparent"].transparent[data-v-4fbac4e1],
-     {
-         background: rgba(19, 28, 45, .49)
-     }
-
-     div[class="nav nav-unscoped transparent"].transparent:hover[data-v-4fbac4e1] {
-         background: rgba(19, 28, 45, .69)
-     }
-     .dropdown[data-v-04b245e6] {
-         background: rgba(19, 28, 45, .81);
-         margin-top: 6px;
-     }
-     .dropdown[data-v-04b245e6]:before {
-         display: none
-     }
-     .footer[data-v-04b245e6] {
-         background: rgba(19, 28, 45, .2)
-     }
-     .nav[data-v-1cc2919e] {
-         background: rgba(19, 28, 45, .22);
-     }
-
-     /*|   Body   |*/
-     body {
-         background-image: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .32)), url("https://wallpx.com/image/2021/03/raining-sky-anime-landscape-cityscape-dark-clouds-rainbow.jpg")
-     }
-     .page-content {
-         background: rgba(19, 28, 45, 0);
-         top: 15px;
-         position: relative;
-         width: 95%;
-         margin: auto;
-
-         border-radius: 25px;
-     }
-
-     .overview[data-v-5c30286e] .content-wrap,
-     .wrap[data-v-77aecf0c],
-     .favourites-wrap[data-v-ddf96a3c] {
-         backdrop-filter: blur(var(--blur));
-         background: rgba(var(--color-main));
-     }
-     .activity-entry > .wrap > .time:hover {
-         background: none
-     }
-     .markdown .markdown-spoiler:before,
-     .footer[data-v-815ccddc] {
-         background: rgba(var(--color-main));
-     }
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-anime_list {
-         position: relative;
-         padding: 2px
-     }
-     .load-more[data-v-6f203cf2] {
-         background: rgba(var(--color-main));
-     }
-     /*|   Genres   |*/
-     div.genres:first-child > div.genre:first-child > div.name:first-child,
-     div.genres:first-child > div.genre:nth-child(2) > div.name:first-child,
-     div.genres:first-child > div.genre:nth-child(3) > div.name:first-child,
-     div.genres:first-child > div.genre:nth-child(4) > div.name:first-child,
-     div.genres:first-child > div.genre:nth-child(5) > div.name:first-child {
-         /*background: #00000063!important;*/
-         background: #ffffff0f!important;
-         border-bottom: 1px solid #4b4b4b1f;
-     }
-     /*|   Genres w/ Entries   |*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:first-child,
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(2),
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(3),
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(4),
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(5) {
-         background: #41414100;
-         border-radius: 7px;
-         padding-bottom: 8px;
-     }
-
-
-     /*entry color*/
-     div.genres:first-child > div.genre:nth-child(1) > div.amount:last-child,
-     div.genres:first-child > div.genre:nth-child(2) > div.amount:last-child,
-     div.genres:first-child > div.genre:nth-child(3) > div.amount:last-child,
-     div.genres:first-child > div.genre:nth-child(4) > div.amount:last-child,
-     div.genres:first-child > div.genre:nth-child(5) > div.amount:last-child {
-         color: rgba(114, 138, 161, .6)!important
-     }
-     /*Nav - Hiding*/
-     .site-theme-dark .nav-unscoped {
-         /* backdrop-filter: blur(var(--blur));*/
-         background: rgba(var(--color-main));
-         border-bottom-left-radius: 25px;
-         border-bottom-right-radius: 25px;
-
-
-         padding: 0px;
-         left: 0;
-         right: 0;
-         margin: auto;
-     }
-     /*Genres*/
-     div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child {
-         backdrop-filter: blur(var(--blur));
-         background: rgba(var(--color-main));
-         width: 100%;
-         height: 40px;
-         position: relative;
-         margin: auto;
-         overflow: hidden;
-         padding: 8px 42%;
-         font-size: 130%;
-         border-top-left-radius: 25px;
-         border-top-right-radius: 25px;
-         border-bottom: 1px solid #4b4b4b1f;
-     }
-
-     /*Genres Text Change*/
-     div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header {
-         text-indent: -9999px;
-         line-height: 0;
-     }
-     div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child:after {
-         text-indent: 0;
-         display: block;
-         line-height: initial;
-         Content: "Genres"
-     }
-
-     /*Characters*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > h2.section-header:first-child {
-         backdrop-filter: blur(var(--blur));
-         background: rgba(var(--color-main));
-         width: 100%;
-         height: 40px;
-         position: relative;
-         margin: auto;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         padding-top: 10px;
-         font-size: 130%;
-         border-top-left-radius: 25px;
-         border-top-right-radius: 25px;
-         border-bottom: 1px solid #4b4b4b1f;
-     }
-     /*Reorder Button*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(1) > h2.section-header:first-child > div.actions,
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(3) > h2.section-header:first-child > div.actions,
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(4) > h2.section-header:first-child > div.actions,
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(5) > h2.section-header:first-child > div.actions {
-         position: relative;
-         bottom: 35px;
-         right: 20px
-     }
-     /*Staff*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > h2.section-header:first-child {
-         backdrop-filter: blur(var(--blur));
-         background: rgba(var(--color-main));
-         width: 100%;
-         height: 40px;
-         position: relative;
-         margin: auto;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         font-size: 130%;
-         padding-top: 10px;
-         border-top-left-radius: 25px;
-         border-top-right-radius: 25px;
-         border-bottom: 1px solid #4b4b4b1f;
-     }
-
-     /*Studios*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > h2.section-header:first-child {
-         backdrop-filter: blur(var(--blur));
-         background: rgba(var(--color-main));
-         width: 100%;
-         height: 40px;
-         position: relative;
-         margin: auto;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         font-size: 130%;
-         padding-top: 10px;
-         border-top-left-radius: 20px;
-         border-top-right-radius: 20px;
-         border-bottom: 1px solid #4b4b4b1f;
-     }
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap {
-         border-top-left-radius: 20px;
-         border-top-right-radius: 20px;
-         border-bottom-left-radius: 20px;
-         border-bottom-right-radius: 20px;
-     }
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap:before {
-         content: "Welcome!";
-         font-family: sans-serif;
-         background: #0000;
-         width: 100%;
-         height: 40px;
-         top: -20px;
-         position: relative;
-         margin: auto;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         font-size: 150%;
-         font-weight: bold;
-         border-top-left-radius: 25px;
-         border-top-right-radius: 25px;
-
-         border-bottom: 1px solid #4b4b4b1f;
-     }
-     /*Activity Head*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child {
-         backdrop-filter: blur(var(--blur));
-         background: rgba(var(--color-main));
-         width: 100%;
-         height: 40px;
-         position: relative;
-         margin: auto;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         padding-top: 15px;
-         font-size: 130%;
-         font-weight: bold;
-         border-top-left-radius: 6px;
-         border-top-right-radius: 6px;
-         border-bottom: 1px solid #4b4b4b1f;
-     }
-     /*Activity Filter*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown {
-         position: relative;
-         margin: auto;
-         left: 44%;
-         top: -15px;
-         overflow: visible;
-         display: flex;
-         flex-direction: column;
-         justify-content: right;
-         align-items: right;
-     }
-
-     /*Activity Editor*/
-     .markdown-editor {
-         background: rgba(var(--color-main));
-         border-top-left-radius: 0px;
-         border-top-right-radius: 0px;
-         border-bottom-left-radius: 10px;
-         border-bottom-right-radius: 10px;
-     }
-     .activity-entry.full-width.activity-anime_list > div.wrap,
-     .activity-entry.full-width.activity-manga_list > div.wrap {
-         background: #00000096;
-         transition: all 0.69s ease-in-out;
-     }
-     /*Activity - Write a Status*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner {
-         border-top-left-radius: 0px;
-         border-top-right-radius: 0px;
-         border-bottom-left-radius: 10px;
-         border-bottom-right-radius: 10px;
-     }
-     /*Activity Reply*/
-     .reply[data-v-732ef224] {
-         background: rgba(var(--color-main));
-     }
-     /*Activity border*/
-     .list.small[data-v-77aecf0c] {
-         padding: 10px;
-     }
-     div.activity-entry.activity-anime_list > div.wrap {
-         border-radius: 5px!important
-     }
-     /*Anime Embed*/
-     .embed[data-v-13cdaed6] {
-         background: rgba(var(--color-main));
-     }
-     /*activity anime cover*/
-     .list.small[data-v-77aecf0c] > a.cover {
-         border-radius: 5px!important;
-         height: 130%;
-         width: 120%;
-         margin-top: -10px;
-         margin-left: -10px;
-         border-top-right-radius: 0px!important;
-         border-bottom-right-radius: 0px!important;
-     }
-     /*activity anime first text*/
-     .list.small[data-v-77aecf0c] > div.details > .status {
-         font-size: 100%;
-         font-weight: normal
-     }
-     /*activity anime name*/
-     .list.small[data-v-77aecf0c] > div.details > .status > a.title {
-         font-size: 110%;
-         font-weight: bold;
-         display: flex
-     }
-
-
-     /*ABOUT - Image Border*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap > .markdown img {
-         border-radius: 5px
-     }
-
-     .text .donator-badge[data-v-77aecf0c] {
-         background: rgba(var(--color-main));
-     }
-     /*Border Fix*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child,
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > div.favourites-wrap.anime:last-child,
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > div.favourites-wrap.characters:last-child,
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > div.favourites-wrap.staff:last-child,
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > div.favourites-wrap.studios:last-child {
-         border-bottom-left-radius: 25px;
-         border-bottom-right-radius: 25px;
-         border-top-left-radius: 0px;
-         border-top-right-radius: 0px;
-     }
-
-     /*Anime*/
-     div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child {
-         backdrop-filter: blur(var(--blur));
-         background: rgba(var(--color-main));
-         width: 100%;
-         height: 40px;
-         position: relative;
-         margin: auto;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         padding-top: 25px;
-         font-size: 130%;
-         border-top-left-radius: 25px;
-         border-top-right-radius: 25px;
-         border-bottom: 1px solid #4b4b4b1f;
-     }
-     /*Anime Reorder*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child > div.actions {
-         position: relative;
-         left: 40%;
-         top: -20px;
-         font-size: 70%;
-         margin-right: auto;
-     }
-     .header-wrap .nav-wrap {
-         backdrop-filter: blur(var(--blur));
-         background: rgba(var(--color-main));
-     }
-     .activity-feed > div > div.wrap > div.list.small > a::before {
-         background: none
-     }
-     .list.small .details[data-v-77aecf0c] {
-         background: none
-     }
-
-     .el-input,
-     .el-textarea {
-         background: none;
-     }
-     .el-input-group__append,
-     .el-input-group__prepend,
-     .el-input__inner,
-     .el-textarea__inner {
-         backdrop-filter: blur(var(--blur));
-         background: rgba(var(--color-main));
-     }
-     body {
-         -webkit-background-size: cover;
-         -moz-background-size: cover;
-         -o-background-size: cover;
-         background-size: cover;
-         background-repeat: no-repeat;
-         background-attachment: fixed;
-         background-position: center;
-         display: block;
-         margin-top: 10px;
-     }
-
-     /*Main Head Navbar*/
-     .site-theme-dark .nav-unscoped.transparent {
-         border-top-left-radius: 25px;
-         border-top-right-radius: 25px;
-         width: 90%;
-         left: 0;
-         right: 0;
-         background: none;
-         margin: auto;
-         margin-top: 25px;
-     }
-     div[class="nav nav-unscoped transparent"].transparent:hover[data-v-4fbac4e1] {
-         background: none;
-     }
-     .banner[data-v-1cc2919e] {
-         border-radius: 25px;
-         position: relative;
-         margin: auto;
-         overflow: visible;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-     }
-     .banner .shadow[data-v-1cc2919e] {
-
-         background: rgba(var(--color-main));
-         z-index: -2;
-         border-top-left-radius: 25px;
-         border-top-right-radius: 25px;
-     }
-
-     div[class="nav-wrap"] {
-         border-bottom-left-radius: 25px;
-         border-bottom-right-radius: 25px;
-         margin: auto;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-     }
-     .nav[data-v-1cc2919e] {
-         background: #fff0;
-     }
-
-     .banner-content[data-v-1cc2919e] {
-         position: relative;
-         width: 100%;
-         margin: auto;
-     }
-
-     .banner-content .name {
-         font-size: 3.75rem;
-         color: #ffffffad;
-         padding: 65px 50px 0px 0px;
-         display: flex;
-
-         align-items: center;
-         filter: drop-shadow(0px 0px 3px black);
-     }
-     .avatar[data-v-1cc2919e] {
-         margin-bottom: -7px;
-     }
-     .banner-content > .avatar {
-         margin-top: 70px;
-         animation-iteration-count: infinite;
-         max-height: 269px;
-         max-width: 188px;
-     }
-     /*Stats*/
-     .list-stats:nth-child(1),
-     .list-stats:nth-child(2) {
-         height: calc(165px - 45px);
-     }
-     .list-stats:nth-child(1):hover,
-     .list-stats:nth-child(2):hover {
-         height: 169px;
-     }
-     .stats-wrap > .content-wrap,
-     .desktop > .content-wrap,
-     .activity-entry > .wrap,
-     .favourites-wrap > .favourite,
-     .scroller > .load-more,
-     .user-page-unscoped .markdown-editor,
-     .el-textarea__inner,
-     .input {
-         transition: all 0.49s ease-in-out;
-     }
-     .stats-wrap[data-v-5c30286e] {
-         grid-column-gap: 7px;
-         grid-row-gap: 5px;
-     }
-
-     .stat[data-v-815ccddc]:nth-child(1) {
-         grid-row-start: span 2;
-     }
-     .stat:nth-child(1) .value[data-v-815ccddc] {
-         font-size: 5.5rem;
-     }
-     .stat .value[data-v-815ccddc] {
-         font-size: 2rem;
-         padding-bottom: 0px;
-     }
-     .stat .label[data-v-815ccddc] {
-         font-size: 1.2rem;
-     }
-
-
-
-     .stats-wrap[data-v-815ccddc] {
-         display: grid;
-         grid-auto-flow: row;
-         grid-row-gap: 10px;
-         grid-template-columns: auto auto;
-         padding: 20px 50px;
-         text-align: left;
-         background: rgba(0, 0, 0, .04);
-     }
-     .stat[data-v-815ccddc]:nth-child(1) {
-         grid-row-start: span 2;
-         padding: 0px 60px;
-     }
-     .stat:nth-child(1) .value[data-v-815ccddc] {
-         font-size: 5.5rem;
-     }
-     .stat .value[data-v-815ccddc] {
-         font-size: 2rem;
-         padding-bottom: 0px;
-     }
-     .stat .label[data-v-815ccddc] {
-         font-size: 1.2rem;
-     }
-
-     .list-stats[data-v-815ccddc]:nth-child(2) .stat[data-v-815ccddc]:nth-child(1) .label,
-     .list-stats[data-v-815ccddc]:nth-child(1) .stat[data-v-815ccddc]:nth-child(1) .label {
-         display: flex;
-         align-items: center;
-         color: rgb(var(--color-text-light));
-         margin-right: 33px;
-         margin-left: 9px;
-     }
-
-
-
-     /*----------------\
-        |..................|
-        | Anime List Page  |
-        |..................|
-        \-----------------*/
-     /*Watching*/
-     #Hachiman > div.lists:last-child > div.list-wrap:nth-child(2) > h3.section-name:first-child,
-     /*Paused->*/
-     #Hachiman > div.lists:last-child > div.list-wrap:nth-child(10) > h3.section-name:first-child,
-     /*Dropped->*/
-     #Hachiman > div.lists:last-child > div.list-wrap:nth-child(11) > h3.section-name:first-child,
-     /*Planning->*/
-     #Hachiman > div.lists:last-child > div.list-wrap:last-child > h3.section-name:first-child,
-     #Hachiman > div.lists:last-child > div.list-wrap:nth-child(3) > h3.section-name:first-child,
-     #Hachiman > div.lists:last-child > div.list-wrap:nth-child(4) > h3.section-name:first-child,
-     /*Completed OVA*/
-     #Hachiman > div.lists:last-child > div.list-wrap:nth-child(5) > h3.section-name:first-child,
-     /*Completed ONA*/
-     #Hachiman > div.lists:last-child > div.list-wrap:nth-child(6) > h3.section-name:first-child,
-     /*Completed Music*/
-     #Hachiman > div.lists:last-child > div.list-wrap:nth-child(9) > h3.section-name:first-child,
-     #Hachiman > div.lists:last-child > div.list-wrap:nth-child(7) > h3.section-name:first-child,
-     #Hachiman > div.lists:last-child > div.list-wrap:nth-child(8) > h3.section-name:first-child {
-         backdrop-filter: blur(var(--blur));
-         background: rgba(var(--color-main));
-         width: 100%;
-         height: 45px;
-         position: relative;
-         margin: auto;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         font-size: 150%;
-         font-weight: bold;
-         border-top-left-radius: 25px;
-         border-top-right-radius: 25px;
-         border-bottom: 1px solid #4b4b4b1f;
-     }
-     /*Background*/
-     .medialist.table .list-section {
-         background: rgba(var(--color-main));
-         border-top-left-radius: 0px;
-         border-top-right-radius: 0px;
-         border-bottom-left-radius: 20px;
-         border-bottom-right-radius: 20px;
-     }
-     /*Filter Background*/
-     #Hachiman > div.filters-wrap:first-child {
-         background: rgba(var(--color-main));
-         padding: 10px;
-         border-radius: 10px;
-         width: 100%;
-         height: 740px;
-     }
-
-     @media (max-width: 720px) {
-         #Hachiman > div.filters-wrap:first-child {
-             background: rgba(var(--color-main));
-             padding: 10px;
-             border-radius: 10px;
-             width: 100%;
+         /*|   Nav   |*/
+         div[class="nav nav-unscoped transparent"].transparent[data-v-4fbac4e1],
+         {
+             background: rgba(19, 28, 45, .49)
          }
-     }
-     #Hachiman > div.filters-wrap:first-child > div.filters.mobile-nav-hidden:nth-child(2) > div.filter-group:nth-child(3) > div.el-slider:last-child {
-         width: 120px;
-         margin: auto
-     }
-     /*Anime List Theme Switch*/
-     #Hachiman > div.lists:last-child > div.actions:first-child > div.theme-switch {
-         position: relative;
 
-         justify-content: center;
-         align-items: center;
-         grid-gap: 10px 12px;
-         top: -20px;
-         left: 0;
-         height: 30px;
-         width: 90px;
+         div[class="nav nav-unscoped transparent"].transparent:hover[data-v-4fbac4e1] {
+             background: rgba(19, 28, 45, .69)
+         }
+         .dropdown[data-v-04b245e6] {
+             background: rgba(19, 28, 45, .81);
+             margin-top: 6px;
+         }
+         .dropdown[data-v-04b245e6]:before {
+             display: none
+         }
+         .footer[data-v-04b245e6] {
+             background: rgba(19, 28, 45, .2)
+         }
+         .nav[data-v-1cc2919e] {
+             background: rgba(19, 28, 45, .22);
+         }
 
-         background: rgba(var(--color-main));
-     }
-     @media (max-width: 720px) {
-         #Hachiman > div.lists:last-child > div.actions:first-child > div.theme-switch {
-             top: -150px;
-             height: 30px;
-             width: 90px;
+         /*|   Body   |*/
+         body {
+             background-image: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .32)), url("https://wallpx.com/image/2021/03/raining-sky-anime-landscape-cityscape-dark-clouds-rainbow.jpg")
+         }
+         .page-content {
+             background: rgba(19, 28, 45, 0);
+             top: 15px;
+             position: relative;
+             width: 95%;
+             margin: auto;
+
+             border-radius: 25px;
+         }
+
+         .overview[data-v-5c30286e] .content-wrap,
+         .wrap[data-v-77aecf0c],
+         .favourites-wrap[data-v-ddf96a3c] {
+             backdrop-filter: blur(var(--blur));
              background: rgba(var(--color-main));
          }
-     }
-
-     /*Anime List Style 3*/
-     #Hachiman > div.lists > div.list-wrap > div.list-section {
-         background: rgba(var(--color-main));
-         padding: 15px 70px;
-         width: 100%;
-         border-bottom-left-radius: 20px;
-         border-bottom-right-radius: 20px;
-     }
-     @media (max-width: 720px) {
-         #Hachiman > div.lists > div.list-wrap > div.list-section {
+         .activity-entry > .wrap > .time:hover {
+             background: none
+         }
+         .markdown .markdown-spoiler:before,
+         .footer[data-v-815ccddc] {
              background: rgba(var(--color-main));
-             padding: 0px 0px;
+         }
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-anime_list {
+             position: relative;
+             padding: 2px
+         }
+         .load-more[data-v-6f203cf2] {
+             background: rgba(var(--color-main));
+         }
+         /*|   Genres   |*/
+         div.genres:first-child > div.genre:first-child > div.name:first-child,
+         div.genres:first-child > div.genre:nth-child(2) > div.name:first-child,
+         div.genres:first-child > div.genre:nth-child(3) > div.name:first-child,
+         div.genres:first-child > div.genre:nth-child(4) > div.name:first-child,
+         div.genres:first-child > div.genre:nth-child(5) > div.name:first-child {
+             /*background: #00000063!important;*/
+             background: #ffffff0f!important;
+             border-bottom: 1px solid #4b4b4b1f;
+         }
+         /*|   Genres w/ Entries   |*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:first-child,
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(2),
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(3),
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(4),
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(5) {
+             background: #41414100;
+             border-radius: 7px;
+             padding-bottom: 8px;
+         }
+
+
+         /*entry color*/
+         div.genres:first-child > div.genre:nth-child(1) > div.amount:last-child,
+         div.genres:first-child > div.genre:nth-child(2) > div.amount:last-child,
+         div.genres:first-child > div.genre:nth-child(3) > div.amount:last-child,
+         div.genres:first-child > div.genre:nth-child(4) > div.amount:last-child,
+         div.genres:first-child > div.genre:nth-child(5) > div.amount:last-child {
+             color: rgba(114, 138, 161, .6)!important
+         }
+         /*Nav - Hiding*/
+         .site-theme-dark .nav-unscoped {
+             /* backdrop-filter: blur(var(--blur));*/
+             background: rgba(var(--color-main));
+             border-bottom-left-radius: 25px;
+             border-bottom-right-radius: 25px;
+
+
+             padding: 0px;
+             left: 0;
+             right: 0;
+             margin: auto;
+         }
+         /*Genres*/
+         div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child {
+             backdrop-filter: blur(var(--blur));
+             background: rgba(var(--color-main));
              width: 100%;
+             height: 40px;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
+             padding: 8px 42%;
+             font-size: 130%;
+             border-top-left-radius: 25px;
+             border-top-right-radius: 25px;
+             border-bottom: 1px solid #4b4b4b1f;
+         }
+
+         /*Genres Text Change*/
+         div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header {
+             text-indent: -9999px;
+             line-height: 0;
+         }
+         div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child:after {
+             text-indent: 0;
+             display: block;
+             line-height: initial;
+             Content: "Genres"
+         }
+
+         /*Characters*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > h2.section-header:first-child {
+             backdrop-filter: blur(var(--blur));
+             background: rgba(var(--color-main));
+             width: 100%;
+             height: 40px;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             padding-top: 10px;
+             font-size: 130%;
+             border-top-left-radius: 25px;
+             border-top-right-radius: 25px;
+             border-bottom: 1px solid #4b4b4b1f;
+         }
+         /*Reorder Button*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(1) > h2.section-header:first-child > div.actions,
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(3) > h2.section-header:first-child > div.actions,
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(4) > h2.section-header:first-child > div.actions,
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(5) > h2.section-header:first-child > div.actions {
+             position: relative;
+             bottom: 35px;
+             right: 20px
+         }
+         /*Staff*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > h2.section-header:first-child {
+             backdrop-filter: blur(var(--blur));
+             background: rgba(var(--color-main));
+             width: 100%;
+             height: 40px;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             font-size: 130%;
+             padding-top: 10px;
+             border-top-left-radius: 25px;
+             border-top-right-radius: 25px;
+             border-bottom: 1px solid #4b4b4b1f;
+         }
+
+         /*Studios*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > h2.section-header:first-child {
+             backdrop-filter: blur(var(--blur));
+             background: rgba(var(--color-main));
+             width: 100%;
+             height: 40px;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             font-size: 130%;
+             padding-top: 10px;
+             border-top-left-radius: 20px;
+             border-top-right-radius: 20px;
+             border-bottom: 1px solid #4b4b4b1f;
+         }
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap {
+             border-top-left-radius: 20px;
+             border-top-right-radius: 20px;
              border-bottom-left-radius: 20px;
              border-bottom-right-radius: 20px;
          }
-     }
-     /*----------------\
-     |..................|
-     | HOME Page        |
-     |..................|
-     \-----------------*/
-     /*homepage-activity*/
-     #app > div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > h2.section-header:first-child {
-         background: rgba(var(--color-main));
-         width: 100%;
-         height: 45px;
-         position: relative;
-         margin: auto;
-         overflow: hidden;
-         display: flex;
-         padding-left: 20px;
-         padding-top: 5px;
-         font-size: 120%;
-         font-weight: bold;
-         border-top-left-radius: 25px;
-         border-top-right-radius: 25px;
-         border-bottom: 1px solid #4b4b4b1f;
-     }
-     #app > div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > h2.section-header:first-child > div.feed-select {
-         position: relative;
-         left: -5px;
-     }
-     /*activity textbox border*/
-     #app > div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > div.activity-edit:nth-child(2) > div.input.el-textarea:last-child > textarea.el-textarea__inner {
-         border-top-left-radius: 0px;
-         border-top-right-radius: 0px;
-     }
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap:before {
+             content: "Welcome!";
+             font-family: sans-serif;
+             background: #0000;
+             width: 100%;
+             height: 40px;
+             top: -20px;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             font-size: 150%;
+             font-weight: bold;
+             border-top-left-radius: 25px;
+             border-top-right-radius: 25px;
 
-     /*homepage-inprogress*/
-     #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap > div.section-header:first-child,
-     #app > div.page-content:nth-child(3) > div.container > div.home.full-width:first-child > div.list-previews > div.list-preview-wrap > div.section-header:first-child {
-         background: rgba(var(--color-main));
-         width: 100%;
-         height: 45px;
-         position: relative;
-         margin: auto;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         padding-top: 20px;
-         font-size: 150%;
-         font-weight: bold;
-         border-top-left-radius: 25px;
-         border-top-right-radius: 25px;
-         border-bottom: 1px solid #4b4b4b1f;
-     }
-     @media (max-width: 1040px) {
-         .list-preview[data-v-6aea970d] {
+             border-bottom: 1px solid #4b4b4b1f;
+         }
+         /*Activity Head*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child {
+             backdrop-filter: blur(var(--blur));
+             background: rgba(var(--color-main));
+             width: 100%;
+             height: 40px;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             padding-top: 15px;
+             font-size: 130%;
+             font-weight: bold;
+             border-top-left-radius: 6px;
+             border-top-right-radius: 6px;
+             border-bottom: 1px solid #4b4b4b1f;
+         }
+         /*Activity Filter*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown {
+             position: relative;
+             margin: auto;
+             left: 44%;
+             top: -15px;
+             overflow: visible;
+             display: flex;
+             flex-direction: column;
+             justify-content: right;
+             align-items: right;
+         }
+
+         /*Activity Editor*/
+         .markdown-editor {
+             background: rgba(var(--color-main));
+             border-top-left-radius: 0px;
+             border-top-right-radius: 0px;
+             border-bottom-left-radius: 10px;
+             border-bottom-right-radius: 10px;
+         }
+         .activity-entry.full-width.activity-anime_list > div.wrap,
+         .activity-entry.full-width.activity-manga_list > div.wrap {
+             background: #00000096;
+             transition: all 0.69s ease-in-out;
+         }
+         /*Activity - Write a Status*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner {
+             border-top-left-radius: 0px;
+             border-top-right-radius: 0px;
+             border-bottom-left-radius: 10px;
+             border-bottom-right-radius: 10px;
+         }
+         /*Activity Reply*/
+         .reply[data-v-732ef224] {
              background: rgba(var(--color-main));
          }
-     }
-     .list-preview[data-v-6aea970d] {
-         background: rgba(var(--color-main));
-         border-bottom-left-radius: 10px;
-         border-bottom-right-radius: 10px;
-         border-top-left-radius: 0px;
-         border-top-right-radius: 0px;
-     }
-     /*inprogress - Zoom Button*/
-     #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap > div.section-header:first-child > svg.size-toggle.svg-inline--fa.fa-expand.fa-w-14.fa-sm:last-child,
-     #app > div.page-content:nth-child(3) > div.container > div.home.full-width:first-child > div.list-previews > div.list-preview-wrap > div.section-header:first-child > svg.size-toggle.svg-inline--fa.fa-compress.fa-w-14.fa-sm:last-child {
-         position: relative;
-         top: -15px;
-         left: -5px;
-     }
-
-     /*homepage-forum-activity*/
-     #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.recent-threads:nth-child(2) > h2.section-header.link:first-child,
-     #app > div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div.recent-threads:first-child > h2.section-header.link:first-child {
-         background: rgba(var(--color-main));
-         width: 100%;
-         height: 45px;
-         position: relative;
-         margin: auto;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         padding-top: 0px;
-         font-size: 100%;
-         font-weight: bold;
-         border-top-left-radius: 10px;
-         border-top-right-radius: 10px;
-         border-bottom: 1px solid #4b4b4b1f;
-     }
-     .forum-wrap[data-v-60c4a343],
-     #app > div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div.recent-reviews:nth-child(2) > div.review-wrap:last-child {
-         padding: 10px;
-         background: rgba(var(--color-main));
-         border-bottom-left-radius: 10px;
-         border-bottom-right-radius: 10px;
-     }
-     /*homepage-forum-thread*/
-     .thread-card[data-v-550f7194] {
-         background: rgba(var(--color-main));
-     }
-
-
-     /*homepage-recent-reviews*/
-     #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.recent-reviews:nth-child(3) > h2.section-header.link:first-child,
-     #app > div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div.recent-reviews:nth-child(2) > h2.section-header.link:first-child {
-         background: rgba(var(--color-main));
-         width: 100%;
-         height: 45px;
-         position: relative;
-         margin: auto;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         padding-top: 0px;
-         font-size: 100%;
-         font-weight: bold;
-         border-top-left-radius: 10px;
-         border-top-right-radius: 10px;
-
-         border-bottom: 1px solid #4b4b4b1f;
-     }
-
-
-     #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.recent-reviews:nth-child(3) > div.review-wrap:last-child {
-         border-bottom-left-radius: 10px;
-         border-bottom-right-radius: 10px;
-         padding: 10px;
-         background: rgba(var(--color-main));
-     }
-     .review-card[data-v-0369a0cf] {
-         background: rgba(var(--color-main));
-     }
-     /*homepage-trending/new anime/manga*/
-     #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div:nth-child(4) > div:first-child > h2.section-header.link:first-child,
-     #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div:nth-child(4) > div:nth-child(2) > h2.section-header.link:first-child,
-     #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div:nth-child(4) > div:last-child > h2.section-header.link:first-child,
-     /*Fullscreen mode*/
-     #app > div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div:nth-child(3) > div:first-child > h2.section-header.link:first-child,
-     #app > div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div:nth-child(3) > div:nth-child(2) > h2.section-header.link:first-child,
-     #app > div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div:nth-child(3) > div:last-child > h2.section-header.link:first-child {
-         background: rgba(var(--color-main));
-         width: 100%;
-         height: 45px;
-         position: relative;
-         margin: auto;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         padding-top: 5px;
-         font-size: 100%;
-         font-weight: bold;
-         border-top-left-radius: 25px;
-         border-top-right-radius: 25px;
-         border-bottom: 1px solid #4b4b4b1f;
-     }
-     .media-preview[data-v-796abd11] {
-         background: rgba(var(--color-main));
-         border-bottom-left-radius: 10px;
-         border-bottom-right-radius: 10px;
-         border-top-left-radius: 0px;
-         border-top-right-radius: 0px;
-     }
-
-     /*----------------\
-        |..................|
-        |Notifications Page|
-        |..................|
-        \-----------------*/
-     .hohNotification {
-         background: rgba(var(--color-main));
-         padding: 0px;
-         border-top-left-radius: 10px;
-         border-top-right-radius: 10px;
-         border-bottom-left-radius: 10px;
-         border-bottom-right-radius: 10px;
-     }
-     /*Notifications filter bg*/
-     #app > div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child {
-         background: rgba(var(--color-main));
-         padding: 20px;
-         border-top-left-radius: 25px;
-         border-top-right-radius: 25px;
-         border-bottom-left-radius: 10px;
-         border-bottom-right-radius: 10px;
-         height: 500px;
-     }
-
-     /*----------------\
-        |..................|
-        | Favourites Page  |
-        |..................|
-        \-----------------*/
-     /*Anime*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:first-child > h2.section-header:first-child {
-         background: rgba(var(--color-main));
-         width: 100%;
-         height: 45px;
-         position: relative;
-         margin: auto;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         padding-top: 40px;
-         font-size: 150%;
-         font-weight: bold;
-         border-top-left-radius: 25px;
-         border-top-right-radius: 25px;
-         border-bottom: 1px solid #4b4b4b1f;
-     }
-     /*Characters*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(3) > h2.section-header:first-child {
-         background: rgba(var(--color-main));
-         width: 100%;
-         height: 45px;
-         position: relative;
-         margin: auto;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         padding-top: 40px;
-         font-size: 150%;
-         font-weight: bold;
-         border-top-left-radius: 25px;
-         border-top-right-radius: 25px;
-
-         border-bottom: 1px solid #4b4b4b1f;
-     }
-     /*Staff*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(4) > h2.section-header:first-child {
-         background: rgba(var(--color-main));
-         width: 100%;
-         height: 45px;
-         position: relative;
-         margin: auto;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         padding-top: 40px;
-         font-size: 150%;
-         font-weight: bold;
-         border-top-left-radius: 25px;
-         border-top-right-radius: 25px;
-         border-bottom: 1px solid #4b4b4b1f;
-     }
-     /*Studio*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:last-child > h2.section-header:first-child {
-         background: rgba(var(--color-main));
-         width: 100%;
-         height: 45px;
-         position: relative;
-         margin: auto;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         padding-top: 40px;
-         font-size: 150%;
-         font-weight: bold;
-         border-top-left-radius: 25px;
-         border-top-right-radius: 25px;
-         border-bottom: 1px solid #4b4b4b1f;
-     }
-
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child {
-         position: relative;
-         top: 25px;
-     }
-
-
-     /*----------------\
-       |..................|
-       |    Stats Page    |
-       |..................|
-       \-----------------*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.stats > div.filters:first-child/*Filter Background*/
-     {
-         background: rgba(var(--color-main));
-         padding: 10px;
-         border-radius: 10px;
-         width: 100%;
-         margin: top;
-         height: 18%;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: left;
-         align-items: left;
-     }
-     /*Background*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.stats {
-         background: rgba(var(--color-main));
-         border-top-left-radius: 20px;
-         border-top-right-radius: 20px;
-         border-bottom-left-radius: 20px;
-         border-bottom-right-radius: 20px;
-         padding: 20px;
-     }
-
-
-
-     /*----------------\
-       |..................|
-       |   Social Page    |
-       |..................|
-       \-----------------*/
-     /*Filter Background*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.filters:first-child {
-         background: rgba(var(--color-main));
-         padding: 10px;
-         border-radius: 10px;
-         width: 100%;
-         margin: auto;
-         overflow: hidden;
-         display: flex;
-         flex-direction: column;
-         justify-content: left;
-         align-items: left;
-         margin-bottom: 5px;
-     }
-     /*Background*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
-         background: rgba(var(--color-main));
-         border-top-left-radius: 20px;
-         border-top-right-radius: 20px;
-         border-bottom-left-radius: 20px;
-         border-bottom-right-radius: 20px;
-         padding: 20px
-     }
-     /*Script Follower Background*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.hohSocialContent.user-follow:last-child {
-         background: none
-     }
-
-     /*Social - Theme Switch*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.filters:first-child > div.theme-switch.hohThemeSwitch:last-child {
-         position: relative;
-         top: -13px;
-         height: 30px;
-         width: 90px;
-         background: rgba(var(--color-main));
-     }
-     /*Follow List Name*/
-     .follow-card .name,
-     .follow-card.unfollow,
-     div.hohSocialContent.user-follow:last-child > div.follow-card > div.avatar > a.name {
-         opacity: 100;
-         color: #fff!important;
-         position: absolute;
-         height: auto;
-         top: 80px;
-         border-bottom-left-radius: 10px;
-         border-bottom-right-radius: 10px
-     }
-     /*Follow List Gaps*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.user-follow:nth-child(2) > div.wrap:first-child,
-     div.hohSocialContent.user-follow:last-child {
-         grid-gap: 60px 10px;
-     }
-     /*Follow List Avatar Border*/
-     .follow-card {
-         border-top-left-radius: 10px;
-         border-top-right-radius: 10px;
-     }
-
-     /*Follow List - List View*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped.listView > div.user-follow:nth-child(2) > div.wrap:first-child div.avatar > a.name {
-         height: auto;
-         top: 15px;
-         border-top-left-radius: 0px;
-         border-top-right-radius: 10px;
-         border-bottom-left-radius: 0px;
-         border-bottom-right-radius: 10px;
-     }
-
-     /*PC - SMALL*/
-     /*PC - WIDE*/
-     @media (max-width: 1580px)/*Favorites Fix*/
-     {
-         .favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],
-         .favourites.preview .favourites-wrap > div[data-v-ddf96a3c] {
-             margin-right: auto 10px;
+         /*Activity border*/
+         .list.small[data-v-77aecf0c] {
+             padding: 10px;
          }
-         /*activity anime Fix*/
-     }
-     @media (min-width: 1540px)/*Activity Anime Fix*/
-     {
+         div.activity-entry.activity-anime_list > div.wrap {
+             border-radius: 5px!important
+         }
+         /*Anime Embed*/
+         .embed[data-v-13cdaed6] {
+             background: rgba(var(--color-main));
+         }
+         /*activity anime cover*/
+         .list.small[data-v-77aecf0c] > a.cover {
+             border-radius: 5px!important;
+             height: 130%;
+             width: 120%;
+             margin-top: -10px;
+             margin-left: -10px;
+             border-top-right-radius: 0px!important;
+             border-bottom-right-radius: 0px!important;
+         }
          /*activity anime first text*/
          .list.small[data-v-77aecf0c] > div.details > .status {
              font-size: 100%;
@@ -2021,138 +1278,886 @@
          }
          /*activity anime name*/
          .list.small[data-v-77aecf0c] > div.details > .status > a.title {
-             font-size: 100%;
+             font-size: 110%;
              font-weight: bold;
              display: flex
          }
-     }
-     @media (min-width: 1540px) {
-         .activity-anime_list .wrap,
-         .activity-manga_list .wrap,
-         .activity-anime_list .wrap .cover,
-         .activity-manga_list .wrap.cover {
-             max-height: 150px;
-         }
-     }
 
-     /*Favorites Fit Fix*/
-     @media (max-width: 1192px)/*Favorites Fix*/
-     {
-         .favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],
-         .favourites.preview .favourites-wrap > div[data-v-ddf96a3c] {
-             margin-right: 3%;
-             position: relative;
-             left: 6px
+
+         /*ABOUT - Image Border*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap > .markdown img {
+             border-radius: 5px
          }
-     }
-     @media (max-width: 1142px)/*Favorites Fix*/
-     {
-         .favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],
-         .favourites.preview .favourites-wrap > div[data-v-ddf96a3c] {
-             margin-right: 1.4%;
-             position: relative;
-             left: -6px;
+
+         .text .donator-badge[data-v-77aecf0c] {
+             background: rgba(var(--color-main));
          }
-     }
-     @media (max-width: 1080px)/*Favorites Fix*/
-     {
-         .favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],
-         .favourites.preview .favourites-wrap > div[data-v-ddf96a3c] {
-             margin-right: 29px;
-             position: relative;
-             left: 8px
+         /*Border Fix*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child,
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > div.favourites-wrap.anime:last-child,
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > div.favourites-wrap.characters:last-child,
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > div.favourites-wrap.staff:last-child,
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > div.favourites-wrap.studios:last-child {
+             border-bottom-left-radius: 25px;
+             border-bottom-right-radius: 25px;
+             border-top-left-radius: 0px;
+             border-top-right-radius: 0px;
          }
-     }
-     /*Mobile*/
-     @media (max-width: 760px) {
-         /*Mobile Things*/
-         /*avatar and name*/
+
+         /*Anime*/
+         div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child {
+             backdrop-filter: blur(var(--blur));
+             background: rgba(var(--color-main));
+             width: 100%;
+             height: 40px;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             padding-top: 25px;
+             font-size: 130%;
+             border-top-left-radius: 25px;
+             border-top-right-radius: 25px;
+             border-bottom: 1px solid #4b4b4b1f;
+         }
+         /*Anime Reorder*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child > div.actions {
+             position: relative;
+             left: 40%;
+             top: -20px;
+             font-size: 70%;
+             margin-right: auto;
+         }
+         .header-wrap .nav-wrap {
+             backdrop-filter: blur(var(--blur));
+             background: rgba(var(--color-main));
+         }
+         .activity-feed > div > div.wrap > div.list.small > a::before {
+             background: none
+         }
+         .list.small .details[data-v-77aecf0c] {
+             background: none
+         }
+
+         .el-input,
+         .el-textarea {
+             background: none;
+         }
+         .el-input-group__append,
+         .el-input-group__prepend,
+         .el-input__inner,
+         .el-textarea__inner {
+             backdrop-filter: blur(var(--blur));
+             background: rgba(var(--color-main));
+         }
+         body {
+             -webkit-background-size: cover;
+             -moz-background-size: cover;
+             -o-background-size: cover;
+             background-size: cover;
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-position: center;
+             display: block;
+             margin-top: 10px;
+         }
+
+         /*Main Head Navbar*/
+         .site-theme-dark .nav-unscoped.transparent {
+             border-top-left-radius: 25px;
+             border-top-right-radius: 25px;
+             width: 90%;
+             left: 0;
+             right: 0;
+             background: none;
+             margin: auto;
+             margin-top: 25px;
+         }
+         div[class="nav nav-unscoped transparent"].transparent:hover[data-v-4fbac4e1] {
+             background: none;
+         }
+         .banner[data-v-1cc2919e] {
+             border-radius: 25px;
+             position: relative;
+             margin: auto;
+             overflow: visible;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+         }
+         .banner .shadow[data-v-1cc2919e] {
+
+             background: rgba(var(--color-main));
+             z-index: -2;
+             border-top-left-radius: 25px;
+             border-top-right-radius: 25px;
+         }
+
+         div[class="nav-wrap"] {
+             border-bottom-left-radius: 25px;
+             border-bottom-right-radius: 25px;
+             margin: auto;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+         }
+         .nav[data-v-1cc2919e] {
+             background: #fff0;
+         }
+
+         .banner-content[data-v-1cc2919e] {
+             position: relative;
+             width: 100%;
+             margin: auto;
+         }
+
+         .banner-content .name {
+             font-size: 3.75rem;
+             color: #ffffffad;
+             padding: 65px 50px 0px 0px;
+             display: flex;
+
+             align-items: center;
+             filter: drop-shadow(0px 0px 3px black);
+         }
          .avatar[data-v-1cc2919e] {
-             margin-bottom: -0px;
+             margin-bottom: -7px;
          }
          .banner-content > .avatar {
-             margin-top: 5px;
+             margin-top: 70px;
              animation-iteration-count: infinite;
-             max-height: 219px;
-             max-width: 158px;
+             max-height: 269px;
+             max-width: 188px;
          }
-         .banner-content .name {
-             font-size: 2.7rem;
+         /*Stats*/
+         .list-stats:nth-child(1),
+         .list-stats:nth-child(2) {
+             height: calc(165px - 45px);
          }
+         .list-stats:nth-child(1):hover,
+         .list-stats:nth-child(2):hover {
+             height: 169px;
+         }
+         .stats-wrap > .content-wrap,
+         .desktop > .content-wrap,
+         .activity-entry > .wrap,
+         .favourites-wrap > .favourite,
+         .scroller > .load-more,
+         .user-page-unscoped .markdown-editor,
+         .el-textarea__inner,
+         .input {
+             transition: all 0.49s ease-in-out;
+         }
+         .stats-wrap[data-v-5c30286e] {
+             grid-column-gap: 7px;
+             grid-row-gap: 5px;
+         }
+
+         .stat[data-v-815ccddc]:nth-child(1) {
+             grid-row-start: span 2;
+         }
+         .stat:nth-child(1) .value[data-v-815ccddc] {
+             font-size: 5.5rem;
+         }
+         .stat .value[data-v-815ccddc] {
+             font-size: 2rem;
+             padding-bottom: 0px;
+         }
+         .stat .label[data-v-815ccddc] {
+             font-size: 1.2rem;
+         }
+
+
+
+         .stats-wrap[data-v-815ccddc] {
+             display: grid;
+             grid-auto-flow: row;
+             grid-row-gap: 10px;
+             grid-template-columns: auto auto;
+             padding: 20px 50px;
+             text-align: left;
+             background: rgba(0, 0, 0, .04);
+         }
+         .stat[data-v-815ccddc]:nth-child(1) {
+             grid-row-start: span 2;
+             padding: 0px 60px;
+         }
+         .stat:nth-child(1) .value[data-v-815ccddc] {
+             font-size: 5.5rem;
+         }
+         .stat .value[data-v-815ccddc] {
+             font-size: 2rem;
+             padding-bottom: 0px;
+         }
+         .stat .label[data-v-815ccddc] {
+             font-size: 1.2rem;
+         }
+
+         .list-stats[data-v-815ccddc]:nth-child(2) .stat[data-v-815ccddc]:nth-child(1) .label,
+         .list-stats[data-v-815ccddc]:nth-child(1) .stat[data-v-815ccddc]:nth-child(1) .label {
+             display: flex;
+             align-items: center;
+             color: rgb(var(--color-text-light));
+             margin-right: 33px;
+             margin-left: 9px;
+         }
+
+
+
+         /*----------------\
+        |..................|
+        | Anime List Page  |
+        |..................|
+        \-----------------*/
+         /*Watching*/
+         #Hachiman > div.lists:last-child > div.list-wrap:nth-child(2) > h3.section-name:first-child,
+         /*Paused->*/
+         #Hachiman > div.lists:last-child > div.list-wrap:nth-child(10) > h3.section-name:first-child,
+         /*Dropped->*/
+         #Hachiman > div.lists:last-child > div.list-wrap:nth-child(11) > h3.section-name:first-child,
+         /*Planning->*/
+         #Hachiman > div.lists:last-child > div.list-wrap:last-child > h3.section-name:first-child,
+         #Hachiman > div.lists:last-child > div.list-wrap:nth-child(3) > h3.section-name:first-child,
+         #Hachiman > div.lists:last-child > div.list-wrap:nth-child(4) > h3.section-name:first-child,
+         /*Completed OVA*/
+         #Hachiman > div.lists:last-child > div.list-wrap:nth-child(5) > h3.section-name:first-child,
+         /*Completed ONA*/
+         #Hachiman > div.lists:last-child > div.list-wrap:nth-child(6) > h3.section-name:first-child,
+         /*Completed Music*/
+         #Hachiman > div.lists:last-child > div.list-wrap:nth-child(9) > h3.section-name:first-child,
+         #Hachiman > div.lists:last-child > div.list-wrap:nth-child(7) > h3.section-name:first-child,
+         #Hachiman > div.lists:last-child > div.list-wrap:nth-child(8) > h3.section-name:first-child {
+             backdrop-filter: blur(var(--blur));
+             background: rgba(var(--color-main));
+             width: 100%;
+             height: 45px;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             font-size: 150%;
+             font-weight: bold;
+             border-top-left-radius: 25px;
+             border-top-right-radius: 25px;
+             border-bottom: 1px solid #4b4b4b1f;
+         }
+         /*Background*/
+         .medialist.table .list-section {
+             background: rgba(var(--color-main));
+             border-top-left-radius: 0px;
+             border-top-right-radius: 0px;
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+         }
+         /*Filter Background*/
          #Hachiman > div.filters-wrap:first-child {
              background: rgba(var(--color-main));
              padding: 10px;
              border-radius: 10px;
              width: 100%;
-             height: 0%;
+             height: 740px;
          }
-         #app > div.page-content:nth-child(3) > div.settings.container > div.nav:first-child {
-             height: 0%!important;
+
+         @media (max-width: 720px) {
+             #Hachiman > div.filters-wrap:first-child {
+                 background: rgba(var(--color-main));
+                 padding: 10px;
+                 border-radius: 10px;
+                 width: 100%;
+             }
+         }
+         #Hachiman > div.filters-wrap:first-child > div.filters.mobile-nav-hidden:nth-child(2) > div.filter-group:nth-child(3) > div.el-slider:last-child {
+             width: 120px;
+             margin: auto
+         }
+         /*Anime List Theme Switch*/
+         #Hachiman > div.lists:last-child > div.actions:first-child > div.theme-switch {
+             position: relative;
+
+             justify-content: center;
+             align-items: center;
+             grid-gap: 10px 12px;
+             top: -20px;
+             left: 0;
+             height: 30px;
+             width: 90px;
+
+             background: rgba(var(--color-main));
+         }
+         @media (max-width: 720px) {
+             #Hachiman > div.lists:last-child > div.actions:first-child > div.theme-switch {
+                 top: -150px;
+                 height: 30px;
+                 width: 90px;
+                 background: rgba(var(--color-main));
+             }
+         }
+
+         /*Anime List Style 3*/
+         #Hachiman > div.lists > div.list-wrap > div.list-section {
+             background: rgba(var(--color-main));
+             padding: 15px 70px;
+             width: 100%;
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+         }
+         @media (max-width: 720px) {
+             #Hachiman > div.lists > div.list-wrap > div.list-section {
+                 background: rgba(var(--color-main));
+                 padding: 0px 0px;
+                 width: 100%;
+                 border-bottom-left-radius: 20px;
+                 border-bottom-right-radius: 20px;
+             }
+         }
+         /*----------------\
+     |..................|
+     | HOME Page        |
+     |..................|
+     \-----------------*/
+         /*homepage-activity*/
+         #app > div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > h2.section-header:first-child {
+             background: rgba(var(--color-main));
+             width: 100%;
+             height: 45px;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
+             display: flex;
+             padding-left: 20px;
+             padding-top: 5px;
+             font-size: 120%;
+             font-weight: bold;
+             border-top-left-radius: 25px;
+             border-top-right-radius: 25px;
+             border-bottom: 1px solid #4b4b4b1f;
+         }
+         #app > div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > h2.section-header:first-child > div.feed-select {
+             position: relative;
+             left: -5px;
+         }
+         /*activity textbox border*/
+         #app > div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > div.activity-edit:nth-child(2) > div.input.el-textarea:last-child > textarea.el-textarea__inner {
+             border-top-left-radius: 0px;
+             border-top-right-radius: 0px;
+         }
+
+         /*homepage-inprogress*/
+         #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap > div.section-header:first-child,
+         #app > div.page-content:nth-child(3) > div.container > div.home.full-width:first-child > div.list-previews > div.list-preview-wrap > div.section-header:first-child {
+             background: rgba(var(--color-main));
+             width: 100%;
+             height: 45px;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             padding-top: 20px;
+             font-size: 150%;
+             font-weight: bold;
+             border-top-left-radius: 25px;
+             border-top-right-radius: 25px;
+             border-bottom: 1px solid #4b4b4b1f;
+         }
+         @media (max-width: 1040px) {
+             .list-preview[data-v-6aea970d] {
+                 background: rgba(var(--color-main));
+             }
+         }
+         .list-preview[data-v-6aea970d] {
+             background: rgba(var(--color-main));
+             border-bottom-left-radius: 10px;
+             border-bottom-right-radius: 10px;
+             border-top-left-radius: 0px;
+             border-top-right-radius: 0px;
+         }
+         /*inprogress - Zoom Button*/
+         #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap > div.section-header:first-child > svg.size-toggle.svg-inline--fa.fa-expand.fa-w-14.fa-sm:last-child,
+         #app > div.page-content:nth-child(3) > div.container > div.home.full-width:first-child > div.list-previews > div.list-preview-wrap > div.section-header:first-child > svg.size-toggle.svg-inline--fa.fa-compress.fa-w-14.fa-sm:last-child {
+             position: relative;
+             top: -15px;
+             left: -5px;
+         }
+
+         /*homepage-forum-activity*/
+         #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.recent-threads:nth-child(2) > h2.section-header.link:first-child,
+         #app > div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div.recent-threads:first-child > h2.section-header.link:first-child {
+             background: rgba(var(--color-main));
+             width: 100%;
+             height: 45px;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             padding-top: 0px;
+             font-size: 100%;
+             font-weight: bold;
+             border-top-left-radius: 10px;
+             border-top-right-radius: 10px;
+             border-bottom: 1px solid #4b4b4b1f;
+         }
+         .forum-wrap[data-v-60c4a343],
+         #app > div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div.recent-reviews:nth-child(2) > div.review-wrap:last-child {
+             padding: 10px;
+             background: rgba(var(--color-main));
+             border-bottom-left-radius: 10px;
+             border-bottom-right-radius: 10px;
+         }
+         /*homepage-forum-thread*/
+         .thread-card[data-v-550f7194] {
+             background: rgba(var(--color-main));
+         }
+
+
+         /*homepage-recent-reviews*/
+         #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.recent-reviews:nth-child(3) > h2.section-header.link:first-child,
+         #app > div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div.recent-reviews:nth-child(2) > h2.section-header.link:first-child {
+             background: rgba(var(--color-main));
+             width: 100%;
+             height: 45px;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             padding-top: 0px;
+             font-size: 100%;
+             font-weight: bold;
+             border-top-left-radius: 10px;
+             border-top-right-radius: 10px;
+
+             border-bottom: 1px solid #4b4b4b1f;
+         }
+
+
+         #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.recent-reviews:nth-child(3) > div.review-wrap:last-child {
+             border-bottom-left-radius: 10px;
+             border-bottom-right-radius: 10px;
+             padding: 10px;
+             background: rgba(var(--color-main));
+         }
+         .review-card[data-v-0369a0cf] {
+             background: rgba(var(--color-main));
+         }
+         /*homepage-trending/new anime/manga*/
+         #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div:nth-child(4) > div:first-child > h2.section-header.link:first-child,
+         #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div:nth-child(4) > div:nth-child(2) > h2.section-header.link:first-child,
+         #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div:nth-child(4) > div:last-child > h2.section-header.link:first-child,
+         /*Fullscreen mode*/
+         #app > div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div:nth-child(3) > div:first-child > h2.section-header.link:first-child,
+         #app > div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div:nth-child(3) > div:nth-child(2) > h2.section-header.link:first-child,
+         #app > div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div:nth-child(3) > div:last-child > h2.section-header.link:first-child {
+             background: rgba(var(--color-main));
+             width: 100%;
+             height: 45px;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             padding-top: 5px;
+             font-size: 100%;
+             font-weight: bold;
+             border-top-left-radius: 25px;
+             border-top-right-radius: 25px;
+             border-bottom: 1px solid #4b4b4b1f;
+         }
+         .media-preview[data-v-796abd11] {
+             background: rgba(var(--color-main));
+             border-bottom-left-radius: 10px;
+             border-bottom-right-radius: 10px;
+             border-top-left-radius: 0px;
+             border-top-right-radius: 0px;
+         }
+
+         /*----------------\
+        |..................|
+        |Notifications Page|
+        |..................|
+        \-----------------*/
+         .hohNotification {
+             background: rgba(var(--color-main));
+             padding: 0px;
+             border-top-left-radius: 10px;
+             border-top-right-radius: 10px;
+             border-bottom-left-radius: 10px;
+             border-bottom-right-radius: 10px;
+         }
+         /*Notifications filter bg*/
+         #app > div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child {
+             background: rgba(var(--color-main));
+             padding: 20px;
+             border-top-left-radius: 25px;
+             border-top-right-radius: 25px;
+             border-bottom-left-radius: 10px;
+             border-bottom-right-radius: 10px;
+             height: 500px;
+         }
+
+         /*----------------\
+        |..................|
+        | Favourites Page  |
+        |..................|
+        \-----------------*/
+         /*Anime*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:first-child > h2.section-header:first-child {
+             background: rgba(var(--color-main));
+             width: 100%;
+             height: 45px;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             padding-top: 40px;
+             font-size: 150%;
+             font-weight: bold;
+             border-top-left-radius: 25px;
+             border-top-right-radius: 25px;
+             border-bottom: 1px solid #4b4b4b1f;
+         }
+         /*Characters*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(3) > h2.section-header:first-child {
+             background: rgba(var(--color-main));
+             width: 100%;
+             height: 45px;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             padding-top: 40px;
+             font-size: 150%;
+             font-weight: bold;
+             border-top-left-radius: 25px;
+             border-top-right-radius: 25px;
+
+             border-bottom: 1px solid #4b4b4b1f;
+         }
+         /*Staff*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(4) > h2.section-header:first-child {
+             background: rgba(var(--color-main));
+             width: 100%;
+             height: 45px;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             padding-top: 40px;
+             font-size: 150%;
+             font-weight: bold;
+             border-top-left-radius: 25px;
+             border-top-right-radius: 25px;
+             border-bottom: 1px solid #4b4b4b1f;
+         }
+         /*Studio*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:last-child > h2.section-header:first-child {
+             background: rgba(var(--color-main));
+             width: 100%;
+             height: 45px;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             padding-top: 40px;
+             font-size: 150%;
+             font-weight: bold;
+             border-top-left-radius: 25px;
+             border-top-right-radius: 25px;
+             border-bottom: 1px solid #4b4b4b1f;
+         }
+
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child {
+             position: relative;
+             top: 25px;
+         }
+
+
+         /*----------------\
+       |..................|
+       |    Stats Page    |
+       |..................|
+       \-----------------*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.stats > div.filters:first-child/*Filter Background*/
+         {
+             background: rgba(var(--color-main));
+             padding: 10px;
+             border-radius: 10px;
+             width: 100%;
+             margin: top;
+             height: 18%;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: left;
+             align-items: left;
+         }
+         /*Background*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.stats {
+             background: rgba(var(--color-main));
+             border-top-left-radius: 20px;
+             border-top-right-radius: 20px;
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             padding: 20px;
+         }
+
+
+
+         /*----------------\
+       |..................|
+       |   Social Page    |
+       |..................|
+       \-----------------*/
+         /*Filter Background*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.filters:first-child {
+             background: rgba(var(--color-main));
+             padding: 10px;
+             border-radius: 10px;
+             width: 100%;
+             margin: auto;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             justify-content: left;
+             align-items: left;
              margin-bottom: 5px;
          }
+         /*Background*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
+             background: rgba(var(--color-main));
+             border-top-left-radius: 20px;
+             border-top-right-radius: 20px;
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             padding: 20px
+         }
+         /*Script Follower Background*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.hohSocialContent.user-follow:last-child {
+             background: none
+         }
 
-         /*stats*/
-         .list-stats:nth-child(1):hover,
-         .list-stats:nth-child(2):hover {
-             height: 160px;
+         /*Social - Theme Switch*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.filters:first-child > div.theme-switch.hohThemeSwitch:last-child {
+             position: relative;
+             top: -13px;
+             height: 30px;
+             width: 90px;
+             background: rgba(var(--color-main));
          }
-         .stats-wrap[data-v-815ccddc] {
-             padding: 10px 30px;
+         /*Follow List Name*/
+         .follow-card .name,
+         .follow-card.unfollow,
+         div.hohSocialContent.user-follow:last-child > div.follow-card > div.avatar > a.name {
+             opacity: 100;
+             color: #fff!important;
+             position: absolute;
+             height: auto;
+             top: 80px;
+             border-bottom-left-radius: 10px;
+             border-bottom-right-radius: 10px
          }
-         .stat[data-v-815ccddc]:nth-child(1) {
-             padding: 0px 30px;
+         /*Follow List Gaps*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.user-follow:nth-child(2) > div.wrap:first-child,
+         div.hohSocialContent.user-follow:last-child {
+             grid-gap: 60px 10px;
          }
-         /*notifications filter*/
-         #app > div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child {
-             height: 290px;
+         /*Follow List Avatar Border*/
+         .follow-card {
+             border-top-left-radius: 10px;
+             border-top-right-radius: 10px;
          }
-     }
 
-     /*----------------\
+         /*Follow List - List View*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped.listView > div.user-follow:nth-child(2) > div.wrap:first-child div.avatar > a.name {
+             height: auto;
+             top: 15px;
+             border-top-left-radius: 0px;
+             border-top-right-radius: 10px;
+             border-bottom-left-radius: 0px;
+             border-bottom-right-radius: 10px;
+         }
+
+         /*PC - SMALL*/
+         /*PC - WIDE*/
+         @media (max-width: 1580px)/*Favorites Fix*/
+         {
+             .favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],
+             .favourites.preview .favourites-wrap > div[data-v-ddf96a3c] {
+                 margin-right: auto 10px;
+             }
+             /*activity anime Fix*/
+         }
+         @media (min-width: 1540px)/*Activity Anime Fix*/
+         {
+             /*activity anime first text*/
+             .list.small[data-v-77aecf0c] > div.details > .status {
+                 font-size: 100%;
+                 font-weight: normal
+             }
+             /*activity anime name*/
+             .list.small[data-v-77aecf0c] > div.details > .status > a.title {
+                 font-size: 100%;
+                 font-weight: bold;
+                 display: flex
+             }
+         }
+         @media (min-width: 1540px) {
+             .activity-anime_list .wrap,
+             .activity-manga_list .wrap,
+             .activity-anime_list .wrap .cover,
+             .activity-manga_list .wrap.cover {
+                 max-height: 150px;
+             }
+         }
+
+         /*Favorites Fit Fix*/
+         @media (max-width: 1192px)/*Favorites Fix*/
+         {
+             .favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],
+             .favourites.preview .favourites-wrap > div[data-v-ddf96a3c] {
+                 margin-right: 3%;
+                 position: relative;
+                 left: 6px
+             }
+         }
+         @media (max-width: 1142px)/*Favorites Fix*/
+         {
+             .favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],
+             .favourites.preview .favourites-wrap > div[data-v-ddf96a3c] {
+                 margin-right: 1.4%;
+                 position: relative;
+                 left: -6px;
+             }
+         }
+         @media (max-width: 1080px)/*Favorites Fix*/
+         {
+             .favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],
+             .favourites.preview .favourites-wrap > div[data-v-ddf96a3c] {
+                 margin-right: 29px;
+                 position: relative;
+                 left: 8px
+             }
+         }
+         /*Mobile*/
+         @media (max-width: 760px) {
+             /*Mobile Things*/
+             /*avatar and name*/
+             .avatar[data-v-1cc2919e] {
+                 margin-bottom: -0px;
+             }
+             .banner-content > .avatar {
+                 margin-top: 5px;
+                 animation-iteration-count: infinite;
+                 max-height: 219px;
+                 max-width: 158px;
+             }
+             .banner-content .name {
+                 font-size: 2.7rem;
+             }
+             #Hachiman > div.filters-wrap:first-child {
+                 background: rgba(var(--color-main));
+                 padding: 10px;
+                 border-radius: 10px;
+                 width: 100%;
+                 height: 0%;
+             }
+             #app > div.page-content:nth-child(3) > div.settings.container > div.nav:first-child {
+                 height: 0%!important;
+                 margin-bottom: 5px;
+             }
+
+             /*stats*/
+             .list-stats:nth-child(1):hover,
+             .list-stats:nth-child(2):hover {
+                 height: 160px;
+             }
+             .stats-wrap[data-v-815ccddc] {
+                 padding: 10px 30px;
+             }
+             .stat[data-v-815ccddc]:nth-child(1) {
+                 padding: 0px 30px;
+             }
+             /*notifications filter*/
+             #app > div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child {
+                 height: 290px;
+             }
+         }
+
+         /*----------------\
      |..................|
      | Settings page    |
      |..................|
      \-----------------*/
-     #app > div.page-content:nth-child(3) > div.settings.container > div.nav:first-child {
-         background: rgba(var(--color-main));
-         padding: 10px;
-         border-radius: 10px;
-         width: 100%;
-         height: 400px;
-     }
-     #app > div.page-content:nth-child(3) > div.settings.container > div.content:last-child {
-         background: rgba(var(--color-main));
-     }
+         #app > div.page-content:nth-child(3) > div.settings.container > div.nav:first-child {
+             background: rgba(var(--color-main));
+             padding: 10px;
+             border-radius: 10px;
+             width: 100%;
+             height: 400px;
+         }
+         #app > div.page-content:nth-child(3) > div.settings.container > div.content:last-child {
+             background: rgba(var(--color-main));
+         }
 
-     /*Shadow!!!*/
-     .overview[data-v-5c30286e] .content-wrap,
-     .wrap[data-v-77aecf0c],
-     .favourites-wrap[data-v-ddf96a3c],
-     .load-more[data-v-6f203cf2],
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child,
-     .markdown-editor,
-     .reply[data-v-732ef224],
-     .el-input-group__append,
-     .el-input-group__prepend,
-     .el-input__inner,
-     .el-textarea__inner,
-     .el-input,
-     .el-textarea,
-     .medialist.table .list-section,
-     #Hachiman > div.filters-wrap:first-child,
-     #Hachiman > div.filters-wrap:first-child,
-     #Hachiman > div.lists > div.list-wrap > div.list-section,
-     .list-preview[data-v-6aea970d],
-     .forum-wrap {
-         filter: drop-shadow(2px 2px 0.4rem #00000075);
-     }
+         /*Shadow!!!*/
+         .overview[data-v-5c30286e] .content-wrap,
+         .wrap[data-v-77aecf0c],
+         .favourites-wrap[data-v-ddf96a3c],
+         .load-more[data-v-6f203cf2],
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child,
+         .markdown-editor,
+         .reply[data-v-732ef224],
+         .el-input-group__append,
+         .el-input-group__prepend,
+         .el-input__inner,
+         .el-textarea__inner,
+         .el-input,
+         .el-textarea,
+         .medialist.table .list-section,
+         #Hachiman > div.filters-wrap:first-child,
+         #Hachiman > div.filters-wrap:first-child,
+         #Hachiman > div.lists > div.list-wrap > div.list-section,
+         .list-preview[data-v-6aea970d],
+         .forum-wrap {
+             filter: drop-shadow(2px 2px 0.4rem #00000075);
+         }
 
-     /*----------------\
+         /*----------------\
      |..................|
      |    Footer        |
      |..................|
      \-----------------*/
-     #app > div.wrap:nth-child(4) > div.footer {
-         background: rgba(var(--color-main));
-         backdrop-filter: blur(var(--blur));
-     }
+         #app > div.wrap:nth-child(4) > div.footer {
+             background: rgba(var(--color-main));
+             backdrop-filter: blur(var(--blur));
+         }
