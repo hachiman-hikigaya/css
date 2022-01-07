@@ -604,9 +604,9 @@
         -webkit-border-radius: 20px!important;
      */
              transform: scale(1.25);
-             border-bottom-left-radius: 6px!important;
-             border-bottom-right-radius: 6px!important;
-             filter: drop-shadow(0 0 0.10rem #09090978);
+             border-bottom-left-radius: 4px!important;
+             border-bottom-right-radius: 4px!important;
+             filter: drop-shadow(0 0 0.05rem #0909094f);
          }
          /*===============================================
     Dropdown - TOP
@@ -1597,8 +1597,8 @@
          }
          @media (max-width: 720px) {
              #Hachiman > div.lists:last-child > div.actions:first-child > div.theme-switch {
-                 top: -150px;
-                 height: 30px;
+                 top: -144px;
+                 height: 26px;
                  width: 90px;
                  background: rgba(var(--color-main));
              }
