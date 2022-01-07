@@ -582,7 +582,7 @@
      .header > div.donator-badge {
          left: -2px;
          margin-top: -15px;
-          position: relative;
+         position: relative;
          overflow: hidden;
          display: flex;
          flex-direction: column;
@@ -1059,8 +1059,12 @@
          background: rgba(var(--color-main));
          border-bottom-left-radius: 25px;
          border-bottom-right-radius: 25px;
-         width: 95%;
-         left: 33px;
+
+
+         padding: 0px;
+         left: 0;
+         right: 0;
+         margin: auto;
      }
      /*Genres*/
      div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child {
