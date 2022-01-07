@@ -2154,7 +2154,11 @@
          #Hachiman > div.filters-wrap:first-child,
          #Hachiman > div.lists > div.list-wrap > div.list-section,
          .list-preview[data-v-6aea970d],
-         .forum-wrap {
+         .forum-wrap,
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > h2.section-header:first-child,
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > h2.section-header:first-child,
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > h2.section-header:first-child,
+         div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child {
              filter: drop-shadow(2px 2px 0.3rem #00000075);
          }
 
