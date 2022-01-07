@@ -854,9 +854,9 @@
 =================================================*/
          div.footer > div.container:before {
              width: 300px!important;
-             content: ' | CSS by Hachiman';
+             content: 'CSS by Hachiman';
              position: relative;
-             text-indent: 5px;
+             text-indent: 0px;
          }
 
          /*===============================================
@@ -2148,19 +2148,14 @@
          #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child,
          .markdown-editor,
          .reply[data-v-732ef224],
-         .el-input-group__append,
-         .el-input-group__prepend,
-         .el-input__inner,
-         .el-textarea__inner,
          .el-input,
          .el-textarea,
          .medialist.table .list-section,
          #Hachiman > div.filters-wrap:first-child,
-         #Hachiman > div.filters-wrap:first-child,
          #Hachiman > div.lists > div.list-wrap > div.list-section,
          .list-preview[data-v-6aea970d],
          .forum-wrap {
-             filter: drop-shadow(2px 2px 0.4rem #00000075);
+             filter: drop-shadow(2px 2px 0.3rem #00000075);
          }
 
          /*----------------\
