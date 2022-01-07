@@ -100,6 +100,21 @@
     .page-content > div > div.content.container > div > div:nth-child(1) > h2 {
         margin-top: 30px;
     }
+    /*header*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.header-wrap:first-child {
+        bottom: -10px;
+        position: relative;
+    }
+    /*header nav*/
+    #nav {
+        position: relative;
+        margin-bottom: -80px;
+    }
+    /*nav search*/
+    #nav > div.quick-search.visible:first-child {
+        background: none;
+        margin-left: -50px
+    }
 
     /*===============================================
     Banner Shadow
@@ -1690,13 +1705,17 @@
     }
     /*Background*/
     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.user-follow:nth-child(2),
-    div.hohSocialContent.user-follow:last-child {
+    {
         background: rgba(var(--color-main));
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         padding: 20px
+    }
+    /*Script Follower Background*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.hohSocialContent.user-follow:last-child {
+        background: none
     }
 
     /*Social - Theme Switch*/
@@ -1768,11 +1787,6 @@
             left: 8px
         }
     }
-
-
-
-
-
     /*Mobile*/
     @media (max-width: 760px) {
         /*Mobile Things*/
