@@ -87,6 +87,10 @@
      .about .content-wrap::-webkit-scrollbar {
          display: none !important;
      }
+     /*Activity Scrollbar*/
+     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner::-webkit-scrollbar {
+         display: none !important;
+     }
 
      /*Nav Scrollbar*/
      .nav::-webkit-scrollbar {
@@ -147,7 +151,9 @@
          border-bottom: 3px solid rgb(var(--color-gray-400));
          color: rgb(var(--hachi-dirty-white));
      }
-
+     .header-wrap[data-v-1cc2919e] {
+         filter: drop-shadow(5px 5px 0.4rem #00000045);
+     }
      /*===============================================
     Genre Overview
 =================================================*/
@@ -576,8 +582,12 @@
      .header > div.donator-badge {
          left: -2px;
          margin-top: -15px;
+          position: relative;
+         overflow: hidden;
          display: flex;
-         margin-left:
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
      }
 
      /*===============================================
@@ -592,7 +602,7 @@
          transform: scale(1.25);
          border-bottom-left-radius: 6px!important;
          border-bottom-right-radius: 6px!important;
-         filter: drop-shadow(0 0 0.30rem #0000004a);
+         filter: drop-shadow(0 0 0.10rem #09090978);
      }
      /*===============================================
     Dropdown - TOP
@@ -981,15 +991,18 @@
 
      /*|   Body   |*/
      body {
-         background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .52)), url("https://randomc.net/image/Shingeki%20no%20Kyojin/Shingeki%20no%20Kyojin%20-%2028%20-%20Large%2016.jpg")
+         background-image: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .32)), url("https://wallpx.com/image/2021/03/raining-sky-anime-landscape-cityscape-dark-clouds-rainbow.jpg")
      }
      .page-content {
          background: rgba(19, 28, 45, 0);
-         top: 10px;
+         top: 15px;
+         position: relative;
          width: 95%;
          margin: auto;
+
          border-radius: 25px;
      }
+
      .overview[data-v-5c30286e] .content-wrap,
      .wrap[data-v-77aecf0c],
      .favourites-wrap[data-v-ddf96a3c] {
@@ -1152,7 +1165,7 @@
      }
      #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap:before {
          content: "Welcome!";
-         font-family: Arial;
+         font-family: sans-serif;
          background: #0000;
          width: 100%;
          height: 40px;
@@ -1262,9 +1275,9 @@
      }
 
 
-     /*ALL - Image Border*/
-     .markdown img {
-         border-radius: 10px
+     /*ABOUT - Image Border*/
+     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap > .markdown img {
+         border-radius: 5px
      }
 
      .text .donator-badge[data-v-77aecf0c] {
@@ -1302,12 +1315,6 @@
          border-bottom: 1px solid #4b4b4b1f;
      }
      /*Anime Reorder*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child > div.actions:before {
-         content: "-";
-         position: absolute;
-         left: -9px
-     }
-
      #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child > div.actions {
          position: relative;
          left: 40%;
@@ -1349,7 +1356,7 @@
          margin-top: 10px;
      }
 
-
+     /*Main Head Navbar*/
      .site-theme-dark .nav-unscoped.transparent {
          border-top-left-radius: 25px;
          border-top-right-radius: 25px;
@@ -1358,7 +1365,7 @@
          right: 0;
          background: none;
          margin: auto;
-         margin-top: 10px;
+         margin-top: 25px;
      }
      div[class="nav nav-unscoped transparent"].transparent:hover[data-v-4fbac4e1] {
          background: none;
@@ -1999,8 +2006,30 @@
          .favourites.preview .favourites-wrap > div[data-v-ddf96a3c] {
              margin-right: auto 10px;
          }
+         /*activity anime Fix*/
      }
-
+     @media (min-width: 1540px)/*Activity Anime Fix*/
+     {
+         /*activity anime first text*/
+         .list.small[data-v-77aecf0c] > div.details > .status {
+             font-size: 100%;
+             font-weight: normal
+         }
+         /*activity anime name*/
+         .list.small[data-v-77aecf0c] > div.details > .status > a.title {
+             font-size: 100%;
+             font-weight: bold;
+             display: flex
+         }
+     }
+     @media (min-width: 1540px) {
+         .activity-anime_list .wrap,
+         .activity-manga_list .wrap,
+         .activity-anime_list .wrap .cover,
+         .activity-manga_list .wrap.cover {
+             max-height: 150px;
+         }
+     }
 
      /*Favorites Fit Fix*/
      @media (max-width: 1192px)/*Favorites Fix*/
@@ -2089,6 +2118,29 @@
      }
      #app > div.page-content:nth-child(3) > div.settings.container > div.content:last-child {
          background: rgba(var(--color-main));
+     }
+
+     /*Shadow!!!*/
+     .overview[data-v-5c30286e] .content-wrap,
+     .wrap[data-v-77aecf0c],
+     .favourites-wrap[data-v-ddf96a3c],
+     .load-more[data-v-6f203cf2],
+     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child,
+     .markdown-editor,
+     .reply[data-v-732ef224],
+     .el-input-group__append,
+     .el-input-group__prepend,
+     .el-input__inner,
+     .el-textarea__inner,
+     .el-input,
+     .el-textarea,
+     .medialist.table .list-section,
+     #Hachiman > div.filters-wrap:first-child,
+     #Hachiman > div.filters-wrap:first-child,
+     #Hachiman > div.lists > div.list-wrap > div.list-section,
+     .list-preview[data-v-6aea970d],
+     .forum-wrap {
+         filter: drop-shadow(2px 2px 0.4rem #00000075);
      }
 
      /*----------------\
