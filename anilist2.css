@@ -1,114 +1,113 @@
-     /*===============================================
+         /*===============================================
     Import Fonts and Animations
 =================================================*/
-     @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-     @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
-     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-     /*===============================================
+         @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+         @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+         /*===============================================
     Colors
 =================================================*/
-     :root {
-         /*Color Scheme*/
-         --hachi-cyan: 125, 190, 203;
-         --hachi-darkred: 200, 42, 50;
-         --hachi-gray: 40, 56, 77;
-         --hachi-light-gray: 88, 88, 88, .29;
-         --hachi-dark-gray: 40, 56, 77;
-         --hachi-white: 255, 255, 255;
-         --hachi-dirty-white: 219, 219, 219;
-         --hachi-transparent: rgb(0 0 0 / 0%);
-         /*Cursor*/
-         --hachi-cursor: url(https://files.catbox.moe/ptm263.png);
-         /*Icons*/
-         --hachi-anilist-logo: url(https://files.catbox.moe/nyzorc.svg);
-         --hachi-yukino-icon: url(https://files.catbox.moe/1wx9ha.png);
-     }
-     /*===============================================
+         :root {
+             /*Color Scheme*/
+             --hachi-cyan: 125, 190, 203;
+             --hachi-darkred: 200, 42, 50;
+             --hachi-gray: 40, 56, 77;
+             --hachi-light-gray: 88, 88, 88, .29;
+             --hachi-dark-gray: 40, 56, 77;
+             --hachi-white: 255, 255, 255;
+             --hachi-dirty-white: 219, 219, 219;
+             --hachi-transparent: rgb(0 0 0 / 0%);
+             /*Cursor*/
+             --hachi-cursor: url(https://files.catbox.moe/ptm263.png);
+             /*Icons*/
+             --hachi-anilist-logo: url(https://files.catbox.moe/nyzorc.svg);
+             --hachi-yukino-icon: url(https://files.catbox.moe/1wx9ha.png);
+         }
+         /*===============================================
     Force Dark Theme
 =================================================*/
-     :root,
-     body,
-     .site-theme-dark,
-     .site-theme-contrast {
-         --color-background: 11, 22, 34 !important;
-         --color-foreground: 21, 31, 46 !important;
-         --color-foreground-grey: 15, 22, 31 !important;
-         --color-foreground-grey-dark: 6, 12, 19 !important;
-         --color-foreground-blue: 15, 22, 31 !important;
-         --color-foreground-blue-dark: 6, 12, 19 !important;
-         --color-text: 159, 173, 189!important;
-         --color-text-light: 114, 138, 161 !important;
-         --color-text-lighter: 133, 150, 165!important;
-         --color-shadow-blue: 0, 5, 15!important;
-         --color-background-1200: 251, 251, 251!important;
-         --color-background-1100: 240, 243, 246 !important;
-         --color-background-1000: 221, 230, 238 !important;
-         --color-background-900: 201, 215, 227!important;
-         --color-background-800: 173, 192, 210 !important;
-         --color-background-700: 139, 160, 178 !important;
-         --color-background-600: 116, 136, 153 !important;
-         --color-background-500: 100, 115, 128 !important;
-         --color-background-400: 81, 97, 112 !important;
-         --color-background-300: 30, 42, 56 !important;
-         --color-background-100: 21, 31, 46 !important;
-         --color-background-200: 11, 22, 34 !important;
-         --color-gray-1200: 251, 251, 251 !important;
-         --color-gray-1100: 240, 243, 246 !important;
-         --color-gray-1000: 221, 230, 238 !important;
-         --color-gray-900: 201, 215, 227 !important;
-         --color-gray-800: 173, 192, 210 !important;
-         --color-gray-700: 139, 160, 178 !important;
-         --color-gray-600: 116, 136, 153 !important;
-         --color-gray-500: 100, 115, 128 !important;
-         --color-gray-400: 81, 97, 112 !important;
-         --color-gray-300: 30, 42, 56 !important;
-         --color-gray-100: 21, 31, 46 !important;
-         --color-gray-200: 11, 22, 34 !important;
-     }
-     /*===============================================
+         :root,
+         body,
+         .site-theme-dark,
+         .site-theme-contrast {
+             --color-background: 11, 22, 34 !important;
+             --color-foreground: 21, 31, 46 !important;
+             --color-foreground-grey: 15, 22, 31 !important;
+             --color-foreground-grey-dark: 6, 12, 19 !important;
+             --color-foreground-blue: 15, 22, 31 !important;
+             --color-foreground-blue-dark: 6, 12, 19 !important;
+             --color-text: 159, 173, 189!important;
+             --color-text-light: 114, 138, 161 !important;
+             --color-text-lighter: 133, 150, 165!important;
+             --color-shadow-blue: 0, 5, 15!important;
+             --color-background-1200: 251, 251, 251!important;
+             --color-background-1100: 240, 243, 246 !important;
+             --color-background-1000: 221, 230, 238 !important;
+             --color-background-900: 201, 215, 227!important;
+             --color-background-800: 173, 192, 210 !important;
+             --color-background-700: 139, 160, 178 !important;
+             --color-background-600: 116, 136, 153 !important;
+             --color-background-500: 100, 115, 128 !important;
+             --color-background-400: 81, 97, 112 !important;
+             --color-background-300: 30, 42, 56 !important;
+             --color-background-100: 21, 31, 46 !important;
+             --color-background-200: 11, 22, 34 !important;
+             --color-gray-1200: 251, 251, 251 !important;
+             --color-gray-1100: 240, 243, 246 !important;
+             --color-gray-1000: 221, 230, 238 !important;
+             --color-gray-900: 201, 215, 227 !important;
+             --color-gray-800: 173, 192, 210 !important;
+             --color-gray-700: 139, 160, 178 !important;
+             --color-gray-600: 116, 136, 153 !important;
+             --color-gray-500: 100, 115, 128 !important;
+             --color-gray-400: 81, 97, 112 !important;
+             --color-gray-300: 30, 42, 56 !important;
+             --color-gray-100: 21, 31, 46 !important;
+             --color-gray-200: 11, 22, 34 !important;
+         }
+         /*===============================================
    Remove Scrollbars
 =================================================*/
-     /*Scrollbar*/
-     ::-webkit-scrollbar {
-         width: 8px;
-         background: rgb(var(--hachi-transparent));
-     }
+         /*Scrollbar*/
+         ::-webkit-scrollbar {
+             width: 8px;
+             background: rgb(var(--hachi-transparent));
+         }
 
-     ::-webkit-scrollbar-corner {
-         background: rgb(var(--hachi-gray));
-     }
+         ::-webkit-scrollbar-corner {
+             background: rgb(var(--hachi-gray));
+         }
 
-     ::-webkit-scrollbar-thumb {
-         background: rgb(var(--hachi-gray));
-         -webkit-border-radius: 1ex;
-     }
+         ::-webkit-scrollbar-thumb {
+             background: rgb(var(--hachi-gray));
+             -webkit-border-radius: 1ex;
+         }
 
-     /*Bio Scrollbar*/
-     .about .content-wrap::-webkit-scrollbar {
-         display: none !important;
-     }
-     /*Activity Scrollbar*/
-     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner::-webkit-scrollbar {
-         display: none !important;
-     }
+         /*Bio Scrollbar*/
+         .about .content-wrap::-webkit-scrollbar {
+             display: none !important;
+         }
+         /*Activity Scrollbar*/
+         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner::-webkit-scrollbar {
+             display: none !important;
+         }
 
-     /*Nav Scrollbar*/
-     .nav::-webkit-scrollbar {
-         display: none;
-     }
-     .text .markdown::-webkit-scrollbar {
-         width: 2px !important;
-         background: rgb(var(--hachi-transparent));
-     }
+         /*Nav Scrollbar*/
+         .nav::-webkit-scrollbar {
+             display: none;
+         }
+         .text .markdown::-webkit-scrollbar {
+             width: 2px !important;
+             background: rgb(var(--hachi-transparent));
+         }
 
-     .page-content > div > div.content.container > div > div:nth-child(1) > h2 {
-         margin-top: 30px;
-     }
-/*NEED WORK*/
-     .content.container {
-         max-width: 82.5%;
-         padding-left: 0px;
-         padding-right: 0px;}
+         .page-content > div > div.content.container > div > div:nth-child(1) > h2 {
+             margin-top: 30px;
+         }
+         /*All Content Width*/
+         .content.container {
+             min-width: 80%;
+         }
          /*header
     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.header-wrap:first-child {
         bottom: -10px;
@@ -996,7 +995,7 @@
 
          /*|   Body   |*/
          body {
-             background-image: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .32)), url("https://wallpx.com/image/2021/03/raining-sky-anime-landscape-cityscape-dark-clouds-rainbow.jpg")
+             background-image: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .32)), url("https://wallpx.com/image/2021/03/raining-sky-anime-landscape-cityscape-dark-clouds-rainbow.jpg")
          }
          .page-content {
              background: rgba(19, 28, 45, 0);
@@ -1064,7 +1063,7 @@
              background: rgba(var(--color-main));
              border-bottom-left-radius: 25px;
              border-bottom-right-radius: 25px;
-
+             max-width: 95%;
 
              padding: 0px;
              left: 0;
@@ -1274,13 +1273,16 @@
          /*activity anime first text*/
          .list.small[data-v-77aecf0c] > div.details > .status {
              font-size: 100%;
+             min-width: 10px;
+
              font-weight: normal
          }
          /*activity anime name*/
          .list.small[data-v-77aecf0c] > div.details > .status > a.title {
-             font-size: 110%;
+             font-size: 105%;
              font-weight: bold;
-             display: flex
+             max-width: 87%;
+             /*go under text -> display: grid;*/
          }
 
 
@@ -1898,9 +1900,15 @@
 
          #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child {
              position: relative;
-             top: 25px;
+             top: 10px;
          }
 
+         .favourites-wrap[data-v-ddf96a3c] {
+             border-top-left-radius: 0px;
+             border-top-right-radius: 0px;
+             border-bottom-left-radius: 15px;
+             border-bottom-right-radius: 15px;
+         }
 
          /*----------------\
        |..................|
@@ -1959,7 +1967,10 @@
              border-top-right-radius: 20px;
              border-bottom-left-radius: 20px;
              border-bottom-right-radius: 20px;
-             padding: 20px
+             padding-bottom: 60px;
+             padding-top: 35px;
+             padding-left: 20px;
+             padding-right: 20px;
          }
          /*Script Follower Background*/
          #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.hohSocialContent.user-follow:last-child {
@@ -2028,7 +2039,7 @@
              .list.small[data-v-77aecf0c] > div.details > .status > a.title {
                  font-size: 100%;
                  font-weight: bold;
-                 display: flex
+                 display: flex;
              }
          }
          @media (min-width: 1540px) {
