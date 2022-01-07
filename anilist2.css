@@ -1639,8 +1639,8 @@
              padding-top: 5px;
              font-size: 120%;
              font-weight: bold;
-             border-top-left-radius: 25px;
-             border-top-right-radius: 25px;
+             border-top-left-radius: 10px;
+             border-top-right-radius: 10px;
              border-bottom: 1px solid #4b4b4b1f;
          }
          #app > div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > h2.section-header:first-child > div.feed-select {
@@ -1669,8 +1669,8 @@
              padding-top: 20px;
              font-size: 150%;
              font-weight: bold;
-             border-top-left-radius: 25px;
-             border-top-right-radius: 25px;
+             border-top-left-radius: 10px;
+             border-top-right-radius: 10px;
              border-bottom: 1px solid #4b4b4b1f;
          }
          @media (max-width: 1040px) {
@@ -1779,8 +1779,8 @@
              padding-top: 5px;
              font-size: 100%;
              font-weight: bold;
-             border-top-left-radius: 25px;
-             border-top-right-radius: 25px;
+             border-top-left-radius: 10px;
+             border-top-right-radius: 10px;
              border-bottom: 1px solid #4b4b4b1f;
          }
          .media-preview[data-v-796abd11] {
