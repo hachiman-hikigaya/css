@@ -269,6 +269,13 @@
         margin-bottom: 0;
     }
 
+    /*Activity text gaps
+  .wrap > div.text > div.activity-markdown  h1{position:relative;margin-top:-10px!important}
+      .wrap > div.text > div.activity-markdown  h2{position:relative;margin-top:-10px!important}
+      .wrap > div.text > div.activity-markdown  h3{position:relative;margin-top:-10px!important}
+      .wrap > div.text > div.activity-markdown  h4{position:relative;margin-top:-10px!important}
+      .wrap > div.text > div.activity-markdown  h5{position:relative;margin-top:-10px!important}
+      .wrap > div.text > div.activity-markdown  h6{position:relative;margin-top:-10px!important}*/
     /*===============================================
     Activity Like & Comment Button
 =================================================*/
@@ -617,7 +624,10 @@
         overflow: visible;
         height: 120px;
     }
-
+    /*hover title bg*/
+    .tooltip.animate-position[data-v-366e5d34] > .title[data-v-366e5d34] {
+        background: none;
+    }
     .about a:nth-child(1) > img,
     .about a:nth-child(2) > img,
     .about a:nth-child(3) > img,
@@ -635,9 +645,8 @@
 
     .favourite:hover {
         transform: scale(1.2);
-        position: static;
-        overflow: visible;
-        border: 3px solid rgb(var(--color-foreground));
+
+        border: 2px solid rgb(var(--color-foreground));
     }
     .favourite.studio:hover {
         transform: scale(1.2);
@@ -847,7 +856,7 @@
         animation: fadeIn;
         animation-duration: .5s;
     }
-
+    /* Hover Zoom Avatar  and Name - Disabled
     .header-wrap .actions .nav-btn:hover,
     .banner-content h1.name:hover,
     .header-wrap > div.banner > div.container > div > img:hover {
@@ -859,7 +868,7 @@
     .header-wrap > div.banner > div.container > div > img {
         transition: 0.2s;
     }
-
+*/
     .button.liked > svg {
         animation: rubberBand;
         animation-duration: 1s;
@@ -906,829 +915,902 @@
         animation: fadeIn;
         animation-duration: 1.0s;
     }
-        /*----------------
+    /*----------------
         NEW STYLE
 ----------------*/
-        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-        @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-        :root {
-            --blur: 2px;
-            --color-main: 11, 14, 24, .8;
-        }
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    :root {
+        --blur: 2px;
+        --color-main: 11, 14, 24, .8;
+    }
 
-        /*----------------\
+    /*----------------\
         |..................|
         |   Profile Page   |
         |..................|
         \-----------------*/
-        /*|   Nav   |*/
-        div[class="nav nav-unscoped transparent"].transparent[data-v-4fbac4e1],
-        {
-            background: rgba(19, 28, 45, .49)
-        }
+    /*|   Nav   |*/
+    div[class="nav nav-unscoped transparent"].transparent[data-v-4fbac4e1],
+    {
+        background: rgba(19, 28, 45, .49)
+    }
 
-        div[class="nav nav-unscoped transparent"].transparent:hover[data-v-4fbac4e1] {
-            background: rgba(19, 28, 45, .69)
-        }
-        .dropdown[data-v-04b245e6] {
-            background: rgba(19, 28, 45, .81);
-            margin-top: 6px;
-        }
-        .dropdown[data-v-04b245e6]:before {
-            display: none
-        }
-        .footer[data-v-04b245e6] {
-            background: rgba(19, 28, 45, .2)
-        }
-        .nav[data-v-1cc2919e] {
-            background: rgba(19, 28, 45, .22);
-        }
+    div[class="nav nav-unscoped transparent"].transparent:hover[data-v-4fbac4e1] {
+        background: rgba(19, 28, 45, .69)
+    }
+    .dropdown[data-v-04b245e6] {
+        background: rgba(19, 28, 45, .81);
+        margin-top: 6px;
+    }
+    .dropdown[data-v-04b245e6]:before {
+        display: none
+    }
+    .footer[data-v-04b245e6] {
+        background: rgba(19, 28, 45, .2)
+    }
+    .nav[data-v-1cc2919e] {
+        background: rgba(19, 28, 45, .22);
+    }
 
-        /*|   Body   |*/
-        body {
-            background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .52)), url("https://randomc.net/image/Shingeki%20no%20Kyojin/Shingeki%20no%20Kyojin%20-%2028%20-%20Large%2016.jpg")
-        }
-        .page-content {
-            background: rgba(19, 28, 45, 0);
-            top: 10px;
-            width: 95%;
-            margin: auto;
-            border-radius: 25px;
-        }
-        .overview[data-v-5c30286e] .content-wrap,
-        .wrap[data-v-77aecf0c],
-        .favourites-wrap[data-v-ddf96a3c] {
-            backdrop-filter: blur(var(--blur));
-            background: rgba(var(--color-main));
-        }
-        .activity-entry > .wrap > .time:hover {
-            background: none
-        }
-        .markdown .markdown-spoiler:before,
-        .footer[data-v-815ccddc] {
-            background: rgba(var(--color-main));
-        }
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-anime_list {
-            position: relative;
-            padding: 2px
-        }
-        .load-more[data-v-6f203cf2] {
-            background: rgba(var(--color-main));
-        }
-        /*|   Genres   |*/
-        div.genres:first-child > div.genre:first-child > div.name:first-child,
-        div.genres:first-child > div.genre:nth-child(2) > div.name:first-child,
-        div.genres:first-child > div.genre:nth-child(3) > div.name:first-child,
-        div.genres:first-child > div.genre:nth-child(4) > div.name:first-child,
-        div.genres:first-child > div.genre:nth-child(5) > div.name:first-child {
-            /*background: #00000063!important;*/
-            background: #ffffff0f!important;
-            border-bottom: 1px solid #4b4b4b1f;
-        }
-        /*|   Genres w/ Entries   |*/
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:first-child,
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(2),
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(3),
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(4),
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(5) {
-            background: #41414100;
-            border-radius: 7px;
-            padding-bottom: 8px;
-        }
-
-
-        /*entry color*/
-        div.genres:first-child > div.genre:nth-child(1) > div.amount:last-child,
-        div.genres:first-child > div.genre:nth-child(2) > div.amount:last-child,
-        div.genres:first-child > div.genre:nth-child(3) > div.amount:last-child,
-        div.genres:first-child > div.genre:nth-child(4) > div.amount:last-child,
-        div.genres:first-child > div.genre:nth-child(5) > div.amount:last-child {
-            color: rgba(114, 138, 161, .6)!important
-        }
-        /*Nav - Hiding*/
-        .site-theme-dark .nav-unscoped {
-            backdrop-filter: blur(var(--blur));
-            background: rgba(var(--color-main));
-            border-bottom-left-radius: 25px;
-            border-bottom-right-radius: 25px;
-            width: 95%;
-            left: 33px;
-        }
-        /*Genres*/
-        div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child {
-            backdrop-filter: blur(var(--blur));
-            background: rgba(var(--color-main));
-            width: 100%;
-            height: 40px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            padding: 8px 42%;
-            font-size: 130%;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom: 1px solid #4b4b4b1f;
-        }
-
-        /*Genres Text Change*/
-        div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header {
-            text-indent: -9999px;
-            line-height: 0;
-        }
-        div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child:after {
-            text-indent: 0;
-            display: block;
-            line-height: initial;
-            Content: "Genres"
-        }
-
-        /*Characters*/
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > h2.section-header:first-child {
-            backdrop-filter: blur(var(--blur));
-            background: rgba(var(--color-main));
-            width: 100%;
-            height: 40px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-top: 10px;
-            font-size: 130%;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom: 1px solid #4b4b4b1f;
-        }
-        /*Staff*/
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > h2.section-header:first-child {
-            backdrop-filter: blur(var(--blur));
-            background: rgba(var(--color-main));
-            width: 100%;
-            height: 40px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-size: 130%;
-            padding-top: 10px;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom: 1px solid #4b4b4b1f;
-        }
-
-        /*Studios*/
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > h2.section-header:first-child {
-            backdrop-filter: blur(var(--blur));
-            background: rgba(var(--color-main));
-            width: 100%;
-            height: 40px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-size: 130%;
-            padding-top: 10px;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            border-bottom: 1px solid #4b4b4b1f;
-        }
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap {
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-        }
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap:before {
-            content: "Welcome!";
-            font-family: Arial;
-            background: #0000;
-            width: 100%;
-            height: 40px;
-            top: -20px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-size: 150%;
-            font-weight: bold;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-
-            border-bottom: 1px solid #4b4b4b1f;
-        }
-        /*Activity Head*/
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child {
-            backdrop-filter: blur(var(--blur));
-            background: rgba(var(--color-main));
-            width: 100%;
-            height: 40px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-top: 15px;
-            font-size: 130%;
-            font-weight: bold;
-            border-top-left-radius: 6px;
-            border-top-right-radius: 6px;
-            border-bottom: 1px solid #4b4b4b1f;
-        }
-        /*Activity Filter*/
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown {
-            position: relative;
-            margin: auto;
-            left: 44%;
-            top: -15px;
-            overflow: visible;
-            display: flex;
-            flex-direction: column;
-            justify-content: right;
-            align-items: right;
-        }
-
-        /*Activity Editor*/
-        .markdown-editor {
-            background: rgba(var(--color-main));
-            border-top-left-radius: 0px;
-            border-top-right-radius: 0px;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-        }
-        .activity-entry.full-width.activity-anime_list > div.wrap,
-        .activity-entry.full-width.activity-manga_list > div.wrap {
-            background: #00000096;
-            transition: all 0.69s ease-in-out;
-        }
-        /*Activity - Write a Status*/
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner {
-            border-top-left-radius: 0px;
-            border-top-right-radius: 0px;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-        }
-        /*Activity Reply*/
-        .reply[data-v-732ef224] {
-            background: rgba(var(--color-main));
-        }
-
-        /*Anime Embed*/
-        .embed[data-v-13cdaed6] {
-            background: rgba(var(--color-main));
-        }
-
-        /*About - Image Border*/
-        .markdown img {
-            border-radius: 10px
-        }
-
-        .text .donator-badge[data-v-77aecf0c] {
-            background: rgba(var(--color-main));
-        }
-        /*Border Fix*/
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child,
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > div.favourites-wrap.anime:last-child,
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > div.favourites-wrap.characters:last-child,
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > div.favourites-wrap.staff:last-child,
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > div.favourites-wrap.studios:last-child {
-            border-bottom-left-radius: 25px;
-            border-bottom-right-radius: 25px;
-            border-top-left-radius: 0px;
-            border-top-right-radius: 0px;
-        }
-
-        /*Anime*/
-        div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child {
-            backdrop-filter: blur(var(--blur));
-            background: rgba(var(--color-main));
-            width: 100%;
-            height: 40px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-top: 25px;
-            font-size: 130%;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom: 1px solid #4b4b4b1f;
-        }
-        /*Anime Reorder*/
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child > div.actions:before {
-            content: "-";
-            position: absolute;
-            left: -9px
-        }
-
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child > div.actions {
-            position: relative;
-            left: 20%;
-            top: -2px;
-            font-size: 70%
-        }
-        .header-wrap .nav-wrap {
-            backdrop-filter: blur(var(--blur));
-            background: rgba(var(--color-main));
-        }
-        .activity-feed > div > div.wrap > div.list.small > a::before {
-            background: none
-        }
-        .list.small .details[data-v-77aecf0c] {
-            background: none
-        }
-
-        .el-input,
-        .el-textarea {
-            background: none;
-        }
-        .el-input-group__append,
-        .el-input-group__prepend,
-        .el-input__inner,
-        .el-textarea__inner {
-            backdrop-filter: blur(var(--blur));
-            background: rgba(var(--color-main));
-        }
-        body {
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            display: block;
-            margin-top: 10px;
-        }
+    /*|   Body   |*/
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .52)), url("https://randomc.net/image/Shingeki%20no%20Kyojin/Shingeki%20no%20Kyojin%20-%2028%20-%20Large%2016.jpg")
+    }
+    .page-content {
+        background: rgba(19, 28, 45, 0);
+        top: 10px;
+        width: 95%;
+        margin: auto;
+        border-radius: 25px;
+    }
+    .overview[data-v-5c30286e] .content-wrap,
+    .wrap[data-v-77aecf0c],
+    .favourites-wrap[data-v-ddf96a3c] {
+        backdrop-filter: blur(var(--blur));
+        background: rgba(var(--color-main));
+    }
+    .activity-entry > .wrap > .time:hover {
+        background: none
+    }
+    .markdown .markdown-spoiler:before,
+    .footer[data-v-815ccddc] {
+        background: rgba(var(--color-main));
+    }
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-anime_list {
+        position: relative;
+        padding: 2px
+    }
+    .load-more[data-v-6f203cf2] {
+        background: rgba(var(--color-main));
+    }
+    /*|   Genres   |*/
+    div.genres:first-child > div.genre:first-child > div.name:first-child,
+    div.genres:first-child > div.genre:nth-child(2) > div.name:first-child,
+    div.genres:first-child > div.genre:nth-child(3) > div.name:first-child,
+    div.genres:first-child > div.genre:nth-child(4) > div.name:first-child,
+    div.genres:first-child > div.genre:nth-child(5) > div.name:first-child {
+        /*background: #00000063!important;*/
+        background: #ffffff0f!important;
+        border-bottom: 1px solid #4b4b4b1f;
+    }
+    /*|   Genres w/ Entries   |*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:first-child,
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(2),
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(3),
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(4),
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(5) {
+        background: #41414100;
+        border-radius: 7px;
+        padding-bottom: 8px;
+    }
 
 
-        .site-theme-dark .nav-unscoped.transparent {
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            width: 90%;
-            left: 0;
-            right: 0;
-            background: none;
-            margin: auto;
-            margin-top: 10px;
-        }
-        div[class="nav nav-unscoped transparent"].transparent:hover[data-v-4fbac4e1] {
-            background: none;
-        }
-        .banner[data-v-1cc2919e] {
-            border-radius: 25px;
-        }
-        .banner .shadow[data-v-1cc2919e] {
+    /*entry color*/
+    div.genres:first-child > div.genre:nth-child(1) > div.amount:last-child,
+    div.genres:first-child > div.genre:nth-child(2) > div.amount:last-child,
+    div.genres:first-child > div.genre:nth-child(3) > div.amount:last-child,
+    div.genres:first-child > div.genre:nth-child(4) > div.amount:last-child,
+    div.genres:first-child > div.genre:nth-child(5) > div.amount:last-child {
+        color: rgba(114, 138, 161, .6)!important
+    }
+    /*Nav - Hiding*/
+    .site-theme-dark .nav-unscoped {
+        backdrop-filter: blur(var(--blur));
+        background: rgba(var(--color-main));
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        width: 95%;
+        left: 33px;
+    }
+    /*Genres*/
+    div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child {
+        backdrop-filter: blur(var(--blur));
+        background: rgba(var(--color-main));
+        width: 100%;
+        height: 40px;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        padding: 8px 42%;
+        font-size: 130%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom: 1px solid #4b4b4b1f;
+    }
 
-            background: rgba(var(--color-main));
-            z-index: -2;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-        }
+    /*Genres Text Change*/
+    div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header {
+        text-indent: -9999px;
+        line-height: 0;
+    }
+    div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child:after {
+        text-indent: 0;
+        display: block;
+        line-height: initial;
+        Content: "Genres"
+    }
 
-        div[class="nav-wrap"] {
-            border-bottom-left-radius: 25px;
-            border-bottom-right-radius: 25px;
-        }
-        .nav[data-v-1cc2919e] {
-            background: #fff0;
-        }
+    /*Characters*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > h2.section-header:first-child {
+        backdrop-filter: blur(var(--blur));
+        background: rgba(var(--color-main));
+        width: 100%;
+        height: 40px;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        font-size: 130%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom: 1px solid #4b4b4b1f;
+    }
+    /*Reorder Button*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(1) > h2.section-header:first-child > div.actions,
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(3) > h2.section-header:first-child > div.actions,
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(4) > h2.section-header:first-child > div.actions,
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(5) > h2.section-header:first-child > div.actions {
+        position: relative;
+        bottom: 35px;
+        right: 20px
+    }
+    /*Staff*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > h2.section-header:first-child {
+        backdrop-filter: blur(var(--blur));
+        background: rgba(var(--color-main));
+        width: 100%;
+        height: 40px;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 130%;
+        padding-top: 10px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom: 1px solid #4b4b4b1f;
+    }
 
-        .banner-content[data-v-1cc2919e] {
-            position: relative;
-            width: 100%;
-            margin: auto;
-        }
+    /*Studios*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > h2.section-header:first-child {
+        backdrop-filter: blur(var(--blur));
+        background: rgba(var(--color-main));
+        width: 100%;
+        height: 40px;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 130%;
+        padding-top: 10px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom: 1px solid #4b4b4b1f;
+    }
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap:before {
+        content: "Welcome!";
+        font-family: Arial;
+        background: #0000;
+        width: 100%;
+        height: 40px;
+        top: -20px;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 150%;
+        font-weight: bold;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
 
-        .banner-content .name {
-            font-size: 3.75rem;
-            color: #ffffffad;
-            padding: 65px 50px 0px 0px;
-            display: flex;
-            align-items: center;
-            filter: drop-shadow(0px 0px 3px black);
-        }
-        .avatar[data-v-1cc2919e] {
-            margin-bottom: -7px;
-        }
-        .banner-content > .avatar {
-            margin-top: 70px;
-            animation-iteration-count: infinite;
-            max-height: 269px;
-            max-width: 188px;
-        }
+        border-bottom: 1px solid #4b4b4b1f;
+    }
+    /*Activity Head*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child {
+        backdrop-filter: blur(var(--blur));
+        background: rgba(var(--color-main));
+        width: 100%;
+        height: 40px;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        font-size: 130%;
+        font-weight: bold;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom: 1px solid #4b4b4b1f;
+    }
+    /*Activity Filter*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown {
+        position: relative;
+        margin: auto;
+        left: 44%;
+        top: -15px;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: right;
+    }
+
+    /*Activity Editor*/
+    .markdown-editor {
+        background: rgba(var(--color-main));
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .activity-entry.full-width.activity-anime_list > div.wrap,
+    .activity-entry.full-width.activity-manga_list > div.wrap {
+        background: #00000096;
+        transition: all 0.69s ease-in-out;
+    }
+    /*Activity - Write a Status*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    /*Activity Reply*/
+    .reply[data-v-732ef224] {
+        background: rgba(var(--color-main));
+    }
+
+    /*Anime Embed*/
+    .embed[data-v-13cdaed6] {
+        background: rgba(var(--color-main));
+    }
+
+    /*About - Image Border*/
+    .markdown img {
+        border-radius: 10px
+    }
+
+    .text .donator-badge[data-v-77aecf0c] {
+        background: rgba(var(--color-main));
+    }
+    /*Border Fix*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child,
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > div.favourites-wrap.anime:last-child,
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > div.favourites-wrap.characters:last-child,
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > div.favourites-wrap.staff:last-child,
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > div.favourites-wrap.studios:last-child {
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    /*Anime*/
+    div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child {
+        backdrop-filter: blur(var(--blur));
+        background: rgba(var(--color-main));
+        width: 100%;
+        height: 40px;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 25px;
+        font-size: 130%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom: 1px solid #4b4b4b1f;
+    }
+    /*Anime Reorder*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child > div.actions:before {
+        content: "-";
+        position: absolute;
+        left: -9px
+    }
+
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child > div.actions {
+        position: relative;
+        left: 40%;
+        top: -20px;
+        font-size: 70%;
+        margin-right: auto;
+    }
+    .header-wrap .nav-wrap {
+        backdrop-filter: blur(var(--blur));
+        background: rgba(var(--color-main));
+    }
+    .activity-feed > div > div.wrap > div.list.small > a::before {
+        background: none
+    }
+    .list.small .details[data-v-77aecf0c] {
+        background: none
+    }
+
+    .el-input,
+    .el-textarea {
+        background: none;
+    }
+    .el-input-group__append,
+    .el-input-group__prepend,
+    .el-input__inner,
+    .el-textarea__inner {
+        backdrop-filter: blur(var(--blur));
+        background: rgba(var(--color-main));
+    }
+    body {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        display: block;
+        margin-top: 10px;
+    }
 
 
-        /*Stats*/
-        .list-stats:nth-child(1),
-        .list-stats:nth-child(2) {
-            height: calc(165px - 45px);
-        }
-        .list-stats:nth-child(1):hover,
-        .list-stats:nth-child(2):hover {
-            height: 169px;
-        }
-        .stats-wrap > .content-wrap,
-        .desktop > .content-wrap,
-        .activity-entry > .wrap,
-        .favourites-wrap > .favourite,
-        .scroller > .load-more,
-        .user-page-unscoped .markdown-editor,
-        .el-textarea__inner,
-        .input {
-            transition: all 0.69s ease-in-out;
-        }
-        .stats-wrap[data-v-5c30286e] {
-            grid-column-gap: 7px;
-            grid-row-gap: 5px;
-        }
+    .site-theme-dark .nav-unscoped.transparent {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        width: 90%;
+        left: 0;
+        right: 0;
+        background: none;
+        margin: auto;
+        margin-top: 10px;
+    }
+    div[class="nav nav-unscoped transparent"].transparent:hover[data-v-4fbac4e1] {
+        background: none;
+    }
+    .banner[data-v-1cc2919e] {
+        border-radius: 25px;
+        position: relative;
+        margin: auto;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner .shadow[data-v-1cc2919e] {
 
-        .stat[data-v-815ccddc]:nth-child(1) {
-            grid-row-start: span 2;
-        }
-        .stat:nth-child(1) .value[data-v-815ccddc] {
-            font-size: 5.5rem;
-        }
-        .stat .value[data-v-815ccddc] {
-            font-size: 2rem;
-            padding-bottom: 0px;
-        }
-        .stat .label[data-v-815ccddc] {
-            font-size: 1.2rem;
-        }
+        background: rgba(var(--color-main));
+        z-index: -2;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
 
+    div[class="nav-wrap"] {
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav[data-v-1cc2919e] {
+        background: #fff0;
+    }
 
+    .banner-content[data-v-1cc2919e] {
+        position: relative;
+        width: 100%;
+        margin: auto;
+    }
 
-        .stats-wrap[data-v-815ccddc] {
-            display: grid;
-            grid-auto-flow: row;
-            grid-row-gap: 10px;
-            grid-template-columns: auto auto;
-            padding: 20px 50px;
-            text-align: left;
-            background: rgba(0, 0, 0, .04);
-        }
-        .stat[data-v-815ccddc]:nth-child(1) {
-            grid-row-start: span 2;
-            padding: 0px 60px;
-        }
-        .stat:nth-child(1) .value[data-v-815ccddc] {
-            font-size: 5.5rem;
-        }
-        .stat .value[data-v-815ccddc] {
-            font-size: 2rem;
-            padding-bottom: 0px;
-        }
-        .stat .label[data-v-815ccddc] {
-            font-size: 1.2rem;
-        }
+    .banner-content .name {
+        font-size: 3.75rem;
+        color: #ffffffad;
+        padding: 65px 50px 0px 0px;
+        display: flex;
 
-        .list-stats[data-v-815ccddc]:nth-child(2) .stat[data-v-815ccddc]:nth-child(1) .label,
-        .list-stats[data-v-815ccddc]:nth-child(1) .stat[data-v-815ccddc]:nth-child(1) .label {
-            display: flex;
-            align-items: center;
-            color: rgb(var(--color-text-light));
-            margin-right: 33px;
-            margin-left: 9px;
-        }
+        align-items: center;
+        filter: drop-shadow(0px 0px 3px black);
+    }
+    .avatar[data-v-1cc2919e] {
+        margin-bottom: -7px;
+    }
+    .banner-content > .avatar {
+        margin-top: 70px;
+        animation-iteration-count: infinite;
+        max-height: 269px;
+        max-width: 188px;
+    }
+    /*Stats*/
+    .list-stats:nth-child(1),
+    .list-stats:nth-child(2) {
+        height: calc(165px - 45px);
+    }
+    .list-stats:nth-child(1):hover,
+    .list-stats:nth-child(2):hover {
+        height: 169px;
+    }
+    .stats-wrap > .content-wrap,
+    .desktop > .content-wrap,
+    .activity-entry > .wrap,
+    .favourites-wrap > .favourite,
+    .scroller > .load-more,
+    .user-page-unscoped .markdown-editor,
+    .el-textarea__inner,
+    .input {
+        transition: all 0.49s ease-in-out;
+    }
+    .stats-wrap[data-v-5c30286e] {
+        grid-column-gap: 7px;
+        grid-row-gap: 5px;
+    }
+
+    .stat[data-v-815ccddc]:nth-child(1) {
+        grid-row-start: span 2;
+    }
+    .stat:nth-child(1) .value[data-v-815ccddc] {
+        font-size: 5.5rem;
+    }
+    .stat .value[data-v-815ccddc] {
+        font-size: 2rem;
+        padding-bottom: 0px;
+    }
+    .stat .label[data-v-815ccddc] {
+        font-size: 1.2rem;
+    }
 
 
 
-        /*----------------\
+    .stats-wrap[data-v-815ccddc] {
+        display: grid;
+        grid-auto-flow: row;
+        grid-row-gap: 10px;
+        grid-template-columns: auto auto;
+        padding: 20px 50px;
+        text-align: left;
+        background: rgba(0, 0, 0, .04);
+    }
+    .stat[data-v-815ccddc]:nth-child(1) {
+        grid-row-start: span 2;
+        padding: 0px 60px;
+    }
+    .stat:nth-child(1) .value[data-v-815ccddc] {
+        font-size: 5.5rem;
+    }
+    .stat .value[data-v-815ccddc] {
+        font-size: 2rem;
+        padding-bottom: 0px;
+    }
+    .stat .label[data-v-815ccddc] {
+        font-size: 1.2rem;
+    }
+
+    .list-stats[data-v-815ccddc]:nth-child(2) .stat[data-v-815ccddc]:nth-child(1) .label,
+    .list-stats[data-v-815ccddc]:nth-child(1) .stat[data-v-815ccddc]:nth-child(1) .label {
+        display: flex;
+        align-items: center;
+        color: rgb(var(--color-text-light));
+        margin-right: 33px;
+        margin-left: 9px;
+    }
+
+
+
+    /*----------------\
         |..................|
         | Anime List Page  |
         |..................|
         \-----------------*/
-        /*Watching*/
-        #Hachiman > div.lists:last-child > div.list-wrap:nth-child(2) > h3.section-name:first-child,
-        /*Paused->*/
-        #Hachiman > div.lists:last-child > div.list-wrap:nth-child(10) > h3.section-name:first-child,
-        /*Dropped->*/
-        #Hachiman > div.lists:last-child > div.list-wrap:nth-child(11) > h3.section-name:first-child,
-        /*Planning->*/
-        #Hachiman > div.lists:last-child > div.list-wrap:last-child > h3.section-name:first-child,
-        #Hachiman > div.lists:last-child > div.list-wrap:nth-child(3) > h3.section-name:first-child,
-        #Hachiman > div.lists:last-child > div.list-wrap:nth-child(4) > h3.section-name:first-child,
-        /*Completed OVA*/
-        #Hachiman > div.lists:last-child > div.list-wrap:nth-child(5) > h3.section-name:first-child,
-        /*Completed ONA*/
-        #Hachiman > div.lists:last-child > div.list-wrap:nth-child(6) > h3.section-name:first-child,
-        /*Completed Music*/
-        #Hachiman > div.lists:last-child > div.list-wrap:nth-child(9) > h3.section-name:first-child,
-        #Hachiman > div.lists:last-child > div.list-wrap:nth-child(7) > h3.section-name:first-child,
-        #Hachiman > div.lists:last-child > div.list-wrap:nth-child(8) > h3.section-name:first-child {
-            backdrop-filter: blur(var(--blur));
-            background: rgba(var(--color-main));
-            width: 100%;
-            height: 45px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-size: 150%;
-            font-weight: bold;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom: 1px solid #4b4b4b1f;
-        }
-        /*Background*/
-        .medialist.table .list-section {
-            background: rgba(var(--color-main));
-            border-top-left-radius: 0px;
-            border-top-right-radius: 0px;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-        }
-        /*Filter Background*/
+    /*Watching*/
+    #Hachiman > div.lists:last-child > div.list-wrap:nth-child(2) > h3.section-name:first-child,
+    /*Paused->*/
+    #Hachiman > div.lists:last-child > div.list-wrap:nth-child(10) > h3.section-name:first-child,
+    /*Dropped->*/
+    #Hachiman > div.lists:last-child > div.list-wrap:nth-child(11) > h3.section-name:first-child,
+    /*Planning->*/
+    #Hachiman > div.lists:last-child > div.list-wrap:last-child > h3.section-name:first-child,
+    #Hachiman > div.lists:last-child > div.list-wrap:nth-child(3) > h3.section-name:first-child,
+    #Hachiman > div.lists:last-child > div.list-wrap:nth-child(4) > h3.section-name:first-child,
+    /*Completed OVA*/
+    #Hachiman > div.lists:last-child > div.list-wrap:nth-child(5) > h3.section-name:first-child,
+    /*Completed ONA*/
+    #Hachiman > div.lists:last-child > div.list-wrap:nth-child(6) > h3.section-name:first-child,
+    /*Completed Music*/
+    #Hachiman > div.lists:last-child > div.list-wrap:nth-child(9) > h3.section-name:first-child,
+    #Hachiman > div.lists:last-child > div.list-wrap:nth-child(7) > h3.section-name:first-child,
+    #Hachiman > div.lists:last-child > div.list-wrap:nth-child(8) > h3.section-name:first-child {
+        backdrop-filter: blur(var(--blur));
+        background: rgba(var(--color-main));
+        width: 100%;
+        height: 45px;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 150%;
+        font-weight: bold;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom: 1px solid #4b4b4b1f;
+    }
+    /*Background*/
+    .medialist.table .list-section {
+        background: rgba(var(--color-main));
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    /*Filter Background*/
+    #Hachiman > div.filters-wrap:first-child {
+        background: rgba(var(--color-main));
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+        height: 4.05%;
+    }
+    @media (max-width: 720px) {
         #Hachiman > div.filters-wrap:first-child {
             background: rgba(var(--color-main));
             padding: 10px;
             border-radius: 10px;
             width: 100%;
         }
-        @media (max-width: 720px) {
-            #Hachiman > div.filters-wrap:first-child {
-                background: rgba(var(--color-main));
-                padding: 10px;
-                border-radius: 10px;
-                width: 100%;
-            }
-        }
-        #Hachiman > div.filters-wrap:first-child > div.filters.mobile-nav-hidden:nth-child(2) > div.filter-group:nth-child(3) > div.el-slider:last-child {
-            width: 120px;
-            margin: auto
-        }
-        /*Anime List Theme Switch*/
+    }
+    #Hachiman > div.filters-wrap:first-child > div.filters.mobile-nav-hidden:nth-child(2) > div.filter-group:nth-child(3) > div.el-slider:last-child {
+        width: 120px;
+        margin: auto
+    }
+    /*Anime List Theme Switch*/
+    #Hachiman > div.lists:last-child > div.actions:first-child > div.theme-switch {
+        position: relative;
+
+        justify-content: center;
+        align-items: center;
+        grid-gap: 10px 12px;
+        top: -20px;
+        left: 0;
+        height: 30px;
+        width: 90px;
+
+        background: rgba(var(--color-main));
+    }
+    @media (max-width: 720px) {
         #Hachiman > div.lists:last-child > div.actions:first-child > div.theme-switch {
-            position: relative;
-            top: -13px;
+            top: -150px;
             height: 30px;
             width: 90px;
             background: rgba(var(--color-main));
         }
-        @media (max-width: 720px) {
-            #Hachiman > div.lists:last-child > div.actions:first-child > div.theme-switch {
-                top: -150px;
-                height: 30px;
-                width: 90px;
-                background: rgba(var(--color-main));
-            }
-        }
+    }
 
-        /*Anime List Style 3*/
+    /*Anime List Style 3*/
+    #Hachiman > div.lists > div.list-wrap > div.list-section {
+        background: rgba(var(--color-main));
+        padding: 15px 70px;
+        width: 100%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    @media (max-width: 720px) {
         #Hachiman > div.lists > div.list-wrap > div.list-section {
             background: rgba(var(--color-main));
-            padding: 15px 70px;
+            padding: 0px 0px;
             width: 100%;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
         }
-        @media (max-width: 720px) {
-            #Hachiman > div.lists > div.list-wrap > div.list-section {
-                background: rgba(var(--color-main));
-                padding: 0px 0px;
-                width: 100%;
-                border-bottom-left-radius: 20px;
-                border-bottom-right-radius: 20px;
-            }
-        }
+    }
 
-        /*----------------\
+    /*----------------\
         |..................|
         | Favourites Page  |
         |..................|
         \-----------------*/
-        /*Anime*/
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:first-child > h2.section-header:first-child {
-            background: rgba(var(--color-main));
-            width: 100%;
-            height: 45px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-top: 40px;
-            font-size: 150%;
-            font-weight: bold;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom: 1px solid #4b4b4b1f;
-        }
-        /*Characters*/
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(3) > h2.section-header:first-child {
-            background: rgba(var(--color-main));
-            width: 100%;
-            height: 45px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-top: 40px;
-            font-size: 150%;
-            font-weight: bold;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
+    /*Anime*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:first-child > h2.section-header:first-child {
+        background: rgba(var(--color-main));
+        width: 100%;
+        height: 45px;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        font-size: 150%;
+        font-weight: bold;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom: 1px solid #4b4b4b1f;
+    }
+    /*Characters*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(3) > h2.section-header:first-child {
+        background: rgba(var(--color-main));
+        width: 100%;
+        height: 45px;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        font-size: 150%;
+        font-weight: bold;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
 
-            border-bottom: 1px solid #4b4b4b1f;
-        }
-        /*Staff*/
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(4) > h2.section-header:first-child {
-            background: rgba(var(--color-main));
-            width: 100%;
-            height: 45px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-top: 40px;
-            font-size: 150%;
-            font-weight: bold;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom: 1px solid #4b4b4b1f;
-        }
-        /*Studio*/
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:last-child > h2.section-header:first-child {
-            background: rgba(var(--color-main));
-            width: 100%;
-            height: 45px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-top: 40px;
-            font-size: 150%;
-            font-weight: bold;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom: 1px solid #4b4b4b1f;
-        }
+        border-bottom: 1px solid #4b4b4b1f;
+    }
+    /*Staff*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(4) > h2.section-header:first-child {
+        background: rgba(var(--color-main));
+        width: 100%;
+        height: 45px;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        font-size: 150%;
+        font-weight: bold;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom: 1px solid #4b4b4b1f;
+    }
+    /*Studio*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:last-child > h2.section-header:first-child {
+        background: rgba(var(--color-main));
+        width: 100%;
+        height: 45px;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        font-size: 150%;
+        font-weight: bold;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom: 1px solid #4b4b4b1f;
+    }
 
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child {
-            position: relative;
-            top: 25px;
-        }
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child {
+        position: relative;
+        top: 25px;
+    }
 
 
-        /*----------------\
+    /*----------------\
        |..................|
        |    Stats Page    |
        |..................|
        \-----------------*/
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.stats > div.filters:first-child/*Filter Background*/
-        {
-            background: rgba(var(--color-main));
-            padding: 10px;
-            border-radius: 10px;
-            width: 100%;
-            margin: auto;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: left;
-            align-items: left;
-        }
-        /*Background*/
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.stats {
-            background: rgba(var(--color-main));
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-            padding: 20px;
-        }
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.stats > div.filters:first-child/*Filter Background*/
+    {
+        background: rgba(var(--color-main));
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+        margin: top;
+        height: 18%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+    }
+    /*Background*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.stats {
+        background: rgba(var(--color-main));
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 20px;
+    }
 
 
 
-        /*----------------\
+    /*----------------\
        |..................|
        |   Social Page    |
        |..................|
        \-----------------*/
-        /*Filter Background*/
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.filters:first-child {
-            background: rgba(var(--color-main));
-            padding: 10px;
-            border-radius: 10px;
-            width: 100%;
-            margin: auto;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: left;
-            align-items: left;
-        }
-        /*Background*/
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
-            background: rgba(var(--color-main));
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-            padding: 20px
-        }
+    /*Filter Background*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.filters:first-child {
+        background: rgba(var(--color-main));
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+    }
+    /*Background*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.user-follow:nth-child(2),
+    div.hohSocialContent.user-follow:last-child {
+        background: rgba(var(--color-main));
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 20px
+    }
 
-        /*Social - Theme Switch*/
-        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.filters:first-child > div.theme-switch.hohThemeSwitch:last-child {
+    /*Social - Theme Switch*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.filters:first-child > div.theme-switch.hohThemeSwitch:last-child {
+        position: relative;
+        top: -13px;
+        height: 30px;
+        width: 90px;
+        background: rgba(var(--color-main));
+    }
+    /*Follow List Name*/
+    .follow-card .name,
+    .follow-card.unfollow,
+    div.hohSocialContent.user-follow:last-child > div.follow-card > div.avatar > a.name {
+        opacity: 100;
+        color: #fff!important;
+        position: absolute;
+        height: auto;
+        top: 80px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px
+    }
+    /*Follow List Gaps*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.user-follow:nth-child(2) > div.wrap:first-child,
+    div.hohSocialContent.user-follow:last-child {
+        grid-gap: 60px 10px;
+    }
+    /*Follow List Avatar Border*/
+    .follow-card {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    /*PC - SMALL*/
+    /*PC - WIDE*/
+    @media (max-width: 1580px)/*Favorites Fix*/
+    {
+        .favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],
+        .favourites.preview .favourites-wrap > div[data-v-ddf96a3c] {
+            margin-right: auto 10px;
+        }
+    }
+
+
+    /*Favorites Fit Fix*/
+    @media (max-width: 1192px)/*Favorites Fix*/
+    {
+        .favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],
+        .favourites.preview .favourites-wrap > div[data-v-ddf96a3c] {
+            margin-right: 3%;
             position: relative;
-            top: -13px;
-            height: 30px;
-            width: 90px;
-            background: rgba(var(--color-main));
+            left: 6px
+        }
+    }
+    @media (max-width: 1142px)/*Favorites Fix*/
+    {
+        .favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],
+        .favourites.preview .favourites-wrap > div[data-v-ddf96a3c] {
+            margin-right: 1.4%;
+            position: relative;
+            left: -6px;
+        }
+    }
+    @media (max-width: 1080px)/*Favorites Fix*/
+    {
+        .favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],
+        .favourites.preview .favourites-wrap > div[data-v-ddf96a3c] {
+            margin-right: 29px;
+            position: relative;
+            left: 8px
+        }
+    }
+
+
+
+
+
+    /*Mobile*/
+    @media (max-width: 760px) {
+        /*Mobile Things*/
+        /*avatar and name*/
+        .avatar[data-v-1cc2919e] {
+            margin-bottom: -0px;
+        }
+        .banner-content > .avatar {
+            margin-top: 5px;
+            animation-iteration-count: infinite;
+            max-height: 219px;
+            max-width: 158px;
+        }
+        .banner-content .name {
+            font-size: 2.7rem;
         }
 
-        /*PC - SMALL*/
-        @media (max-width: 1080px)/*Favorites Fix*/
-        {
-            .favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],
-            .favourites.preview .favourites-wrap > div[data-v-ddf96a3c] {
-                margin-right: 30px;
-                position: relative;
-                left: 6px
-            }
+
+        /*stats*/
+        .list-stats:nth-child(1):hover,
+        .list-stats:nth-child(2):hover {
+            height: 160px;
         }
-
-
-
-        /*PC - WIDE*/
-        @media (max-width: 1580px)/*Favorites Fix*/
-        {
-            .favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],
-            .favourites.preview .favourites-wrap > div[data-v-ddf96a3c] {
-                margin-right: auto 10px;
-            }
+        .stats-wrap[data-v-815ccddc] {
+            padding: 10px 30px;
         }
-
-
-
-        /*Mobile*/
-        @media (max-width: 760px) {
-            /*Mobile Things*/
-            /*avatar and name*/
-            .avatar[data-v-1cc2919e] {
-                margin-bottom: -0px;
-            }
-            .banner-content > .avatar {
-                margin-top: 5px;
-                animation-iteration-count: infinite;
-                max-height: 219px;
-                max-width: 158px;
-            }
-            .banner-content .name {
-                font-size: 2.7rem;
-            }
-
-
-            /*stats*/
-            .list-stats:nth-child(1):hover,
-            .list-stats:nth-child(2):hover {
-                height: 160px;
-            }
-            .stats-wrap[data-v-815ccddc] {
-                padding: 10px 30px;
-            }
-            .stat[data-v-815ccddc]:nth-child(1) {
-                padding: 0px 30px;
-            }
+        .stat[data-v-815ccddc]:nth-child(1) {
+            padding: 0px 30px;
         }
+    }
 
-        /*----------------\
+
+    /*----------------\
         |..................|
         |    Footer        |
         |..................|
         \-----------------*/
-        #app > div.wrap:nth-child(4) > div.footer {
-            background: rgba(var(--color-main));
-            backdrop-filter: blur(var(--blur));
-        }
+    #app > div.wrap:nth-child(4) > div.footer {
+        background: rgba(var(--color-main));
+        backdrop-filter: blur(var(--blur));
+    }
