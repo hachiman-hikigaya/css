@@ -1,4 +1,4 @@
-/*===============================================
+  /*===============================================
     Import Fonts and Animations
 =================================================*/
     @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
@@ -1747,6 +1747,15 @@
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
+    
+    /*Follow List - List View*/
+        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped.listView > div.user-follow:nth-child(2) > div.wrap:first-child div.avatar > a.name{
+        height: auto;
+        top:15px;   border-top-left-radius: 0px;
+        border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 10px;}
+
     /*PC - SMALL*/
     /*PC - WIDE*/
     @media (max-width: 1580px)/*Favorites Fix*/
