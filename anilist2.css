@@ -105,8 +105,10 @@
              margin-top: 30px;
          }
          /*All Content Width*/
-         .content.container {
-             min-width: 80%;
+         .content.container,
+         .banner,
+         .header-wrap .nav-wrap {
+             min-width: 320px;
          }
          /*header
     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.header-wrap:first-child {
@@ -155,9 +157,7 @@
              border-bottom: 3px solid rgb(var(--color-gray-400));
              color: rgb(var(--hachi-dirty-white));
          }
-         .header-wrap[data-v-1cc2919e] {
-             filter: drop-shadow(5px 5px 0.4rem #00000045);
-         }
+
          /*===============================================
     Genre Overview
 =================================================*/
@@ -533,9 +533,6 @@
              }
          }
 
-         .wrap > div.list.small > a {
-             box-shadow: 0px 0 10px 20px rgb(0 0 0 / 10%);
-         }
 
 
          /*===============================================
@@ -903,9 +900,8 @@
          .header-wrap > div.banner > div.container > div > img {
              /*transition: 0.2s;*/
              /*Avatar and Name Animation*/
-             filter: drop-shadow(-5px 3px 0.25rem #0000003b);
              animation: fadeIn 2.5s;
-             animation-iteration-count: 1
+             animation-iteration-count: 1;
          }
 
          .button.liked > svg {
@@ -961,8 +957,8 @@
          @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
          :root {
-             --blur: 2px;
-             --color-main: 11, 14, 24, .8;
+             --blur: 0;
+             --color-main: 11, 14, 24, .9;
          }
 
          /*----------------\
@@ -1081,8 +1077,8 @@
              overflow: hidden;
              padding: 8px 42%;
              font-size: 130%;
-             border-top-left-radius: 25px;
-             border-top-right-radius: 25px;
+             border-top-left-radius: 20px;
+             border-top-right-radius: 20px;
              border-bottom: 1px solid #4b4b4b1f;
          }
 
@@ -1189,9 +1185,9 @@
              font-weight: bold;
              border-top-left-radius: 25px;
              border-top-right-radius: 25px;
-
              border-bottom: 1px solid #4b4b4b1f;
          }
+
          /*Activity Head*/
          #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child {
              backdrop-filter: blur(var(--blur));
@@ -1208,8 +1204,8 @@
              padding-top: 15px;
              font-size: 130%;
              font-weight: bold;
-             border-top-left-radius: 6px;
-             border-top-right-radius: 6px;
+             border-top-left-radius: 5px;
+             border-top-right-radius: 5px;
              border-bottom: 1px solid #4b4b4b1f;
          }
          /*Activity Filter*/
@@ -1230,8 +1226,8 @@
              background: rgba(var(--color-main));
              border-top-left-radius: 0px;
              border-top-right-radius: 0px;
-             border-bottom-left-radius: 10px;
-             border-bottom-right-radius: 10px;
+             border-bottom-left-radius: 5px;
+             border-bottom-right-radius: 5px;
          }
          .activity-entry.full-width.activity-anime_list > div.wrap,
          .activity-entry.full-width.activity-manga_list > div.wrap {
@@ -1242,8 +1238,8 @@
          #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner {
              border-top-left-radius: 0px;
              border-top-right-radius: 0px;
-             border-bottom-left-radius: 10px;
-             border-bottom-right-radius: 10px;
+             border-bottom-left-radius: 5px;
+             border-bottom-right-radius: 5px;
          }
          /*Activity Reply*/
          .reply[data-v-732ef224] {
@@ -1426,7 +1422,6 @@
              display: flex;
 
              align-items: center;
-             filter: drop-shadow(0px 0px 3px black);
          }
          .avatar[data-v-1cc2919e] {
              margin-bottom: -7px;
@@ -1808,11 +1803,15 @@
          #app > div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child {
              background: rgba(var(--color-main));
              padding: 20px;
-             border-top-left-radius: 25px;
-             border-top-right-radius: 25px;
+             border-top-left-radius: 10px;
+             border-top-right-radius: 10px;
              border-bottom-left-radius: 10px;
              border-bottom-right-radius: 10px;
-             height: 500px;
+             height: 400px;
+         }
+         /*Notifications filter Notification*/
+         #app > div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child > p:nth-child(5) > p:last-child {
+             display: none;
          }
 
          /*----------------\
@@ -2120,7 +2119,22 @@
              }
              /*notifications filter*/
              #app > div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child {
-                 height: 290px;
+                 height: 200px;
+                 margin-bottom: 20px;
+             }
+             /*Anime List Remove Type and score*/
+             #Hachiman > div.lists:last-child > div.list-wrap > div.list-section:last-child > div.list-head.row:first-child > div.format:last-child,
+             #Hachiman > div.lists:last-child > div.list-wrap > div.list-section:last-child > div.list-head.row:first-child > div.score {
+                 display: none;
+             }
+         }
+         .progress[data-v-5d42c114] {
+             background-color: #2b2b2b;
+         }
+         /*Anime List Remove Progress*/
+         @media (max-width: 350px) {
+             #Hachiman > div.lists:last-child > div.list-wrap > div.list-section:last-child > div.list-head.row:first-child > div.progress {
+                 display: none;
              }
          }
 
@@ -2140,7 +2154,7 @@
              background: rgba(var(--color-main));
          }
 
-         /*Shadow!!!*/
+         /*Shadow!!!
          .overview[data-v-5c30286e] .content-wrap,
          .wrap[data-v-77aecf0c],
          .favourites-wrap[data-v-ddf96a3c],
@@ -2160,6 +2174,16 @@
          #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > h2.section-header:first-child,
          div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child {
              filter: drop-shadow(2px 2px 0.3rem #00000075);
+         }*/
+         /*.banner-content .name { filter: drop-shadow(0px 0px 3px black);}
+         header-wrap[data-v-1cc2919e] {filter: drop-shadow(5px 5px 0.4rem #00000045);} 
+         .wrap > div.list.small > a {box-shadow: 0px 0 10px 20px rgb(0 0 0 / 10%);
+         }*/
+         /*Name and avatar Shadow*/
+         .banner-content h1.name,
+         .header-wrap > div.banner > div.container > div > img {
+
+             filter: drop-shadow(-2px 1px 0.25rem #0000003b);
          }
 
          /*----------------\
