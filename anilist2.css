@@ -1797,13 +1797,15 @@
         |Notifications Page|
         |..................|
         \-----------------*/
-         .hohNotification {
+         .hohNotification,
+         .notification[data-v-6c4dd492] {
              background: rgba(var(--color-main));
              padding: 0px;
              border-top-left-radius: 10px;
              border-top-right-radius: 10px;
              border-bottom-left-radius: 10px;
              border-bottom-right-radius: 10px;
+             height: auto;
          }
          /*Notifications filter bg*/
          #app > div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child {
@@ -1813,14 +1815,15 @@
              border-top-right-radius: 10px;
              border-bottom-left-radius: 10px;
              border-bottom-right-radius: 10px;
-             height: 420px;
-         }
-         /*Notifications filter Notification and mark*/
-         #app > div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child > div.reset-btn:nth-child(3) {
-             display: none;
+             height: 440px;
          }
 
-         .filter-group[data-v-0a867854] {}
+
+         /*Notifications filter mark*/
+         #app > div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child > div.reset-btn:nth-child(3) {
+             display: none;
+             background: rgba(var(--color-main));
+         }
 
          /*----------------\
         |..................|
@@ -2127,16 +2130,15 @@
              }
              /*notifications filter*/
              #app > div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child {
-                 height: 250px;
+                 height: auto;
                  margin-bottom: 20px;
              }
              .filter-toggle.active[data-v-0a867854][data-v-0a867854] {
                  color: rgba(var(--hachi-gray))
              }
-             .filter-group {
-                 max-height: 220px;
-                 display: flex
-             }
+
+
+
              /*Anime List Remove Type and score*/
              #Hachiman > div.lists:last-child > div.list-wrap > div.list-section:last-child > div.list-head.row:first-child > div.format:last-child,
              #Hachiman > div.lists:last-child > div.list-wrap > div.list-section:last-child > div.list-head.row:first-child > div.score {
@@ -2153,7 +2155,7 @@
              }
          }
 
-         /*----------------\
+      /*----------------\
      |..................|
      | Settings page    |
      |..................|
