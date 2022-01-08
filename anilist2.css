@@ -946,6 +946,12 @@
              transition: 0.2s
          }
 
+         .mobile-nav[data-v-8aeb5e9a] > .menu.visible[data-v-8aeb5e9a],
+         .hamburger[data-v-8aeb5e9a],
+         .menu[data-v-8aeb5e9a] {
+             background: rgb(var(--color-main));
+         }
+
          .medialist.table .entry:hover .cover .image {
              animation: fadeIn;
              animation-duration: 1.0s;
@@ -976,7 +982,7 @@
              background: rgba(19, 28, 45, .69)
          }
          .dropdown[data-v-04b245e6] {
-             background: rgba(19, 28, 45, .81);
+             background: rgba(var(--color-main));
              margin-top: 6px;
          }
          .dropdown[data-v-04b245e6]:before {
@@ -2186,7 +2192,7 @@
              filter: drop-shadow(-2px 1px 0.25rem #0000003b);
          }
 
-         /*----------------\
+      /*----------------\
      |..................|
      |    Footer        |
      |..................|
