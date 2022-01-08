@@ -111,16 +111,6 @@
     .page-content {
         min-width: 320px;
     }
-    /*header
-    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.header-wrap:first-child {
-        bottom: -10px;
-        position: relative;
-    }
-    /*header nav
-    #nav {
-        position: relative;
-        margin-bottom: -80px;
-    }
     /*nav search*/
     #nav > div.quick-search.visible:first-child {
         background: rgba(var(--color-main));
@@ -167,14 +157,6 @@
         border-top-right-radius: 5px;
         border-bottom: 1px solid #4b4b4b1f;
     }
-/*===============================================
-    Banner Shadow
-=================================================*/
-/* -Disabled-
-    
-    .banner .shadow {
-        display: none;
-    }*/
 /*===============================================
     Navigation
 =================================================*/
@@ -335,13 +317,6 @@ div[class="count circle"],
     margin-bottom: 0;
 }
 
-/*Activity text gaps
-  .wrap > div.text > div.activity-markdown  h1{position:relative;margin-top:-10px!important}
-      .wrap > div.text > div.activity-markdown  h2{position:relative;margin-top:-10px!important}
-      .wrap > div.text > div.activity-markdown  h3{position:relative;margin-top:-10px!important}
-      .wrap > div.text > div.activity-markdown  h4{position:relative;margin-top:-10px!important}
-      .wrap > div.text > div.activity-markdown  h5{position:relative;margin-top:-10px!important}
-      .wrap > div.text > div.activity-markdown  h6{position:relative;margin-top:-10px!important}*/
 /*===============================================
     Activity Like & Comment Button
 =================================================*/
@@ -477,15 +452,6 @@ div.activity-entry.activity-manga_list > div.wrap:first-child > div.time:nth-chi
 }
 
 /*===============================================
-    Activity Top Markdown
-=================================================*/
-/*Disabled
-    
-    .wrap > div.text > div.activity-markdown {
-        margin-top: 10px;
-        border-top: 1px solid rgba(var(--hachi-gray), 0.2);
-    }*/
-/*===============================================
     Activity Bottom Markdown
 =================================================*/
 .wrap > div.text > div.activity-markdown {
@@ -574,8 +540,6 @@ div.activity-entry.activity-manga_list > div.wrap:first-child > div.time:nth-chi
     }
 }
 
-
-
 /*===============================================
     Activity - Fix Title Overflow
 =================================================*/
@@ -637,10 +601,6 @@ a[href="/user/Hachiman/"]:not(.avatar):not(.user):not(.link):not(.primary-link) 
 =================================================*/
 a[class="avatar"],
 a[class="avatar router-link-exact-active router-link-active"] {
-    /*
-            border: 1px solid #7b7b7c!important;background:#405d9e0d;backdrop-filter:blur(5px);
-        -webkit-border-radius: 20px!important;
-     */
     transform: scale(1.25);
     border-bottom-left-radius: 4px!important;
     border-bottom-right-radius: 4px!important;
@@ -786,12 +746,6 @@ body .overview .favourite.studio,
     color: rgb(var(--color-blue)) !important;
 }
 
-/* Previously Known As*/
-/*.prev-name-container {
-        content: url(https://files.catbox.moe/1wx9ha.png);
-        height: 100px;
-        margin: auto
-    }*/
 /*Remove Unsubscribe Text*/
 .has-label:hover.has-label[data-v-77aecf0c]::before {
     content: none
@@ -929,14 +883,6 @@ div[class="user-follow"] {
     animation: fadeIn;
     animation-duration: .5s;
 }
-/* Hover Zoom Avatar  and Name - Disabled
-    .header-wrap .actions .nav-btn:hover,
-    .banner-content h1.name:hover,
-    .header-wrap > div.banner > div.container > div > img:hover {
-        transform: scale(1.05);
-        transition: 0.2s;
-    }
-*/
 .banner-content h1.name,
 .header-wrap > div.banner > div.container > div > img {
     /*transition: 0.2s;*/
@@ -1099,8 +1045,6 @@ div.genres:first-child > div.genre:nth-child(5) > div.name:first-child {
     border-radius: 7px;
     padding-bottom: 8px;
 }
-
-
 /*entry color*/
 div.genres:first-child > div.genre:nth-child(1) > div.amount:last-child,
 div.genres:first-child > div.genre:nth-child(2) > div.amount:last-child,
@@ -1527,8 +1471,6 @@ div[class="nav-wrap"] {
     font-size: 1.2rem;
 }
 
-
-
 .stats-wrap[data-v-815ccddc] {
     display: grid;
     grid-auto-flow: row;
@@ -1732,6 +1674,7 @@ div[class="nav-wrap"] {
     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.stats > div.filters:first-child {
         height: 13.7%!important
     }
+    .list-preview[data-v-6aea970d] .media-preview-card .content, .list-preview[data-v-6aea970d] .media-preview-card .info{background:rgba(var(--color-main))}
 }
 .list-preview[data-v-6aea970d] {
     background: rgba(var(--color-main));
@@ -1799,7 +1742,6 @@ div[class="nav-wrap"] {
     font-weight: bold;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
     border-bottom: 1px solid #4b4b4b1f;
 }
 
@@ -2190,8 +2132,6 @@ div.hohSocialContent.user-follow:last-child {
         color: rgba(var(--hachi-gray))
     }
 
-
-
     /*Anime List Remove Type and score*/
     #Hachiman > div.lists:last-child > div.list-wrap > div.list-section:last-child > div.list-head.row:first-child > div.format:last-child,
     #Hachiman > div.lists:last-child > div.list-wrap > div.list-section:last-child > div.list-head.row:first-child > div.score {
@@ -2223,32 +2163,6 @@ div.hohSocialContent.user-follow:last-child {
 #app > div.page-content:nth-child(3) > div.settings.container > div.content:last-child {
     background: rgba(var(--color-main));
 }
-
-/*Shadow!!!
-         .overview[data-v-5c30286e] .content-wrap,
-         .wrap[data-v-77aecf0c],
-         .favourites-wrap[data-v-ddf96a3c],
-         .load-more[data-v-6f203cf2],
-         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child,
-         .markdown-editor,
-         .reply[data-v-732ef224],
-         .el-input,
-         .el-textarea,
-         .medialist.table .list-section,
-         #Hachiman > div.filters-wrap:first-child,
-         #Hachiman > div.lists > div.list-wrap > div.list-section,
-         .list-preview[data-v-6aea970d],
-         .forum-wrap,
-         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > h2.section-header:first-child,
-         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > h2.section-header:first-child,
-         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > h2.section-header:first-child,
-         div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child {
-             filter: drop-shadow(2px 2px 0.3rem #00000075);
-         }*/
-/*.banner-content .name { filter: drop-shadow(0px 0px 3px black);}
-         header-wrap[data-v-1cc2919e] {filter: drop-shadow(5px 5px 0.4rem #00000045);} 
-         .wrap > div.list.small > a {box-shadow: 0px 0 10px 20px rgb(0 0 0 / 10%);
-         }*/
 /*Name and avatar Shadow*/
 .banner-content h1.name,
 .header-wrap > div.banner > div.container > div > img {
