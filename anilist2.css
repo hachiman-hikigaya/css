@@ -1813,12 +1813,14 @@
              border-top-right-radius: 10px;
              border-bottom-left-radius: 10px;
              border-bottom-right-radius: 10px;
-             height: 400px;
+             height: 420px;
          }
-         /*Notifications filter Notification*/
-         #app > div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child > p:nth-child(5) > p:last-child {
+         /*Notifications filter Notification and mark*/
+         #app > div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child > div.reset-btn:nth-child(3) {
              display: none;
          }
+
+         .filter-group[data-v-0a867854] {}
 
          /*----------------\
         |..................|
@@ -2125,8 +2127,15 @@
              }
              /*notifications filter*/
              #app > div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child {
-                 height: 200px;
+                 height: 250px;
                  margin-bottom: 20px;
+             }
+             .filter-toggle.active[data-v-0a867854][data-v-0a867854] {
+                 color: rgba(var(--hachi-gray))
+             }
+             .filter-group {
+                 max-height: 220px;
+                 display: flex
              }
              /*Anime List Remove Type and score*/
              #Hachiman > div.lists:last-child > div.list-wrap > div.list-section:last-child > div.list-head.row:first-child > div.format:last-child,
@@ -2192,7 +2201,7 @@
              filter: drop-shadow(-2px 1px 0.25rem #0000003b);
          }
 
-      /*----------------\
+         /*----------------\
      |..................|
      |    Footer        |
      |..................|
