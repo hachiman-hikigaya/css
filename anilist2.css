@@ -106,11 +106,12 @@
     }
     /*All Content Width*/
     .content.container,
-    .banner,
     .header-wrap .nav-wrap,
     .page-content {
         min-width: 320px;
     }
+
+
     /*header
     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.header-wrap:first-child {
         bottom: -10px;
@@ -1487,19 +1488,16 @@
     .banner-content[data-v-1cc2919e] {
         position: relative;
         width: 100%;
-        margin: auto;
+        margin-top: auto;
     }
 
     .banner-content .name {
         font-size: 3.75rem;
         color: #ffffffad;
-        padding: 65px 50px 0px 0px;
+        padding: 65px 50px 0px 10px;
         display: flex;
 
         align-items: center;
-    }
-    .avatar[data-v-1cc2919e] {
-        margin-bottom: -7px;
     }
     .banner-content > .avatar {
         margin-top: 70px;
@@ -1778,6 +1776,18 @@
         border-bottom-right-radius: 10px;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
+    }
+
+    /*inprogress mobile*/
+    #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap > div.list-preview:last-child {
+        padding: 20px;
+    }
+    /*inprogress mobile zoom button*/
+    @media (max-width: 1040px) {
+        #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap > div.section-header:first-child > svg.size-toggle.svg-inline--fa.fa-expand.fa-w-14.fa-sm:last-child,
+        #app > div.page-content:nth-child(3) > div.container > div.home.full-width:first-child > div.list-previews > div.list-preview-wrap > div.section-header:first-child > svg.size-toggle.svg-inline--fa.fa-compress.fa-w-14.fa-sm:last-child {
+            display: none
+        }
     }
     /*inprogress - Zoom Button*/
     #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap > div.section-header:first-child > svg.size-toggle.svg-inline--fa.fa-expand.fa-w-14.fa-sm:last-child,
@@ -2303,6 +2313,73 @@
 
         filter: drop-shadow(-2px 1px 0.25rem #0000003b);
     }
+    /*Follows you / Following and donator badge fix*/
+    .donator-badge[data-v-1cc2919e] {
+        left: 100%;
+        margin-left: -80px;
+        max-width: 100px;
+        top: -100px;
+        position: absolute;
+        display: none;
+    }
+
+    div.details > div.donator-badge {
+        display: none
+    }
+
+    .follower-badge[data-v-1cc2919e] {
+        top: 125px!important;
+        left: 100%;
+        margin-left: -83px;
+        width: 80px;
+        position: absolute;
+    }
+    @media (max-width: 1040px) {
+        .donator-badge[data-v-1cc2919e] {
+            left: 100%;
+            margin-left: -80px;
+            max-width: 100px;
+            top: -100px;
+            position: absolute;
+            display: none;
+        }
+        .follower-badge[data-v-1cc2919e] {
+            top: 125px!important;
+            left: 100%;
+            margin-left: -83px;
+            width: 80px;
+            position: absolute;
+        }
+
+        .nav-btn:nth-child(1)[data-v-1cc2919e] {
+            margin: auto;
+            left: 100%;
+            margin-left: -75px;
+        }
+    }
+
+    @media (max-width: 760px) {
+        .donator-badge[data-v-1cc2919e] {
+            display: none;
+        }
+        .follower-badge[data-v-1cc2919e] {
+            top: -40px!important;
+            left: 100%;
+            margin-left: -75px;
+            width: 80px
+        }
+        .nav-btn:nth-child(1)[data-v-1cc2919e] {
+            top: -80px;
+            position: absolute;
+            left: 100%;
+            margin-left: -70px;
+        }
+        .header-wrap[data-v-1cc2919e] {
+            min-width: 320px;
+        }
+    }
+
+
 
     /*----------------\
      |..................|
