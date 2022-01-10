@@ -113,7 +113,7 @@
     }
     @media (min-width: 1920px) {
         .content.container {
-            min-width: 79%;
+            min-width: 80%;
         }
     }
 
@@ -173,6 +173,36 @@
         border-top-right-radius: 10px;
         border-bottom: 1px solid #4b4b4b1f;
     }
+
+    /*Anime - Manga - Forum Page*/
+    .header[data-v-4df465ff],
+    #app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-manga > div.content.container:last-child,
+    #app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-anime > div.content.container:last-child,
+    #app > div.page-content:nth-child(3) > div.forum-feed.container,
+    #app > div.page-content:nth-child(3) > div.forum-feed.container > div.filters.mobile-nav-hidden:nth-child(2),
+    #app > div.page-content:nth-child(3) > div.forum-thread.forum-thread-unscoped.container > div.body,
+    .comment-wrap[data-v-11064179],
+    .child.even[data-v-11064179] {
+        background: rgba(var(--color-main))
+    }
+    .header[data-v-4df465ff] {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px
+    }
+    #app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-anime > div.content.container:last-child,
+    #app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-manga > div.content.container:last-child,
+    #app > div.page-content:nth-child(3) > div.forum-feed.container {
+        border-radius: 15px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    /*Forum Page Filter*/
+    #app > div.page-content:nth-child(3) > div.forum-feed.container > div.filters.mobile-nav-hidden:nth-child(2) {
+        padding: 20px;
+        border-radius: 15px;
+        margin-bottom: auto
+    }
+
     /*===============================================
     Banner Shadow
 =================================================*/
@@ -1069,9 +1099,10 @@
 
     .overview[data-v-5c30286e] .content-wrap,
     .wrap[data-v-77aecf0c],
-    .favourites-wrap[data-v-ddf96a3c] {
+    .favourites-wrap[data-v-ddf96a3c],
+    .overview .favourites > .favourites-wrap {
         backdrop-filter: blur(var(--blur));
-        background: rgba(var(--color-main));
+        background: rgba(var(--color-main))!important;
     }
     .wrap[data-v-77aecf0c] {
         border-radius: 5px
@@ -1124,7 +1155,9 @@
         color: rgba(114, 138, 161, .6)!important
     }
     /*Nav - Hiding*/
-    .site-theme-dark .nav-unscoped {
+    .site-theme-dark .nav-unscoped,
+    div[class="nav nav-unscoped"],
+    [class="nav nav-unscoped hide"] {
         /* backdrop-filter: blur(var(--blur));*/
         background: rgba(var(--color-main));
         border-bottom-left-radius: 15px;
@@ -1194,8 +1227,8 @@
     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(3) > h2.section-header:first-child > div.actions,
     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(4) > h2.section-header:first-child > div.actions,
     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(5) > h2.section-header:first-child > div.actions {
-        position: relative;
-        bottom: 35px;
+        position: absolute;
+        bottom: 7px;
         right: 20px
     }
     /*Staff*/
@@ -1243,7 +1276,8 @@
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
-    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap:before {
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap:before,
+    #app > div.page-content > div > div.content.container > div > div:nth-child(1) > div.about > div:before {
         content: "Welcome!";
         letter-spacing: 0.05em;
         background: #0000;
@@ -1290,7 +1324,8 @@
         border-bottom: 1px solid #4b4b4b1f;
     }
     /*Activity Filter*/
-    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown {
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown,
+    #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > h2 > div {
         position: relative;
         margin: auto;
         left: 44%;
@@ -1310,6 +1345,13 @@
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
+    #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-edit > div.input.el-textarea > textarea {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
     .activity-entry.full-width.activity-anime_list > div.wrap,
     .activity-entry.full-width.activity-manga_list > div.wrap {
         background: #00000096;
@@ -1382,6 +1424,29 @@
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
     }
+    .overview[data-v-5c30286e] .section-header {
+        backdrop-filter: blur(var(--blur));
+        background: rgba(var(--color-main));
+        width: 100%;
+        height: 40px;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+        font-size: 130%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom: 1px solid #4b4b4b1f;
+    }
+
+    #app > div.page-content > div > div.content.container > div > div:nth-child(1) > div:nth-child(3) > div {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px
+    }
 
     /*Anime*/
     div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child {
@@ -1396,7 +1461,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 25px;
+        padding-top: 5px;
         font-size: 130%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -1404,9 +1469,9 @@
     }
     /*Anime Reorder*/
     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child > div.actions {
-        position: relative;
-        left: 40%;
-        top: -20px;
+        position: absolute;
+        left: 85%;
+        top: 15px;
         font-size: 70%;
         margin-right: auto;
     }
@@ -1445,7 +1510,14 @@
     }
 
     /*Main Head Navbar*/
-    .site-theme-dark .nav-unscoped.transparent {
+    .nav[data-v-4fbac4e1],
+    .solid[data-v-4fbac4e1],
+    .transparent[data-v-4fbac4e1]:hover {
+        background: rgba(var(--color-main));
+        width: 95%;
+    }
+    .site-theme-dark .nav-unscoped.transparent,
+    div[class="nav nav-unscoped transparent"] {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         width: 90%;
@@ -1476,8 +1548,12 @@
         z-index: -2;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+        display: none;
     }
-
+    .nav[data-v-4fbac4e1] .solid[data-v-4fbac4e1],
+    .transparent[data-v-4fbac4e1] {
+        background: none
+    }
     div[class="nav-wrap"] {
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
@@ -1593,6 +1669,7 @@
         |..................|
         \-----------------*/
     /*Watching*/
+    #martonko > div.lists.no-auth > div > h3,
     #Hachiman > div.lists:last-child > div.list-wrap:nth-child(2) > h3.section-name:first-child,
     /*Paused->*/
     #Hachiman > div.lists:last-child > div.list-wrap:nth-child(10) > h3.section-name:first-child,
@@ -1636,6 +1713,7 @@
         border-bottom-right-radius: 10px;
     }
     /*Filter Background*/
+    #martonko > div.filters-wrap,
     #Hachiman > div.filters-wrap:first-child {
         background: rgba(var(--color-main));
         padding: 10px;
@@ -1645,6 +1723,7 @@
     }
 
     @media (max-width: 720px) {
+        #martonko > div.filters-wrap,
         #Hachiman > div.filters-wrap:first-child {
             background: rgba(var(--color-main));
             padding: 10px;
@@ -1951,7 +2030,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 40px;
+        padding-top: 5px;
         font-size: 150%;
         font-weight: bold;
         border-top-left-radius: 10px;
@@ -1970,7 +2049,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 40px;
+        padding-top: 5px;
         font-size: 150%;
         font-weight: bold;
         border-top-left-radius: 10px;
@@ -1990,7 +2069,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 40px;
+        padding-top: 5px;
         font-size: 150%;
         font-weight: bold;
         border-top-left-radius: 10px;
@@ -2009,7 +2088,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 40px;
+        padding-top: 5px;
         font-size: 150%;
         font-weight: bold;
         border-top-left-radius: 10px;
@@ -2178,6 +2257,16 @@
         }
     }
 
+    /*profile fav fix*/
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > div.favourites-wrap.anime:last-child,
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > div.favourites-wrap.characters:last-child,
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > div.favourites-wrap.staff:last-child {
+        padding-top: 15px!important;
+        padding-bottom: 15px!important;
+        grid-gap: 25px;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-evenly;
+    }
     /*Favorites Fit Fix*/
     @media (max-width: 1192px)/*Favorites Fix*/
     {
@@ -2385,7 +2474,16 @@
         }
         .header-wrap[data-v-1cc2919e] {
             min-width: 320px;
+            background: rgba(var(--color-main));
+            border-radius: 15px;
         }
+    }
+    .header-wrap[data-v-1cc2919e] {
+        background: rgba(var(--color-main));
+        border-radius: 15px;
+    }
+    .nav-wrap[data-v-1cc2919e] {
+        background: none;
     }
     @media (max-width: 520px) {
 
