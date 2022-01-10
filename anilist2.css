@@ -4,6 +4,7 @@
     @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
     @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
     /*===============================================
     Colors
 =================================================*/
@@ -110,7 +111,11 @@
     .page-content {
         min-width: 320px;
     }
-
+    @media (min-width: 1920px) {
+        .content.container {
+            min-width: 80%;
+        }
+    }
 
     /*header
     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.header-wrap:first-child {
@@ -1154,7 +1159,10 @@
     }
     div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child:after {
         text-indent: 0;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         line-height: initial;
         Content: "Genres"
     }
@@ -1452,6 +1460,8 @@
     }
     .banner[data-v-1cc2919e] {
         border-radius: 15px;
+        /*border-bottom-left-radius:0;
+        border-bottom-right-radius:0;*/
         position: relative;
         margin: auto;
         overflow: visible;
