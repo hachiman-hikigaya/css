@@ -3,7 +3,7 @@
 =================================================*/
     @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
     @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
     /*===============================================
     Colors
 =================================================*/
@@ -164,8 +164,8 @@
         margin-top: 20px;
         font-size: 130%;
         font-weight: bold;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         border-bottom: 1px solid #4b4b4b1f;
     }
     /*===============================================
@@ -790,20 +790,6 @@
         color: rgb(var(--color-blue)) !important;
     }
 
-    /* Previously Known As*/
-    /*    .tooltip .prev-name-container {
-        content: url(https://files.catbox.moe/1wx9ha.png);
-        height: 100px;
-        margin: auto;
-       margin-bottom:20px;
-    } */
-    /* Remove Previously Known As*/
-    strong[data-v-1cc2919e],
-    div[data-v-1cc2919e9],
-    .tooltip .prev-name-container {
-        display: none
-    }
-
     /*Remove Unsubscribe Text*/
     .has-label:hover.has-label[data-v-77aecf0c]::before {
         content: none
@@ -1021,9 +1007,6 @@
     /*----------------
         NEW STYLE
 ----------------*/
-    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-    @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
     :root {
         --blur: 0;
         --color-main: 11, 14, 24, .9;
@@ -1085,6 +1068,12 @@
         backdrop-filter: blur(var(--blur));
         background: rgba(var(--color-main));
     }
+    .wrap[data-v-77aecf0c] {
+        border-radius: 5px
+    }
+    .overview[data-v-5c30286e] .content-wrap {
+        border-radius: 10px;
+    }
     .activity-entry > .wrap > .time:hover {
         background: none
     }
@@ -1133,8 +1122,8 @@
     .site-theme-dark .nav-unscoped {
         /* backdrop-filter: blur(var(--blur));*/
         background: rgba(var(--color-main));
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
         max-width: 95%;
 
         padding: 0px;
@@ -1169,7 +1158,10 @@
         line-height: initial;
         Content: "Genres"
     }
-
+    .overview[data-v-5c30286e] .section-header {
+        padding-left: 0;
+        padding-right: 0
+    }
     /*Characters*/
     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > h2.section-header:first-child {
         backdrop-filter: blur(var(--blur));
@@ -1244,8 +1236,8 @@
         border-bottom-right-radius: 10px;
     }
     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap:before {
-        content: "Welcome to my profile!";
-        font-family: sans-serif;
+        content: "Welcome!";
+        letter-spacing: 0.05em;
         background: #0000;
         width: 100%;
         height: 45px;
@@ -1264,6 +1256,11 @@
         border-bottom: 1px solid #4b4b4b1f;
     }
 
+    h2.name {
+        div {
+            pointer-events: none
+        }
+    }
     /*Activity Head*/
     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child {
         backdrop-filter: blur(var(--blur));
@@ -1280,8 +1277,8 @@
         padding-top: 15px;
         font-size: 130%;
         font-weight: bold;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         border-bottom: 1px solid #4b4b4b1f;
     }
     /*Activity Filter*/
@@ -1302,8 +1299,8 @@
         background: rgba(var(--color-main));
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     .activity-entry.full-width.activity-anime_list > div.wrap,
     .activity-entry.full-width.activity-manga_list > div.wrap {
@@ -1314,8 +1311,8 @@
     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner {
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     /*Activity Reply*/
     .reply[data-v-732ef224] {
@@ -1326,7 +1323,7 @@
         padding: 10px;
     }
     div.activity-entry.activity-anime_list > div.wrap {
-        border-radius: 5px!important
+        border-radius: 10px!important
     }
     /*Anime Embed*/
     .embed[data-v-13cdaed6] {
@@ -1334,7 +1331,7 @@
     }
     /*activity anime cover*/
     .list.small[data-v-77aecf0c] > a.cover {
-        border-radius: 5px!important;
+        border-radius: 10px!important;
         height: 130%;
         width: 120%;
         margin-top: -10px;
@@ -1454,7 +1451,7 @@
         background: none;
     }
     .banner[data-v-1cc2919e] {
-        border-radius: 10px;
+        border-radius: 15px;
         position: relative;
         margin: auto;
         overflow: visible;
@@ -1467,13 +1464,13 @@
 
         background: rgba(var(--color-main));
         z-index: -2;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
 
     div[class="nav-wrap"] {
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
         margin: auto;
         overflow: hidden;
         display: flex;
@@ -1496,8 +1493,8 @@
         color: #ffffffad;
         padding: 65px 50px 0px 10px;
         display: flex;
-
         align-items: center;
+        pointer-events: none;
     }
     .banner-content > .avatar {
         margin-top: 70px;
@@ -2121,7 +2118,7 @@
     }
     /*Follow List - List View*/
     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped.listView > div.user-follow:nth-child(2) > div.wrap:first-child > div.follow-card {
-        border-radius: 5px;
+        border-radius: 10px;
         margin-bottom: 20px;
     }
 
