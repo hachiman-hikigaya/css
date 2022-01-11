@@ -116,17 +116,6 @@
             min-width: 80%;
         }
     }
-
-    /*header
-    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.header-wrap:first-child {
-        bottom: -10px;
-        position: relative;
-    }
-    /*header nav
-    #nav {
-        position: relative;
-        margin-bottom: -80px;
-    }
     /*nav search*/
     #nav > div.quick-search.visible:first-child {
         background: rgba(var(--color-main));
@@ -370,14 +359,6 @@
     .text[data-v-77aecf0c] .markdown p:last-of-type {
         margin-bottom: 0;
     }
-
-    /*Activity text gaps
-  .wrap > div.text > div.activity-markdown  h1{position:relative;margin-top:-10px!important}
-      .wrap > div.text > div.activity-markdown  h2{position:relative;margin-top:-10px!important}
-      .wrap > div.text > div.activity-markdown  h3{position:relative;margin-top:-10px!important}
-      .wrap > div.text > div.activity-markdown  h4{position:relative;margin-top:-10px!important}
-      .wrap > div.text > div.activity-markdown  h5{position:relative;margin-top:-10px!important}
-      .wrap > div.text > div.activity-markdown  h6{position:relative;margin-top:-10px!important}*/
     /*===============================================
     Activity Like & Comment Button
 =================================================*/
@@ -457,6 +438,24 @@
         background: rgba(var(--hachi-cyan), 0.2)
     }
 
+    ul[class="el-dropdown-menu el-popper activity-extras-dropdown el-dropdown-menu--medium"],
+    ul[class="el-dropdown-menu el-popper activity-extras-dropdown el-dropdown-menu"],
+    ul[class="el-dropdown-menu el-popper activity-extras-dropdown el-dropdown-menu--medium el-zoom-in-top-enter-active el-zoom-in-top-enter-to"],
+    ul[class="el-dropdown-menu el-popper activity-extras-dropdown el-dropdown-menu--medium el-zoom-in-top-leave-active el-zoom-in-top-leave-to"],
+    ul[class="el-dropdown-menu el-popper el-dropdown-menu--small"],
+    ul[class="el-dropdown-menu el-popper el-dropdown-menu--small el-zoom-in-top-enter-active el-zoom-in-top-enter-to"],
+    ul[class="el-dropdown-menu el-popper el-dropdown-menu--small"],
+    ul[class="el-dropdown-menu el-popper el-dropdown-menu--small el-zoom-in-top-leave-active el-zoom-in-top-leave-to"],
+    ul[class="el-dropdown-menu el-popper"],
+    ul[class="el-dropdown-menu el-popper el-zoom-in-top-enter-active el-zoom-in-top-enter-to"],
+    ul[class="el-dropdown-menu el-popper el-zoom-in-top-leave-active el-zoom-in-top-leave-to"] {
+        background: rgba(var(--color-main))
+    }
+
+    .el-dropdown-menu__item--divided:before,
+    .el-popper[x-placement^=bottom] .popper__arrow {
+        display: none
+    }
     /*===============================================
     Activity Dropdown Button
 =================================================*/
@@ -676,15 +675,13 @@
 =================================================*/
     a[class="avatar"],
     a[class="avatar router-link-exact-active router-link-active"] {
-        /*
-            border: 1px solid #7b7b7c!important;background:#405d9e0d;backdrop-filter:blur(5px);
-        -webkit-border-radius: 20px!important;
-     */
         transform: scale(1.25);
         border-bottom-left-radius: 4px!important;
         border-bottom-right-radius: 4px!important;
         filter: drop-shadow(0 0 0.05rem #0909094f);
     }
+
+    /*Report*/
     /*===============================================
     Dropdown - TOP
 =================================================*/
@@ -1170,7 +1167,8 @@
         margin: auto;
     }
     /*Genres*/
-    div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child {
+    div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child,
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.pink > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child {
         backdrop-filter: blur(var(--blur));
         background: rgba(var(--color-main));
         width: 100%;
@@ -1186,11 +1184,13 @@
     }
 
     /*Genres Text Change*/
-    div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header {
+    div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header,
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.pink > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child {
         text-indent: -9999px;
         line-height: 0;
     }
-    div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child:after {
+    div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child:after,
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.pink > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child:after {
         text-indent: 0;
         display: flex;
         flex-direction: column;
@@ -1297,14 +1297,9 @@
         border-top-right-radius: 10px;
         border-bottom: 1px solid #4b4b4b1f;
     }
-
-    h2.name {
-        div {
-            pointer-events: none
-        }
-    }
     /*Activity Head*/
-    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child {
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child,
+    #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.pink > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child {
         backdrop-filter: blur(var(--blur));
         background: rgba(var(--color-main));
         width: 100%;
@@ -1316,7 +1311,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 15px;
+        padding-top: 2px;
         font-size: 130%;
         font-weight: bold;
         border-top-left-radius: 10px;
@@ -1326,10 +1321,10 @@
     /*Activity Filter*/
     #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown,
     #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > h2 > div {
-        position: relative;
+        position: absolute;
         margin: auto;
-        left: 44%;
-        top: -15px;
+        left: 88%;
+        top: 15px;
         overflow: visible;
         display: flex;
         flex-direction: column;
@@ -2340,8 +2335,6 @@
             color: rgba(var(--hachi-gray))
         }
 
-
-
         /*Anime List Remove Type and score*/
         #Hachiman > div.lists:last-child > div.list-wrap > div.list-section:last-child > div.list-head.row:first-child > div.format:last-child,
         #Hachiman > div.lists:last-child > div.list-wrap > div.list-section:last-child > div.list-head.row:first-child > div.score {
@@ -2374,31 +2367,6 @@
         background: rgba(var(--color-main));
     }
 
-    /*Shadow!!!
-         .overview[data-v-5c30286e] .content-wrap,
-         .wrap[data-v-77aecf0c],
-         .favourites-wrap[data-v-ddf96a3c],
-         .load-more[data-v-6f203cf2],
-         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child,
-         .markdown-editor,
-         .reply[data-v-732ef224],
-         .el-input,
-         .el-textarea,
-         .medialist.table .list-section,
-         #Hachiman > div.filters-wrap:first-child,
-         #Hachiman > div.lists > div.list-wrap > div.list-section,
-         .list-preview[data-v-6aea970d],
-         .forum-wrap,
-         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > h2.section-header:first-child,
-         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > h2.section-header:first-child,
-         #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > h2.section-header:first-child,
-         div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child {
-             filter: drop-shadow(2px 2px 0.3rem #00000075);
-         }*/
-    /*.banner-content .name { filter: drop-shadow(0px 0px 3px black);}
-         header-wrap[data-v-1cc2919e] {filter: drop-shadow(5px 5px 0.4rem #00000045);} 
-         .wrap > div.list.small > a {box-shadow: 0px 0 10px 20px rgb(0 0 0 / 10%);
-         }*/
     /*Name and avatar Shadow*/
     .banner-content h1.name,
     .header-wrap > div.banner > div.container > div > img {
@@ -2477,6 +2445,19 @@
             background: rgba(var(--color-main));
             border-radius: 15px;
         }
+        /*Activity Filter*/
+        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown,
+        #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > h2 > div {
+            position: absolute;
+            margin: auto;
+            left: 85%;
+            top: 15px;
+            overflow: visible;
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            align-items: right;
+        }
     }
     .header-wrap[data-v-1cc2919e] {
         background: rgba(var(--color-main));
@@ -2490,6 +2471,22 @@
         .follower-badge[data-v-1cc2919e] {
             top: -30px;
             margin-left: -160px;
+        }
+        /*Activity Filter*/
+        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown,
+        #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > h2 > div {
+            position: absolute;
+            margin: auto;
+            left: 83%;
+            top: 15px;
+            overflow: visible;
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            align-items: right;
+        }
+        .heading[data-v-72dc5b51] .switch .option {
+            font-size: 1.2rem;
         }
     }
     @media (max-width: 440px) {
@@ -2511,8 +2508,33 @@
             top: -5px;
             overflow: hidden;
         }
+        /*Activity Filter*/
+        #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown,
+        #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > h2 > div {
+            position: absolute;
+            margin: auto;
+            left: 78%;
+            top: 15px;
+            overflow: visible;
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            align-items: right;
+        }
+        .heading[data-v-72dc5b51] .switch .option {
+            font-size: 1.1rem;
+        }
     }
-
+    @media (max-width: 405px) {
+        .heading[data-v-72dc5b51] .switch .option {
+            font-size: 0.99rem;
+        }
+    }
+    @media (max-width: 380px) {
+        .heading[data-v-72dc5b51] .switch .option {
+            font-size: 1.04rem;
+        }
+    }
 
     /*----------------\
      |..................|
