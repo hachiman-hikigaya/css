@@ -1512,7 +1512,7 @@ height:auto
 }
 
 #app>div.page-content:nth-child(3)>div.settings.container>div.nav:first-child {
-height:0!important;
+height:auto!important;
 margin-bottom:5px
 }
 
