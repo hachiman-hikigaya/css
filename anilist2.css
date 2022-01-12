@@ -1732,6 +1732,19 @@ font-size:1.04rem
 }
 }
 
+div.about:first-child>div.content-wrap>.markdown .youtube{
+border-radius: 4px!important;
+height: 300px;
+max-width: 300px;
+filter:drop-shadow(0 0 0.2rem #0000007d)
+}
+@media (max-width:400px){
+div.about:first-child>div.content-wrap>.markdown .youtube{
+height: 240px;
+max-width: 240px;
+}
+}
+
 #app>div.wrap:nth-child(4)>div.footer {
 background:rgba(var(--color-main));
 backdrop-filter:blur(var(--blur))
