@@ -244,8 +244,12 @@ div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activit
 top:2px;
 margin-left:-5px
 }
- div.activity-feed-wrap:last-child > div.activity-feed > div.activity-entry.activity-text> div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2){
-top:2px
+ div.activity-feed-wrap:last-child > div.activity-feed > div.activity-entry.activity-text> div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2),div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-message > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2) > span.el-dropdown-link.action.el-dropdown-selfdefine:first-child{
+top:2px;
+}
+    
+div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-message > div.wrap:first-child > div.time:nth-child(2) > span.action.has-label:first-child,div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-text:nth-child(8) > div.wrap:first-child > div.time:nth-child(2) > span.action.has-label:first-child{
+top:1px;
 }
 
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.time > span > svg{
