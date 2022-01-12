@@ -1040,7 +1040,7 @@ margin-right:33px;
 margin-left:9px
 }
 
-#Hachiman>div.lists:last-child>div.list-wrap:last-child>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(10)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(11)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(2)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(3)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(4)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(5)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(6)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(7)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(8)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(9)>h3.section-name:first-child,#martonko>div.lists.no-auth>div>h3 {
+#Hachiman>div.lists:last-child>div.list-wrap:last-child>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(10)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(11)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(2)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(3)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(4)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(5)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(6)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(7)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(8)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(9)>h3.section-name:first-child,#Hachiman>div.lists.no-auth>div>h3 {
 backdrop-filter:blur(var(--blur));
 background:rgba(var(--color-main));
 width:100%;
@@ -1059,7 +1059,7 @@ border-top-right-radius:10px;
 border-bottom:1px solid #4b4b4b1f
 }
 
-#Hachiman>div.filters-wrap:first-child,#martonko>div.filters-wrap {
+#Hachiman>div.filters-wrap:first-child,#Hachiman>div.filters-wrap {
 background:rgba(var(--color-main));
 padding:10px;
 border-radius:10px;
@@ -1098,7 +1098,7 @@ border-radius:0 0 10px 10px
 }
 
 @media (max-width:720px) {
-#Hachiman>div.filters-wrap:first-child,#martonko>div.filters-wrap {
+#Hachiman>div.filters-wrap:first-child,#Hachiman>div.filters-wrap {
 background:rgba(var(--color-main));
 padding:10px;
 border-radius:10px;
@@ -1508,7 +1508,7 @@ background:rgba(var(--color-main));
 padding:10px;
 border-radius:10px;
 width:100%;
-height:0
+height:auto
 }
 
 #app>div.page-content:nth-child(3)>div.settings.container>div.nav:first-child {
