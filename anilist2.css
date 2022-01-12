@@ -236,8 +236,25 @@ display:flex;
 justify-content:flex-end
 }
 
-.activity-entry>.wrap>.time .action {
-margin-bottom:5px
+.activity-message>.wrap>.time, .activity-text>.wrap>.time {
+padding-top:5px;
+}
+
+div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-anime_list > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2),div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-manga_list > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2){
+top:2px;
+margin-left:-5px
+}
+ div.activity-feed-wrap:last-child > div.activity-feed > div.activity-entry.activity-text> div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2){
+top:2px
+}
+
+div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.time > span > svg{
+transform:scale(0.8);
+margin-left:-5px
+}
+    
+div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.time > div > span > svg{
+transform:scale(0.88)
 }
 
 div.activity-entry.activity-anime_list>div.wrap:first-child>div.time:nth-child(2)>time:last-child {
@@ -257,47 +274,16 @@ align-items:center
 font-weight:700
 }
 
-.el-dropdown {
-margin-bottom:-5px
-}
-
 .el-dropdown-menu__item--divided {
 border-top:1px solid rgba(var(--hachi-cyan),.2)
 }
 
-svg[class="svg-inline--fa fa-ellipsis-h fa-w-16"] {
-margin-bottom:10%;
-height:11px
-}
+
 
 .activity-extras-dropdown.el-popper[x-placement^=bottom][data-v-77aecf0c] {
 margin-top:5px
 }
 
-svg[class="svg-inline--fa fa-bell fa-w-14"] {
-margin-bottom:-25%;
-height:10px;
-position:relative;
-right:5px
-}
-
-div.activity-entry.activity-anime_list>div.wrap:first-child>div.time:nth-child(2)>div.extras-dropdown.el-dropdown:nth-child(2),div.activity-entry.activity-manga_list>div.wrap:first-child>div.time:nth-child(2)>div.extras-dropdown.el-dropdown:nth-child(2)>span.el-dropdown-link.action.el-dropdown-selfdefine:first-child {
-position:relative;
-top:3px;
-left:2.5px
-}
-
-div.activity-entry.activity-anime_list>div.wrap:first-child>div.time:nth-child(2)>span.action.has-label:first-child {
-position:relative;
-top:-26px;
-left:15px
-}
-
-div.activity-entry.activity-manga_list>div.wrap:first-child>div.time:nth-child(2)>span.action.has-label:first-child {
-position:relative;
-top:-28px;
-left:15px
-}
 
 .wrap>div.text>div.activity-markdown {
 border-bottom:1px solid rgba(var(--hachi-gray),.2)
@@ -1229,17 +1215,8 @@ border-radius:0 0 10px 10px
 padding:20px
 }
 
-@media (max-width:1040px) {
-#app>div.page-content:nth-child(3)>div.container>div.home.full-width:first-child>div.list-previews>div.list-preview-wrap>div.section-header:first-child>svg.size-toggle.svg-inline--fa.fa-compress.fa-w-14.fa-sm:last-child,#app>div.page-content:nth-child(3)>div.container>div.home>div:last-child>div.list-previews:first-child>div.list-preview-wrap>div.section-header:first-child>svg.size-toggle.svg-inline--fa.fa-expand.fa-w-14.fa-sm:last-child {
-display:none
-}
-}
 
-#app>div.page-content:nth-child(3)>div.container>div.home.full-width:first-child>div.list-previews>div.list-preview-wrap>div.section-header:first-child>svg.size-toggle.svg-inline--fa.fa-compress.fa-w-14.fa-sm:last-child,#app>div.page-content:nth-child(3)>div.container>div.home>div:last-child>div.list-previews:first-child>div.list-preview-wrap>div.section-header:first-child>svg.size-toggle.svg-inline--fa.fa-expand.fa-w-14.fa-sm:last-child {
-position:relative;
-top:-15px;
-left:-5px
-}
+
 
 #app>div.page-content:nth-child(3)>div.container>div.home:last-child>div:last-child>div.recent-reviews:nth-child(2)>h2.section-header.link:first-child,#app>div.page-content:nth-child(3)>div.container>div.home:last-child>div:last-child>div.recent-threads:first-child>h2.section-header.link:first-child,#app>div.page-content:nth-child(3)>div.container>div.home>div:last-child>div.recent-reviews:nth-child(3)>h2.section-header.link:first-child,#app>div.page-content:nth-child(3)>div.container>div.home>div:last-child>div.recent-threads:nth-child(2)>h2.section-header.link:first-child {
 background:rgba(var(--color-main));
