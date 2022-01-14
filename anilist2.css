@@ -1034,7 +1034,7 @@ margin-right:33px;
 margin-left:9px
 }
 
-#Hachiman>div.lists:last-child>div.list-wrap:last-child>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(10)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(11)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(2)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(3)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(4)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(5)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(6)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(7)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(8)>h3.section-name:first-child,#Hachiman>div.lists:last-child>div.list-wrap:nth-child(9)>h3.section-name:first-child,#Hachiman>div.lists.no-auth>div>h3 {
+div.lists:last-child>div.list-wrap:last-child>h3.section-name:first-child,div.lists:last-child>div.list-wrap:nth-child(10)>h3.section-name:first-child,div.lists:last-child>div.list-wrap:nth-child(11)>h3.section-name:first-child,div.lists:last-child>div.list-wrap:nth-child(2)>h3.section-name:first-child,div.lists:last-child>div.list-wrap:nth-child(3)>h3.section-name:first-child,div.lists:last-child>div.list-wrap:nth-child(4)>h3.section-name:first-child,div.lists:last-child>div.list-wrap:nth-child(5)>h3.section-name:first-child,div.lists:last-child>div.list-wrap:nth-child(6)>h3.section-name:first-child,div.lists:last-child>div.list-wrap:nth-child(7)>h3.section-name:first-child,div.lists:last-child>div.list-wrap:nth-child(8)>h3.section-name:first-child,div.lists:last-child>div.list-wrap:nth-child(9)>h3.section-name:first-child,div.lists.no-auth>div>h3 {
 backdrop-filter:blur(var(--blur));
 background:rgba(var(--color-main));
 width:100%;
@@ -1053,7 +1053,7 @@ border-top-right-radius:10px;
 border-bottom:1px solid #4b4b4b1f
 }
 
-#Hachiman>div.filters-wrap:first-child,#Hachiman>div.filters-wrap {
+div.filters-wrap:first-child,div.filters-wrap {
 background:rgba(var(--color-main));
 padding:10px;
 border-radius:10px;
@@ -1092,7 +1092,7 @@ border-radius:0 0 10px 10px
 }
 
 @media (max-width:720px) {
-#Hachiman>div.filters-wrap:first-child,#Hachiman>div.filters-wrap {
+div.filters-wrap:first-child,div.filters-wrap {
 background:rgba(var(--color-main));
 padding:10px;
 border-radius:10px;
@@ -1100,13 +1100,13 @@ width:100%
 }
 }
 
-#Hachiman>div.filters-wrap:first-child>div.filters.mobile-nav-hidden:nth-child(2)>div.filter-group:nth-child(3)>div.el-slider:last-child {
+div.filters-wrap:first-child>div.filters.mobile-nav-hidden:nth-child(2)>div.filter-group:nth-child(3)>div.el-slider:last-child {
 width:120px;
 margin:auto
 }
 
 @media (max-width:720px) {
-#Hachiman>div.lists:last-child>div.actions:first-child>div.theme-switch {
+div.lists:last-child>div.actions:first-child>div.theme-switch {
 position:relative;
 justify-content:center;
 align-items:center;
@@ -1119,7 +1119,7 @@ background:rgba(var(--color-main))
 }
 }
 
-#Hachiman>div.lists:last-child>div.actions:first-child>div.theme-switch {
+div.lists:last-child>div.actions:first-child>div.theme-switch {
 position:relative;
 justify-content:center;
 align-items:center;
@@ -1131,7 +1131,7 @@ background:rgba(var(--color-main))
 }
 
 @media (max-width:720px) {
-#Hachiman>div.lists:last-child>div.actions:first-child>div.theme-switch {
+div.lists:last-child>div.actions:first-child>div.theme-switch {
 top:-55px;
 left:-10px;
 height:26px;
@@ -1140,7 +1140,7 @@ background:rgba(var(--color-main))
 }
 }
 
-#Hachiman>div.lists>div.list-wrap>div.list-section {
+div.lists>div.list-wrap>div.list-section {
 background:rgba(var(--color-main));
 padding:15px 70px;
 width:100%;
@@ -1149,7 +1149,7 @@ border-bottom-right-radius:10px
 }
 
 @media (max-width:720px) {
-#Hachiman>div.lists>div.list-wrap>div.list-section {
+div.lists>div.list-wrap>div.list-section {
 background:rgba(var(--color-main));
 padding:0;
 width:100%;
@@ -1497,7 +1497,7 @@ max-height:219px;
 max-width:150px
 }
 
-#Hachiman>div.filters-wrap:first-child {
+div.filters-wrap:first-child {
 background:rgba(var(--color-main));
 padding:10px;
 border-radius:10px;
@@ -1531,7 +1531,7 @@ margin-bottom:20px
 color:rgba(var(--hachi-gray))
 }
 
-#Hachiman>div.lists:last-child>div.list-wrap>div.list-section:last-child>div.list-head.row:first-child>div.format:last-child,#Hachiman>div.lists:last-child>div.list-wrap>div.list-section:last-child>div.list-head.row:first-child>div.score {
+div.lists:last-child>div.list-wrap>div.list-section:last-child>div.list-head.row:first-child>div.format:last-child,div.lists:last-child>div.list-wrap>div.list-section:last-child>div.list-head.row:first-child>div.score {
 display:none
 }
 }
@@ -1541,7 +1541,7 @@ background-color:#2b2b2b
 }
 
 @media (max-width:350px) {
-#Hachiman>div.lists:last-child>div.list-wrap>div.list-section:last-child>div.list-head.row:first-child>div.progress {
+div.lists:last-child>div.list-wrap>div.list-section:last-child>div.list-head.row:first-child>div.progress {
 display:none
 }
 }
