@@ -1061,6 +1061,16 @@ width:100%;
 height:740px
 }
 
+#app > div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters{
+height:200px;
+background:none;
+}
+
+#app > div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters:first-child > div.extra-filters-wrap:last-child > div.dropdown.anime:last-child > div.filters-wrap{
+height:50px;
+background:none;
+}
+
 .hamburger svg[data-v-8aeb5e9a]:hover,div.menu.visible:last-child>:hover {
 color:rgb(var(--hachi-gray));
 transition:.2s
@@ -1105,7 +1115,18 @@ width:120px;
 margin:auto
 }
 
-@media (max-width:720px) {
+div.lists:last-child>div.actions:first-child>div.theme-switch {
+position:relative;
+justify-content:center;
+align-items:center;
+grid-gap:10px 12px;
+top:-20px;
+height:30px;
+width:90px;
+background:rgba(var(--color-main))
+}
+
+@media (max-width:760px) {
 div.lists:last-child>div.actions:first-child>div.theme-switch {
 position:relative;
 justify-content:center;
@@ -1117,17 +1138,6 @@ height:26px;
 width:90px;
 background:rgba(var(--color-main))
 }
-}
-
-div.lists:last-child>div.actions:first-child>div.theme-switch {
-position:relative;
-justify-content:center;
-align-items:center;
-grid-gap:10px 12px;
-top:-20px;
-height:30px;
-width:90px;
-background:rgba(var(--color-main))
 }
 
 @media (max-width:720px) {
@@ -1769,7 +1779,7 @@ border-radius:4px;
 border-bottom:1px solid #4b4b4b1f
 }
 
-.header[data-v-4df465ff],
+.header[data-v-4df465ff],#app > div.page-content:nth-child(3) > div.staff-wrap,
 #app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-manga > div.content.container:last-child,
 #app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-anime > div.content.container:last-child,
 #app > div.page-content:nth-child(3) > div.forum-feed.container,
