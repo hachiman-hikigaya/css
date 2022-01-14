@@ -161,6 +161,30 @@ font-size:1.4rem;
 border-bottom:2px solid rgba(var(--hachi-transparent))
 }
 
+@media(max-width:768px)
+{.header-wrap .nav-wrap .nav .link {
+margin:0 14px;
+}
+}
+
+@media(max-width:425px)
+{.header-wrap .nav-wrap .nav .link {
+margin:0 14px;
+}
+}
+
+@media(max-width:375px)
+{.header-wrap .nav-wrap .nav .link {
+margin:0 6px;
+}
+}
+
+@media(max-width:320px)
+{.header-wrap .nav-wrap .nav .link {
+margin:0 25px;
+}
+}
+
 .header-wrap .nav-wrap .nav .link:hover {
 border-bottom:3px solid rgba(var(--color-text),.7)
 }
