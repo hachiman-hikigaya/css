@@ -1803,7 +1803,7 @@ border-radius:4px;
 border-bottom:1px solid #4b4b4b1f
 }
 
-.header[data-v-4df465ff],#app > div.page-content:nth-child(3) > div.staff-wrap,
+.header[data-v-4df465ff],#app > div.page-content:nth-child(3) > div.character-wrap,#app > div.page-content:nth-child(3) > div.staff-wrap,#app > div.page-content:nth-child(3) > div.studio.studio-page-unscoped,
 #app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-manga > div.content.container:last-child,
 #app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-anime > div.content.container:last-child,
 #app > div.page-content:nth-child(3) > div.forum-feed.container,
@@ -1813,7 +1813,19 @@ border-bottom:1px solid #4b4b4b1f
 .child.even[data-v-20438142] {
 background: rgba(var(--color-main))
 }
-    
+
+#app > div.page-content:nth-child(3) > div.character-wrap,#app > div.page-content:nth-child(3) > div.staff-wrap,#app > div.page-content:nth-child(3) > div.studio.studio-page-unscoped{
+border-radius:10px
+}
+
+#app > div.page-content:nth-child(3) > div.character-wrap > div.character:first-child > div.header:first-child,#app > div.page-content:nth-child(3) > div.staff-wrap > div.staff:first-child > div.header:first-child{
+background:none
+}
+
+#app > div.page-content:nth-child(3) > div.studio.studio-page-unscoped{
+padding:20px
+}
+
 .button.comment[data-v-07b321a7],.button[data-v-c574a71c],.actions>div[data-v-ddf96a3c],.create-btn[data-v-0064307c]{background:rgba(var(--hachi-gray))
 }
     
