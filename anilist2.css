@@ -1436,7 +1436,7 @@ border-bottom-right-radius:10px
 grid-gap:60px 10px
 }
 
-.follow-card {
+.follow-card{
 border-top-left-radius:10px;
 border-top-right-radius:10px
 }
@@ -1824,6 +1824,13 @@ background:none
 
 #app > div.page-content:nth-child(3) > div.studio.studio-page-unscoped{
 padding:20px
+}
+
+
+#app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-manga > div.header-wrap:first-child > div.banner:first-child,#app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-anime > div.header-wrap:first-child > div.banner:first-child{
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+margin:0
 }
 
 .button.comment[data-v-07b321a7],.button[data-v-c574a71c],.actions>div[data-v-ddf96a3c],.create-btn[data-v-0064307c]{background:rgba(var(--hachi-gray))
