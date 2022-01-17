@@ -261,7 +261,7 @@ justify-content:flex-end
 }
 
 .activity-message>.wrap>.time, .activity-text>.wrap>.time {
-padding-top:5px;
+padding-top:2px;
 }
 #app > div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-manga_list> div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2),
 #app > div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-anime_list> div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2),
