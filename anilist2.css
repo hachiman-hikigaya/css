@@ -937,7 +937,12 @@ background:rgba(var(--color-main))
 
 .nav[data-v-4fbac4e1],.solid[data-v-4fbac4e1],.transparent[data-v-4fbac4e1]:hover {
 background:rgba(var(--color-main));
-width:95%
+width:90.2%;
+left:0;
+right:0;
+margin:auto;
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
 }
 
 .site-theme-dark .nav-unscoped.transparent,div[class="nav nav-unscoped transparent"] {
