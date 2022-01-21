@@ -1840,7 +1840,6 @@ margin:0
 background:rgba(var(--color-main));
 backdrop-filter:blur(var(--blur))
 }
-
 @media (min-width: 1041px) {
 .header-wrap{
 margin: auto;
@@ -1872,22 +1871,22 @@ div[class="nav nav-unscoped transparent"].transparent:hover[data-v-4fbac4e1],
 div[class="nav nav-unscoped"],
 .site-theme-dark .nav-unscoped.transparent{
 background: rgba(var(--color-main));
-width: 95%;
-height: 48px;
+width: 90%;
+height: 50px;
 margin-top: 0;
 border-top-left-radius: 0;
 border-top-right-radius: 0;
-border-bottom-left-radius: 45px;
-border-bottom-right-radius: 45px
+border-bottom-left-radius: 25px;
+border-bottom-right-radius: 35px
 }
 .logo img[data-v-4fbac4e1]{
-height: 35px
+height: 40px
 }
 .search[data-v-4fbac4e1]{
 font-size: 1.2rem
 }
 .user .avatar[data-v-4fbac4e1]{
-transform: scale(0.8)!important
+transform: scale(0.9)!important
 }
 .banner-content h1.name {
 filter: drop-shadow(-2px 1px 0.25rem #00000063)
