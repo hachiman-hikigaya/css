@@ -1518,6 +1518,14 @@ grid-template-columns: repeat(auto-fill,150px);
 justify-content: space-evenly
 }
 
+#app>div.page-content:nth-child(3)>div.user.user-page-unscoped.gray>div.content.container:last-child>div.user-social.user-social-unscoped>div.user-follow:nth-child(2)>div.wrap:first-child, div.hohSocialContent.user-follow:last-child{
+display: grid;
+grid-gap: 70px 10px;padding:15px;
+grid-template-columns: repeat(auto-fill,90px);
+justify-content: space-evenly;padding-top:15px!important;
+padding-bottom:15px!important
+}
+
 .favourites.preview .favourites-wrap[data-v-ddf96a3c]{
 display: grid;
 grid-gap: 10px 10px;padding:15px;
