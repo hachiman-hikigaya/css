@@ -92,10 +92,12 @@ min-width:320px
 display:none!important
 }
 
-@media (min-width:1920px) {
-.content.container {
-min-width:80%
+.banner>.container {
+max-width: 98%;
 }
+
+div[id="nav"]{
+max-width: 95%!important;
 }
 
 #nav>div.quick-search.visible:first-child {
@@ -471,11 +473,6 @@ max-height:none!important
 .cover {
 border-radius:0!important
 }
-
-.favourites {
-margin-top:0!important
-}
-
 .favourite[data-v-0317d914] {
 transition:transform .2s;
 border-radius:20%;
@@ -533,6 +530,10 @@ grid-template-rows:repeat(auto-fill,50px)
 background:0 0!important;
 border:1px!important;
 border-radius:5.6px!important
+}
+
+.hohPinned .wrap{
+background:rgba(var(--color-main))
 }
 
 .activity-manga_list>div>div>div>div>.title,.hohPinned .list .title[href^="/manga/"] {
@@ -873,7 +874,7 @@ border-radius:10px!important
 }
 
 .list.small[data-v-77aecf0c]>a.cover {
-border-radius:10px!important;
+border-radius:0px!important;
 height:130%;
 width:120%;
 margin-top:-10px;
@@ -945,14 +946,18 @@ border-bottom-left-radius:10px;
 border-bottom-right-radius:10px;
 }
 
-.site-theme-dark .nav-unscoped.transparent,div[class="nav nav-unscoped transparent"] {
+.site-theme-dark .nav-unscoped.transparent,div[class="nav nav-unscoped transparent"],div[class="wrap guest"] {
 border-top-left-radius:10px;
 border-top-right-radius:10px;
-width:90%;
+width:90.2%;
 left:0;
 right:0;
 background:0 0;
 margin:25px auto auto
+}
+
+div[class="nav nav-unscoped"] > div.wrap.guest{
+margin:0 auto auto
 }
 
 .banner[data-v-1cc2919e],div[class=nav-wrap] {
@@ -1038,8 +1043,22 @@ background:rgba(0,0,0,.04)
 
 .stat[data-v-815ccddc]:nth-child(1) {
 grid-row-start:span 2;
-padding:0 60px
+padding:0 60px;
+overflow:hidden;
 }
+@media (max-width: 760px)
+{
+.stat[data-v-815ccddc]:nth-child(1) {
+padding: 0 65px!important;
+}}
+@media (max-width:600px){
+.stat[data-v-815ccddc]:nth-child(1) {
+padding: 0 30px!important;
+}}
+@media (max-width:360px){
+.stat[data-v-815ccddc]:nth-child(1) {
+padding: 0 10px!important;
+}}
 
 .stat .value[data-v-815ccddc] {
 font-size:2rem;
@@ -1488,36 +1507,23 @@ max-height:150px
 }
 }
 
-#app>div.page-content:nth-child(3)>div.user.user-page-unscoped.gray>div.content.container:last-child>div.overview>div.section:first-child>div.favourites.desktop.preview:nth-child(4)>div.favourites-wrap.anime:last-child,#app>div.page-content:nth-child(3)>div.user.user-page-unscoped.gray>div.content.container:last-child>div.overview>div.section:first-child>div.favourites.desktop.preview:nth-child(6)>div.favourites-wrap.characters:last-child,#app>div.page-content:nth-child(3)>div.user.user-page-unscoped.gray>div.content.container:last-child>div.overview>div.section:first-child>div.favourites.desktop.preview:nth-child(7)>div.favourites-wrap.staff:last-child {
-padding-top:15px!important;
-padding-bottom:15px!important;
-grid-gap:25px;
-grid-template-columns:auto auto auto auto;
-justify-content:space-evenly
+.content.container {
+max-width:94%;
 }
 
-@media (max-width:1192px) {
-.favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],.favourites.preview .favourites-wrap>div[data-v-ddf96a3c] {
-margin-right:3%;
-position:relative;
-left:6px
-}
-}
-
-@media (max-width:1142px) {
-.favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],.favourites.preview .favourites-wrap>div[data-v-ddf96a3c] {
-margin-right:1.4%;
-position:relative;
-left:-6px
-}
+.medialist.cards .list-section .list-entries{
+display: grid;
+grid-gap: 10px 10px;padding:15px;
+grid-template-columns: repeat(auto-fill,150px);
+justify-content: space-evenly
 }
 
-@media (max-width:1080px) {
-.favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],.favourites.preview .favourites-wrap>div[data-v-ddf96a3c] {
-margin-right:29px;
-position:relative;
-left:8px
-}
+.favourites.preview .favourites-wrap[data-v-ddf96a3c]{
+display: grid;
+grid-gap: 10px 10px;padding:15px;
+grid-template-columns: repeat(auto-fill,90px);
+justify-content: space-evenly;padding-top:15px!important;
+padding-bottom:15px!important
 }
 
 @media (max-width:760px) {
@@ -1551,6 +1557,7 @@ height:160px
 .stats-wrap[data-v-815ccddc] {
 padding:10px 30px
 }
+
 
 .stat[data-v-815ccddc]:nth-child(1) {
 padding:0 30px
@@ -1866,4 +1873,7 @@ font-size: 1.2rem
 .banner-content h1.name {
 filter: drop-shadow(-2px 1px 0.25rem #00000063)
 }
+}
+.overview[data-v-5c30286e],.favourites,.stats{
+margin-top:20px!important
 }
