@@ -712,15 +712,22 @@ min-width:95%
 max-width:90%
 }
 
+@media(max-width:1024px){
+.content.container{
+max-width:98%
+}
+}
+
 @media(max-width:420px){
 .page-content {
 max-width:96%
 }
 .header-wrap[data-v-1cc2919e]{
 min-width:95%
-}    
+}
 .content.container{
-max-width:95%
+max-width:100%;
+min-width:375px;
 }
 }
 
