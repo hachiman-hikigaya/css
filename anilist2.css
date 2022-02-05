@@ -718,7 +718,7 @@ max-width:98%
 }
 }
 
-@media(max-width:420px){
+@media(max-width:425px){
 .page-content {
 max-width:96%
 }
@@ -1003,7 +1003,7 @@ align-items:center
 }
 
 .banner[data-v-1cc2919e] {
-border-radius:15px;
+border-radius:13px;
 position:relative;
 overflow:visible
 }
