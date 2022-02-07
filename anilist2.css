@@ -812,7 +812,7 @@ div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.c
 margin-bottom:0px;border-radius:0px!important;
 border-bottom: 1px solid #4b4b4b1f
 }
-div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit > div.activity-entry.preview.activity-text .wrap,
+div.home > div.activity-feed-wrap:first-child > div.activity-edit > div.input.el-textarea > textarea.el-textarea__inner,div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit > div.activity-entry.preview.activity-text .wrap,
 div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child > div.input.el-textarea > textarea.el-textarea__inner,div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child > div.reply.preview{
 border-top-left-radius:0px;
 border-top-right-radius:0px
@@ -820,6 +820,9 @@ border-top-right-radius:0px
 div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child > div.markdown-editor:first-child{
 border-top-left-radius:5px!important;
 border-top-right-radius:5px!important
+}
+div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child > div.input.el-textarea > textarea.el-textarea__inner{
+overflow:hidden
 }
 #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(1) > h2.section-header:first-child > div.actions,
 #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(3) > h2.section-header:first-child > div.actions,
