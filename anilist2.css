@@ -2,17 +2,6 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css);
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Quicksand&display=swap);
-.medialist.cards .entry-card .title,
-.tooltip {
-  backdrop-filter: blur(2px)!important
-}
-.about a:nth-child(1) > img,
-.about a:nth-child(2) > img,
-.about a:nth-child(3) > img,
-.about a:nth-child(4) > img,
-.activity-entry .like-wrap .users {
-  transition: .5s
-}
 :root {
   --hachi-cyan: 125,190,203;
   --hachi-darkred: 200,42,50;
@@ -84,6 +73,17 @@ body {
 .text .markdown::-webkit-scrollbar {
   width: 2px!important;
   background: rgb(var(--hachi-transparent))
+}
+.medialist.cards .entry-card .title,
+.tooltip {
+  backdrop-filter: blur(2px)!important
+}
+.about a:nth-child(1) > img,
+.about a:nth-child(2) > img,
+.about a:nth-child(3) > img,
+.about a:nth-child(4) > img,
+.activity-entry .like-wrap .users {
+  transition: .5s
 }
 .page-content > div > div.content.container > div > div:nth-child(1) > h2 {
   margin-top: 30px
@@ -1906,7 +1906,7 @@ overflow:hidden
 }
 .highlights[data-v-72dc5b51] {
   margin-left: 0;
-    width:100%;
+    width:100%
 }
 .highlight .circle[data-v-72dc5b51] {
   min-width: 40px;
