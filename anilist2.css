@@ -2,17 +2,6 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css);
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Quicksand&display=swap);
-.medialist.cards .entry-card .title,
-.tooltip {
-  backdrop-filter: blur(2px)!important
-}
-.about a:nth-child(1) > img,
-.about a:nth-child(2) > img,
-.about a:nth-child(3) > img,
-.about a:nth-child(4) > img,
-.activity-entry .like-wrap .users {
-  transition: .5s
-}
 :root {
   --hachi-cyan: 125,190,203;
   --hachi-darkred: 200,42,50;
@@ -84,6 +73,17 @@ body {
 .text .markdown::-webkit-scrollbar {
   width: 2px!important;
   background: rgb(var(--hachi-transparent))
+}
+.medialist.cards .entry-card .title,
+.tooltip {
+  backdrop-filter: blur(2px)!important
+}
+.about a:nth-child(1) > img,
+.about a:nth-child(2) > img,
+.about a:nth-child(3) > img,
+.about a:nth-child(4) > img,
+.activity-entry .like-wrap .users {
+  transition: .5s
 }
 .page-content > div > div.content.container > div > div:nth-child(1) > h2 {
   margin-top: 30px
@@ -1191,9 +1191,12 @@ div[class="nav nav-unscoped transparent"].transparent:hover[data-v-4fbac4e1] {
 #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner {
   border-radius: 0 0 10px 10px
 }
-div.filters-wrap:first-child > div.filters.mobile-nav-hidden:nth-child(2) > div.filter-group:nth-child(3) > div.el-slider:last-child {
-  width: 120px;
-  margin: auto
+div.filters-wrap:first-child > div.filters:nth-child(2) > div.filter-group:nth-child(3) > div.el-slider:last-child {
+padding-left:5px;
+}
+div.filters-wrap:first-child > div.filters:nth-child(2) > div.filter-group:nth-child(3) > div.el-slider:last-child > span.hohStepper:nth-child(2),
+div.filters-wrap:first-child > div.filters:nth-child(2) > div.filter-group:nth-child(3) > div.el-slider:last-child > span.hohStepper:last-child{
+display:none
 }
 div.lists:last-child > div.actions:first-child > div.theme-switch {
   position: relative;
@@ -1879,6 +1882,9 @@ div.about:first-child > div.content-wrap > .markdown .youtube {
 .hohButton,
 .signup[data-v-4fbac4e1] {
   background: rgba(var(--color-main))
+}
+.hohExtraFilters {
+overflow:hidden
 }
 .favourites,
 .overview[data-v-5c30286e],
