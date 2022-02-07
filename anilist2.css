@@ -1892,7 +1892,8 @@ overflow:hidden
   margin-top: 20px!important
 }
 .highlights[data-v-72dc5b51] {
-  margin-left: 0
+  margin-left: 0;
+  width:100%
 }
 .highlight .circle[data-v-72dc5b51] {
   min-width: 40px;
