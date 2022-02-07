@@ -821,6 +821,7 @@ div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child 
 border-top-left-radius:5px!important;
 border-top-right-radius:5px!important
 }
+div.home > div.activity-feed-wrap:first-child > div.activity-edit > div.input.el-textarea > textarea.el-textarea__inner,
 div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child > div.input.el-textarea > textarea.el-textarea__inner{
 overflow:hidden
 }
@@ -1938,4 +1939,29 @@ div.favourites.desktop.preview:nth-child(8) > div.favourites-wrap.studios:last-c
   div.stats > div.stats-wrap:last-child > div.overview:first-child > section:nth-child(3) > div.heading:first-child > div.switch:last-child div.option {
     font-size: .99rem
   }
+}
+@media (min-width: 1540px)
+{.list.small[data-v-77aecf0c] > div.details > .status {
+margin-top:5px;
+width:100%;
+}
+.list.small[data-v-77aecf0c] > div.details > .status > a.title  {
+font-size: 100%;
+width:12vw;
+margin-bottom:5px;
+display:block;
+font-weight: 400
+}  
+}
+@media (min-width: 1720px)
+{
+.list.small[data-v-77aecf0c] > div.details > .status > a.title {
+width:14vw
+}
+}
+@media (min-width: 1920px)
+{
+.list.small[data-v-77aecf0c] > div.details > .status > a.title  {
+width:16vw
+}  
 }
