@@ -11,8 +11,7 @@
   --hachi-white: 255,255,255;
   --hachi-dirty-white: 219,219,219;
   --hachi-transparent: rgb(0 0 0 / 0%);
-  --hachi-banner-background: url(https://i.imgur.com/ROLbZ1X.jpg);
-  --hachi-background: url(https://i.imgur.com/KyQeWHd.jpg);
+  --hachi-background: url(https://i.imgur.com/owuqQAB.png);
   --hachi-cursor: url(https://files.catbox.moe/ptm263.png);
   --hachi-anilist-logo: url(https://files.catbox.moe/nyzorc.svg);
   --hachi-yukino-icon: url(https://files.catbox.moe/1wx9ha.png);
@@ -1022,8 +1021,17 @@ div[class=nav-wrap] {
 .banner[data-v-1cc2919e] {
   border-radius: 13px;
   position: relative;
-  overflow: visible;
-  background-image: linear-gradient(rgba(0,0,0,.43),rgba(0,0,0,0)),var(--hachi-banner-background)!important
+  overflow: visible
+}
+.banner[data-v-1cc2919e]:after {
+  content: "";  
+  border-radius: 13px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to top, transparent, #0000009c)
 }
 .banner .shadow[data-v-1cc2919e] {
   background: rgba(var(--color-main));
