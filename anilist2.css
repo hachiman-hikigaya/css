@@ -1799,7 +1799,6 @@ div.hohSocialContent.user-follow:last-child {
   }
 }
 .bar-chart-wrap[data-v-46edc0ca] {
-  background: rgb(var(--color-main));
   overflow-x: scroll;
   box-shadow: none
 }
@@ -1956,6 +1955,21 @@ div.favourites.desktop.preview:nth-child(8) > div.favourites-wrap.studios:last-c
 .activity-entry[data-v-77aecf0c] {
   margin-bottom: 10px
 }
+.medialist .filters .filter-group:first-child > span .count {
+  margin-right: 10px
+}
+.filter-toggle[data-v-170179fc],.actions > div[data-v-ddf96a3c], .button.comment[data-v-07b321a7], .button[data-v-c574a71c], .create-btn[data-v-0064307c] {
+  background:rgba(var(--color-main))
+}
+.stat-card[data-v-686e8358],.relations-wrap[data-v-686e8358],.hohTable,.hohTable .header.row,.bar-chart-wrap[data-v-46edc0ca],[data-v-72dc5b51] .horizontal-scroller,.el-select-dropdown__item.hover, .el-select-dropdown__item:hover,.user-social .filter-group span.active,.user-follow .follow-card,.pie-chart[data-v-26dc9635],.highlight .circle[data-v-72dc5b51],.switch[data-v-05bb5e72],.filter-group .active[data-v-170179fc] ,.filter-group a.router-link-active[data-v-1e00b9da] {
+  background:rgba(174, 174, 174, .05)
+}
+.line-chart-wrap[data-v-84e71bc6] {
+  background:none
+}
+.button.cancel[data-v-c574a71c] {
+  background:rgba(20, 20, 20, .76)
+} 
 @media (max-width:432px) {
   div.stats > div.stats-wrap:last-child > div.overview:first-child > section:nth-child(3) > div.heading:first-child > div.switch:last-child div.option {
     font-size: .99rem
