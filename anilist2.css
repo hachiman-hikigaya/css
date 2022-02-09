@@ -392,11 +392,13 @@ li.el-dropdown-menu__item:nth-child(4):hover {
   left: 16px;
   -webkit-filter: blur(1.7px)
 }
+div.home > div:last-child > div > div > div.media-preview:last-child > div.media-preview-card.small > a.cover:first-child,div.home > div:last-child > div.list-previews > div.list-preview-wrap> div.list-preview> div.media-preview-card.small >a.cover {
+  border-radius:10px!important
+}
 @media (min-width:1540px) {
   .activity-anime_list .wrap,
   .activity-manga_list .wrap,
   .cover {
-    max-height: 70px;
     overflow: hidden;
     transition: .2s
   }
@@ -1961,14 +1963,43 @@ div.favourites.desktop.preview:nth-child(8) > div.favourites-wrap.studios:last-c
 .filter-toggle[data-v-170179fc],.actions > div[data-v-ddf96a3c], .button.comment[data-v-07b321a7], .button[data-v-c574a71c], .create-btn[data-v-0064307c] {
   background:rgba(var(--color-main))
 }
-.stat-card[data-v-686e8358],.relations-wrap[data-v-686e8358],.hohTable,.hohTable .header.row,.bar-chart-wrap[data-v-46edc0ca],[data-v-72dc5b51] .horizontal-scroller,.el-select-dropdown__item.hover, .el-select-dropdown__item:hover,.user-social .filter-group span.active,.user-follow .follow-card,.pie-chart[data-v-26dc9635],.highlight .circle[data-v-72dc5b51],.switch[data-v-05bb5e72],.filter-group .active[data-v-170179fc] ,.filter-group a.router-link-active[data-v-1e00b9da] {
+.media-preview-card[data-v-4b71d7c6],.el-slider__runway,.feed-type-toggle[data-v-8209bd04],.feed-type-toggle>div.active[data-v-8209bd04],.stat-card[data-v-686e8358],.relations-wrap[data-v-686e8358],.hohTable,.hohTable .header.row,.bar-chart-wrap[data-v-46edc0ca],[data-v-72dc5b51] .horizontal-scroller,.el-select-dropdown__item.hover, .el-select-dropdown__item:hover,.user-social .filter-group span.active,.user-follow .follow-card,.pie-chart[data-v-26dc9635],.highlight .circle[data-v-72dc5b51],.switch[data-v-05bb5e72],.filter-group .active[data-v-170179fc] ,.filter-group a.router-link-active[data-v-1e00b9da] {
   background:rgba(174, 174, 174, .05)
+}
+.el-dropdown-menu__item.active,.feed-filter[data-v-8209bd04]:hover,.el-select-dropdown__item.selected,.feed-type-toggle>div.active[data-v-8209bd04],.feed-type-toggle>div[data-v-8209bd04]:hover {
+  color:rgba(255, 255, 255, .8)
 }
 .line-chart-wrap[data-v-84e71bc6] {
   background:none
 }
 .button.cancel[data-v-c574a71c] {
   background:rgba(20, 20, 20, .76)
+}
+.media-preview[data-v-796abd11] .media-preview-card .content,.list-preview[data-v-6aea970d] .media-preview-card .info,.list-preview[data-v-6aea970d] .media-preview-card .content {
+  background:rgb(16, 16, 16)
+}
+@media (max-width:1040px) {
+.list-preview[data-v-6aea970d] .media-preview-card .info,.list-preview[data-v-6aea970d] .media-preview-card .content {
+  background:rgba(18, 18, 18, 0)
+}
+}
+div.info:last-child > meter:first-child {
+  filter: saturate(0) brightness(80%)
+}
+div.home > div:last-child > div.list-previews > div.list-preview-wrap:first-child > div.list-preview:last-child > div.media-preview-card > div.content:last-child > div.info-header:first-child {
+  color:#777777fa
+}
+div.home > div:last-child > div.list-previews > div.list-preview-wrap > div.list-preview > div.media-preview-card > div.content> a.title:first-child:hover {
+  color:#ffffffbd
+}
+.small[data-v-4b71d7c6],.list-preview[data-v-6aea970d] .media-preview-card .cover .image-text,.plus-progress[data-v-2fd80e52] {
+border-bottom-left-radius :10px;
+border-bottom-right-radius:10px
+}
+.behind-accent[data-v-2fd80e52] {
+height:7px;
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px
 } 
 @media (max-width:432px) {
   div.stats > div.stats-wrap:last-child > div.overview:first-child > section:nth-child(3) > div.heading:first-child > div.switch:last-child div.option {
