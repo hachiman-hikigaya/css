@@ -23,7 +23,7 @@
 :root,
 body {
   --color-background: 11,22,34!important;
-  --color-foreground: 21,31,46!important;
+      --color-foreground: 10,10,15!important;
   --color-foreground-grey: 15,22,31!important;
   --color-foreground-grey-dark: 6,12,19!important;
   --color-foreground-blue: 15,22,31!important;
@@ -94,8 +94,7 @@ body {
 .page-content {
   min-width: 320px
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner::-webkit-scrollbar,
-.about .content-wrap::-webkit-scrollbar {
+#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner::-webkit-scrollbar,.about .content-wrap::-webkit-scrollbar {
   display: none!important
 }
 .banner > .container {
@@ -1025,9 +1024,9 @@ div[class=nav-wrap] {
   position: relative;
   overflow: visible
 }
-.banner[data-v-1cc2919e]:after {
+#app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-anime > div.header-wrap:first-child > div.banner:after, #app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-manga > div.header-wrap:first-child > div.banner:after,.banner[data-v-1cc2919e]:after {
   content: "";  
-  border-radius: 13px;
+  border-radius: 10px;
   position: absolute;
   top: 0;
   left: 0;
@@ -1818,8 +1817,7 @@ div.hohSocialContent.user-follow:last-child {
 #app > div.page-content:nth-child(3) > div.studio.studio-page-unscoped,
 .child.even[data-v-20438142],
 .comment-wrap[data-v-20438142],
-.header[data-v-4df465ff],
-.tag[data-v-5760f120] {
+.header[data-v-4df465ff]{
   background: rgba(var(--color-main))
 }
 .switch[data-v-05bb5e72] {
@@ -1844,17 +1842,18 @@ div.about:first-child > div.content-wrap > .markdown .youtube {
   border-radius: 10px;
   padding: 10px
 }
-#app > div.page-content:nth-child(3) > div.forum-thread.forum-thread-unscoped.container #anchor,
-#app > div.page-content:nth-child(3) > div.forum-thread.forum-thread-unscoped.container > h1.title {
+div.forum-thread.forum-thread-unscoped.container #anchor,
+div.forum-thread.forum-thread-unscoped.container > h1.title {
   background: rgba(var(--color-main));
   width: 100%;
-  height: 45px;
+  height: auto;
   position: relative;
   margin: auto;
   overflow: hidden;
   display: flex;
   padding-left: 20px;
   padding-top: 10px;
+  padding-bottom:10px;
   font-size: 125%;
   margin-bottom: 15px;
   font-weight: 500;
@@ -1963,10 +1962,10 @@ div.favourites.desktop.preview:nth-child(8) > div.favourites-wrap.studios:last-c
 .filter-toggle[data-v-170179fc],.actions > div[data-v-ddf96a3c], .button.comment[data-v-07b321a7], .button[data-v-c574a71c], .create-btn[data-v-0064307c] {
   background:rgba(var(--color-main))
 }
-.media-preview-card[data-v-4b71d7c6],.el-slider__runway,.feed-type-toggle[data-v-8209bd04],.feed-type-toggle>div.active[data-v-8209bd04],.stat-card[data-v-686e8358],.relations-wrap[data-v-686e8358],.hohTable,.hohTable .header.row,.bar-chart-wrap[data-v-46edc0ca],[data-v-72dc5b51] .horizontal-scroller,.el-select-dropdown__item.hover, .el-select-dropdown__item:hover,.user-social .filter-group span.active,.user-follow .follow-card,.pie-chart[data-v-26dc9635],.highlight .circle[data-v-72dc5b51],.switch[data-v-05bb5e72],.filter-group .active[data-v-170179fc] ,.filter-group a.router-link-active[data-v-1e00b9da] {
+.list[data-v-4df465ff],.button[data-v-1c97ba07],.external-link[data-v-7a1f9df8],.tag[data-v-5760f120],.search-wrap[data-v-128d71ac],.type[data-v-544390d2],.open-btn[data-v-458a983a],.media-card[data-v-70df6e62],.el-message-box .el-input__inner,.el-message-box .el-button--primary,.option.selected[data-v-e3e1e202], .option[data-v-e3e1e202]:hover,.open-user-search[data-v-2edb3b2e],.settings[data-v-e9066d7e] .button,.search-wrap[data-v-458a983a],.select[data-v-e3e1e202],.open-btn[data-v-a679b1ba],.media-preview-card[data-v-4b71d7c6],.el-slider__runway,.feed-type-toggle[data-v-8209bd04],.feed-type-toggle>div.active[data-v-8209bd04],.stat-card[data-v-686e8358],.relations-wrap[data-v-686e8358],.hohTable,.hohTable .header.row,.bar-chart-wrap[data-v-46edc0ca],[data-v-72dc5b51] .horizontal-scroller,.el-select-dropdown__item.hover, .el-select-dropdown__item:hover,.user-social .filter-group span.active,.user-follow .follow-card,.pie-chart[data-v-26dc9635],.highlight .circle[data-v-72dc5b51],.switch[data-v-05bb5e72],.filter-group .active[data-v-170179fc] ,.filter-group a.router-link-active[data-v-1e00b9da] {
   background:rgba(174, 174, 174, .05)
 }
-.el-dropdown-menu__item.active,.feed-filter[data-v-8209bd04]:hover,.el-select-dropdown__item.selected,.feed-type-toggle>div.active[data-v-8209bd04],.feed-type-toggle>div[data-v-8209bd04]:hover {
+.open-btn.active[data-v-458a983a],.open-btn.active[data-v-a679b1ba], .open-btn[data-v-a679b1ba]:hover,.el-dropdown-menu__item.active,.feed-filter[data-v-8209bd04]:hover,.el-select-dropdown__item.selected,.feed-type-toggle>div.active[data-v-8209bd04],.feed-type-toggle>div[data-v-8209bd04]:hover {
   color:rgba(255, 255, 255, .8)
 }
 .line-chart-wrap[data-v-84e71bc6] {
@@ -1975,8 +1974,17 @@ div.favourites.desktop.preview:nth-child(8) > div.favourites-wrap.studios:last-c
 .button.cancel[data-v-c574a71c] {
   background:rgba(20, 20, 20, .76)
 }
-.media-preview[data-v-796abd11] .media-preview-card .content,.list-preview[data-v-6aea970d] .media-preview-card .info,.list-preview[data-v-6aea970d] .media-preview-card .content {
-  background:rgb(16, 16, 16)
+.handle-1[data-v-94c49b6c],.handle-0[data-v-94c49b6c] {
+  background:rgba(106, 106, 106, .55)
+}
+.range-wrap .handle:hover {
+  background:rgba(159, 159, 159, .81)
+}
+div.el-message-box > div.el-message-box__btns:last-child > button.el-button.el-button--default.el-button--small:first-child,.hover-data[data-v-4d8937d6],.dropdown[data-v-a679b1ba],.options[data-v-e3e1e202],.media-preview[data-v-796abd11] .media-preview-card .content,.list-preview[data-v-6aea970d] .media-preview-card .info,.list-preview[data-v-6aea970d] .media-preview-card .content {
+ background:rgb(13, 13, 18)
+}
+div.review >.banner.no-image[data-v-5ca094da] {
+  background:rgba(var(--color-main))
 }
 @media (max-width:1040px) {
 .list-preview[data-v-6aea970d] .media-preview-card .info,.list-preview[data-v-6aea970d] .media-preview-card .content {
@@ -1989,7 +1997,7 @@ div.info:last-child > meter:first-child {
 div.home > div:last-child > div.list-previews > div.list-preview-wrap:first-child > div.list-preview:last-child > div.media-preview-card > div.content:last-child > div.info-header:first-child {
   color:#777777fa
 }
-div.home > div:last-child > div.list-previews > div.list-preview-wrap > div.list-preview > div.media-preview-card > div.content> a.title:first-child:hover {
+.option.selected[data-v-e3e1e202], .option[data-v-e3e1e202]:hover,div.home > div:last-child > div.list-previews > div.list-preview-wrap > div.list-preview > div.media-preview-card > div.content> a.title:first-child:hover {
   color:#ffffffbd
 }
 .small[data-v-4b71d7c6],.list-preview[data-v-6aea970d] .media-preview-card .cover .image-text,.plus-progress[data-v-2fd80e52] {
@@ -2001,6 +2009,12 @@ height:7px;
 border-bottom-left-radius:10px;
 border-bottom-right-radius:10px
 } 
+div.media.media-page-unscoped.media-anime > div.header-wrap:first-child > div.header > div.container > div.cover-wrap:first-child > div.cover-wrap-inner > img.cover,div.media.media-page-unscoped.media-manga > div.header-wrap:first-child > div.header > div.container > div.cover-wrap:first-child > div.cover-wrap-inner > img.cover,.search .results.cover .media-card .cover, .search-landing .results:not(.table) .media-card .cover, .search .results .staff-card .cover,div.recommendations > div.wrap > div.recommendation-card > div.cover,div.media.media-page-unscoped.media-anime > div.header-wrap:first-child,div.media.media-page-unscoped.media-manga > div.header-wrap:first-child {
+  border-radius:10px!important
+}
+#app > div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters:first-child > div.filters:first-child {
+  grid-template-columns: repeat(5,160px)
+}
 @media (max-width:432px) {
   div.stats > div.stats-wrap:last-child > div.overview:first-child > section:nth-child(3) > div.heading:first-child > div.switch:last-child div.option {
     font-size: .99rem
