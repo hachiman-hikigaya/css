@@ -1979,7 +1979,7 @@ div.favourites.desktop.preview:nth-child(8) > div.favourites-wrap.studios:last-c
 .range-wrap .handle:hover {
   background:rgba(159, 159, 159, .81)
 }
-div.el-message-box > div.el-message-box__btns:last-child > button.el-button.el-button--default.el-button--small:first-child,.hover-data[data-v-4d8937d6],.dropdown[data-v-a679b1ba],.options[data-v-e3e1e202],.media-preview[data-v-796abd11] .media-preview-card .content,.list-preview[data-v-6aea970d] .media-preview-card .info,.list-preview[data-v-6aea970d] .media-preview-card .content {
+.site-theme-dark .el-dropdown-menu,.el-select-dropdown,.el-scrollbar,div.el-message-box > div.el-message-box__btns:last-child > button.el-button.el-button--default.el-button--small:first-child,.hover-data[data-v-4d8937d6],.dropdown[data-v-a679b1ba],.options[data-v-e3e1e202],.media-preview[data-v-796abd11] .media-preview-card .content,.list-preview[data-v-6aea970d] .media-preview-card .info,.list-preview[data-v-6aea970d] .media-preview-card .content {
  background:rgb(13, 13, 18)
 }
 div.review >.banner.no-image[data-v-5ca094da] {
@@ -1993,7 +1993,7 @@ div.review >.banner.no-image[data-v-5ca094da] {
 div.info:last-child > meter:first-child {
   filter: saturate(0) brightness(80%)
 }
-div.home > div:last-child > div.list-previews > div.list-preview-wrap:first-child > div.list-preview:last-child > div.media-preview-card > div.content:last-child > div.info-header:first-child {
+.el-checkbox__input.is-checked+.el-checkbox__label,.el-dialog__headerbtn:focus .el-dialog__close, .el-dialog__headerbtn:hover .el-dialog__close,div.home > div:last-child > div.list-previews > div.list-preview-wrap:first-child > div.list-preview:last-child > div.media-preview-card > div.content:last-child > div.info-header:first-child {
   color:#777777fa
 }
 .option.selected[data-v-e3e1e202], .option[data-v-e3e1e202]:hover,div.home > div:last-child > div.list-previews > div.list-preview-wrap > div.list-preview > div.media-preview-card > div.content> a.title:first-child:hover {
@@ -2013,6 +2013,17 @@ div.media.media-page-unscoped.media-anime > div.header-wrap:first-child > div.he
 }
 #app > div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters:first-child > div.filters:first-child {
   grid-template-columns: repeat(5,160px)
+}
+.list-editor-wrap .header {
+  box-shadow: none;
+  background:rgba(var(--color-main))
+}
+.list-editor-wrap .list-editor {
+  box-shadow: none
+}
+.el-checkbox__input.is-checked .el-checkbox__inner {
+  background-color: #646464;
+  border-color: #646464
 }
 @media (max-width:432px) {
   div.stats > div.stats-wrap:last-child > div.overview:first-child > section:nth-child(3) > div.heading:first-child > div.switch:last-child div.option {
