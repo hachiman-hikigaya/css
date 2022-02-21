@@ -150,17 +150,17 @@ body {
 }
 @media(max-width:825px) {
   .header-wrap .nav-wrap .nav .link {
-    margin: 0 14px
+    margin: 0 16px
   }
 }
 @media(max-width:425px) {
   .header-wrap .nav-wrap .nav .link {
-    margin: 0 14px
+    margin: 0 16px
   }
 }
 @media(max-width:375px) {
   .header-wrap .nav-wrap .nav .link {
-    margin: 0 6px
+    margin: 0 9px
   }
 }
 @media(max-width:320px) {
@@ -899,7 +899,7 @@ div.overview > div.section:first-child > div.favourites.desktop.preview:nth-chil
 .el-input-group__prepend,
 .el-input__inner {
   backdrop-filter: blur(var(--blur));
-  background: rgba(27, 37, 57, .9);
+  background: rgba(23, 35, 53, .92);
 }
 div[class="nav nav-unscoped"] > div.wrap.guest {
   margin: 0 auto auto
