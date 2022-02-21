@@ -132,13 +132,7 @@ body {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px
 }
-#app > div.page-content:nth-child(3) > div.forum-feed.container,
-#app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-anime > div.content.container:last-child,
-#app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-manga > div.content.container:last-child {
-  border-radius: 15px;
-  padding-top: 25px;
-  padding-bottom: 25px
-}
+
 #app > div.page-content:nth-child(3) > div.forum-feed.container > div.filters.mobile-nav-hidden:nth-child(2) {
   padding: 20px;
   border-radius: 15px;
@@ -1706,10 +1700,9 @@ div.forum-thread.forum-thread-unscoped.container > h1.title {
 }
 #app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-anime > div.header-wrap:first-child > div.banner:first-child,
 #app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-manga > div.header-wrap:first-child > div.banner:first-child {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   margin: 0
 }
+.list[data-v-aef58af4],
 .actions > div[data-v-ddf96a3c],
 .button.comment[data-v-07b321a7],
 .button[data-v-c574a71c]{
