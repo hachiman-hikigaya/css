@@ -652,7 +652,6 @@ body {
   .content.container {
     min-width: 375px
   }
-}
 .favourites-wrap[data-v-ddf96a3c],
 .overview .favourites > .favourites-wrap,
 .overview[data-v-5c30286e] .content-wrap,
@@ -786,8 +785,8 @@ div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child 
 #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap {
   border-radius: 10px
 }
-#app > div.page-content > div > div.content.container > div > div:nth-child(1) > div.about > div:before,
-/* #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap:before {
+/* #app > div.page-content > div > div.content.container > div > div:nth-child(1) > div.about > div:before,
+#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap:before {
   content: "Welcome!";
   letter-spacing: .05em;
   background: #0000;
@@ -910,7 +909,7 @@ filter: opacity(40%)
 .banner-content .name {
   font-size: 3.75rem;
   color: #ffffffad;
-  padding: 65px 50px 0 10px;
+  padding: 65px 10px 0 10px;
   display: flex;
   align-items: center;
   pointer-events: none
@@ -1531,9 +1530,15 @@ div.hohSocialContent.user-follow:last-child {
   position: absolute;
   display: none
 }
+.nav-btn[data-v-1cc2919e]{
+    top: -11px;
+   position: relative
+ }
 .follower-badge[data-v-1cc2919e] {
-  position: relative
+    top: -12px;
+   position: relative
 }
+    
 @media (max-width:1040px) {
   .donator-badge[data-v-1cc2919e] {
     left: 100%;
@@ -1543,32 +1548,37 @@ div.hohSocialContent.user-follow:last-child {
     position: absolute;
     display: none
   }
-  .follower-badge[data-v-1cc2919e] {
-    position: relative
-  }
   .banner-content .name {
-    font-size: 2.7rem;
+    font-size: 3.75rem;
     position: relative;
-    top: -10px;
     overflow: hidden
   }
-}
+}  
 @media (max-width:760px) {
+.nav-btn[data-v-1cc2919e] {
+    top: 5px;
+   position: relative
+ }
+.follower-badge[data-v-1cc2919e] {
+  top: 7px;
+  position: relative
+  }
+}
+@media (max-width:610px) {
   .banner-content .name {
-    font-size: 2.7rem;
+    font-size: 3.75rem;
     position: relative;
-    top: -10px;
     overflow: hidden
   }
   .donator-badge[data-v-1cc2919e] {
     display: none
   }
   .follower-badge[data-v-1cc2919e] {
-    top: 0;
-    margin-left: -85px;
-    position: relative
+    top: 140px;
+    left:180px;
+      margin:auto;
+    position: absolute
   }
-
   .header-wrap[data-v-1cc2919e] {
     min-width: 375px;
     background: rgba(var(--color-main))
@@ -1578,10 +1588,6 @@ div.hohSocialContent.user-follow:last-child {
   background: 0 0
 }
 @media (max-width:520px) {
-  .follower-badge[data-v-1cc2919e] {
-    top: -30px;
-    margin-left: -160px
-  }
   .heading[data-v-72dc5b51] .switch .option {
     font-size: 1.2rem
   }
@@ -1589,15 +1595,6 @@ div.hohSocialContent.user-follow:last-child {
 @media (max-width:440px) {
   .donator-badge[data-v-1cc2919e] {
     display: none
-  }
-  .follower-badge[data-v-1cc2919e] {
-    top: -65px;
-    margin-left: -178px
-  }
-  .banner-content .name {
-    position: relative;
-    top: -5px;
-    overflow: hidden
   }
 }
 .bar-chart-wrap[data-v-46edc0ca] {
@@ -1823,3 +1820,4 @@ div.media.media-page-unscoped.media-anime > div.header-wrap:first-child > div.he
   div.stats > div.stats-wrap:last-child > div.overview:first-child > section:nth-child(3) > div.heading:first-child > div.switch:last-child div.option {
     font-size: .99rem
   }
+}
