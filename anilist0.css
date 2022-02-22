@@ -491,9 +491,19 @@ body .overview .favourite.studio {
   padding: 0;
   visibility: hidden
 }
-.markdown-spoiler:before {
+div.about:first-child .markdown-spoiler:before,
+div.wrap .markdown-spoiler:before{
   content: "Click to View"!important;
   font-weight: 700
+}
+.markdown .markdown-spoiler:before {
+  padding:5px;
+  padding-top:3px; 
+  font-weight: 700;
+  padding-bottom:3px;
+  background: rgb(20, 25, 33);
+  color:#8c8c8c;
+  border-radius:5px
 }
 .footer[data-v-04b245e6] a:nth-child(4) {
   margin-left: 35%!important;
@@ -891,12 +901,6 @@ div.overview > div.section:first-child > div.favourites.desktop.preview:nth-chil
 .users[data-v-58401890]{
 background: rgba(23, 35, 53, 1)
 }
-.el-input-group__append,
-.el-input-group__prepend,
-.el-input__inner {
-  backdrop-filter: blur(var(--blur));
-  background: rgba(23, 35, 53, .92);
-}
 div[class="nav nav-unscoped"] > div.wrap.guest {
   margin: 0 auto auto
 }
@@ -1054,7 +1058,6 @@ div.menu.visible:last-child > :hover {
 .browse-wrap[data-v-4fbac4e1]:hover .dropdown,
 .footer[data-v-815ccddc],
 .load-more[data-v-6f203cf2],
-.markdown .markdown-spoiler:before,
 .reply[data-v-732ef224],
 .text .donator-badge[data-v-77aecf0c],
 .user-wrap[data-v-4fbac4e1]:hover .dropdown {
@@ -1739,11 +1742,14 @@ div.favourites.desktop.preview:nth-child(8) > div.favourites-wrap.studios:last-c
   margin-right: 10px
 }
 .list-editor-wrap .header .save-btn,.filter-toggle[data-v-170179fc],.actions > div[data-v-ddf96a3c], .button.comment[data-v-07b321a7], .button[data-v-c574a71c] {
-background: rgb(25 39 61)
+background: rgb(23, 35, 53)
 }
 .create-btn[data-v-0064307c],.list[data-v-4df465ff],.button[data-v-1c97ba07],.external-link[data-v-7a1f9df8],.tag[data-v-5760f120],.search-wrap[data-v-128d71ac],.type[data-v-544390d2],.open-btn[data-v-458a983a],.media-card[data-v-70df6e62],.el-message-box .el-input__inner,.el-message-box .el-button--primary,.option.selected[data-v-e3e1e202], .option[data-v-e3e1e202]:hover,.open-user-search[data-v-2edb3b2e],.settings[data-v-e9066d7e] .button,.search-wrap[data-v-458a983a],.select[data-v-e3e1e202],.open-btn[data-v-a679b1ba],.media-preview-card[data-v-4b71d7c6],.el-slider__runway,.feed-type-toggle[data-v-8209bd04],.stat-card[data-v-686e8358],.relations-wrap[data-v-686e8358],.hohTable,.hohTable .header.row,.bar-chart-wrap[data-v-46edc0ca],[data-v-72dc5b51] .horizontal-scroller,.el-select-dropdown__item.hover, .el-select-dropdown__item:hover,.user-social .filter-group span.active,.user-follow .follow-card,.pie-chart[data-v-26dc9635],.highlight .circle[data-v-72dc5b51],.switch[data-v-05bb5e72],.filter-group a.router-link-active[data-v-1e00b9da] {
-    background: rgb(29, 41, 57);
-    color:#b0b0b0
+  background: rgb(29, 41, 57);
+  color:#b0b0b0
+}
+.feed-type-toggle>div.active[data-v-8209bd04]{
+  background: rgb(36, 50, 66)
 }
 .open-btn.active[data-v-458a983a],.open-btn.active[data-v-a679b1ba], .open-btn[data-v-a679b1ba]:hover,.el-dropdown-menu__item.active,.feed-filter[data-v-8209bd04]:hover,.el-select-dropdown__item.selected,.feed-type-toggle>div.active[data-v-8209bd04],.feed-type-toggle>div[data-v-8209bd04]:hover {
   color:rgba(255, 255, 255, .8)
@@ -1806,11 +1812,11 @@ div.media.media-page-unscoped.media-anime > div.header-wrap:first-child > div.he
 .option.active[data-v-05bb5e72],
 .hohRecsSwitch .options .option.active,
 .el-checkbox__input.is-checked .el-checkbox__inner {
-  background-color: #646464;
+  background: rgb(42, 56, 77);
   border-color: #646464
 }
 .el-input-group__append, .el-input-group__prepend, .el-input__inner,.filter-group .active[data-v-170179fc],
-.filter-group .active[data-v-119352f9] {
+.filter-toggle[data-v-1e00b9da],.filter-group .active[data-v-119352f9] {
   background: rgb(23, 35, 53)
 }
 @media (max-width:432px) {
