@@ -608,7 +608,7 @@ div[class=user-follow] {
 .hamburger[data-v-8aeb5e9a],
 .menu[data-v-8aeb5e9a],
 .mobile-nav[data-v-8aeb5e9a] > .menu.visible[data-v-8aeb5e9a] {
-  background: rgb(var(--color-main))
+  background: rgb(21, 29, 42);
 }
 div[class="nav nav-unscoped transparent"].transparent:hover[data-v-4fbac4e1] {
   background: rgba(19,28,45,.69);
@@ -818,20 +818,13 @@ div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child 
   border-bottom: 1px solid #4b4b4b1f
 }
 #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > h2 > div,
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown {
-  position: absolute;
-  margin: auto;
-  left: 88%;
-  top: 15px;
-  overflow: visible;
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
-  align-items: right
-}
+  #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown {
+    position: absolute;
+    left:auto;
+    right:0
+  }
 .activity-entry.full-width.activity-anime_list > div.wrap,
 .activity-entry.full-width.activity-manga_list > div.wrap {
-  background: #00000096;
   transition: .69s ease-in-out
 }
 .list.small[data-v-77aecf0c] {
@@ -894,6 +887,9 @@ div.overview > div.section:first-child > div.favourites.desktop.preview:nth-chil
   top: 15px;
   font-size: 70%;
   margin-right: auto
+}
+.users[data-v-58401890]{
+background: rgba(23, 35, 53, 1)
 }
 .el-input-group__append,
 .el-input-group__prepend,
@@ -1045,8 +1041,15 @@ div.menu.visible:last-child > :hover {
 .footer[data-v-38edf8f8] {
   background: rgba(19,28,45,.2)
 }
+.medialist.table .entry:hover {
+  background: rgb(34, 45, 62)
+}
+.medialist .notes:before, 
+.medialist .repeat:before {
+  background: rgb(50, 60, 77)
+}
 .embed[data-v-13cdaed6] {
-background: rgba(30, 45, 72, .34)
+  background: rgb(15, 24, 39)
 }
 .browse-wrap[data-v-4fbac4e1]:hover .dropdown,
 .footer[data-v-815ccddc],
@@ -1060,6 +1063,10 @@ background: rgba(30, 45, 72, .34)
 #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap > .markdown img,
 .wrap[data-v-77aecf0c] {
   border-radius: 10px
+}
+.el-input,
+.el-textarea {
+  border-radius:10px
 }
 .activity-feed > div > div.wrap > div.list.small > a::before,
 .el-input,
@@ -1138,7 +1145,7 @@ div.lists > div.list-wrap > div.list-section {
     left: -10px;
     height: 26px;
     width: 90px;
-    background: rgba(var(--color-main))
+     background:rgba(23, 35, 53, .92)
   }
   div.lists > div.list-wrap > div.list-section {
     background: rgba(var(--color-main));
@@ -1236,7 +1243,7 @@ div.lists > div.list-wrap > div.list-section {
 }
 .review-card[data-v-0369a0cf],
 .thread-card[data-v-550f7194] {
-  background: rgba(var(--color-main))
+  background: rgba(15, 25, 40, .57)
 }
 #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div:nth-child(4) > div:first-child > h2.section-header.link:first-child,
 #app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div:nth-child(4) > div:last-child > h2.section-header.link:first-child,
@@ -1367,7 +1374,7 @@ div.lists > div.list-wrap > div.list-section {
   top: -13px;
   height: 30px;
   width: 90px;
-  background: rgba(var(--color-main))
+   background:rgba(23, 35, 53, .92)
 }
 .follow-card .name,
 .follow-card.unfollow,
@@ -1486,7 +1493,7 @@ div.hohSocialContent.user-follow:last-child {
     height: auto;
     margin-bottom: 20px
   }
-  .filter-toggle.active[data-v-0a867854][data-v-0a867854] {
+.filter-toggle.active[data-v-0a867854][data-v-0a867854] {
     color: rgba(var(--hachi-gray))
   }
   div.lists:last-child > div.list-wrap > div.list-section:last-child > div.list-head.row:first-child > div.format:last-child,
@@ -1563,18 +1570,6 @@ div.hohSocialContent.user-follow:last-child {
     min-width: 375px;
     background: rgba(var(--color-main))
   }
-  #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > h2 > div,
-  #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown {
-    position: absolute;
-    margin: auto;
-    left: 85%;
-    top: 15px;
-    overflow: visible;
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: right
-  }
 }
 .nav-wrap[data-v-1cc2919e] {
   background: 0 0
@@ -1583,18 +1578,6 @@ div.hohSocialContent.user-follow:last-child {
   .follower-badge[data-v-1cc2919e] {
     top: -30px;
     margin-left: -160px
-  }
-  #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > h2 > div,
-  #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown {
-    position: absolute;
-    margin: auto;
-    left: 83%;
-    top: 15px;
-    overflow: visible;
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: right
   }
   .heading[data-v-72dc5b51] .switch .option {
     font-size: 1.2rem
@@ -1613,21 +1596,9 @@ div.hohSocialContent.user-follow:last-child {
     top: -5px;
     overflow: hidden
   }
-  #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > h2 > div,
-  #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown {
-    position: absolute;
-    margin: auto;
-    left: 78%;
-    top: 15px;
-    overflow: visible;
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: right
-  }
 }
 .bar-chart-wrap[data-v-46edc0ca] {
-  overflow-x: scroll;
+      overflow-x: scroll;
   box-shadow: none
 }
 #app > div.page-content:nth-child(3) > div.character-wrap,
@@ -1724,7 +1695,7 @@ div.forum-thread.forum-thread-unscoped.container > h1.title {
 .favourite.studio[data-v-0317d914],
 .hohButton,
 .signup[data-v-4fbac4e1] {
-  background: rgba(var(--color-main))
+   background:rgba(23, 35, 53, .92)
 }
 .hohExtraFilters {
   overflow: hidden
@@ -1768,14 +1739,16 @@ div.favourites.desktop.preview:nth-child(8) > div.favourites-wrap.studios:last-c
   margin-right: 10px
 }
 .list-editor-wrap .header .save-btn,.filter-toggle[data-v-170179fc],.actions > div[data-v-ddf96a3c], .button.comment[data-v-07b321a7], .button[data-v-c574a71c] {
-  background:rgba(var(--color-main))
+background: rgb(25 39 61)
 }
-.create-btn[data-v-0064307c],.list[data-v-4df465ff],.button[data-v-1c97ba07],.external-link[data-v-7a1f9df8],.tag[data-v-5760f120],.search-wrap[data-v-128d71ac],.type[data-v-544390d2],.open-btn[data-v-458a983a],.media-card[data-v-70df6e62],.el-message-box .el-input__inner,.el-message-box .el-button--primary,.option.selected[data-v-e3e1e202], .option[data-v-e3e1e202]:hover,.open-user-search[data-v-2edb3b2e],.settings[data-v-e9066d7e] .button,.search-wrap[data-v-458a983a],.select[data-v-e3e1e202],.open-btn[data-v-a679b1ba],.media-preview-card[data-v-4b71d7c6],.el-slider__runway,.feed-type-toggle[data-v-8209bd04],.feed-type-toggle>div.active[data-v-8209bd04],.stat-card[data-v-686e8358],.relations-wrap[data-v-686e8358],.hohTable,.hohTable .header.row,.bar-chart-wrap[data-v-46edc0ca],[data-v-72dc5b51] .horizontal-scroller,.el-select-dropdown__item.hover, .el-select-dropdown__item:hover,.user-social .filter-group span.active,.user-follow .follow-card,.pie-chart[data-v-26dc9635],.highlight .circle[data-v-72dc5b51],.switch[data-v-05bb5e72],.filter-group .active[data-v-170179fc] ,.filter-group a.router-link-active[data-v-1e00b9da] {
-  background:rgba(174, 174, 174, .05)
+.create-btn[data-v-0064307c],.list[data-v-4df465ff],.button[data-v-1c97ba07],.external-link[data-v-7a1f9df8],.tag[data-v-5760f120],.search-wrap[data-v-128d71ac],.type[data-v-544390d2],.open-btn[data-v-458a983a],.media-card[data-v-70df6e62],.el-message-box .el-input__inner,.el-message-box .el-button--primary,.option.selected[data-v-e3e1e202], .option[data-v-e3e1e202]:hover,.open-user-search[data-v-2edb3b2e],.settings[data-v-e9066d7e] .button,.search-wrap[data-v-458a983a],.select[data-v-e3e1e202],.open-btn[data-v-a679b1ba],.media-preview-card[data-v-4b71d7c6],.el-slider__runway,.feed-type-toggle[data-v-8209bd04],.stat-card[data-v-686e8358],.relations-wrap[data-v-686e8358],.hohTable,.hohTable .header.row,.bar-chart-wrap[data-v-46edc0ca],[data-v-72dc5b51] .horizontal-scroller,.el-select-dropdown__item.hover, .el-select-dropdown__item:hover,.user-social .filter-group span.active,.user-follow .follow-card,.pie-chart[data-v-26dc9635],.highlight .circle[data-v-72dc5b51],.switch[data-v-05bb5e72],.filter-group a.router-link-active[data-v-1e00b9da] {
+    background: rgb(29, 41, 57);
+    color:#b0b0b0
 }
 .open-btn.active[data-v-458a983a],.open-btn.active[data-v-a679b1ba], .open-btn[data-v-a679b1ba]:hover,.el-dropdown-menu__item.active,.feed-filter[data-v-8209bd04]:hover,.el-select-dropdown__item.selected,.feed-type-toggle>div.active[data-v-8209bd04],.feed-type-toggle>div[data-v-8209bd04]:hover {
   color:rgba(255, 255, 255, .8)
 }
+.relations[data-v-686e8358]{padding-left:6px}
 .line-chart-wrap[data-v-84e71bc6] {
   background:none
 }
@@ -1800,10 +1773,10 @@ div.review >.banner.no-image[data-v-5ca094da] {
 }
 }
 div.info:last-child > meter:first-child {
-  filter: saturate(0) brightness(80%)
+  filter: saturate(80%) hue-rotate(25deg) brightness(100%)
 }
 .el-checkbox__input.is-checked+.el-checkbox__label,.el-dialog__headerbtn:focus .el-dialog__close, .el-dialog__headerbtn:hover .el-dialog__close,div.home > div:last-child > div.list-previews > div.list-preview-wrap:first-child > div.list-preview:last-child > div.media-preview-card > div.content:last-child > div.info-header:first-child {
-  color:#777777fa
+  color:#ddddddfa
 }
 .option.selected[data-v-e3e1e202], .option[data-v-e3e1e202]:hover,div.home > div:last-child > div.list-previews > div.list-preview-wrap > div.list-preview > div.media-preview-card > div.content> a.title:first-child:hover {
   color:#ffffffbd
@@ -1830,9 +1803,15 @@ div.media.media-page-unscoped.media-anime > div.header-wrap:first-child > div.he
 .list-editor-wrap .list-editor {
   box-shadow: none
 }
+.option.active[data-v-05bb5e72],
+.hohRecsSwitch .options .option.active,
 .el-checkbox__input.is-checked .el-checkbox__inner {
   background-color: #646464;
   border-color: #646464
+}
+.el-input-group__append, .el-input-group__prepend, .el-input__inner,.filter-group .active[data-v-170179fc],
+.filter-group .active[data-v-119352f9] {
+  background: rgb(23, 35, 53)
 }
 @media (max-width:432px) {
   div.stats > div.stats-wrap:last-child > div.overview:first-child > section:nth-child(3) > div.heading:first-child > div.switch:last-child div.option {
