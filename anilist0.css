@@ -316,7 +316,6 @@ div.genres:first-child > div.genre:nth-child(5) > div.amount:last-child {
 }
 .el-dropdown-menu__item--divided:before,
 .el-popper[x-placement^=bottom] .popper__arrow,
-.header > div.donator-badge,
 div.percentage-bar:last-child {
   display: none
 }
@@ -342,18 +341,10 @@ li.el-dropdown-menu__item:nth-child(4):focus,
 li.el-dropdown-menu__item:nth-child(4):hover {
   background: rgba(var(--hachi-cyan),.2)
 }
-/* .activity-feed > div > div.wrap > div.list.small > a::before {
-  content: "";
-  background: inherit;
-  width: 110%;
-  height: 110%;
-  display: block;
-  z-index: -3;
-  position: absolute;
-  top: -5px;
-  left: 14px;
-  filter:opacity(10%)blur(8.0px)!important;
-} */
+.activity-feed .markdown img,.activity-feed .markdown img {
+    z-index: 1;position:relative
+}
+
 div.home > div:last-child > div > div > div.media-preview:last-child > div.media-preview-card.small > a.cover:first-child,div.home > div:last-child > div.list-previews > div.list-preview-wrap> div.list-preview> div.media-preview-card.small >a.cover {
   border-radius:10px!important
 }
@@ -520,7 +511,7 @@ div.footer > div.container > div.links:last-child > section:nth-child(3) > a:fir
 div.footer > div.container > div.links:last-child > section:nth-child(3) > a:last-child,
 div.footer > div.container > div.links:last-child > section:nth-child(3) > a:nth-child(2),
 div.footer > div.container > div.links:last-child > section:nth-child(3) > a:nth-child(3) {
-  display: None
+  display: none
 }
 div.footer > div.container:before {
   width: 300px!important;
@@ -552,6 +543,10 @@ div.details > div.donator-badge,
 div.dropdown.el-dropdown,
 div.theme-selector:first-child {
   display: none
+}
+.header > div.donator-badge {
+  margin-top:-5px;
+  padding:0
 }
 .dropdown[data-v-04b245e6]:before,
 .dropdown[data-v-38edf8f8]:before {
@@ -785,27 +780,6 @@ div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child 
 #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap {
   border-radius: 10px
 }
-/* #app > div.page-content > div > div.content.container > div > div:nth-child(1) > div.about > div:before,
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap:before {
-  content: "Welcome!";
-  letter-spacing: .05em;
-  background: #0000;
-  width: 100%;
-  height: 45px;
-  top: -20px;
-  position: relative;
-  margin: auto;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 150%;
-  font-weight: 700;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom: 1px solid #4b4b4b1f
-} */
 #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child,
 #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.pink > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child {
   backdrop-filter: blur(var(--blur));
@@ -908,7 +882,7 @@ filter: opacity(40%)
 }
 .banner-content .name {
   font-size: 3.75rem;
-  color: #ffffffad;
+  color: #ffffffba;
   padding: 65px 10px 0 10px;
   display: flex;
   align-items: center;
@@ -1330,7 +1304,6 @@ div.lists > div.list-wrap > div.list-section {
   padding: 10px;
   border-radius: 10px;
   width: 100%;
-  max-height: 18%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1763,7 +1736,7 @@ background: rgb(23, 35, 53)
   color:#b0b0b0
 }
 .feed-type-toggle>div.active[data-v-8209bd04]{
-  background: rgb(36, 50, 66)
+  background: rgb(46, 63, 83)
 }
 .open-btn.active[data-v-458a983a],.open-btn.active[data-v-a679b1ba], .open-btn[data-v-a679b1ba]:hover,.el-dropdown-menu__item.active,.feed-filter[data-v-8209bd04]:hover,.el-select-dropdown__item.selected,.feed-type-toggle>div.active[data-v-8209bd04],.feed-type-toggle>div[data-v-8209bd04]:hover {
   color:rgba(255, 255, 255, .8)
