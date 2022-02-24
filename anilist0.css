@@ -205,10 +205,6 @@ div[class="count circle"] {
 .history-day.lv-3 {
   background: rgb(var(--hachi-dark-gray))!important
 }
-.desktop:nth-of-type(2) {
-  height: 0;
-  visibility: hidden
-}
 .favourites .favourite {
   border-radius: 9px!important
 }
@@ -658,6 +654,10 @@ body {
 .page-content {
   border-radius: 10px
 }
+.overview[data-v-5c30286e] .content-wrap{
+  border-top-left-radius: 0px;
+  border-top-right-radius:0px
+}
 #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-anime_list {
   position: relative;
   padding: 2px
@@ -725,8 +725,8 @@ div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.c
   align-items: center;
   padding-top: 5px;
   font-size: 130%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   border-bottom: 1px solid #4b4b4b1f
 }
 .markdown-editor {
