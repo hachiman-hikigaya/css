@@ -681,6 +681,10 @@ body {
   border-top-left-radius: 0px;
   border-top-right-radius:0px
 }
+div.content.container > div > div:nth-child(2) > div.stats-wrap.full-width > div{  
+    border-top-left-radius: 10px;
+  border-top-right-radius:10px
+}
 #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-anime_list {
   position: relative;
   padding: 2px
