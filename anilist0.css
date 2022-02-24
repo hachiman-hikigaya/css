@@ -681,7 +681,9 @@ body {
   border-top-left-radius: 0px;
   border-top-right-radius:0px
 }
-div.content.container > div > div:nth-child(2) > div.stats-wrap.full-width > div{  
+div.content.container > div > div:nth-child(2) > div.stats-wrap.full-width > div,
+div.content.container > div > div:nth-child(2) > div.stats-wrap > div.list-stats.content-wrap.hohMilestones,
+div.content.container > div > div:nth-child(2) > div.stats-wrap > div:nth-child(2){  
     border-top-left-radius: 10px;
   border-top-right-radius:10px
 }
