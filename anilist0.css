@@ -224,11 +224,11 @@ div[class="count circle"] {
 }
 .history-day.lv-2,
 .tooltip .circle.lv-2 {
-  background: rgba(171, 186, 205, .3)!important
+  background: rgba(171, 186, 205, .3,7)!important
 }
 .history-day.lv-1,
 .tooltip .circle.lv-1 {
-  background: rgba(171, 186, 205, .1)!important
+  background: rgba(171, 186, 205, .2)!important
 }
 .favourites .favourite {
   border-radius: 9px!important
@@ -365,7 +365,6 @@ li.el-dropdown-menu__item:nth-child(4):hover {
 .activity-feed .markdown img,.activity-feed .markdown img {
     z-index: 1;position:relative
 }
-
 div.home > div:last-child > div > div > div.media-preview:last-child > div.media-preview-card.small > a.cover:first-child,div.home > div:last-child > div.list-previews > div.list-preview-wrap> div.list-preview> div.media-preview-card.small >a.cover {
   border-radius:10px!important
 }
@@ -558,7 +557,6 @@ div.nav.container > a.link:nth-child(3) {
 }
 .hohDownload,
 .hohRewatchSuffix,
-.hohScore,
 .page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div:nth-child(2) > div > div.text,
 div.details > div.donator-badge,
 div.dropdown.el-dropdown,
