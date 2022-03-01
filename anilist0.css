@@ -94,7 +94,7 @@ body {
 .page-content {
   min-width: 320px
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner::-webkit-scrollbar,.about .content-wrap::-webkit-scrollbar {
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner::-webkit-scrollbar,.about .content-wrap::-webkit-scrollbar {
   display: none!important
 }
 
@@ -133,7 +133,7 @@ body {
   border-bottom-right-radius: 15px
 }
 
-#app > div.page-content:nth-child(3) > div.forum-feed.container > div.filters.mobile-nav-hidden:nth-child(2) {
+div.page-content:nth-child(3) > div.forum-feed.container > div.filters.mobile-nav-hidden:nth-child(2) {
   padding: 20px;
   border-radius: 15px;
   margin-bottom: auto
@@ -259,20 +259,20 @@ div[class="count circle"] {
   justify-content: flex-end;
   align-items: center
 }
-#app > div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-anime_list > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2),
-#app > div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-manga_list > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2),
+div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-anime_list > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2),
+div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-manga_list > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2),
 div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-anime_list > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2),
 div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-manga_list > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2) {
   top: 2px;
   margin-left: -5px
 }
-#app > div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-text > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2),
+div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-text > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2),
 div.activity-feed-wrap:last-child > div.activity-feed > div.activity-entry.activity-text > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2),
 div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-message > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2) > span.el-dropdown-link.action.el-dropdown-selfdefine:first-child,
 div.home > div.activity-feed-wrap:first-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-manga_list:nth-child(8) > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2) > span.el-dropdown-link.action.el-dropdown-selfdefine.focusing:first-child {
   top: 2px
 }
-#app > div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-text > div.wrap:first-child > div.time:nth-child(2) > span.action.has-label:first-child,
+div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-text > div.wrap:first-child > div.time:nth-child(2) > span.action.has-label:first-child,
 div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-message > div.wrap:first-child > div.time:nth-child(2) > span.action.has-label:first-child,
 div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-text:nth-child(8) > div.wrap:first-child > div.time:nth-child(2) > span.action.has-label:first-child {
   top: 1px
@@ -299,9 +299,9 @@ div.activity-entry.activity-anime_list > div.wrap:first-child > div.time:nth-chi
 .wrap > div.text > div.activity-markdown {
   border-bottom: 1px solid rgba(var(--hachi-gray),.2)
 }
-#app > div.page-content:nth-child(3) > div.forum-feed.container,
-#app > div.page-content:nth-child(3) > div.forum-feed.container > div.filters.mobile-nav-hidden:nth-child(2),
-#app > div.page-content:nth-child(3) > div.forum-thread.forum-thread-unscoped.container > div.body,
+div.page-content:nth-child(3) > div.forum-feed.container,
+div.page-content:nth-child(3) > div.forum-feed.container > div.filters.mobile-nav-hidden:nth-child(2),
+div.page-content:nth-child(3) > div.forum-thread.forum-thread-unscoped.container > div.body,
 .child.even[data-v-11064179],
 .comment-wrap[data-v-11064179],
 .header[data-v-4df465ff],
@@ -677,25 +677,25 @@ body {
 .page-content {
   border-radius: 10px
 }
-.overview[data-v-5c30286e] .content-wrap{
+.overview[data-v-5c30286e] .content-wrap {
   border-top-left-radius: 0px;
   border-top-right-radius:0px
 }
 div.content.container > div > div:nth-child(2) > div.stats-wrap.full-width > div,
 div.content.container > div > div:nth-child(2) > div.stats-wrap > div.list-stats.content-wrap.hohMilestones,
-div.content.container > div > div:nth-child(2) > div.stats-wrap > div:nth-child(2){  
+div.content.container > div > div:nth-child(2) > div.stats-wrap > div:nth-child(2) {  
     border-top-left-radius: 10px;
   border-top-right-radius:10px
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-anime_list {
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-anime_list {
   position: relative;
   padding: 2px
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:first-child,
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(2),
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(3),
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(4),
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(5) {
+div.page-content:nth-child(3) > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:first-child,
+div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(2),
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(3),
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(4),
+div.page-content:nth-child(3) > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(5) {
   background: #41414100;
   border-radius: 7px;
   padding-bottom: 8px
@@ -707,7 +707,7 @@ div.genres:first-child > div.genre:nth-child(4) > div.amount:last-child,
 div.genres:first-child > div.genre:nth-child(5) > div.amount:last-child {
   color: rgba(114,138,161,.6)!important
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.pink > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child,
+div.page-content:nth-child(3) > div.user.user-page-unscoped.pink > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child,
 div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child {
   backdrop-filter: blur(var(--blur));
   background: rgba(var(--color-main));
@@ -723,13 +723,13 @@ div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.c
   border-top-right-radius: 10px;
   border-bottom: 1px solid #4b4b4b1f
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.pink > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child,
-div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header {
+div.page-content:nth-child(3)
+div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header {
   text-indent: -9999px;
   line-height: 0
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.pink > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child:after,
-div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child:after {
+div.page-content:nth-child(3) 
+div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child:after {
   text-indent: 0;
   display: flex;
   flex-direction: column;
@@ -778,17 +778,22 @@ div.home > div.activity-feed-wrap:first-child > div.activity-edit > div.input.el
 div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child > div.input.el-textarea > textarea.el-textarea__inner {
   overflow: hidden
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(1) > h2.section-header:first-child > div.actions,
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(3) > h2.section-header:first-child > div.actions,
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(4) > h2.section-header:first-child > div.actions,
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(5) > h2.section-header:first-child > div.actions {
+div.page-content:nth-child(3) div.content.container:last-child > div.favourites > div.favourites:nth-child(1) > h2.section-header:first-child > div.actions,
+div.page-content:nth-child(3) div.content.container:last-child > div.favourites > div.favourites:nth-child(3) > h2.section-header:first-child > div.actions,
+div.page-content:nth-child(3)
+div.content.container:last-child > div.favourites > div.favourites:nth-child(4) > h2.section-header:first-child > div.actions,
+div.page-content:nth-child(3)
+div.content.container:last-child > div.favourites > div.favourites:nth-child(5) > h2.section-header:first-child > div.actions {
   position: absolute;
   bottom: 7px;
   right: 20px
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > h2.section-header:first-child,
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > h2.section-header:first-child,
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > h2.section-header:first-child {
+div.page-content:nth-child(3)
+div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > h2.section-header:first-child,
+div.page-content:nth-child(3)
+div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > h2.section-header:first-child,
+div.page-content:nth-child(3)
+div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > h2.section-header:first-child {
   backdrop-filter: blur(var(--blur));
   background: rgba(var(--color-main));
   width: 100%;
@@ -806,11 +811,11 @@ div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child 
   border-top-right-radius: 10px;
   border-bottom: 1px solid #4b4b4b1f
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap {
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap {
   border-radius: 10px
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child,
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.pink > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child {
+div.page-content:nth-child(3)
+div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child{
   backdrop-filter: blur(var(--blur));
   background: rgba(var(--color-main));
   width: 100%;
@@ -829,8 +834,9 @@ div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child 
   border-top-right-radius: 10px;
   border-bottom: 1px solid #4b4b4b1f
 }
-#app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > h2 > div,
-  #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown {
+div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > h2 > div,
+div.page-content:nth-child(3)
+div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown {
     position: absolute;
     left:auto;
     right:0
@@ -864,14 +870,19 @@ div.activity-entry.activity-anime_list > div.wrap {
   font-weight: 700;
   max-width: 87%
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child,
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > div.favourites-wrap.anime:last-child,
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > div.favourites-wrap.characters:last-child,
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > div.favourites-wrap.staff:last-child,
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > div.favourites-wrap.studios:last-child {
+div.page-content:nth-child(3)
+div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child,
+div.page-content:nth-child(3)
+div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > div.favourites-wrap.anime:last-child,
+div.page-content:nth-child(3)
+div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > div.favourites-wrap.characters:last-child,
+div.page-content:nth-child(3)
+div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > div.favourites-wrap.staff:last-child,
+div.page-content:nth-child(3)
+div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > div.favourites-wrap.studios:last-child {
   border-radius: 0 0 10px 10px
 }
-#app > div.page-content > div > div.content.container > div > div:nth-child(1) > div:nth-child(3) > div {
+div.page-content > div > div.content.container > div > div:nth-child(1) > div:nth-child(3) > div {
   border-top-left-radius: 0;
   border-top-right-radius: 0
 }
@@ -893,7 +904,8 @@ div.overview > div.section:first-child > div.favourites.desktop.preview:nth-chil
   border-top-right-radius: 10px;
   border-bottom: 1px solid #4b4b4b1f
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child > div.actions {
+div.page-content:nth-child(3)
+div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child > div.actions {
   position: absolute;
   left: 82%;
   top: 15px;
@@ -1030,11 +1042,11 @@ div.filters-wrap:first-child {
   width: 100%;
   height: 740px
 }
-#app > div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters {
+div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters {
   height: 200px;
   background: 0 0
 }
-#app > div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters:first-child > div.extra-filters-wrap:last-child > div.dropdown.anime:last-child > div.filters-wrap {
+div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters:first-child > div.extra-filters-wrap:last-child > div.dropdown.anime:last-child > div.filters-wrap {
   height: 50px;
   background: 0 0
 }
@@ -1065,7 +1077,8 @@ div.menu.visible:last-child > :hover {
 .user-wrap[data-v-4fbac4e1]:hover .dropdown {
   background: rgba(var(--color-main))
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap > .markdown img,
+div.page-content:nth-child(3)
+div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap > .markdown img,
 .wrap[data-v-77aecf0c] {
   border-radius: 10px
 }
@@ -1090,8 +1103,9 @@ background:none
   background: rgba(var(--color-main));
   border-radius: 0 0 10px 10px
 }
-#app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-edit > div.input.el-textarea > textarea,
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner {
+div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-edit > div.input.el-textarea > textarea,
+div.page-content:nth-child(3)
+div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner {
   border-radius: 0 0 10px 10px
 }
 div.filters-wrap:first-child > div.filters:nth-child(2) > div.filter-group:nth-child(3) > div.el-slider:last-child {
@@ -1123,7 +1137,8 @@ div.lists:last-child > div.actions:first-child > div.theme-switch {
     width: 90px;
     background: rgba(var(--color-main))
   }
-  #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.stats > div.filters:first-child {
+div.page-content:nth-child(3)
+div.content.container:last-child > div.stats > div.filters:first-child {
     background: 0 0!important
   }
   #hohDraw3x3 {
@@ -1160,7 +1175,7 @@ div.lists > div.list-wrap > div.list-section {
     border-bottom-right-radius: 10px
   }
 }
-#app > div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > h2.section-header:first-child {
+div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > h2.section-header:first-child {
   background: rgba(var(--color-main));
   width: 100%;
   height: 45px;
@@ -1176,16 +1191,16 @@ div.lists > div.list-wrap > div.list-section {
   border-top-right-radius: 10px;
   border-bottom: 1px solid #4b4b4b1f
 }
-#app > div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > h2.section-header:first-child > div.feed-select {
+div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > h2.section-header:first-child > div.feed-select {
   position: relative;
   left: -5px
 }
-#app > div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > div.activity-edit:nth-child(2) > div.input.el-textarea:last-child > textarea.el-textarea__inner {
+div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wrap:first-child > div.activity-edit:nth-child(2) > div.input.el-textarea:last-child > textarea.el-textarea__inner {
   border-top-left-radius: 0;
   border-top-right-radius: 0
 }
-#app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap > div.section-header:first-child,
-#app > div.page-content:nth-child(3) > div.container > div.home.full-width:first-child > div.list-previews > div.list-preview-wrap > div.section-header:first-child {
+div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap > div.section-header:first-child,
+div.page-content:nth-child(3) > div.container > div.home.full-width:first-child > div.list-previews > div.list-preview-wrap > div.section-header:first-child {
   background: rgba(var(--color-main));
   width: 100%;
   height: 45px;
@@ -1214,13 +1229,13 @@ div.lists > div.list-wrap > div.list-section {
   background: rgba(var(--color-main));
   border-radius: 0 0 10px 10px
 }
-#app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap > div.list-preview:last-child {
+div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap > div.list-preview:last-child {
   padding: 20px
 }
-#app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.recent-reviews:nth-child(3) > h2.section-header.link:first-child,
-#app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.recent-threads:nth-child(2) > h2.section-header.link:first-child,
-#app > div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div.recent-reviews:nth-child(2) > h2.section-header.link:first-child,
-#app > div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div.recent-threads:first-child > h2.section-header.link:first-child {
+div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.recent-reviews:nth-child(3) > h2.section-header.link:first-child,
+div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.recent-threads:nth-child(2) > h2.section-header.link:first-child,
+div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div.recent-reviews:nth-child(2) > h2.section-header.link:first-child,
+div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div.recent-threads:first-child > h2.section-header.link:first-child {
   background: rgba(var(--color-main));
   width: 100%;
   height: 45px;
@@ -1238,8 +1253,8 @@ div.lists > div.list-wrap > div.list-section {
   border-top-right-radius: 10px;
   border-bottom: 1px solid #4b4b4b1f
 }
-#app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.recent-reviews:nth-child(3) > div.review-wrap:last-child,
-#app > div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div.recent-reviews:nth-child(2) > div.review-wrap:last-child,
+div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.recent-reviews:nth-child(3) > div.review-wrap:last-child,
+div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div.recent-reviews:nth-child(2) > div.review-wrap:last-child,
 .forum-wrap[data-v-60c4a343] {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -1250,12 +1265,12 @@ div.lists > div.list-wrap > div.list-section {
 .thread-card[data-v-550f7194] {
   background: rgba(15, 25, 40, .57)
 }
-#app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div:nth-child(4) > div:first-child > h2.section-header.link:first-child,
-#app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div:nth-child(4) > div:last-child > h2.section-header.link:first-child,
-#app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div:nth-child(4) > div:nth-child(2) > h2.section-header.link:first-child,
-#app > div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div:nth-child(3) > div:first-child > h2.section-header.link:first-child,
-#app > div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div:nth-child(3) > div:last-child > h2.section-header.link:first-child,
-#app > div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div:nth-child(3) > div:nth-child(2) > h2.section-header.link:first-child {
+div.page-content:nth-child(3) > div.container > div.home > div:last-child > div:nth-child(4) > div:first-child > h2.section-header.link:first-child,
+div.page-content:nth-child(3) > div.container > div.home > div:last-child > div:nth-child(4) > div:last-child > h2.section-header.link:first-child,
+div.page-content:nth-child(3) > div.container > div.home > div:last-child > div:nth-child(4) > div:nth-child(2) > h2.section-header.link:first-child,
+div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div:nth-child(3) > div:first-child > h2.section-header.link:first-child,
+div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div:nth-child(3) > div:last-child > h2.section-header.link:first-child,
+div.page-content:nth-child(3) > div.container > div.home:last-child > div:last-child > div:nth-child(3) > div:nth-child(2) > h2.section-header.link:first-child {
   background: rgba(var(--color-main));
   width: 100%;
   height: 45px;
@@ -1290,20 +1305,17 @@ div.lists > div.list-wrap > div.list-section {
   padding: 0;
   height: auto
 }
-#app > div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child {
+div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child {
   background: rgba(var(--color-main));
   padding: 20px;
   height: 440px;
   border-radius: 10px
 }
-#app > div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child > div.reset-btn:nth-child(3) {
+div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child > div.reset-btn:nth-child(3) {
   display: none;
   background: rgba(var(--color-main))
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:first-child > h2.section-header:first-child,
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:last-child > h2.section-header:first-child,
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(3) > h2.section-header:first-child,
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.favourites > div.favourites:nth-child(4) > h2.section-header:first-child {
+div.page-content:nth-child(3) div.content.container:last-child > div.favourites > div.favourites > h2.section-header:first-child {
   background: rgba(var(--color-main));
   width: 100%;
   height: 45px;
@@ -1321,14 +1333,15 @@ div.lists > div.list-wrap > div.list-section {
   border-top-right-radius: 10px;
   border-bottom: 1px solid #4b4b4b1f
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child {
+div.page-content:nth-child(3) div.content.container:last-child {
   position: relative;
   top: 10px
 }
 .favourites-wrap[data-v-ddf96a3c] {
   border-radius: 0 0 10px 10px
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.stats > div.filters:first-child {
+div.page-content:nth-child(3)
+div.content.container:last-child > div.stats > div.filters:first-child {
   background: rgba(var(--color-main));
   padding: 10px;
   border-radius: 10px;
@@ -1338,13 +1351,13 @@ div.lists > div.list-wrap > div.list-section {
   flex-direction: column;
   justify-content: left
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.stats {
+div.page-content:nth-child(3) div.content.container:last-child > div.stats {
   background: rgba(var(--color-main));
   padding: 20px;
   min-width: 320px;
   border-radius: 10px
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.filters:first-child {
+div.user-social.user-social-unscoped > div.filters:first-child {
   background: rgba(var(--color-main));
   padding: 10px;
   border-radius: 10px;
@@ -1355,25 +1368,26 @@ div.lists > div.list-wrap > div.list-section {
   flex-direction: column;
   justify-content: left
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.hohSocialContent.user-follow:last-child,
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
+div.page-content:nth-child(3) div.content.container:last-child > div.user-social.user-social-unscoped > div.hohSocialContent.user-follow:last-child,
+div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
   background: rgba(var(--color-main));
   padding: 10px 20px 50px;
   margin-top: 0;
   border-radius: 10px
 }
 @media(max-width:760px) {
-  #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
+div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
     margin-top: 20px
   }
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.hohSocialContent.user-follow:last-child {
+div.page-content:nth-child(3)
+div.content.container:last-child > div.user-social.user-social-unscoped > div.hohSocialContent.user-follow:last-child {
   background: 0 0
 }
 .user-social[data-v-e4963b98] {
   margin-top: 20px
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.filters:first-child > div.theme-switch.hohThemeSwitch:last-child {
+div.user-social.user-social-unscoped > div.filters:first-child > div.theme-switch.hohThemeSwitch:last-child {
   position: relative;
   top: -13px;
   height: 30px;
@@ -1391,33 +1405,28 @@ div.hohSocialContent.user-follow:last-child > div.follow-card > div.avatar > a.n
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped.listView > div.user-follow:nth-child(2) > div.wrap:first-child > div.follow-card {
+div.page-content:nth-child(3) div.content.container:last-child > div.user-social.user-social-unscoped.listView > div.user-follow:nth-child(2) > div.wrap:first-child > div.follow-card {
   border-radius: 10px;
   margin-bottom: 20px
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped.listView > div.user-follow:nth-child(2) > div.wrap:first-child div.avatar > a.name {
+div.page-content:nth-child(3) div.content.container:last-child > div.user-social.user-social-unscoped.listView > div.user-follow:nth-child(2) > div.wrap:first-child div.avatar > a.name {
   height: auto;
   top: 10px;
   border-radius: 0 10px 10px 0
 }
 @media(max-width:440px) {
-  #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped.listView > div.user-follow:nth-child(2) > div.wrap:first-child div.avatar > a.name {
+div.page-content:nth-child(3) div.content.container:last-child > div.user-social.user-social-unscoped.listView > div.user-follow:nth-child(2) > div.wrap:first-child div.avatar > a.name {
     max-width: 250px
   }
 }
 @media(max-width:415px) {
-  #app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped.listView > div.user-follow:nth-child(2) > div.wrap:first-child div.avatar > a.name {
+div.page-content:nth-child(3) div.content.container:last-child > div.user-social.user-social-unscoped.listView > div.user-follow:nth-child(2) > div.wrap:first-child div.avatar > a.name {
     max-width: 155px
   }
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped.listView {
+div.page-content:nth-child(3)
+div.content.container:last-child > div.user-social.user-social-unscoped.listView {
   max-width: 600px
-}
-@media (max-width:1580px) {
-  .favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],
-  .favourites.preview .favourites-wrap > div[data-v-ddf96a3c] {
-    margin-right: auto 10px
-  }
 }
 @media (min-width:1540px) {
   .activity-anime_list .wrap,
@@ -1444,7 +1453,7 @@ div.hohSocialContent.user-follow:last-child > div.follow-card > div.avatar > a.n
   grid-template-columns: repeat(auto-fill,150px);
   justify-content: space-evenly
 }
-#app > div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.user-social.user-social-unscoped > div.user-follow:nth-child(2) > div.wrap:first-child,
+div.user-social.user-social-unscoped > div.user-follow:nth-child(2) > div.wrap:first-child,
 div.hohSocialContent.user-follow:last-child {
   display: grid;
   grid-gap: 70px 10px;
@@ -1455,13 +1464,17 @@ div.hohSocialContent.user-follow:last-child {
   padding-bottom: 15px!important
 }
 .favourites.preview .favourites-wrap[data-v-ddf96a3c] {
-  display: grid;
-  grid-gap: 10px 10px;
-  padding: 15px;
-  grid-template-columns: repeat(auto-fill,90px);
-  justify-content: space-evenly;
+  display: grid!important;
+  grid-gap: 10px 10px!important;
+  padding: 15px!important;
+  grid-template-columns: repeat(auto-fill,90px)!important;
+  justify-content: space-evenly!important;
   padding-top: 15px!important;
   padding-bottom: 15px!important
+}
+.favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c], .favourites.preview .favourites-wrap>div[data-v-ddf96a3c]  {
+    margin-bottom: 12px!important;
+    margin-right: 17px!important;
 }
 @media (max-width:760px) {
   .avatar[data-v-1cc2919e] {
@@ -1479,7 +1492,7 @@ div.hohSocialContent.user-follow:last-child {
     width: 100%;
     height: auto
   }
-  #app > div.page-content:nth-child(3) > div.settings.container > div.nav:first-child {
+  div.page-content:nth-child(3) > div.settings.container > div.nav:first-child {
     height: auto!important;
     margin-bottom: 5px
   }
@@ -1493,7 +1506,7 @@ div.hohSocialContent.user-follow:last-child {
   .stat[data-v-815ccddc]:nth-child(1) {
     padding: 0 30px
   }
-  #app > div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child {
+  div.page-content:nth-child(3) > div.notifications-feed.container > div.filters:first-child {
     height: auto;
     margin-bottom: 20px
   }
@@ -1508,7 +1521,7 @@ div.hohSocialContent.user-follow:last-child {
 .progress[data-v-5d42c114] {
   background-color: #2b2b2b
 }
-#app > div.page-content:nth-child(3) > div.settings.container > div.content:last-child,
+div.page-content:nth-child(3) > div.settings.container > div.content:last-child,
 .header-wrap[data-v-1cc2919e] {
   background: rgba(var(--color-main))
 }
@@ -1517,7 +1530,7 @@ div.hohSocialContent.user-follow:last-child {
     display: none
   }
 }
-#app > div.page-content:nth-child(3) > div.settings.container > div.nav:first-child {
+div.page-content:nth-child(3) > div.settings.container > div.nav:first-child {
   background: rgba(var(--color-main));
   padding: 10px;
   border-radius: 10px;
@@ -1620,17 +1633,17 @@ div.hohSocialContent.user-follow:last-child {
       overflow-x: scroll;
   box-shadow: none
 }
-#app > div.page-content:nth-child(3) > div.character-wrap,
-#app > div.page-content:nth-child(3) > div.forum-feed.container,
-#app > div.page-content:nth-child(3) > div.forum-feed.container > div.filters.mobile-nav-hidden:nth-child(2),
-#app > div.page-content:nth-child(3) > div.forum-thread.forum-thread-unscoped.container > div.body,
-#app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-manga > div.content.container:last-child,
-#app > div.page-content:nth-child(3) > div.search,
-#app > div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters:first-child > div.extra-filters-wrap:last-child > div.dropdown.anime:last-child > div.filters-wrap:nth-child(2) > div.filter.range-wrap:first-child > div.range-wrap > div.range:last-child > div.rail > div.active-region:nth-child(2),
-#app > div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters:first-child > div.extra-filters-wrap:last-child > div.dropdown.anime:last-child > div.filters-wrap:nth-child(2) > div.filter.range-wrap:last-child > div.range-wrap > div.range:last-child > div.rail > div.active-region:nth-child(2),
-#app > div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters:first-child > div.extra-filters-wrap:last-child > div.dropdown.anime:last-child > div.filters-wrap:nth-child(2) > div.filter.range-wrap:nth-child(2) > div.range-wrap > div.range:last-child > div.rail > div.active-region:nth-child(2),
-#app > div.page-content:nth-child(3) > div.staff-wrap,
-#app > div.page-content:nth-child(3) > div.studio.studio-page-unscoped,
+div.page-content:nth-child(3) > div.character-wrap,
+div.page-content:nth-child(3) > div.forum-feed.container,
+div.page-content:nth-child(3) > div.forum-feed.container > div.filters.mobile-nav-hidden:nth-child(2),
+div.page-content:nth-child(3) > div.forum-thread.forum-thread-unscoped.container > div.body,
+div.page-content:nth-child(3) > div.media.media-page-unscoped.media-manga > div.content.container:last-child,
+div.page-content:nth-child(3) > div.search,
+div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters:first-child > div.extra-filters-wrap:last-child > div.dropdown.anime:last-child > div.filters-wrap:nth-child(2) > div.filter.range-wrap:first-child > div.range-wrap > div.range:last-child > div.rail > div.active-region:nth-child(2),
+div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters:first-child > div.extra-filters-wrap:last-child > div.dropdown.anime:last-child > div.filters-wrap:nth-child(2) > div.filter.range-wrap:last-child > div.range-wrap > div.range:last-child > div.rail > div.active-region:nth-child(2),
+div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters:first-child > div.extra-filters-wrap:last-child > div.dropdown.anime:last-child > div.filters-wrap:nth-child(2) > div.filter.range-wrap:nth-child(2) > div.range-wrap > div.range:last-child > div.rail > div.active-region:nth-child(2),
+div.page-content:nth-child(3) > div.staff-wrap,
+div.page-content:nth-child(3) > div.studio.studio-page-unscoped,
 .child.even[data-v-20438142],
 .comment-wrap[data-v-20438142],
 .header[data-v-4df465ff]{
@@ -1651,10 +1664,10 @@ div.about:first-child > div.content-wrap > .markdown .youtube {
     max-width: 240px
   }
 }
-#app > div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews > div.list-preview-wrap > div.section-header:first-child > svg.size-toggle.svg-inline--fa.fa-expand.fa-w-14.fa-sm:last-child > path {
+div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews > div.list-preview-wrap > div.section-header:first-child > svg.size-toggle.svg-inline--fa.fa-expand.fa-w-14.fa-sm:last-child > path {
   display: none
 }
-#app > div.page-content:nth-child(3) > div.search {
+div.page-content:nth-child(3) > div.search {
   border-radius: 10px;
   padding: 10px
 }
@@ -1676,20 +1689,20 @@ div.forum-thread.forum-thread-unscoped.container > h1.title {
   border-radius: 4px;
   border-bottom: 1px solid #4b4b4b1f
 }
-#app > div.page-content:nth-child(3) > div.character-wrap,
-#app > div.page-content:nth-child(3) > div.staff-wrap,
-#app > div.page-content:nth-child(3) > div.studio.studio-page-unscoped {
+div.page-content:nth-child(3) > div.character-wrap,
+div.page-content:nth-child(3) > div.staff-wrap,
+div.page-content:nth-child(3) > div.studio.studio-page-unscoped {
   border-radius: 10px
 }
-#app > div.page-content:nth-child(3) > div.character-wrap > div.character:first-child > div.header:first-child,
-#app > div.page-content:nth-child(3) > div.staff-wrap > div.staff:first-child > div.header:first-child {
+div.page-content:nth-child(3) > div.character-wrap > div.character:first-child > div.header:first-child,
+div.page-content:nth-child(3) > div.staff-wrap > div.staff:first-child > div.header:first-child {
   background: 0 0
 }
-#app > div.page-content:nth-child(3) > div.studio.studio-page-unscoped {
+div.page-content:nth-child(3) > div.studio.studio-page-unscoped {
   padding: 20px
 }
-#app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-anime > div.header-wrap:first-child > div.banner:first-child,
-#app > div.page-content:nth-child(3) > div.media.media-page-unscoped.media-manga > div.header-wrap:first-child > div.banner:first-child {
+div.page-content:nth-child(3) > div.media.media-page-unscoped.media-anime > div.header-wrap:first-child > div.banner:first-child,
+div.page-content:nth-child(3) > div.media.media-page-unscoped.media-manga > div.header-wrap:first-child > div.banner:first-child {
   margin: 0
 }
 .list[data-v-aef58af4],
@@ -1698,7 +1711,7 @@ div.forum-thread.forum-thread-unscoped.container > h1.title {
 .button[data-v-c574a71c]{
   background: rgba(var(--hachi-gray))
 }
-#app > div.wrap:nth-child(4) > div.footer {
+div.wrap:nth-child(4) > div.footer {
   background: rgba(var(--color-main));
   backdrop-filter: blur(var(--blur))
 }
@@ -1815,7 +1828,7 @@ border-bottom-right-radius:10px
 div.media.media-page-unscoped.media-anime > div.header-wrap:first-child > div.header > div.container > div.cover-wrap:first-child > div.cover-wrap-inner > img.cover,div.media.media-page-unscoped.media-manga > div.header-wrap:first-child > div.header > div.container > div.cover-wrap:first-child > div.cover-wrap-inner > img.cover,.search .results.cover .media-card .cover, .search-landing .results:not(.table) .media-card .cover, .search .results .staff-card .cover,div.recommendations > div.wrap > div.recommendation-card > div.cover,div.media.media-page-unscoped.media-anime > div.header-wrap:first-child,div.media.media-page-unscoped.media-manga > div.header-wrap:first-child {
   border-radius:10px!important
 }
-#app > div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters:first-child > div.filters:first-child {
+div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters:first-child > div.filters:first-child {
   grid-template-columns: repeat(5,160px)
 }
 .list-editor-wrap .header {
