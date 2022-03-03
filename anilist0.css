@@ -362,10 +362,8 @@ li.el-dropdown-menu__item:nth-child(4):focus,
 li.el-dropdown-menu__item:nth-child(4):hover {
   background: rgba(var(--hachi-cyan),.2)
 }
-.activity-feed .markdown img,.activity-feed .markdown img {
-    z-index: 1;position:relative
-}
-div.home > div:last-child > div > div > div.media-preview:last-child > div.media-preview-card.small > a.cover:first-child,div.home > div:last-child > div.list-previews > div.list-preview-wrap> div.list-preview> div.media-preview-card.small >a.cover {
+div.home > div:last-child > div > div > div.media-preview:last-child > div.media-preview-card.small > a.cover:first-child,
+div.home > div:last-child > div.list-previews > div.list-preview-wrap> div.list-preview> div.media-preview-card.small >a.cover {
   border-radius:10px!important
 }
 @media (min-width:1540px) {
@@ -1368,7 +1366,6 @@ div.user-social.user-social-unscoped > div.filters:first-child {
   flex-direction: column;
   justify-content: left
 }
-div.page-content:nth-child(3) div.content.container:last-child > div.user-social.user-social-unscoped > div.hohSocialContent.user-follow:last-child,
 div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
   background: rgba(var(--color-main));
   padding: 10px 20px 50px;
@@ -1669,6 +1666,9 @@ div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.
 }
 div.page-content:nth-child(3) > div.search {
   border-radius: 10px;
+  max-width:95%;
+  margin:auto;
+  margin-top:30px;
   padding: 10px
 }
 div.forum-thread.forum-thread-unscoped.container #anchor,
@@ -1803,12 +1803,19 @@ div.review >.banner.no-image[data-v-5ca094da] {
   background:rgba(var(--color-main))
 }
 @media (max-width:1040px) {
-.list-preview[data-v-6aea970d] .media-preview-card .info,.list-preview[data-v-6aea970d] .media-preview-card .content {
-  background:rgba(18, 18, 18, 0)
+.list-preview[data-v-6aea970d] .media-preview-card .content {
+  background:rgba(25, 39, 53, .76)
+}
+div.list-preview > div > a {
+  border-top-left-radius:3px!important;
+  border-bottom-left-radius:3px!important
+}
+.list-preview[data-v-6aea970d] .media-preview-card .info {
+  background:none
 }
 }
 div.info:last-child > meter:first-child {
-  filter: saturate(80%) hue-rotate(25deg) brightness(100%)
+  filter: saturate(40%) hue-rotate(25deg) brightness(100%)
 }
 .el-checkbox__input.is-checked+.el-checkbox__label,.el-dialog__headerbtn:focus .el-dialog__close, .el-dialog__headerbtn:hover .el-dialog__close,div.home > div:last-child > div.list-previews > div.list-preview-wrap:first-child > div.list-preview:last-child > div.media-preview-card > div.content:last-child > div.info-header:first-child {
   color:#ddddddfa
@@ -1816,15 +1823,19 @@ div.info:last-child > meter:first-child {
 .option.selected[data-v-e3e1e202], .option[data-v-e3e1e202]:hover,div.home > div:last-child > div.list-previews > div.list-preview-wrap > div.list-preview > div.media-preview-card > div.content> a.title:first-child:hover {
   color:#ffffffbd
 }
-.small[data-v-4b71d7c6],.list-preview[data-v-6aea970d] .media-preview-card .cover .image-text,.plus-progress[data-v-2fd80e52] {
-border-bottom-left-radius :10px;
-border-bottom-right-radius:10px
+.list-preview[data-v-6aea970d] .media-preview-card .cover .image-text,.plus-progress[data-v-2fd80e52] {
+  border-bottom-left-radius :10px;
+  border-bottom-right-radius:10px
+}
+.small[data-v-4b71d7c6]{
+  border-radius:10px
 }
 .behind-accent[data-v-2fd80e52] {
-height:7px;
-border-bottom-left-radius:10px;
-border-bottom-right-radius:10px
-} 
+  height:12px;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+  background: linear-gradient(rgba(255, 255, 255, 0),rgba(232, 93, 117, .49))
+}
 div.media.media-page-unscoped.media-anime > div.header-wrap:first-child > div.header > div.container > div.cover-wrap:first-child > div.cover-wrap-inner > img.cover,div.media.media-page-unscoped.media-manga > div.header-wrap:first-child > div.header > div.container > div.cover-wrap:first-child > div.cover-wrap-inner > img.cover,.search .results.cover .media-card .cover, .search-landing .results:not(.table) .media-card .cover, .search .results .staff-card .cover,div.recommendations > div.wrap > div.recommendation-card > div.cover,div.media.media-page-unscoped.media-anime > div.header-wrap:first-child,div.media.media-page-unscoped.media-manga > div.header-wrap:first-child {
   border-radius:10px!important
 }
@@ -1847,6 +1858,14 @@ div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.pr
 .el-input-group__append, .el-input-group__prepend, .el-input__inner,.filter-group .active[data-v-170179fc],
 .filter-toggle[data-v-1e00b9da],.filter-group .active[data-v-119352f9] {
   background: rgb(23, 35, 53)
+}
+.time .pinned[data-v-b584a8de] {
+  padding-left:5px;
+  padding-top:2px
+}
+.donator-badge[data-v-b584a8de] {
+  margin-bottom:2px!important;
+  background:none
 }
 @media (max-width:432px) {
   div.stats > div.stats-wrap:last-child > div.overview:first-child > section:nth-child(3) > div.heading:first-child > div.switch:last-child div.option {
