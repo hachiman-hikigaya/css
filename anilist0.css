@@ -1804,7 +1804,7 @@ div.review >.banner.no-image[data-v-5ca094da] {
 }
 @media (max-width:1040px) {
 .list-preview[data-v-6aea970d] .media-preview-card .content {
-  background:rgba(25, 39, 53, .76)
+  background:rgba(0, 0, 0, .08)
 }
 div.list-preview > div > a {
   border-top-left-radius:3px!important;
