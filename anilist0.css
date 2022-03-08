@@ -363,7 +363,8 @@ li.el-dropdown-menu__item:nth-child(4):hover {
   background: rgba(var(--hachi-cyan),.2)
 }
 div.home > div:last-child > div > div > div.media-preview:last-child > div.media-preview-card.small > a.cover:first-child,
-div.home > div:last-child > div.list-previews > div.list-preview-wrap> div.list-preview> div.media-preview-card.small >a.cover {
+div.home > div:last-child > div.list-previews > div.list-preview-wrap> div.list-preview> div.media-preview-card.small >a.cover,
+div.page-content > div > div:nth-child(3) > div a.cover{
   border-radius:10px!important
 }
 @media (min-width:1540px) {
@@ -564,6 +565,10 @@ div.theme-selector:first-child {
 .header > div.donator-badge {
   margin-top:-5px;
   padding:0
+}
+div.mod-badge-wrap.donator-badge {
+  margin-top:7px;
+  background:none
 }
 .dropdown[data-v-04b245e6]:before,
 .dropdown[data-v-38edf8f8]:before {
@@ -1217,10 +1222,28 @@ div.page-content:nth-child(3) > div.container > div.home.full-width:first-child 
   border-bottom: 1px solid #4b4b4b1f
 }
 @media (max-width:1040px) {
-  .list-preview[data-v-6aea970d],
-  .list-preview[data-v-6aea970d] .media-preview-card .content,
-  .list-preview[data-v-6aea970d] .media-preview-card .info {
-    background: rgba(var(--color-main))
+div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap .cover .image-text[data-v-4b71d7c6] {
+  display:block;
+  top:74%;
+  height:30px;
+  background: rgba(var(--color-overlay),.7);
+  border-bottom-left-radius: 3px!important;
+  border-bottom-right-radius: 0px!important;
+  position:relative;
+  width:100%;
+  font-size:0.99rem!important;
+  text-align:center;
+  line-height:1.5!important;
+  font-weight:500;
+  padding:0.2px!important
+}
+div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap [data-v-2fd80e52] .countdown>span span:first-of-type:before {
+  height:0
+}
+.list-preview[data-v-6aea970d],
+.list-preview[data-v-6aea970d] .media-preview-card .content,
+.list-preview[data-v-6aea970d] .media-preview-card .info {
+  background: rgba(var(--color-main))
   }
 }
 .list-preview[data-v-6aea970d] {
@@ -1634,7 +1657,6 @@ div.page-content:nth-child(3) > div.character-wrap,
 div.page-content:nth-child(3) > div.forum-feed.container,
 div.page-content:nth-child(3) > div.forum-feed.container > div.filters.mobile-nav-hidden:nth-child(2),
 div.page-content:nth-child(3) > div.forum-thread.forum-thread-unscoped.container > div.body,
-div.page-content:nth-child(3) > div.media.media-page-unscoped.media-manga > div.content.container:last-child,
 div.page-content:nth-child(3) > div.search,
 div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters:first-child > div.extra-filters-wrap:last-child > div.dropdown.anime:last-child > div.filters-wrap:nth-child(2) > div.filter.range-wrap:first-child > div.range-wrap > div.range:last-child > div.rail > div.active-region:nth-child(2),
 div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters:first-child > div.extra-filters-wrap:last-child > div.dropdown.anime:last-child > div.filters-wrap:nth-child(2) > div.filter.range-wrap:last-child > div.range-wrap > div.range:last-child > div.rail > div.active-region:nth-child(2),
@@ -1664,7 +1686,7 @@ div.about:first-child > div.content-wrap > .markdown .youtube {
 div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews > div.list-preview-wrap > div.section-header:first-child > svg.size-toggle.svg-inline--fa.fa-expand.fa-w-14.fa-sm:last-child > path {
   display: none
 }
-div.page-content:nth-child(3) > div.search {
+div.page-content:nth-child(3) > div.search,div.page-content:nth-child(3) > div.studio.studio-page-unscoped {
   border-radius: 10px;
   max-width:95%;
   margin:auto;
@@ -1817,8 +1839,12 @@ div.list-preview > div > a {
 div.info:last-child > meter:first-child {
   filter: saturate(40%) hue-rotate(25deg) brightness(100%)
 }
-.el-checkbox__input.is-checked+.el-checkbox__label,.el-dialog__headerbtn:focus .el-dialog__close, .el-dialog__headerbtn:hover .el-dialog__close,div.home > div:last-child > div.list-previews > div.list-preview-wrap:first-child > div.list-preview:last-child > div.media-preview-card > div.content:last-child > div.info-header:first-child {
+.el-checkbox__input.is-checked+.el-checkbox__label,
+.el-dialog__headerbtn:focus .el-dialog__close, .el-dialog__headerbtn:hover .el-dialog__close {
   color:#ddddddfa
+}
+div.home > div:last-child > div.list-previews > div.list-preview-wrap:first-child > div.list-preview:last-child > div.media-preview-card > div.content:last-child > div.info-header:first-child {
+  color:#a1a1a19c
 }
 .option.selected[data-v-e3e1e202], .option[data-v-e3e1e202]:hover,div.home > div:last-child > div.list-previews > div.list-preview-wrap > div.list-preview > div.media-preview-card > div.content> a.title:first-child:hover {
   color:#ffffffbd
