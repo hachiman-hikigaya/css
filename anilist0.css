@@ -969,8 +969,7 @@ filter: opacity(40%)
   grid-row-gap: 10px;
   grid-template-columns: auto auto;
   padding: 20px 50px;
-  text-align: left;
-  background: rgba(0,0,0,.04)
+  text-align: left
 }
 .stat[data-v-815ccddc]:nth-child(1) {
   grid-row-start: span 2;
