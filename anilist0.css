@@ -1082,7 +1082,7 @@ div.menu.visible:last-child > :hover {
 div.page-content:nth-child(3)
 div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap > .markdown img,
 .wrap[data-v-77aecf0c] {
-  border-radius: 10px
+  border-radius: 3px
 }
 .el-input,
 .el-textarea {
@@ -1202,7 +1202,7 @@ div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wra
   border-top-right-radius: 0
 }
 div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap > div.section-header:first-child,
-div.page-content:nth-child(3) > div.container > div.home.full-width:first-child > div.list-previews > div.list-preview-wrap > div.section-header:first-child {
+div.page-content:nth-child(3) > div.container > div.home.full-width:first-child > div.list-previews > div.list-preview-wrap > div.section-header:first-child{
   background: rgba(var(--color-main));
   width: 100%;
   height: 45px;
@@ -1892,8 +1892,103 @@ div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.pr
   margin-bottom:2px!important;
   background:none
 }
+.hohSocialFeed .details {
+  min-width:320px
+}
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following > div > a> div.name {
+  font-size:1.3rem
+}
 @media (max-width:432px) {
   div.stats > div.stats-wrap:last-child > div.overview:first-child > section:nth-child(3) > div.heading:first-child > div.switch:last-child div.option {
     font-size: .99rem
   }
+}
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following > #statusList,
+div.page-content > div > div.content.container > div.social > div.activity-feed > div.hohSocialFeed > div:nth-child(1) {
+  top:14px!important;
+  padding-right:10px;
+  font-size:1.2rem
+}
+div.page-content > div > div.content.container > div.social > div.activity-feed > h2,
+div.page-content > div > div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > h2,
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > h2{
+  background: rgba(var(--color-main));
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  overflow: hidden;
+  align-items: start;
+  padding:12px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid #4b4b4b1f
+}
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline h2,
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div,
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(1) > h2{
+  border-bottom: 1px solid #4b4b4b1f;
+  padding-bottom:5px
+}
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline > div.hohTimelineGap {
+  background:none;
+  padding:10px;
+  padding-bottom:0px
+}
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following,
+div.page-content > div > div.content.container > div.social > div.activity-feed > .activity-entry[data-v-b584a8de],
+div.page-content > div > div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3),
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) {
+  padding:10px;
+  margin-top:0px;
+  margin-bottom:0;
+  background: rgba(var(--color-main))
+}
+div.page-content > div > div.content.container > div.social > div.activity-feed > div.scroller > div {
+  margin-top:0px;
+  padding:10px
+}
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(1),
+div.page-content > div > div.content.container > div.social > div.activity-feed > div.scroller,
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline{
+  padding:10px;
+  background: rgba(var(--color-main));
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px
+}
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline {
+  margin-top:10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px
+}
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following,
+div.page-content > div > div.content.container > div.social > div.activity-feed:after,
+div.page-content > div > div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) {
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px
+}
+div.page-content > div > div.content.container > div.social > div.activity-feed > div.scroller > div,
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > input,
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline >div,
+div.page-content > div > div.content.container > div.social > div.activity-feed > div.activity-entry.full-width.activity-anime_list > div.wrap,
+div.page-content > div > div.content.container > div.social > div.activity-feed > div.activity-entry.activity-anime_list > div.wrap,
+div.page-content > div > div.content.container > div.social > div.activity-feed > div.activity-entry.full-width.activity-anime_list > div.reply-wrap > div > div.activity-edit > div.markdown-editor,
+div.page-content > div > div.content.container > div.social > div.activity-feed > div.activity-entry.full-width.activity-anime_list > div.reply-wrap > div > div.activity-edit > div.input.el-textarea > textarea,
+div.page-content > div > div.content.container > div.social > div.activity-feed > div.activity-entry.full-width.activity-anime_list > div.reply-wrap > div > div.activity-edit > div.reply.preview,
+div.page-content > div > div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) > div:nth-child(1) > div.wrap,
+div.page-content > div > div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) > div > div.wrap,
+div.page-content > div > div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) > div > div.reply-wrap > div > div,
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following > div > a {
+  background:rgba(11, 16, 24, .34)
+}
+div.page-content > div > div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) > div > div.reply-wrap > div > div,
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div:nth-child(4),
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(1) {
+  border-radius:10px
+}
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following > div > a > div.name{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
 }
