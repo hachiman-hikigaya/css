@@ -224,7 +224,7 @@ div[class="count circle"] {
 }
 .history-day.lv-2,
 .tooltip .circle.lv-2 {
-  background: rgba(171, 186, 205, .3,7)!important
+  background: rgba(171, 186, 205, .3)!important
 }
 .history-day.lv-1,
 .tooltip .circle.lv-1 {
@@ -308,16 +308,7 @@ div.page-content:nth-child(3) > div.forum-thread.forum-thread-unscoped.container
 .input[data-v-17620a08],
 .result-col[data-v-17620a08],
 [data-v-17620a08].result .open-list-editor,
-ul[class="el-dropdown-menu el-popper activity-extras-dropdown el-dropdown-menu"],
-ul[class="el-dropdown-menu el-popper activity-extras-dropdown el-dropdown-menu--medium el-zoom-in-top-enter-active el-zoom-in-top-enter-to"],
-ul[class="el-dropdown-menu el-popper activity-extras-dropdown el-dropdown-menu--medium el-zoom-in-top-leave-active el-zoom-in-top-leave-to"],
-ul[class="el-dropdown-menu el-popper activity-extras-dropdown el-dropdown-menu--medium"],
-ul[class="el-dropdown-menu el-popper el-dropdown-menu--small el-zoom-in-top-enter-active el-zoom-in-top-enter-to"],
-ul[class="el-dropdown-menu el-popper el-dropdown-menu--small el-zoom-in-top-leave-active el-zoom-in-top-leave-to"],
-ul[class="el-dropdown-menu el-popper el-dropdown-menu--small"],
-ul[class="el-dropdown-menu el-popper el-zoom-in-top-enter-active el-zoom-in-top-enter-to"],
-ul[class="el-dropdown-menu el-popper el-zoom-in-top-leave-active el-zoom-in-top-leave-to"],
-ul[class="el-dropdown-menu el-popper"] {
+.el-dropdown-menu{
   background: rgba(var(--color-main))
 }
 div.genres:first-child > div.genre:first-child > div.name:first-child,
@@ -337,6 +328,7 @@ div.genres:first-child > div.genre:nth-child(5) > div.amount:last-child {
 }
 .el-dropdown-menu__item--divided:before,
 .el-popper[x-placement^=bottom] .popper__arrow,
+.el-popper[x-placement^=top] .popper__arrow,
 div.percentage-bar:last-child {
   display: none
 }
@@ -726,13 +718,11 @@ div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.c
   border-top-right-radius: 10px;
   border-bottom: 1px solid #4b4b4b1f
 }
-div.page-content:nth-child(3)
-div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header {
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header {
   text-indent: -9999px;
   line-height: 0
 }
-div.page-content:nth-child(3) 
-div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child:after {
+div.page-content:nth-child(3)  div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child:after {
   text-indent: 0;
   display: flex;
   flex-direction: column;
@@ -783,20 +773,15 @@ div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child 
 }
 div.page-content:nth-child(3) div.content.container:last-child > div.favourites > div.favourites:nth-child(1) > h2.section-header:first-child > div.actions,
 div.page-content:nth-child(3) div.content.container:last-child > div.favourites > div.favourites:nth-child(3) > h2.section-header:first-child > div.actions,
-div.page-content:nth-child(3)
-div.content.container:last-child > div.favourites > div.favourites:nth-child(4) > h2.section-header:first-child > div.actions,
-div.page-content:nth-child(3)
-div.content.container:last-child > div.favourites > div.favourites:nth-child(5) > h2.section-header:first-child > div.actions {
+div.page-content:nth-child(3) div.content.container:last-child > div.favourites > div.favourites:nth-child(4) > h2.section-header:first-child > div.actions,
+div.page-content:nth-child(3) div.content.container:last-child > div.favourites > div.favourites:nth-child(5) > h2.section-header:first-child > div.actions {
   position: absolute;
   bottom: 7px;
   right: 20px
 }
-div.page-content:nth-child(3)
-div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > h2.section-header:first-child,
-div.page-content:nth-child(3)
-div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > h2.section-header:first-child,
-div.page-content:nth-child(3)
-div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > h2.section-header:first-child {
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > h2.section-header:first-child,
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > h2.section-header:first-child,
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > h2.section-header:first-child {
   backdrop-filter: blur(var(--blur));
   background: rgba(var(--color-main));
   width: 100%;
@@ -817,8 +802,7 @@ div.content.container:last-child > div.overview > div.section:first-child > div.
 div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap {
   border-radius: 10px
 }
-div.page-content:nth-child(3)
-div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child{
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child{
   backdrop-filter: blur(var(--blur));
   background: rgba(var(--color-main));
   width: 100%;
@@ -838,8 +822,7 @@ div.content.container:last-child > div.overview > div.section:last-child > div.a
   border-bottom: 1px solid #4b4b4b1f
 }
 div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > h2 > div,
-div.page-content:nth-child(3)
-div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown {
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown {
     position: absolute;
     left:auto;
     right:0
@@ -873,16 +856,11 @@ div.activity-entry.activity-anime_list > div.wrap {
   font-weight: 700;
   max-width: 87%
 }
-div.page-content:nth-child(3)
-div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child,
-div.page-content:nth-child(3)
-div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > div.favourites-wrap.anime:last-child,
-div.page-content:nth-child(3)
-div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > div.favourites-wrap.characters:last-child,
-div.page-content:nth-child(3)
-div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > div.favourites-wrap.staff:last-child,
-div.page-content:nth-child(3)
-div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > div.favourites-wrap.studios:last-child {
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child,
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > div.favourites-wrap.anime:last-child,
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > div.favourites-wrap.characters:last-child,
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > div.favourites-wrap.staff:last-child,
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(8) > div.favourites-wrap.studios:last-child {
   border-radius: 0 0 10px 10px
 }
 div.page-content > div > div.content.container > div > div:nth-child(1) > div:nth-child(3) > div {
@@ -907,8 +885,7 @@ div.overview > div.section:first-child > div.favourites.desktop.preview:nth-chil
   border-top-right-radius: 10px;
   border-bottom: 1px solid #4b4b4b1f
 }
-div.page-content:nth-child(3)
-div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child > div.actions {
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child > div.actions {
   position: absolute;
   left: 82%;
   top: 15px;
@@ -1068,7 +1045,8 @@ div.menu.visible:last-child > :hover {
 .medialist .repeat:before {
   background: rgb(50, 60, 77)
 }
-.embed[data-v-13cdaed6] {
+.embed[data-v-13cdaed6],
+.activity-feed .hohNoteSuffix:not(:empty), .activity-feed .hohRewatchSuffix:not(:empty), .activity-feed .hohScore:not(.hohSmiley) {
   background: rgb(15, 24, 39)
 }
 .browse-wrap[data-v-4fbac4e1]:hover .dropdown,
@@ -1079,8 +1057,7 @@ div.menu.visible:last-child > :hover {
 .user-wrap[data-v-4fbac4e1]:hover .dropdown {
   background: rgba(var(--color-main))
 }
-div.page-content:nth-child(3)
-div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap > .markdown img,
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap > .markdown img,
 .wrap[data-v-77aecf0c] {
   border-radius: 3px
 }
@@ -1093,9 +1070,11 @@ div.content.container:last-child > div.overview > div.section:first-child > div.
 .el-textarea,
 .list.small .details[data-v-77aecf0c],
 .nav[data-v-4fbac4e1] .solid[data-v-4fbac4e1],
-.page-content,
- {
+.page-content {
   background: 0 0
+}
+.nav[data-v-4fbac4e1] {
+  background: rgba(var(--color-main))
 }
 .activity-entry > .wrap > .time:hover {
 background:none
@@ -1106,8 +1085,7 @@ background:none
   border-radius: 0 0 10px 10px
 }
 div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-edit > div.input.el-textarea > textarea,
-div.page-content:nth-child(3)
-div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner {
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner {
   border-radius: 0 0 10px 10px
 }
 div.filters-wrap:first-child > div.filters:nth-child(2) > div.filter-group:nth-child(3) > div.el-slider:last-child {
@@ -1139,8 +1117,7 @@ div.lists:last-child > div.actions:first-child > div.theme-switch {
     width: 90px;
     background: rgba(var(--color-main))
   }
-div.page-content:nth-child(3)
-div.content.container:last-child > div.stats > div.filters:first-child {
+div.page-content:nth-child(3) div.content.container:last-child > div.stats > div.filters:first-child {
     background: 0 0!important
   }
   #hohDraw3x3 {
@@ -1360,8 +1337,7 @@ div.page-content:nth-child(3) div.content.container:last-child {
 .favourites-wrap[data-v-ddf96a3c] {
   border-radius: 0 0 10px 10px
 }
-div.page-content:nth-child(3)
-div.content.container:last-child > div.stats > div.filters:first-child {
+div.page-content:nth-child(3) div.content.container:last-child > div.stats > div.filters:first-child {
   background: rgba(var(--color-main));
   padding: 10px;
   border-radius: 10px;
@@ -1399,8 +1375,7 @@ div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
     margin-top: 20px
   }
 }
-div.page-content:nth-child(3)
-div.content.container:last-child > div.user-social.user-social-unscoped > div.hohSocialContent.user-follow:last-child {
+div.page-content:nth-child(3) div.content.container:last-child > div.user-social.user-social-unscoped > div.hohSocialContent.user-follow:last-child {
   background: 0 0
 }
 .user-social[data-v-e4963b98] {
@@ -1416,7 +1391,7 @@ div.user-social.user-social-unscoped > div.filters:first-child > div.theme-switc
 .follow-card .name,
 .follow-card.unfollow,
 div.hohSocialContent.user-follow:last-child > div.follow-card > div.avatar > a.name {
-  opacity: 100;
+  opacity: 100%;
   color: #fff!important;
   position: absolute;
   height: auto;
@@ -1443,8 +1418,7 @@ div.page-content:nth-child(3) div.content.container:last-child > div.user-social
     max-width: 155px
   }
 }
-div.page-content:nth-child(3)
-div.content.container:last-child > div.user-social.user-social-unscoped.listView {
+div.page-content:nth-child(3) div.content.container:last-child > div.user-social.user-social-unscoped.listView {
   max-width: 600px
 }
 @media (min-width:1540px) {
@@ -1991,4 +1965,7 @@ div.page-content > div > div.content.container > div.social > div:nth-child(2) >
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis
+    }
+.activity-extras-dropdown.el-popper[x-placement^=bottom][data-v-b584a8de] {
+  margin-top: 0px
 }
