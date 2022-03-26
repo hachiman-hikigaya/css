@@ -1198,6 +1198,21 @@ div.page-content:nth-child(3) > div.container > div.home.full-width:first-child 
   border-bottom: 1px solid #4b4b4b1f
 }
 @media (max-width:1040px) {
+.list-preview[data-v-6aea970d] {
+  background: rgba(var(--color-main));
+  border-radius: 0 0 10px 10px;
+  display:flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+}
+.media-preview-card meter {
+  width: 140px
+}
+div.home > div:last-child > div.list-previews > div.list-preview-wrap:first-child > div.list-preview:last-child > div.media-preview-card > div.content:last-child > div.info-header:first-child {
+  color: #a1a1a19c;
+  margin-bottom: 5px;
+  margin-top:-5px;
+}
 div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap .cover .image-text[data-v-4b71d7c6] {
   display:block;
   top:74%;
