@@ -1211,9 +1211,7 @@ div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.
   background: rgba(var(--color-main));
   border-radius: 0 0 10px 10px;
   display:flex;
-  flex-wrap: nowrap;
-  flex-direction: row-reverse;
-  justify-content:flex-end
+  grid-gap:0
 }
 .media-preview-card meter {
   width: 140px
