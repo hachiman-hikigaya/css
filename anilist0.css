@@ -1197,6 +1197,15 @@ div.page-content:nth-child(3) > div.container > div.home.full-width:first-child 
   border-top-right-radius: 10px;
   border-bottom: 1px solid #4b4b4b1f
 }
+div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap > div.section-header:first-child h2 {
+  font-size:1.6rem;
+  font-weight:600
+}
+div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap > div.section-header:first-child {
+  padding:0;
+  flex-direction:column-reverse;
+  justify-content:flex-end
+} 
 @media (max-width:1040px) {
 .list-preview[data-v-6aea970d] {
   background: rgba(var(--color-main));
@@ -1204,6 +1213,7 @@ div.page-content:nth-child(3) > div.container > div.home.full-width:first-child 
   display:flex;
   flex-wrap: nowrap;
   flex-direction: row-reverse;
+  justify-content:flex-end
 }
 .media-preview-card meter {
   width: 140px
@@ -1214,7 +1224,9 @@ div.home > div:last-child > div.list-previews > div.list-preview-wrap:first-chil
   margin-top:-5px;
 }
 div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap .cover .image-text[data-v-4b71d7c6] {
-  display:block;
+  display:flex;
+  padding:0;
+  justify-content:center;
   top:74%;
   height:30px;
   background: rgba(var(--color-overlay),.7);
@@ -1222,11 +1234,14 @@ div.home > div:last-child > div.list-previews:first-child > div.list-preview-wra
   border-bottom-right-radius: 0px!important;
   position:relative;
   width:100%;
-  font-size:0.99rem!important;
+  color:rgba(var(--color-text-bright),.91);
+  font-size:1rem!important;
   text-align:center;
-  line-height:1.5!important;
+  line-height:1.4!important;
   font-weight:500;
-  padding:0.2px!important
+}
+div.list-preview > div > a > div.image-text > div > div {
+  margin-top:1.1px
 }
 div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap [data-v-2fd80e52] .countdown>span span:first-of-type:before {
   height:0
@@ -1783,7 +1798,7 @@ div.favourites.desktop.preview:nth-child(8) > div.favourites-wrap.studios:last-c
 .list-editor-wrap .header .save-btn,.filter-toggle[data-v-119352f9],.filter-toggle[data-v-170179fc],.actions > div[data-v-ddf96a3c], .button.comment[data-v-07b321a7], .button[data-v-c574a71c] {
 background: rgb(23, 35, 53)
 }
-.create-btn[data-v-0064307c],.list[data-v-4df465ff],.button[data-v-1c97ba07],.external-link[data-v-7a1f9df8],.tag[data-v-5760f120],.search-wrap[data-v-128d71ac],.type[data-v-544390d2],.open-btn[data-v-458a983a],.media-card[data-v-70df6e62],.el-message-box .el-input__inner,.el-message-box .el-button--primary,.option.selected[data-v-e3e1e202], .option[data-v-e3e1e202]:hover,.open-user-search[data-v-2edb3b2e],.settings[data-v-e9066d7e] .button,.search-wrap[data-v-458a983a],.select[data-v-e3e1e202],.open-btn[data-v-a679b1ba],.media-preview-card[data-v-4b71d7c6],.el-slider__runway,.feed-type-toggle[data-v-8209bd04],.stat-card[data-v-686e8358],.relations-wrap[data-v-686e8358],.hohTable,.hohTable .header.row,.bar-chart-wrap[data-v-46edc0ca],[data-v-72dc5b51] .horizontal-scroller,.el-select-dropdown__item.hover, .el-select-dropdown__item:hover,.user-social .filter-group span.active,.user-follow .follow-card,.pie-chart[data-v-26dc9635],.highlight .circle[data-v-72dc5b51],.switch[data-v-05bb5e72],.filter-group a.router-link-active[data-v-1e00b9da] {
+.create-btn[data-v-0064307c],.list[data-v-4df465ff],.button[data-v-1c97ba07],.external-link[data-v-7a1f9df8],.tag[data-v-5760f120],.search-wrap[data-v-128d71ac],.type[data-v-544390d2],.open-btn[data-v-458a983a],.media-card[data-v-70df6e62],.el-message-box .el-input__inner,.el-message-box .el-button--primary,.option.selected[data-v-e3e1e202], .option[data-v-e3e1e202]:hover,.open-user-search[data-v-2edb3b2e],.settings[data-v-e9066d7e] .button,.search-wrap[data-v-458a983a],.select[data-v-e3e1e202],.open-btn[data-v-a679b1ba],.media-preview-card[data-v-4b71d7c6],.el-slider__runway,.feed-type-toggle[data-v-8209bd04],.stat-card[data-v-686e8358],.relations-wrap[data-v-686e8358],.hohTable,.hohTable .header.row,.bar-chart-wrap[data-v-46edc0ca],[data-v-72dc5b51] .horizontal-scroller,.el-select-dropdown__item.hover, .el-select-dropdown__item:hover,.user-social .filter-group span.active,.user-follow .follow-card,.pie-chart[data-v-26dc9635],.highlight .circle[data-v-72dc5b51],.switch[data-v-05bb5e72],.filter-group a.router-link-active[data-v-1e00b9da],div.filters-wrap.primary-filters > div.filters > div:nth-child(1) > div.search-wrap,div.filters-wrap.primary-filters > div > div.search-wrap,div.filters-wrap.primary-filters > div > div.open-btn {
   background: rgb(29, 41, 57);
   color:#b0b0b0
 }
