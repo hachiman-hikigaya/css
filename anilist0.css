@@ -548,7 +548,8 @@ div.mod-badge-wrap.donator-badge {
 .medialist.table .entry:hover .cover .image,
 .stats-wrap,
 div[class=activity-edit],
-div[class=user-follow] {
+div[class=user-follow],
+div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child{
   animation: fadeIn;
   animation-duration: 1s
 } 
