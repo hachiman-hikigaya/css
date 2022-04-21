@@ -79,10 +79,7 @@ body {
 .tooltip {
   backdrop-filter: blur(2px)!important
 }
-.about a:nth-child(1) > img,
-.about a:nth-child(2) > img,
-.about a:nth-child(3) > img,
-.about a:nth-child(4) > img,
+.about a > img,
 .activity-entry .like-wrap .users {
   transition: .5s
 }
@@ -104,12 +101,9 @@ div.page-content:nth-child(3) div.content.container:last-child > div.overview > 
 [data-v-17620a08] .result .open-list-editor {
   color: #ffffff82
 }
-#nav > div.quick-search.visible:first-child > div.results:last-child > div.result-col:first-child > h3.title:first-child,
-#nav > div.quick-search.visible:first-child > div.results:last-child > div.result-col:last-child > h3.title:first-child,
-#nav > div.quick-search.visible:first-child > div.results:last-child > div.result-col:nth-child(2) > h3.title:first-child,
-#nav > div.quick-search.visible:first-child > div.results:last-child > div.result-col:nth-child(3) > h3.title:first-child,
-#nav > div.quick-search.visible:first-child > div.results:last-child > div.result-col:nth-child(4) > h3.title:first-child,
-#nav > div.quick-search.visible:first-child > div.results:last-child > div.result-col:nth-child(5) > h3.title:first-child {
+a[name="test"]{background:#fff}
+#nav > div.quick-search.visible:first-child > div.results:last-child > div.result-col > h3.title:first-child
+ {
   backdrop-filter: blur(var(--blur));
   background: rgba(var(--color-main));
   width: 100%;
@@ -311,18 +305,10 @@ div.page-content:nth-child(3) > div.forum-thread.forum-thread-unscoped.container
 .el-dropdown-menu{
   background: rgba(var(--color-main))
 }
-div.genres:first-child > div.genre:first-child > div.name:first-child,
-div.genres:first-child > div.genre:nth-child(2) > div.name:first-child,
-div.genres:first-child > div.genre:nth-child(3) > div.name:first-child,
-div.genres:first-child > div.genre:nth-child(4) > div.name:first-child,
-div.genres:first-child > div.genre:nth-child(5) > div.name:first-child {
+div.genres:first-child > div.genre > div.name:first-child {
   background: #41597747!important;
 }
-div.genres:first-child > div.genre:first-child > div.amount:last-child,
-div.genres:first-child > div.genre:nth-child(2) > div.amount:last-child,
-div.genres:first-child > div.genre:nth-child(3) > div.amount:last-child,
-div.genres:first-child > div.genre:nth-child(4) > div.amount:last-child,
-div.genres:first-child > div.genre:nth-child(5) > div.amount:last-child {
+div.genres:first-child > div.genre > div.amount:last-child{
   color: #ffffff9e!important;
   text-shadow: 0 0 1px
 }
@@ -332,27 +318,13 @@ div.genres:first-child > div.genre:nth-child(5) > div.amount:last-child {
 div.percentage-bar:last-child {
   display: none
 }
-a.el-dropdown-menu__item:first-child:focus,
-a.el-dropdown-menu__item:first-child:hover,
 a.el-dropdown-menu__item:focus,
 a.el-dropdown-menu__item:hover,
-div.el-dropdown-menu__item:nth-child(1):focus,
-div.el-dropdown-menu__item:nth-child(1):hover,
-div.el-dropdown-menu__item:nth-child(2):focus,
-div.el-dropdown-menu__item:nth-child(2):hover,
-div.el-dropdown-menu__item:nth-child(3):focus,
-div.el-dropdown-menu__item:nth-child(3):hover,
-li.el-dropdown-menu__item:first-child:focus,
-li.el-dropdown-menu__item:first-child:hover,
+div.el-dropdown-menu__item:focus,
+div.el-dropdown-menu__item:hover,
 li.el-dropdown-menu__item:focus,
-li.el-dropdown-menu__item:hover,
-li.el-dropdown-menu__item:nth-child(2):focus,
-li.el-dropdown-menu__item:nth-child(2):hover,
-li.el-dropdown-menu__item:nth-child(3):focus,
-li.el-dropdown-menu__item:nth-child(3):hover,
-li.el-dropdown-menu__item:nth-child(4):focus,
-li.el-dropdown-menu__item:nth-child(4):hover {
-  background: rgba(var(--hachi-cyan),.2)
+li.el-dropdown-menu__item:hover {
+  background: rgba(var(--hachi-cyan),.2)!important 
 }
 div.home > div:last-child > div > div > div.media-preview:last-child > div.media-preview-card.small > a.cover:first-child,
 div.home > div:last-child > div.list-previews > div.list-preview-wrap> div.list-preview> div.media-preview-card.small >a.cover,
@@ -427,22 +399,18 @@ a[class=avatar] {
   border-radius: 0!important
 }
 .favourite[data-v-0317d914] {
-  transition: transform .2s;
-  border-radius: 20%;
-  position: static;
+  position: relative;
   overflow: visible;
-  height: 120px
+  height: 120px;
+  border: 2px solid rgb(var(--color-foreground))
 }
-.about a:nth-child(1) > img:hover,
-.about a:nth-child(2) > img:hover,
-.about a:nth-child(3) > img:hover,
-.about a:nth-child(4) > img:hover {
+.about a > img:hover {
   transform: scale(1.05);
   transition: .5s
 }
 .favourite:hover {
   transform: scale(1.2);
-  border: 2px solid rgb(var(--color-foreground))
+
 }
 .favourite.studio:hover {
   transform: scale(1.2);
@@ -686,23 +654,12 @@ div.page-content:nth-child(3) div.content.container:last-child > div.overview > 
   position: relative;
   padding: 2px
 }
-div.page-content:nth-child(3) > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:first-child,
-div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(2),
-div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(3),
-div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(4),
-div.page-content:nth-child(3) > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre:nth-child(5) {
-  background: #41414100;
-  border-radius: 7px;
-  padding-bottom: 8px
+div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre {
+  padding-bottom: 6px
 }
-div.genres:first-child > div.genre:nth-child(1) > div.amount:last-child,
-div.genres:first-child > div.genre:nth-child(2) > div.amount:last-child,
-div.genres:first-child > div.genre:nth-child(3) > div.amount:last-child,
-div.genres:first-child > div.genre:nth-child(4) > div.amount:last-child,
-div.genres:first-child > div.genre:nth-child(5) > div.amount:last-child {
+div.genres:first-child > div.genre > div.amount:last-child{
   color: rgba(114,138,161,.6)!important
 }
-div.page-content:nth-child(3) > div.user.user-page-unscoped.pink > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child,
 div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child {
   backdrop-filter: blur(var(--blur));
   background: rgba(var(--color-main));
@@ -777,7 +734,7 @@ div.page-content:nth-child(3) div.content.container:last-child > div.favourites 
 div.page-content:nth-child(3) div.content.container:last-child > div.favourites > div.favourites:nth-child(5) > h2.section-header:first-child > div.actions {
   position: absolute;
   bottom: 7px;
-  right: 20px
+  right: 20px;
 }
 div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > h2.section-header:first-child,
 div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > h2.section-header:first-child,
@@ -886,11 +843,9 @@ div.overview > div.section:first-child > div.favourites.desktop.preview:nth-chil
   border-bottom: 1px solid #4b4b4b1f
 }
 div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child > div.actions {
-  position: absolute;
-  left: 82%;
-  top: 15px;
-  font-size: 70%;
-  margin-right: auto
+  left:auto;
+  right:0;
+  margin-right:15px
 }
 .users[data-v-58401890]{
 background: rgba(23, 35, 53, 1)
@@ -926,12 +881,14 @@ filter: opacity(40%)
 .activity-entry > .wrap,
 .desktop > .content-wrap,
 .el-textarea__inner,
-.favourites-wrap > .favourite,
 .input,
 .scroller > .load-more,
 .stats-wrap > .content-wrap,
 .user-page-unscoped .markdown-editor {
   transition: .49s ease-in-out
+}
+.favourites .favourite {
+    transition: transform 0.45s ease-in-out
 }
 .stats-wrap[data-v-5c30286e] {
   grid-column-gap: 7px;
@@ -1876,12 +1833,18 @@ div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.pr
 .list-editor-wrap .list-editor {
   box-shadow: none
 }
+
+.list[data-v-5776f768],
 .option.active[data-v-05bb5e72],
 .hohRecsSwitch .options .option.active,
 .el-checkbox__input.is-checked .el-checkbox__inner {
   background: rgb(42, 56, 77);
   border-color: #646464
 }
+.button[data-v-c93e1c70] {
+  color:rgba(var(--text))
+}
+.button[data-v-c93e1c70],
 .el-input-group__append, .el-input-group__prepend, .el-input__inner,.filter-group .active[data-v-170179fc],
 .filter-toggle[data-v-1e00b9da],.filter-group .active[data-v-119352f9] {
   background: rgb(23, 35, 53)
@@ -1947,6 +1910,9 @@ div.page-content > div > div.content.container > div.social > div:nth-child(2) >
   margin-bottom:0;
   background: rgba(var(--color-main))
 }
+div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div {
+  margin-bottom:15px
+}
 div.page-content > div > div.content.container > div.social > div.activity-feed > div.scroller > div {
   margin-top:0px;
   padding:10px
@@ -1993,7 +1959,220 @@ div.page-content > div > div.content.container > div.social > div:nth-child(2) >
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis
-    }
+}
 .activity-extras-dropdown.el-popper[x-placement^=bottom][data-v-b584a8de] {
   margin-top: 0px
+}
+img[rel="badges"] {
+  background: rgb(21, 36, 55);
+  padding: 2px;
+  margin:2px
+}
+img[rel="badges"]:hover {
+  transform: scale(4.5) !important;
+  transition: transform 1s;
+  position: relative;
+  z-index: 2;
+  margin:50px;
+  margin-bottom:80px!important;
+  animation: slideInLeft;
+  animation-duration: 0.01s
+}
+div.list-previews .small .cover:hover+.content[data-v-4b71d7c6]{z-index:999}
+@media (min-width:1040px) and (max-width:1540px) {
+/*Activity Anime Hover*/
+div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover,
+div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover{ 
+position: relative;
+background-size: contain;
+height: calc(300px - 25px);
+width: calc(220px - 25px);
+animation: slideInLeft;
+z-index:34;
+animation-duration: 1.01s;  
+background-color:rgb(21, 31, 46);
+}
+/*Activity Hover - Background Remove*/
+div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover:before,
+div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover:before{
+  background-color:rgb(21, 31, 46)!important;
+  content: ""!important;
+  background-size:90% 300%!important;
+  width: 310%!important;
+  height: 110%!important;
+  z-index:  2;
+  position: absolute;
+  top: -5px;
+  left: 190px;
+}
+/*Activity Hover - Background Blur*/
+div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover:after,
+div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover:after{
+  content: ""!important;
+  background: inherit!important;
+  background-size:90% 300%!important;
+  width: 310%!important;
+  height: 110%!important;
+  z-index: 2;
+  position: absolute;
+  top: -5px;
+  left: 155px;
+  filter: brightness(30%) opacity(50%)blur(8.0px)!important;
+  background-color: rgba(0, 0, 0, 0)!important;
+}
+    
+/*Activity Hover - Adjustments*/
+div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover +.details[data-v-b584a8de] {
+  left: 150px!important;
+  z-index:40;
+  position: relative;
+  max-width: 400px;
+  font-size: 15px;   
+  animation: slideInRight!important;
+  animation-duration: 1.5s!important;
+}
+div.entry-dropdown.el-dropdown {display:none!important}
+/*Avatar Hover Adjustments*/
+div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar:hover+ a.name,
+div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar.router-link-exact-active.router-link-active:hover + a.name.router-link-exact-active.router-link-active,
+div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar:hover +.name[data-v-b584a8de],
+div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar.router-link-exact-active.router-link-active:hover +.name[data-v-b584a8de]{
+position: relative;
+transition: all 1s;
+animation:fadeIn;
+animation-duration: 3s;
+margin-left:10px;
+font-size: 25px;
+background:rgba(255, 255, 255, .05);
+border-radius:5px;
+padding: 8px;
+font-family: Overpass,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+font-weight: 600;
+color: #ffffffba;
+}
+    
+/*Home Feed Activity Hover  - Adjustments*/
+div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover+.details[data-v-b584a8de]{
+  left: 100px!important;
+  z-index:40;
+  position: relative;
+  margin:auto;
+  max-width: 360px;
+  font-size: 15px;   
+  animation: slideInRight!important;
+  animation-duration: 1.5s!important;
+}
+
+/*Home Feed - Avatar Hover Adjustments*/
+div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar:hover +.name[data-v-b584a8de]{
+margin-left:auto;
+    margin-right: auto;
+}
+/*Home Feed - Avatar Under Hover*/
+div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > div > a.avatar:hover{
+transition: all 1s;
+position: relative;
+display: flex;
+background-size: contain;
+height: calc(180px - 45px);
+width: calc(180px - 45px);
+filter: none;
+z-index: 2;
+margin-bottom:10px;
+margin-left:10px;
+margin-right: -10px; 
+margin-top: 25px;
+background-color: rgb(21, 31, 46);
+}
+/*profile avatar Hover*/
+div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover,
+div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover{
+    transition: all 1s;
+    position: relative;
+    display: flex;
+    background-size: contain;
+    height: calc(180px - 45px);
+    width: calc(180px - 45px);
+    animation: fadeIn;
+    filter: none;
+    animation-duration: 0.11s;
+    z-index: 2;
+    margin-bottom:10px;
+    margin-right: -10px; 
+    margin-top: 15px;
+    background-color: rgb(21, 31, 46);}
+
+/*Avatar Hover - Background Remove*/
+div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover:before{ transition: all 1s;
+background-color:rgb(21, 31, 46)!important;
+    animation:slideInLeft;animation-duration: 1s;
+content:"";
+background-image: inherit;
+background-size: contain;
+margin-top:-15px!important;
+background-repeat: no-repeat;
+border-bottom: solid 1px rgba(var(--hachi-gray),.5);
+width: 400%!important;
+height: 151px;
+position: absolute;
+}
+/*Avatar Hover - Background Blur*/
+div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover:after{ transition: all 1s;
+  content: ""!important;
+  background: inherit!important;
+  background-size:550% 200%!important;
+  width: 310%!important;
+  height: 110%!important;
+  z-index: 2;
+  position: absolute;
+  top: -15px;
+  left: 105px;
+  filter: brightness(30%)opacity(30%)blur(20.0px)!important;
+  background-color: rgba(0, 0, 0, 0)!important;
+}
+a:not(.avatar):not(.user):not(.link):not(.primary-link){z-index:222}
+/*Reply Avatar Hover*/
+#app > div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div.reply > div.header > a.avatar:hover,    
+#app > div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-manga_list > div.reply-wrap > div > div > div.header > a.avatar:hover,
+#app > div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-anime_list > div.reply-wrap > div > div > div.header > a.avatar:hover,
+    #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div > div.header > a.avatar:hover,
+    #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-message > div.reply-wrap > div > div.reply > div.header > a.avatar.router-link-exact-active.router-link-active:hover,
+#app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div > div.reply-wrap > div > div > div.header > a.avatar:hover{
+    transition: all 1s;
+    position: relative;
+    display: flex;
+    background-size: contain;
+    height: calc(180px - 45px);
+    width: calc(180px - 45px);
+    animation: fadeIn;
+    filter: none;
+    animation-duration: 0.11s;
+    z-index: 2;
+    margin-left:5px;
+    margin-top: 15px;
+    margin-bottom:-20px
+}
+/*Reply Avatar Hover Adjustment*/
+div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div.reply > div.header > a.avatar:hover+ a.name,
+div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-manga_list > div.reply-wrap > div > div > div.header > a.avatar:hover + a.name,
+div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-anime_list > div.reply-wrap > div > div > div.header > a.avatar:hover + a.name,
+div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div > div.header > a.avatar:hover + a.name,
+div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-message > div.reply-wrap > div > div.reply > div.header > a.avatar.router-link-exact-active.router-link-active:hover + a.name.router-link-exact-active.router-link-active,
+#app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div > div.reply-wrap > div > div > div.header > a.avatar:hover+ a.name{
+position: relative;
+transition: all 1s;
+animation:fadeIn;
+top:-50px;
+animation-duration: 3s;
+left:130px;
+margin-left:50px;
+font-size: 25px;
+background:rgba(255, 255, 255, .08);
+border-radius:10px;
+padding: 8px;
+padding-bottom: 25px;
+font-family: Overpass,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+font-weight: 600;
+color: #ffffffba;
+}
 }
