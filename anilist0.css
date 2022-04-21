@@ -1979,7 +1979,6 @@ img[rel="badges"]:hover {
 }
 div.list-previews .small .cover:hover+.content[data-v-4b71d7c6]{z-index:999}
 @media (min-width:1040px) and (max-width:1540px) {
-/*Activity Anime Hover*/
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover,
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover{ 
 position: relative;
@@ -1991,7 +1990,6 @@ z-index:34;
 animation-duration: 1.01s;  
 background-color:rgb(21, 31, 46);
 }
-/*Activity Hover - Background Remove*/
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover:before,
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover:before{
   background-color:rgb(21, 31, 46)!important;
@@ -2004,7 +2002,6 @@ div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a
   top: -5px;
   left: 190px;
 }
-/*Activity Hover - Background Blur*/
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover:after,
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover:after{
   content: ""!important;
@@ -2019,8 +2016,6 @@ div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a
   filter: brightness(30%) opacity(50%)blur(8.0px)!important;
   background-color: rgba(0, 0, 0, 0)!important;
 }
-    
-/*Activity Hover - Adjustments*/
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover +.details[data-v-b584a8de] {
   left: 150px!important;
   z-index:40;
@@ -2031,7 +2026,6 @@ div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a
   animation-duration: 1.5s!important;
 }
 div.entry-dropdown.el-dropdown {display:none!important}
-/*Avatar Hover Adjustments*/
 div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar:hover+ a.name,
 div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar.router-link-exact-active.router-link-active:hover + a.name.router-link-exact-active.router-link-active,
 div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar:hover +.name[data-v-b584a8de],
@@ -2049,8 +2043,6 @@ div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.hea
   font-weight: 600;
   color: #ffffffba;
 }
-    
-/*Home Feed Activity Hover  - Adjustments*/
 div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover+.details[data-v-b584a8de]{
   left: 100px!important;
   z-index:40;
@@ -2061,13 +2053,10 @@ div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div 
   animation: slideInRight!important;
   animation-duration: 1.5s!important;
 }
-
-/*Home Feed - Avatar Hover Adjustments*/
 div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar:hover +.name[data-v-b584a8de]{
   margin-left:auto;
   margin-right: auto;
 }
-/*Home Feed - Avatar Under Hover*/
 div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > div > a.avatar:hover{
   transition: all 1s;
   position: relative;
@@ -2083,7 +2072,6 @@ div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div 
   margin-top: 25px;
   background-color: rgb(21, 31, 46);
 }
-/*profile avatar Hover*/
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover,
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover{
   transition: all 1s;
@@ -2099,9 +2087,8 @@ div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.hea
   margin-bottom:10px;
   margin-right: -10px; 
   margin-top: 15px;
-  background-color: rgb(21, 31, 46);}
-
-/*Avatar Hover - Background Remove*/
+  background-color: rgb(21, 31, 46);
+}
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover:before{ transition: all 1s;
   background-color:rgb(21, 31, 46)!important;
   animation:slideInLeft;
@@ -2116,7 +2103,6 @@ div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.hea
   height: 151px;
   position: absolute;
 }
-/*Avatar Hover - Background Blur*/
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover:after{ transition: all 1s;
   content: ""!important;
   background: inherit!important;
@@ -2131,7 +2117,6 @@ div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.hea
   background-color: rgba(0, 0, 0, 0)!important;
 }
 a:not(.avatar):not(.user):not(.link):not(.primary-link){z-index:222}
-/*Reply Avatar Hover*/
 #app > div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div.reply > div.header > a.avatar:hover,    
 #app > div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-manga_list > div.reply-wrap > div > div > div.header > a.avatar:hover,
 #app > div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-anime_list > div.reply-wrap > div > div > div.header > a.avatar:hover,
@@ -2152,7 +2137,6 @@ a:not(.avatar):not(.user):not(.link):not(.primary-link){z-index:222}
   margin-top: 15px;
   margin-bottom:-20px
 }
-/*Reply Avatar Hover Adjustment*/
 div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div.reply > div.header > a.avatar:hover+ a.name,
 div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-manga_list > div.reply-wrap > div > div > div.header > a.avatar:hover + a.name,
 div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-anime_list > div.reply-wrap > div > div > div.header > a.avatar:hover + a.name,
