@@ -399,10 +399,9 @@ a[class=avatar] {
   border-radius: 0!important
 }
 .favourite[data-v-0317d914] {
-  position: relative;
+  position: static;
   overflow: visible;
   height: 120px;
-  border: 2px solid rgb(var(--color-foreground))
 }
 .about a > img:hover {
   transform: scale(1.05);
@@ -410,7 +409,6 @@ a[class=avatar] {
 }
 .favourite:hover {
   transform: scale(1.2);
-
 }
 .favourite.studio:hover {
   transform: scale(1.2);
@@ -548,13 +546,12 @@ div.mod-badge-wrap.donator-badge {
 .activity-entry,
 .lists,
 .medialist.table .entry:hover .cover .image,
-.overview[data-v-5c30286e] .section-header,
 .stats-wrap,
 div[class=activity-edit],
 div[class=user-follow] {
   animation: fadeIn;
   animation-duration: 1s
-}
+} 
 .page-content > div > div.content.container > div > div:nth-child(1) {
   animation: fadeIn;
   animation-duration: 1s;
@@ -845,7 +842,9 @@ div.overview > div.section:first-child > div.favourites.desktop.preview:nth-chil
 div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child > div.actions {
   left:auto;
   right:0;
-  margin-right:15px
+  margin-right:15px;
+    position: absolute;
+    font-size:15px;
 }
 .users[data-v-58401890]{
 background: rgba(23, 35, 53, 1)
@@ -2037,18 +2036,18 @@ div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.head
 div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar.router-link-exact-active.router-link-active:hover + a.name.router-link-exact-active.router-link-active,
 div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar:hover +.name[data-v-b584a8de],
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar.router-link-exact-active.router-link-active:hover +.name[data-v-b584a8de]{
-position: relative;
-transition: all 1s;
-animation:fadeIn;
-animation-duration: 3s;
-margin-left:10px;
-font-size: 25px;
-background:rgba(255, 255, 255, .05);
-border-radius:5px;
-padding: 8px;
-font-family: Overpass,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-font-weight: 600;
-color: #ffffffba;
+  position: relative;
+  transition: all 1s;
+  animation:fadeIn;
+  animation-duration: 3s;
+  margin-left:10px;
+  font-size: 25px;
+  background:rgba(255, 255, 255, .05);
+  border-radius:5px;
+  padding: 8px;
+  font-family: Overpass,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  font-weight: 600;
+  color: #ffffffba;
 }
     
 /*Home Feed Activity Hover  - Adjustments*/
@@ -2065,56 +2064,57 @@ div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div 
 
 /*Home Feed - Avatar Hover Adjustments*/
 div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar:hover +.name[data-v-b584a8de]{
-margin-left:auto;
-    margin-right: auto;
+  margin-left:auto;
+  margin-right: auto;
 }
 /*Home Feed - Avatar Under Hover*/
 div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > div > a.avatar:hover{
-transition: all 1s;
-position: relative;
-display: flex;
-background-size: contain;
-height: calc(180px - 45px);
-width: calc(180px - 45px);
-filter: none;
-z-index: 2;
-margin-bottom:10px;
-margin-left:10px;
-margin-right: -10px; 
-margin-top: 25px;
-background-color: rgb(21, 31, 46);
+  transition: all 1s;
+  position: relative;
+  display: flex;
+  background-size: contain;
+  height: calc(180px - 45px);
+  width: calc(180px - 45px);
+  filter: none;
+  z-index: 2;
+  margin-bottom:10px;
+  margin-left:10px;
+  margin-right: -10px; 
+  margin-top: 25px;
+  background-color: rgb(21, 31, 46);
 }
 /*profile avatar Hover*/
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover,
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover{
-    transition: all 1s;
-    position: relative;
-    display: flex;
-    background-size: contain;
-    height: calc(180px - 45px);
-    width: calc(180px - 45px);
-    animation: fadeIn;
-    filter: none;
-    animation-duration: 0.11s;
-    z-index: 2;
-    margin-bottom:10px;
-    margin-right: -10px; 
-    margin-top: 15px;
-    background-color: rgb(21, 31, 46);}
+  transition: all 1s;
+  position: relative;
+  display: flex;
+  background-size: contain;
+  height: calc(180px - 45px);
+  width: calc(180px - 45px);
+  animation: fadeIn;
+  filter: none;
+  animation-duration: 0.11s;
+  z-index: 2;
+  margin-bottom:10px;
+  margin-right: -10px; 
+  margin-top: 15px;
+  background-color: rgb(21, 31, 46);}
 
 /*Avatar Hover - Background Remove*/
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover:before{ transition: all 1s;
-background-color:rgb(21, 31, 46)!important;
-    animation:slideInLeft;animation-duration: 1s;
-content:"";
-background-image: inherit;
-background-size: contain;
-margin-top:-15px!important;
-background-repeat: no-repeat;
-border-bottom: solid 1px rgba(var(--hachi-gray),.5);
-width: 400%!important;
-height: 151px;
-position: absolute;
+  background-color:rgb(21, 31, 46)!important;
+  animation:slideInLeft;
+  animation-duration: 1s;
+  content:"";
+  background-image: inherit;
+  background-size: contain;
+  margin-top:-15px!important;
+  background-repeat: no-repeat;
+  border-bottom: solid 1px rgba(var(--hachi-gray),.5);
+  width: 400%!important;
+  height: 151px;
+  position: absolute;
 }
 /*Avatar Hover - Background Blur*/
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover:after{ transition: all 1s;
@@ -2138,19 +2138,19 @@ a:not(.avatar):not(.user):not(.link):not(.primary-link){z-index:222}
     #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div > div.header > a.avatar:hover,
     #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-message > div.reply-wrap > div > div.reply > div.header > a.avatar.router-link-exact-active.router-link-active:hover,
 #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div > div.reply-wrap > div > div > div.header > a.avatar:hover{
-    transition: all 1s;
-    position: relative;
-    display: flex;
-    background-size: contain;
-    height: calc(180px - 45px);
-    width: calc(180px - 45px);
-    animation: fadeIn;
-    filter: none;
-    animation-duration: 0.11s;
-    z-index: 2;
-    margin-left:5px;
-    margin-top: 15px;
-    margin-bottom:-20px
+  transition: all 1s;
+  position: relative;
+  display: flex;
+  background-size: contain;
+  height: calc(180px - 45px);
+  width: calc(180px - 45px);
+  animation: fadeIn;
+  filter: none;
+  animation-duration: 0.11s;
+  z-index: 2;
+  margin-left:5px;
+  margin-top: 15px;
+  margin-bottom:-20px
 }
 /*Reply Avatar Hover Adjustment*/
 div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div.reply > div.header > a.avatar:hover+ a.name,
@@ -2159,20 +2159,20 @@ div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.
 div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div > div.header > a.avatar:hover + a.name,
 div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-message > div.reply-wrap > div > div.reply > div.header > a.avatar.router-link-exact-active.router-link-active:hover + a.name.router-link-exact-active.router-link-active,
 #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div > div.reply-wrap > div > div > div.header > a.avatar:hover+ a.name{
-position: relative;
-transition: all 1s;
-animation:fadeIn;
-top:-50px;
-animation-duration: 3s;
-left:130px;
-margin-left:50px;
-font-size: 25px;
-background:rgba(255, 255, 255, .08);
-border-radius:10px;
-padding: 8px;
-padding-bottom: 25px;
-font-family: Overpass,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-font-weight: 600;
-color: #ffffffba;
+  position: relative;
+  transition: all 1s;
+  animation:fadeIn;
+  top:-50px;
+  animation-duration: 3s;
+  left:130px;
+  margin-left:50px;
+  font-size: 25px;
+  background:rgba(255, 255, 255, .08);
+  border-radius:10px;
+  padding: 8px;
+  padding-bottom: 25px;
+  font-family: Overpass,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  font-weight: 600;
+  color: #ffffffba;
 }
 }
