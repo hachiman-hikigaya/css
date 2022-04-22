@@ -305,8 +305,31 @@ div.page-content:nth-child(3) > div.forum-thread.forum-thread-unscoped.container
 .el-dropdown-menu{
   background: rgba(var(--color-main))
 }
+/*Make cursor default*/
+.reply,.heading h3[data-v-72dc5b51],
+.nav[data-v-1cc2919e],
+.filter-group .group-header[data-v-170179fc],
+.filter-group .group-header[data-v-1e00b9da],
+div.favourites > div.favourites > h2.section-header:first-child,
+.stats-wrap[data-v-815ccddc],
+.milestones .milestone[data-v-815ccddc],
+div.wrap,
+div.overview > div.section:first-child > div.about:first-child > div.content-wrap,
+div.genres:first-child > div.genre > div.name:first-child,
+.overview[data-v-5c30286e] .section-header,
+div.genres:first-child > div.genre > div.amount:last-child {
+  cursor:default;
+}
 div.genres:first-child > div.genre > div.name:first-child {
   background: #41597747!important;
+}
+div.genres:first-child > div.genre > div.name:first-child,
+.history-day {
+  transition: 0.5s ease-in-out;
+}
+.history-day:hover,
+div.genres:first-child > div.genre > div.name:first-child:hover {
+  transform:scale(1.15)
 }
 div.genres:first-child > div.genre > div.amount:last-child{
   color: #ffffff9e!important;
@@ -417,11 +440,7 @@ a[class=avatar] {
   overflow: visible;
   border: 3px solid rgb(var(--color-foreground))
 }
-.favourites-wrap[data-v-ddf96a3c],
-.favourites.preview .favourites-wrap .favourite,
-.favourites.preview .favourites-wrap > div {
-  overflow: visible
-}
+
 .overview .favourite.studio {
   min-height: 35px!important;
   max-height: 35px!important;
@@ -1447,8 +1466,8 @@ div.hohSocialContent.user-follow:last-child {
   padding: 15px!important;
   grid-template-columns: repeat(auto-fill,90px)!important;
   justify-content: space-evenly!important;
-  padding-top: 15px!important;
-  padding-bottom: 15px!important
+  padding-top: 22px!important;
+  padding-bottom: 10px!important;
 }
 .favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c], .favourites.preview .favourites-wrap>div[data-v-ddf96a3c]  {
     margin-bottom: 12px!important;
@@ -1968,16 +1987,16 @@ img[rel="badges"] {
   padding: 1px
 }
 img[rel="badges"]:hover {
-  transform: scale(4.5) !important;
-  transition: transform 1s;
-  position: relative;
-  z-index: 2;
-  margin:50px;
-  margin-bottom:80px!important;
+  transform: scale(4.5) !important ;
+  margin:55px;
+  margin-bottom:0;
+  margin-top:-50px;
   animation: slideInLeft;
   animation-duration: 0.01s
 }
-div.list-previews .small .cover:hover+.content[data-v-4b71d7c6]{z-index:999}
+div.list-previews .small .cover:hover+.content[data-v-4b71d7c6] {
+  z-index:300
+}
 @media (min-width:1040px) and (max-width:1540px) {
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover,
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover{ 
@@ -2025,7 +2044,9 @@ div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a
   animation: slideInRight!important;
   animation-duration: 1.5s!important;
 }
-div.entry-dropdown.el-dropdown {display:none!important}
+div.entry-dropdown.el-dropdown {
+  display:none!important
+}
 div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar:hover+ a.name,
 div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar.router-link-exact-active.router-link-active:hover + a.name.router-link-exact-active.router-link-active,
 div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar:hover +.name[data-v-b584a8de],
@@ -2116,6 +2137,7 @@ div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.hea
   background-color: rgba(0, 0, 0, 0)!important;
 }
 a:not(.avatar):not(.user):not(.link):not(.primary-link){z-index:222}
+/*Reply Avatar Hover*/
 #app > div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div.reply > div.header > a.avatar:hover,    
 #app > div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-manga_list > div.reply-wrap > div > div > div.header > a.avatar:hover,
 #app > div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-anime_list > div.reply-wrap > div > div > div.header > a.avatar:hover,
@@ -2136,7 +2158,6 @@ a:not(.avatar):not(.user):not(.link):not(.primary-link){z-index:222}
   margin-top: 15px;
   margin-bottom:-20px
 }
-/*Reply Avatar Hover Adjustment*/
 div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div.reply > div.header > a.avatar:hover+ a.name,
 div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-manga_list > div.reply-wrap > div > div > div.header > a.avatar:hover + a.name,
 div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-anime_list > div.reply-wrap > div > div > div.header > a.avatar:hover + a.name,
