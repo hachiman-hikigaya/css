@@ -15,8 +15,8 @@
   --hachi-anilist-logo: url(https://files.catbox.moe/nyzorc.svg);
   --hachi-yukino-icon: url(https://files.catbox.moe/1wx9ha.png);
   --blur: 0;
-  --color-main:  21,31,46;
-  --color-hachi-foreground:  17,29,45;
+  --color-main: 21,31,46;
+  --color-hachi-foreground: 17,29,45
 }
 .site-theme-contrast,
 .site-theme-dark,
@@ -77,7 +77,7 @@ body {
 }
 .medialist.cards .entry-card .title,
 .tooltip {
-  backdrop-filter: blur(2px)!important
+  backdrop-filter: blur(2px) !important
 }
 .about a > img,
 .activity-entry .like-wrap .users {
@@ -91,19 +91,20 @@ body {
 .page-content {
   min-width: 320px
 }
-div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner::-webkit-scrollbar,.about .content-wrap::-webkit-scrollbar {
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner::-webkit-scrollbar,
+.about .content-wrap::-webkit-scrollbar {
   display: none!important
 }
-
 [data-v-17620a08] .result:hover {
   background: #0000002e
 }
 [data-v-17620a08] .result .open-list-editor {
   color: #ffffff82
 }
-a[name="test"]{background:#fff}
-#nav > div.quick-search.visible:first-child > div.results:last-child > div.result-col > h3.title:first-child
- {
+a[name="test"] {
+  background: #fff
+}
+#nav > div.quick-search.visible:first-child > div.results:last-child > div.result-col > h3.title:first-child {
   backdrop-filter: blur(var(--blur));
   background: rgba(var(--color-main));
   width: 100%;
@@ -126,7 +127,6 @@ a[name="test"]{background:#fff}
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px
 }
-
 div.page-content:nth-child(3) > div.forum-feed.container > div.filters.mobile-nav-hidden:nth-child(2) {
   padding: 20px;
   border-radius: 15px;
@@ -181,7 +181,7 @@ div.page-content:nth-child(3) > div.forum-feed.container > div.filters.mobile-na
   animation-duration: 1s
 }
 .stats-wrap {
-  transform: scale(1)!important
+  transform: scale(1) !important
 }
 .progress .bar[data-v-815ccddc] {
   background: rgb(var(--hachi-gray))
@@ -198,31 +198,31 @@ div[class="count circle"] {
 }
 .history-day.lv-5,
 .history-day.lv-6,
-.history-day.lv-7, 
-.history-day.lv-8, 
-.history-day.lv-9, 
+.history-day.lv-7,
+.history-day.lv-8,
+.history-day.lv-9,
 .tooltip .circle.lv-5,
 .tooltip .circle.lv-6,
 .tooltip .circle.lv-7,
 .tooltip .circle.lv-8,
-.tooltip .circle.lv-9{
-  background: rgba(171, 186, 205, .9)!important
+.tooltip .circle.lv-9 {
+  background: rgba(171, 186, 205, .9) !important
 }
 .history-day.lv-4,
 .tooltip .circle.lv-4 {
-  background: rgba(171, 186, 205, .7)!important
+  background: rgba(171, 186, 205, .7) !important
 }
 .history-day.lv-3,
 .tooltip .circle.lv-3 {
-  background: rgba(171, 186, 205, .5)!important
+  background: rgba(171, 186, 205, .5) !important
 }
 .history-day.lv-2,
 .tooltip .circle.lv-2 {
-  background: rgba(171, 186, 205, .3)!important
+  background: rgba(171, 186, 205, .3) !important
 }
 .history-day.lv-1,
 .tooltip .circle.lv-1 {
-  background: rgba(171, 186, 205, .2)!important
+  background: rgba(171, 186, 205, .2) !important
 }
 .favourites .favourite {
   border-radius: 9px!important
@@ -302,11 +302,12 @@ div.page-content:nth-child(3) > div.forum-thread.forum-thread-unscoped.container
 .input[data-v-17620a08],
 .result-col[data-v-17620a08],
 [data-v-17620a08].result .open-list-editor,
-.el-dropdown-menu{
+.el-dropdown-menu {
   background: rgba(var(--color-main))
 }
 /*Make cursor default*/
-.reply,.heading h3[data-v-72dc5b51],
+.reply,
+.heading h3[data-v-72dc5b51],
 .nav[data-v-1cc2919e],
 .filter-group .group-header[data-v-170179fc],
 .filter-group .group-header[data-v-1e00b9da],
@@ -318,20 +319,20 @@ div.overview > div.section:first-child > div.about:first-child > div.content-wra
 div.genres:first-child > div.genre > div.name:first-child,
 .overview[data-v-5c30286e] .section-header,
 div.genres:first-child > div.genre > div.amount:last-child {
-  cursor:default;
+  cursor: default
 }
 div.genres:first-child > div.genre > div.name:first-child {
-  background: #41597747!important;
+  background: #41597747!important
 }
 div.genres:first-child > div.genre > div.name:first-child,
 .history-day {
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out
 }
 .history-day:hover,
 div.genres:first-child > div.genre > div.name:first-child:hover {
-  transform:scale(1.15)
+  transform: scale(1.15)
 }
-div.genres:first-child > div.genre > div.amount:last-child{
+div.genres:first-child > div.genre > div.amount:last-child {
   color: #ffffff9e!important;
   text-shadow: 0 0 1px
 }
@@ -347,12 +348,12 @@ div.el-dropdown-menu__item:focus,
 div.el-dropdown-menu__item:hover,
 li.el-dropdown-menu__item:focus,
 li.el-dropdown-menu__item:hover {
-  background: rgba(var(--hachi-cyan),.2)!important 
+  background: rgba(var(--hachi-cyan),.2) !important
 }
 div.home > div:last-child > div > div > div.media-preview:last-child > div.media-preview-card.small > a.cover:first-child,
 div.home > div:last-child > div.list-previews > div.list-preview-wrap> div.list-preview> div.media-preview-card.small >a.cover,
-div.page-content > div > div:nth-child(3) > div a.cover{
-  border-radius:10px!important
+div.page-content > div > div:nth-child(3) > div a.cover {
+  border-radius: 10px!important
 }
 @media (min-width:1540px) {
   .activity-anime_list .wrap,
@@ -410,10 +411,10 @@ a[class=avatar] {
   background: rgb(var(--hachi-light-gray))
 }
 .medialist.cards .entry-card .title {
-  background: rgba(var(--color-foreground),.8)!important
+  background: rgba(var(--color-foreground),.8) !important
 }
 .medialist.cards .entry-card .edit {
-  background: rgb(var(--hachi-light-gray))!important
+  background: rgb(var(--hachi-light-gray)) !important
 }
 .content-wrap {
   max-height: none!important
@@ -424,14 +425,14 @@ a[class=avatar] {
 .favourite[data-v-0317d914] {
   position: static;
   overflow: visible;
-  height: 120px;
+  height: 120px
 }
 .about a > img:hover {
   transform: scale(1.05);
   transition: .5s
 }
 .favourite:hover {
-  transform: scale(1.2);
+  transform: scale(1.2)
 }
 .favourite.studio:hover {
   transform: scale(1.2);
@@ -440,7 +441,6 @@ a[class=avatar] {
   overflow: visible;
   border: 3px solid rgb(var(--color-foreground))
 }
-
 .overview .favourite.studio {
   min-height: 35px!important;
   max-height: 35px!important;
@@ -466,7 +466,7 @@ body .overview .favourite.studio {
 }
 .activity-manga_list > div > div > div > div > .title,
 .hohPinned .list .title[href^="/manga/"] {
-  color: rgb(var(--color-blue))!important
+  color: rgb(var(--color-blue)) !important
 }
 .has-label:hover.has-label[data-v-77aecf0c]::before {
   content: none
@@ -479,18 +479,18 @@ body .overview .favourite.studio {
   visibility: hidden
 }
 div.about:first-child .markdown-spoiler:before,
-div.wrap .markdown-spoiler:before{
+div.wrap .markdown-spoiler:before {
   content: "Click to View"!important;
   font-weight: 700
 }
 .markdown .markdown-spoiler:before {
-  padding:5px;
-  padding-top:3px; 
+  padding: 5px;
+  padding-top: 3px;
   font-weight: 700;
-  padding-bottom:3px;
+  padding-bottom: 3px;
   background: rgb(15, 24, 39);
   color: rgb(var(--color-blue));
-  border-radius:5px
+  border-radius: 5px
 }
 .footer[data-v-04b245e6] a:nth-child(4) {
   margin-left: 35%!important;
@@ -540,19 +540,19 @@ div.theme-selector:first-child {
   display: none
 }
 .header > div.donator-badge {
-  margin-top:-5px;
-  padding:0
+  margin-top: -5px;
+  padding: 0
 }
 div.mod-badge-wrap.donator-badge {
-  margin-top:7px;
-  background:none
+  margin-top: 7px;
+  background: none
 }
 .dropdown[data-v-04b245e6]:before,
 .dropdown[data-v-38edf8f8]:before {
   color: rgba(var(--color-main))
 }
-.dropdown[data-v-04b245e6]{    
-   background: rgba(var(--color-main));
+.dropdown[data-v-04b245e6] {
+  background: rgba(var(--color-main))
 }
 @media (max-width:500px) {
   div.footer > div.container:before {
@@ -568,10 +568,10 @@ div.mod-badge-wrap.donator-badge {
 .stats-wrap,
 div[class=activity-edit],
 div[class=user-follow],
-div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child{
+div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child {
   animation: fadeIn;
   animation-duration: 1s
-} 
+}
 .page-content > div > div.content.container > div > div:nth-child(1) {
   animation: fadeIn;
   animation-duration: 1s;
@@ -612,10 +612,10 @@ div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.s
 .hamburger[data-v-8aeb5e9a],
 .menu[data-v-8aeb5e9a],
 .mobile-nav[data-v-8aeb5e9a] > .menu.visible[data-v-8aeb5e9a] {
-  background: rgb(21, 29, 42);
+  background: rgb(21, 29, 42)
 }
 div[class="nav nav-unscoped transparent"].transparent:hover[data-v-4fbac4e1] {
-  background: rgba(19,28,45,.69);
+  background: rgba(19,28,45,.69)
 }
 .dropdown[data-v-04b245e6] {
   width: 175px!important;
@@ -643,15 +643,15 @@ body {
 .wrap[data-v-4fbac4e1] {
   max-width: 87%
 }
-  .content.container {
-    min-width: 375px
-  }
+.content.container {
+  min-width: 375px
+}
 .favourites-wrap[data-v-ddf96a3c],
 .overview .favourites > .favourites-wrap,
 .overview[data-v-5c30286e] .content-wrap,
 .wrap[data-v-77aecf0c] {
   backdrop-filter: blur(var(--blur));
-  background: rgba(var(--color-main))!important
+  background: rgba(var(--color-main)) !important
 }
 .overview[data-v-5c30286e] .content-wrap,
 .page-content {
@@ -659,13 +659,13 @@ body {
 }
 .overview[data-v-5c30286e] .content-wrap {
   border-top-left-radius: 0px;
-  border-top-right-radius:0px
+  border-top-right-radius: 0px
 }
 div.content.container > div > div:nth-child(2) > div.stats-wrap.full-width > div,
 div.content.container > div > div:nth-child(2) > div.stats-wrap > div.list-stats.content-wrap.hohMilestones,
-div.content.container > div > div:nth-child(2) > div.stats-wrap > div:nth-child(2) {  
-    border-top-left-radius: 10px;
-  border-top-right-radius:10px
+div.content.container > div > div:nth-child(2) > div.stats-wrap > div:nth-child(2) {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px
 }
 div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-anime_list {
   position: relative;
@@ -674,8 +674,8 @@ div.page-content:nth-child(3) div.content.container:last-child > div.overview > 
 div.overview > div.section:first-child > div.desktop:nth-child(3) > div.genre-overview.content-wrap:last-child > div.genres:first-child > div.genre {
   padding-bottom: 6px
 }
-div.genres:first-child > div.genre > div.amount:last-child{
-  color: rgba(114,138,161,.6)!important
+div.genres:first-child > div.genre > div.amount:last-child {
+  color: rgba(114,138,161,.6) !important
 }
 div.page-content:nth-child(3) > div.user.user-page-unscoped.gray > div.content.container:last-child > div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-header:first-child {
   backdrop-filter: blur(var(--blur));
@@ -751,7 +751,7 @@ div.page-content:nth-child(3) div.content.container:last-child > div.favourites 
 div.page-content:nth-child(3) div.content.container:last-child > div.favourites > div.favourites:nth-child(5) > h2.section-header:first-child > div.actions {
   position: absolute;
   bottom: 7px;
-  right: 20px;
+  right: 20px
 }
 div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(6) > h2.section-header:first-child,
 div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(7) > h2.section-header:first-child,
@@ -776,7 +776,7 @@ div.page-content:nth-child(3) div.content.container:last-child > div.overview > 
 div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.about:first-child > div.content-wrap {
   border-radius: 10px
 }
-div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child{
+div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child {
   backdrop-filter: blur(var(--blur));
   background: rgba(var(--color-main));
   width: 100%;
@@ -797,10 +797,10 @@ div.page-content:nth-child(3) div.content.container:last-child > div.overview > 
 }
 div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > h2 > div,
 div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:last-child > div.activity-feed-wrap:last-child > h2.section-header:first-child > div.el-dropdown {
-    position: absolute;
-    left:auto;
-    right:0
-  }
+  position: absolute;
+  left: auto;
+  right: 0
+}
 .activity-entry.full-width.activity-anime_list > div.wrap,
 .activity-entry.full-width.activity-manga_list > div.wrap {
   transition: .69s ease-in-out
@@ -860,20 +860,20 @@ div.overview > div.section:first-child > div.favourites.desktop.preview:nth-chil
   border-bottom: 1px solid #4b4b4b1f
 }
 div.page-content:nth-child(3) div.content.container:last-child > div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child > div.actions {
-  left:auto;
-  right:0;
-  margin-right:15px;
-    position: absolute;
-    font-size:15px;
+  left: auto;
+  right: 0;
+  margin-right: 15px;
+  position: absolute;
+  font-size: 15px
 }
-.users[data-v-58401890]{
-background: rgba(23, 35, 53, 1)
+.users[data-v-58401890] {
+  background: rgba(23, 35, 53, 1)
 }
 div[class="nav nav-unscoped"] > div.wrap.guest {
   margin: 0 auto auto
 }
 .banner .shadow[data-v-1cc2919e] {
-filter: opacity(40%)
+  filter: opacity(40%)
 }
 .banner-content .name {
   font-size: 3.75rem;
@@ -907,7 +907,7 @@ filter: opacity(40%)
   transition: .49s ease-in-out
 }
 .favourites .favourite {
-    transition: transform 0.45s ease-in-out
+  transition: transform 0.45s ease-in-out
 }
 .stats-wrap[data-v-5c30286e] {
   grid-column-gap: 7px;
@@ -1017,12 +1017,14 @@ div.menu.visible:last-child > :hover {
 .medialist.table .entry:hover {
   background: rgb(34, 45, 62)
 }
-.medialist .notes:before, 
+.medialist .notes:before,
 .medialist .repeat:before {
   background: rgb(50, 60, 77)
 }
 .embed[data-v-13cdaed6],
-.activity-feed .hohNoteSuffix:not(:empty), .activity-feed .hohRewatchSuffix:not(:empty), .activity-feed .hohScore:not(.hohSmiley) {
+.activity-feed .hohNoteSuffix:not(:empty),
+.activity-feed .hohRewatchSuffix:not(:empty),
+.activity-feed .hohScore:not(.hohSmiley) {
   background: rgb(15, 24, 39)
 }
 .browse-wrap[data-v-4fbac4e1]:hover .dropdown,
@@ -1039,7 +1041,7 @@ div.page-content:nth-child(3) div.content.container:last-child > div.overview > 
 }
 .el-input,
 .el-textarea {
-  border-radius:10px
+  border-radius: 10px
 }
 .activity-feed > div > div.wrap > div.list.small > a::before,
 .el-input,
@@ -1053,7 +1055,7 @@ div.page-content:nth-child(3) div.content.container:last-child > div.overview > 
   background: rgba(var(--color-main))
 }
 .activity-entry > .wrap > .time:hover {
-background:none
+  background: none
 }
 .markdown-editor,
 .medialist.table .list-section {
@@ -1093,7 +1095,7 @@ div.lists:last-child > div.actions:first-child > div.theme-switch {
     width: 90px;
     background: rgba(var(--color-main))
   }
-div.page-content:nth-child(3) div.content.container:last-child > div.stats > div.filters:first-child {
+  div.page-content:nth-child(3) div.content.container:last-child > div.stats > div.filters:first-child {
     background: 0 0!important
   }
   #hohDraw3x3 {
@@ -1120,7 +1122,7 @@ div.lists > div.list-wrap > div.list-section {
     left: -10px;
     height: 26px;
     width: 90px;
-     background:rgba(23, 35, 53, .92)
+    background: rgba(23, 35, 53, .92)
   }
   div.lists > div.list-wrap > div.list-section {
     background: rgba(var(--color-main));
@@ -1155,7 +1157,7 @@ div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wra
   border-top-right-radius: 0
 }
 div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap > div.section-header:first-child,
-div.page-content:nth-child(3) > div.container > div.home.full-width:first-child > div.list-previews > div.list-preview-wrap > div.section-header:first-child{
+div.page-content:nth-child(3) > div.container > div.home.full-width:first-child > div.list-previews > div.list-preview-wrap > div.section-header:first-child {
   background: rgba(var(--color-main));
   width: 100%;
   height: 45px;
@@ -1174,56 +1176,56 @@ div.page-content:nth-child(3) > div.container > div.home.full-width:first-child 
   border-bottom: 1px solid #4b4b4b1f
 }
 div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap > div.section-header:first-child h2 {
-  font-size:1.6rem;
-  font-weight:600
+  font-size: 1.6rem;
+  font-weight: 600
 }
 div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap > div.section-header:first-child {
-  padding:0;
-  flex-direction:column-reverse;
-  justify-content:flex-end
-} 
+  padding: 0;
+  flex-direction: column-reverse;
+  justify-content: flex-end
+}
 @media (max-width:1040px) {
-.list-preview[data-v-6aea970d] {
-  background: rgba(var(--color-main));
-  border-radius: 0 0 10px 10px;
-  display:flex;
-  grid-gap:0
-}
-.media-preview-card meter {
-  width: 140px
-}
-div.home > div:last-child > div.list-previews > div.list-preview-wrap:first-child > div.list-preview:last-child > div.media-preview-card > div.content:last-child > div.info-header:first-child {
-  color: #a1a1a19c;
-  margin-bottom: 5px;
-  margin-top:-5px;
-}
-div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap .cover .image-text[data-v-4b71d7c6] {
-  display:flex;
-  padding:0;
-  justify-content:center;
-  top:74%;
-  height:30px;
-  background: rgba(var(--color-overlay),.7);
-  border-bottom-left-radius: 3px!important;
-  border-bottom-right-radius: 0px!important;
-  position:relative;
-  width:100%;
-  color:rgba(var(--color-text-bright),.91);
-  font-size:1rem!important;
-  text-align:center;
-  line-height:1.4!important;
-  font-weight:500;
-}
-div.list-preview > div > a > div.image-text > div > div {
-  margin-top:1.1px
-}
-div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap [data-v-2fd80e52] .countdown>span span:first-of-type:before {
-  height:0
-}
-.list-preview[data-v-6aea970d],
-.list-preview[data-v-6aea970d] .media-preview-card .content,
-.list-preview[data-v-6aea970d] .media-preview-card .info {
-  background: rgba(var(--color-main))
+  .list-preview[data-v-6aea970d] {
+    background: rgba(var(--color-main));
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    grid-gap: 0
+  }
+  .media-preview-card meter {
+    width: 140px
+  }
+  div.home > div:last-child > div.list-previews > div.list-preview-wrap:first-child > div.list-preview:last-child > div.media-preview-card > div.content:last-child > div.info-header:first-child {
+    color: #a1a1a19c;
+    margin-bottom: 5px;
+    margin-top: -5px
+  }
+  div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap .cover .image-text[data-v-4b71d7c6] {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    top: 74%;
+    height: 30px;
+    background: rgba(var(--color-overlay),.7);
+    border-bottom-left-radius: 3px!important;
+    border-bottom-right-radius: 0px!important;
+    position: relative;
+    width: 100%;
+    color: rgba(var(--color-text-bright),.91);
+    font-size: 1rem!important;
+    text-align: center;
+    line-height: 1.4!important;
+    font-weight: 500
+  }
+  div.list-preview > div > a > div.image-text > div > div {
+    margin-top: 1.1px
+  }
+  div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap [data-v-2fd80e52] .countdown>span span:first-of-type:before {
+    height: 0
+  }
+  .list-preview[data-v-6aea970d],
+  .list-preview[data-v-6aea970d] .media-preview-card .content,
+  .list-preview[data-v-6aea970d] .media-preview-card .info {
+    background: rgba(var(--color-main))
   }
 }
 .list-preview[data-v-6aea970d] {
@@ -1375,7 +1377,7 @@ div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
   border-radius: 10px
 }
 @media(max-width:760px) {
-div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
+  div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
     margin-top: 20px
   }
 }
@@ -1390,7 +1392,7 @@ div.user-social.user-social-unscoped > div.filters:first-child > div.theme-switc
   top: -13px;
   height: 30px;
   width: 90px;
-   background:rgba(23, 35, 53, .92)
+  background: rgba(23, 35, 53, .92)
 }
 .follow-card .name,
 .follow-card.unfollow,
@@ -1413,12 +1415,12 @@ div.page-content:nth-child(3) div.content.container:last-child > div.user-social
   border-radius: 0 10px 10px 0
 }
 @media(max-width:440px) {
-div.page-content:nth-child(3) div.content.container:last-child > div.user-social.user-social-unscoped.listView > div.user-follow:nth-child(2) > div.wrap:first-child div.avatar > a.name {
+  div.page-content:nth-child(3) div.content.container:last-child > div.user-social.user-social-unscoped.listView > div.user-follow:nth-child(2) > div.wrap:first-child div.avatar > a.name {
     max-width: 250px
   }
 }
 @media(max-width:415px) {
-div.page-content:nth-child(3) div.content.container:last-child > div.user-social.user-social-unscoped.listView > div.user-follow:nth-child(2) > div.wrap:first-child div.avatar > a.name {
+  div.page-content:nth-child(3) div.content.container:last-child > div.user-social.user-social-unscoped.listView > div.user-follow:nth-child(2) > div.wrap:first-child div.avatar > a.name {
     max-width: 155px
   }
 }
@@ -1464,14 +1466,15 @@ div.hohSocialContent.user-follow:last-child {
   display: grid!important;
   grid-gap: 10px 10px!important;
   padding: 15px!important;
-  grid-template-columns: repeat(auto-fill,90px)!important;
+  grid-template-columns: repeat(auto-fill,90px) !important;
   justify-content: space-evenly!important;
   padding-top: 22px!important;
-  padding-bottom: 10px!important;
+  padding-bottom: 10px!important
 }
-.favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c], .favourites.preview .favourites-wrap>div[data-v-ddf96a3c]  {
-    margin-bottom: 12px!important;
-    margin-right: 17px!important;
+.favourites.preview .favourites-wrap .favourite[data-v-ddf96a3c],
+.favourites.preview .favourites-wrap>div[data-v-ddf96a3c] {
+  margin-bottom: 12px!important;
+  margin-right: 17px!important
 }
 @media (max-width:760px) {
   .avatar[data-v-1cc2919e] {
@@ -1507,7 +1510,7 @@ div.hohSocialContent.user-follow:last-child {
     height: auto;
     margin-bottom: 20px
   }
-.filter-toggle.active[data-v-0a867854][data-v-0a867854] {
+  .filter-toggle.active[data-v-0a867854][data-v-0a867854] {
     color: rgba(var(--hachi-gray))
   }
   div.lists:last-child > div.list-wrap > div.list-section:last-child > div.list-head.row:first-child > div.format:last-child,
@@ -1542,15 +1545,14 @@ div.page-content:nth-child(3) > div.settings.container > div.nav:first-child {
   position: absolute;
   display: none
 }
-.nav-btn[data-v-1cc2919e]{
-    top: -11px;
-   position: relative
- }
-.follower-badge[data-v-1cc2919e] {
-    top: -12px;
-   position: relative
+.nav-btn[data-v-1cc2919e] {
+  top: -11px;
+  position: relative
 }
-    
+.follower-badge[data-v-1cc2919e] {
+  top: -12px;
+  position: relative
+}
 @media (max-width:1040px) {
   .donator-badge[data-v-1cc2919e] {
     left: 100%;
@@ -1565,15 +1567,15 @@ div.page-content:nth-child(3) > div.settings.container > div.nav:first-child {
     position: relative;
     overflow: hidden
   }
-}  
+}
 @media (max-width:760px) {
-.nav-btn[data-v-1cc2919e] {
+  .nav-btn[data-v-1cc2919e] {
     top: 5px;
-   position: relative
- }
-.follower-badge[data-v-1cc2919e] {
-  top: 7px;
-  position: relative
+    position: relative
+  }
+  .follower-badge[data-v-1cc2919e] {
+    top: 7px;
+    position: relative
   }
 }
 @media (max-width:610px) {
@@ -1587,8 +1589,8 @@ div.page-content:nth-child(3) > div.settings.container > div.nav:first-child {
   }
   .follower-badge[data-v-1cc2919e] {
     top: 140px;
-    left:180px;
-      margin:auto;
+    left: 180px;
+    margin: auto;
     position: absolute
   }
   .header-wrap[data-v-1cc2919e] {
@@ -1607,7 +1609,7 @@ div.page-content:nth-child(3) > div.settings.container > div.nav:first-child {
 @media (max-width:460px) {
   .banner-content .name {
     font-size: 2.55rem;
-    top:-10px;
+    top: -10px;
     position: relative;
     overflow: hidden
   }
@@ -1615,19 +1617,19 @@ div.page-content:nth-child(3) > div.settings.container > div.nav:first-child {
 @media (max-width:400px) {
   .banner-content .name {
     font-size: 2.55rem;
-    top:-10px;
+    top: -10px;
     padding: 65px 0px 0 10px;
     position: relative;
     overflow: hidden
   }
-.nav-btn[data-v-1cc2919e],
-.follower-badge[data-v-1cc2919e] {
-  transform:scale(0.85);
-  margin-left:0px
+  .nav-btn[data-v-1cc2919e],
+  .follower-badge[data-v-1cc2919e] {
+    transform: scale(0.85);
+    margin-left: 0px
   }
 }
 .bar-chart-wrap[data-v-46edc0ca] {
-      overflow-x: scroll;
+  overflow-x: scroll;
   box-shadow: none
 }
 div.page-content:nth-child(3) > div.character-wrap,
@@ -1642,7 +1644,7 @@ div.page-content:nth-child(3) > div.staff-wrap,
 div.page-content:nth-child(3) > div.studio.studio-page-unscoped,
 .child.even[data-v-20438142],
 .comment-wrap[data-v-20438142],
-.header[data-v-4df465ff]{
+.header[data-v-4df465ff] {
   background: rgba(var(--color-main))
 }
 .switch[data-v-05bb5e72] {
@@ -1663,11 +1665,12 @@ div.about:first-child > div.content-wrap > .markdown .youtube {
 div.page-content:nth-child(3) > div.container > div.home > div:last-child > div.list-previews > div.list-preview-wrap > div.section-header:first-child > svg.size-toggle.svg-inline--fa.fa-expand.fa-w-14.fa-sm:last-child > path {
   display: none
 }
-div.page-content:nth-child(3) > div.search,div.page-content:nth-child(3) > div.studio.studio-page-unscoped {
+div.page-content:nth-child(3) > div.search,
+div.page-content:nth-child(3) > div.studio.studio-page-unscoped {
   border-radius: 10px;
-  max-width:95%;
-  margin:auto;
-  margin-top:30px;
+  max-width: 95%;
+  margin: auto;
+  margin-top: 30px;
   padding: 10px
 }
 div.forum-thread.forum-thread-unscoped.container #anchor,
@@ -1681,7 +1684,7 @@ div.forum-thread.forum-thread-unscoped.container > h1.title {
   display: flex;
   padding-left: 20px;
   padding-top: 10px;
-  padding-bottom:10px;
+  padding-bottom: 10px;
   font-size: 125%;
   margin-bottom: 15px;
   font-weight: 500;
@@ -1707,7 +1710,7 @@ div.page-content:nth-child(3) > div.media.media-page-unscoped.media-manga > div.
 .list[data-v-aef58af4],
 .actions > div[data-v-ddf96a3c],
 .button.comment[data-v-07b321a7],
-.button[data-v-c574a71c]{
+.button[data-v-c574a71c] {
   background: rgba(var(--hachi-gray))
 }
 div.wrap:nth-child(4) > div.footer {
@@ -1726,7 +1729,7 @@ div.wrap:nth-child(4) > div.footer {
 .favourite.studio[data-v-0317d914],
 .hohButton,
 .signup[data-v-4fbac4e1] {
-   background:rgba(23, 35, 53, .92)
+  background: rgba(23, 35, 53, .92)
 }
 .hohExtraFilters {
   overflow: hidden
@@ -1769,90 +1772,161 @@ div.favourites.desktop.preview:nth-child(8) > div.favourites-wrap.studios:last-c
 .medialist .filters .filter-group:first-child > span .count {
   margin-right: 10px
 }
-.list-editor-wrap .header .save-btn,.filter-toggle[data-v-119352f9],.filter-toggle[data-v-170179fc],.actions > div[data-v-ddf96a3c], .button.comment[data-v-07b321a7], .button[data-v-c574a71c] {
-background: rgb(23, 35, 53)
+.list-editor-wrap .header .save-btn,
+.filter-toggle[data-v-119352f9],
+.filter-toggle[data-v-170179fc],
+.actions > div[data-v-ddf96a3c],
+.button.comment[data-v-07b321a7],
+.button[data-v-c574a71c] {
+  background: rgb(23, 35, 53)
 }
-.create-btn[data-v-0064307c],.list[data-v-4df465ff],.button[data-v-1c97ba07],.external-link[data-v-7a1f9df8],.tag[data-v-5760f120],.search-wrap[data-v-128d71ac],.type[data-v-544390d2],.open-btn[data-v-458a983a],.media-card[data-v-70df6e62],.el-message-box .el-input__inner,.el-message-box .el-button--primary,.option.selected[data-v-e3e1e202], .option[data-v-e3e1e202]:hover,.open-user-search[data-v-2edb3b2e],.settings[data-v-e9066d7e] .button,.search-wrap[data-v-458a983a],.select[data-v-e3e1e202],.open-btn[data-v-a679b1ba],.media-preview-card[data-v-4b71d7c6],.el-slider__runway,.feed-type-toggle[data-v-8209bd04],.stat-card[data-v-686e8358],.relations-wrap[data-v-686e8358],.hohTable,.hohTable .header.row,.bar-chart-wrap[data-v-46edc0ca],[data-v-72dc5b51] .horizontal-scroller,.el-select-dropdown__item.hover, .el-select-dropdown__item:hover,.user-social .filter-group span.active,.user-follow .follow-card,.pie-chart[data-v-26dc9635],.highlight .circle[data-v-72dc5b51],.switch[data-v-05bb5e72],.filter-group a.router-link-active[data-v-1e00b9da],div.filters-wrap.primary-filters > div.filters > div:nth-child(1) > div.search-wrap,div.filters-wrap.primary-filters > div > div.search-wrap,div.filters-wrap.primary-filters > div > div.open-btn {
+.create-btn[data-v-0064307c],
+.list[data-v-4df465ff],
+.button[data-v-1c97ba07],
+.external-link[data-v-7a1f9df8],
+.tag[data-v-5760f120],
+.search-wrap[data-v-128d71ac],
+.type[data-v-544390d2],
+.open-btn[data-v-458a983a],
+.media-card[data-v-70df6e62],
+.el-message-box .el-input__inner,
+.el-message-box .el-button--primary,
+.option.selected[data-v-e3e1e202],
+.option[data-v-e3e1e202]:hover,
+.open-user-search[data-v-2edb3b2e],
+.settings[data-v-e9066d7e] .button,
+.search-wrap[data-v-458a983a],
+.select[data-v-e3e1e202],
+.open-btn[data-v-a679b1ba],
+.media-preview-card[data-v-4b71d7c6],
+.el-slider__runway,
+.feed-type-toggle[data-v-8209bd04],
+.stat-card[data-v-686e8358],
+.relations-wrap[data-v-686e8358],
+.hohTable,
+.hohTable .header.row,
+.bar-chart-wrap[data-v-46edc0ca],
+[data-v-72dc5b51] .horizontal-scroller,
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover,
+.user-social .filter-group span.active,
+.user-follow .follow-card,
+.pie-chart[data-v-26dc9635],
+.highlight .circle[data-v-72dc5b51],
+.switch[data-v-05bb5e72],
+.filter-group a.router-link-active[data-v-1e00b9da],
+div.filters-wrap.primary-filters > div.filters > div:nth-child(1) > div.search-wrap,
+div.filters-wrap.primary-filters > div > div.search-wrap,
+div.filters-wrap.primary-filters > div > div.open-btn {
   background: rgb(29, 41, 57);
-  color:#b0b0b0
+  color: #b0b0b0
 }
-.feed-type-toggle>div.active[data-v-8209bd04]{
+.feed-type-toggle>div.active[data-v-8209bd04] {
   background: rgb(46, 63, 83)
 }
-.open-btn.active[data-v-458a983a],.open-btn.active[data-v-a679b1ba], .open-btn[data-v-a679b1ba]:hover,.el-dropdown-menu__item.active,.feed-filter[data-v-8209bd04]:hover,.el-select-dropdown__item.selected,.feed-type-toggle>div.active[data-v-8209bd04],.feed-type-toggle>div[data-v-8209bd04]:hover {
-  color:rgba(255, 255, 255, .8)
+.open-btn.active[data-v-458a983a],
+.open-btn.active[data-v-a679b1ba],
+.open-btn[data-v-a679b1ba]:hover,
+.el-dropdown-menu__item.active,
+.feed-filter[data-v-8209bd04]:hover,
+.el-select-dropdown__item.selected,
+.feed-type-toggle>div.active[data-v-8209bd04],
+.feed-type-toggle>div[data-v-8209bd04]:hover {
+  color: rgba(255, 255, 255, .8)
 }
-.relations[data-v-686e8358]{padding-left:6px}
+.relations[data-v-686e8358] {
+  padding-left: 6px
+}
 .line-chart-wrap[data-v-84e71bc6] {
-  background:none
+  background: none
 }
 .button.cancel[data-v-c574a71c] {
-  background:rgba(var(--color-hachi-foreground))
+  background: rgba(var(--color-hachi-foreground))
 }
-.handle-1[data-v-94c49b6c],.handle-0[data-v-94c49b6c] {
-  background:rgba(106, 106, 106, .55)
+.handle-1[data-v-94c49b6c],
+.handle-0[data-v-94c49b6c] {
+  background: rgba(106, 106, 106, .55)
 }
 .range-wrap .handle:hover {
-  background:rgba(159, 159, 159, .81)
+  background: rgba(159, 159, 159, .81)
 }
-.site-theme-dark .el-dropdown-menu,.el-select-dropdown,.el-scrollbar,div.el-message-box > div.el-message-box__btns:last-child > button.el-button.el-button--default.el-button--small:first-child,.hover-data[data-v-4d8937d6],.dropdown[data-v-a679b1ba],.options[data-v-e3e1e202],.media-preview[data-v-796abd11] .media-preview-card .content,.list-preview[data-v-6aea970d] .media-preview-card .info,.list-preview[data-v-6aea970d] .media-preview-card .content {
- background:rgba(var(--color-hachi-foreground))
+.site-theme-dark .el-dropdown-menu,
+.el-select-dropdown,
+.el-scrollbar,
+div.el-message-box > div.el-message-box__btns:last-child > button.el-button.el-button--default.el-button--small:first-child,
+.hover-data[data-v-4d8937d6],
+.dropdown[data-v-a679b1ba],
+.options[data-v-e3e1e202],
+.media-preview[data-v-796abd11] .media-preview-card .content,
+.list-preview[data-v-6aea970d] .media-preview-card .info,
+.list-preview[data-v-6aea970d] .media-preview-card .content {
+  background: rgba(var(--color-hachi-foreground))
 }
 div.review >.banner.no-image[data-v-5ca094da] {
-  background:rgba(var(--color-main))
+  background: rgba(var(--color-main))
 }
 @media (max-width:1040px) {
-.list-preview[data-v-6aea970d] .media-preview-card .content {
-  background:rgba(0, 0, 0, .08)
-}
-div.list-preview > div > a {
-  border-top-left-radius:3px!important;
-  border-bottom-left-radius:3px!important
-}
-.list-preview[data-v-6aea970d] .media-preview-card .info {
-  background:none
-}
+  .list-preview[data-v-6aea970d] .media-preview-card .content {
+    background: rgba(0, 0, 0, .08)
+  }
+  div.list-preview > div > a {
+    border-top-left-radius: 3px!important;
+    border-bottom-left-radius: 3px!important
+  }
+  .list-preview[data-v-6aea970d] .media-preview-card .info {
+    background: none
+  }
 }
 div.info:last-child > meter:first-child {
   filter: saturate(40%) hue-rotate(25deg) brightness(100%)
 }
 .el-checkbox__input.is-checked+.el-checkbox__label,
-.el-dialog__headerbtn:focus .el-dialog__close, .el-dialog__headerbtn:hover .el-dialog__close {
-  color:#ddddddfa
+.el-dialog__headerbtn:focus .el-dialog__close,
+.el-dialog__headerbtn:hover .el-dialog__close {
+  color: #ddddddfa
 }
 div.home > div:last-child > div.list-previews > div.list-preview-wrap:first-child > div.list-preview:last-child > div.media-preview-card > div.content:last-child > div.info-header:first-child {
-  color:#a1a1a19c
+  color: #a1a1a19c
 }
-.option.selected[data-v-e3e1e202], .option[data-v-e3e1e202]:hover,div.home > div:last-child > div.list-previews > div.list-preview-wrap > div.list-preview > div.media-preview-card > div.content> a.title:first-child:hover {
-  color:#ffffffbd
+.option.selected[data-v-e3e1e202],
+.option[data-v-e3e1e202]:hover,
+div.home > div:last-child > div.list-previews > div.list-preview-wrap > div.list-preview > div.media-preview-card > div.content> a.title:first-child:hover {
+  color: #ffffffbd
 }
-.list-preview[data-v-6aea970d] .media-preview-card .cover .image-text,.plus-progress[data-v-2fd80e52] {
-  border-bottom-left-radius :10px;
-  border-bottom-right-radius:10px
+.list-preview[data-v-6aea970d] .media-preview-card .cover .image-text,
+.plus-progress[data-v-2fd80e52] {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px
 }
-.small[data-v-4b71d7c6]{
-  border-radius:10px
+.small[data-v-4b71d7c6] {
+  border-radius: 10px
 }
 .behind-accent[data-v-2fd80e52] {
-  height:12px;
-  border-bottom-left-radius:10px;
-  border-bottom-right-radius:10px;
+  height: 12px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background: linear-gradient(rgba(255, 255, 255, 0),rgba(232, 93, 117, .49))
 }
-div.media.media-page-unscoped.media-anime > div.header-wrap:first-child > div.header > div.container > div.cover-wrap:first-child > div.cover-wrap-inner > img.cover,div.media.media-page-unscoped.media-manga > div.header-wrap:first-child > div.header > div.container > div.cover-wrap:first-child > div.cover-wrap-inner > img.cover,.search .results.cover .media-card .cover, .search-landing .results:not(.table) .media-card .cover, .search .results .staff-card .cover,div.recommendations > div.wrap > div.recommendation-card > div.cover,div.media.media-page-unscoped.media-anime > div.header-wrap:first-child,div.media.media-page-unscoped.media-manga > div.header-wrap:first-child {
-  border-radius:10px!important
+div.media.media-page-unscoped.media-anime > div.header-wrap:first-child > div.header > div.container > div.cover-wrap:first-child > div.cover-wrap-inner > img.cover,
+div.media.media-page-unscoped.media-manga > div.header-wrap:first-child > div.header > div.container > div.cover-wrap:first-child > div.cover-wrap-inner > img.cover,
+.search .results.cover .media-card .cover,
+.search-landing .results:not(.table) .media-card .cover,
+.search .results .staff-card .cover,
+div.recommendations > div.wrap > div.recommendation-card > div.cover,
+div.media.media-page-unscoped.media-anime > div.header-wrap:first-child,
+div.media.media-page-unscoped.media-manga > div.header-wrap:first-child {
+  border-radius: 10px!important
 }
 div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.primary-filters:first-child > div.filters:first-child {
   grid-template-columns: repeat(5,160px)
 }
 .list-editor-wrap .header {
   box-shadow: none;
-  background:rgba(var(--color-main))
+  background: rgba(var(--color-main))
 }
 .list-editor-wrap .list-editor {
   box-shadow: none
 }
-
 .list[data-v-5776f768],
 .option.active[data-v-05bb5e72],
 .hohRecsSwitch .options .option.active,
@@ -1861,26 +1935,30 @@ div.page-content:nth-child(3) > div.search > div.container > div.filters-wrap.pr
   border-color: #646464
 }
 .button[data-v-c93e1c70] {
-  color:rgba(var(--text))
+  color: rgba(var(--text))
 }
 .button[data-v-c93e1c70],
-.el-input-group__append, .el-input-group__prepend, .el-input__inner,.filter-group .active[data-v-170179fc],
-.filter-toggle[data-v-1e00b9da],.filter-group .active[data-v-119352f9] {
+.el-input-group__append,
+.el-input-group__prepend,
+.el-input__inner,
+.filter-group .active[data-v-170179fc],
+.filter-toggle[data-v-1e00b9da],
+.filter-group .active[data-v-119352f9] {
   background: rgb(23, 35, 53)
 }
 .time .pinned[data-v-b584a8de] {
-  padding-left:5px;
-  padding-top:2px
+  padding-left: 5px;
+  padding-top: 2px
 }
 .donator-badge[data-v-b584a8de] {
-  margin-bottom:2px!important;
-  background:none
+  margin-bottom: 2px!important;
+  background: none
 }
 .hohSocialFeed .details {
-  min-width:320px
+  min-width: 320px
 }
 div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following > div > a> div.name {
-  font-size:1.3rem
+  font-size: 1.3rem
 }
 @media (max-width:432px) {
   div.stats > div.stats-wrap:last-child > div.overview:first-child > section:nth-child(3) > div.heading:first-child > div.switch:last-child div.option {
@@ -1889,20 +1967,20 @@ div.page-content > div > div.content.container > div.social > div:nth-child(2) >
 }
 div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following > #statusList,
 div.page-content > div > div.content.container > div.social > div.activity-feed > div.hohSocialFeed > div:nth-child(1) {
-  top:14px!important;
-  padding-right:10px;
-  font-size:1.2rem
+  top: 14px!important;
+  padding-right: 10px;
+  font-size: 1.2rem
 }
 div.page-content > div > div.content.container > div.social > div.activity-feed > h2,
 div.page-content > div > div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > h2,
-div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > h2{
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > h2 {
   background: rgba(var(--color-main));
   width: 100%;
   height: 40px;
   margin: auto;
   overflow: hidden;
   align-items: start;
-  padding:12px;
+  padding: 12px;
   font-size: 1.4rem;
   font-weight: 500;
   border-top-left-radius: 10px;
@@ -1911,49 +1989,49 @@ div.page-content > div > div.content.container > div.social > div:nth-child(2) >
 }
 div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline h2,
 div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div,
-div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(1) > h2{
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(1) > h2 {
   border-bottom: 1px solid #4b4b4b1f;
-  padding-bottom:5px
+  padding-bottom: 5px
 }
 div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline > div.hohTimelineGap {
-  background:none;
-  padding:10px;
-  padding-bottom:0px
+  background: none;
+  padding: 10px;
+  padding-bottom: 0px
 }
 div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following,
 div.page-content > div > div.content.container > div.social > div.activity-feed > .activity-entry[data-v-b584a8de],
 div.page-content > div > div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3),
 div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) {
-  padding:10px;
-  margin-top:0px;
-  margin-bottom:0;
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 0;
   background: rgba(var(--color-main))
 }
 div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div {
-  margin-bottom:15px
+  margin-bottom: 15px
 }
 div.page-content > div > div.content.container > div.social > div.activity-feed > div.scroller > div {
-  margin-top:0px;
-  padding:10px
+  margin-top: 0px;
+  padding: 10px
 }
 div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(1),
 div.page-content > div > div.content.container > div.social > div.activity-feed > div.scroller,
-div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline{
-  padding:10px;
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline {
+  padding: 10px;
   background: rgba(var(--color-main));
-  border-bottom-left-radius:10px;
-  border-bottom-right-radius:10px
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px
 }
 div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline {
-  margin-top:10px;
+  margin-top: 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px
 }
 div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following,
 div.page-content > div > div.content.container > div.social > div.activity-feed:after,
 div.page-content > div > div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) {
-  border-bottom-left-radius:10px;
-  border-bottom-right-radius:10px
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px
 }
 div.page-content > div > div.content.container > div.social > div.activity-feed > div.scroller > div,
 div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > input,
@@ -1967,14 +2045,14 @@ div.page-content > div > div.content.container > div.social > div.activity-feed.
 div.page-content > div > div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) > div > div.wrap,
 div.page-content > div > div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) > div > div.reply-wrap > div > div,
 div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following > div > a {
-  background:rgba(11, 16, 24, .34)
+  background: rgba(11, 16, 24, .34)
 }
 div.page-content > div > div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) > div > div.reply-wrap > div > div,
 div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div:nth-child(4),
 div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(1) {
-  border-radius:10px
+  border-radius: 10px
 }
-div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following > div > a > div.name{
+div.page-content > div > div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following > div > a > div.name {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis
@@ -1987,197 +2065,199 @@ img[rel="badges"] {
   padding: 1px
 }
 img[rel="badges"]:hover {
-  transform: scale(4.5) !important ;
-  margin:55px;
-  margin-bottom:0;
-  margin-top:-50px;
-  animation: slideInLeft;
+  transform: scale(4.5) !important;
+  margin: 75px;
+  animation: fadeOut;
   animation-duration: 0.01s
 }
 div.list-previews .small .cover:hover+.content[data-v-4b71d7c6] {
-  z-index:300
+  z-index: 300
 }
 @media (min-width:1040px) and (max-width:1540px) {
-div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover,
-div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover{ 
-position: relative;
-background-size: contain;
-height: calc(300px - 25px);
-width: calc(220px - 25px);
-animation: slideInLeft;
-z-index:34;
-animation-duration: 1.01s;  
-background-color:rgb(21, 31, 46);
-}
-div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover:before,
-div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover:before{
-  background-color:rgb(21, 31, 46)!important;
-  content: ""!important;
-  background-size:90% 300%!important;
-  width: 310%!important;
-  height: 110%!important;
-  z-index:  2;
-  position: absolute;
-  top: -5px;
-  left: 190px;
-}
-div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover:after,
-div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover:after{
-  content: ""!important;
-  background: inherit!important;
-  background-size:90% 300%!important;
-  width: 310%!important;
-  height: 110%!important;
-  z-index: 2;
-  position: absolute;
-  top: -5px;
-  left: 155px;
-  filter: brightness(30%) opacity(50%)blur(8.0px)!important;
-  background-color: rgba(0, 0, 0, 0)!important;
-}
-div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover +.details[data-v-b584a8de] {
-  left: 150px!important;
-  z-index:40;
-  position: relative;
-  max-width: 400px;
-  font-size: 15px;   
-  animation: slideInRight!important;
-  animation-duration: 1.5s!important;
-}
-div.entry-dropdown.el-dropdown {
-  display:none!important
-}
-div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar:hover+ a.name,
-div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar.router-link-exact-active.router-link-active:hover + a.name.router-link-exact-active.router-link-active,
-div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar:hover +.name[data-v-b584a8de],
-div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar.router-link-exact-active.router-link-active:hover +.name[data-v-b584a8de]{
-  position: relative;
-  transition: all 1s;
-  animation:fadeIn;
-  animation-duration: 3s;
-  margin-left:10px;
-  font-size: 25px;
-  background:rgba(255, 255, 255, .05);
-  border-radius:5px;
-  padding: 8px;
-  font-family: Overpass,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-  font-weight: 600;
-  color: #ffffffba;
-}
-div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover+.details[data-v-b584a8de]{
-  left: 100px!important;
-  z-index:40;
-  position: relative;
-  margin:auto;
-  max-width: 360px;
-  font-size: 15px;   
-  animation: slideInRight!important;
-  animation-duration: 1.5s!important;
-}
-div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar:hover +.name[data-v-b584a8de]{
-  margin-left:auto;
-  margin-right: auto;
-}
-div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > div > a.avatar:hover{
-  transition: all 1s;
-  position: relative;
-  display: flex;
-  background-size: contain;
-  height: calc(180px - 45px);
-  width: calc(180px - 45px);
-  filter: none;
-  z-index: 2;
-  margin-bottom:10px;
-  margin-left:10px;
-  margin-right: -10px; 
-  margin-top: 25px;
-  background-color: rgb(21, 31, 46);
-}
-div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover,
-div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover{
-  transition: all 1s;
-  position: relative;
-  display: flex;
-  background-size: contain;
-  height: calc(180px - 45px);
-  width: calc(180px - 45px);
-  animation: fadeIn;
-  filter: none;
-  animation-duration: 0.11s;
-  z-index: 2;
-  margin-bottom:10px;
-  margin-right: -10px; 
-  margin-top: 15px;
-  background-color: rgb(21, 31, 46);}
-div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover:before{ transition: all 1s;
-  background-color:rgb(21, 31, 46)!important;
-  animation:slideInLeft;
-  animation-duration: 1s;
-  content:"";
-  background-image: inherit;
-  background-size: contain;
-  margin-top:-15px!important;
-  background-repeat: no-repeat;
-  border-bottom: solid 1px rgba(var(--hachi-gray),.5);
-  width: 400%!important;
-  height: 151px;
-  position: absolute;
-}
-div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover:after{ transition: all 1s;
-  content: ""!important;
-  background: inherit!important;
-  background-size:550% 200%!important;
-  width: 310%!important;
-  height: 110%!important;
-  z-index: 2;
-  position: absolute;
-  top: -15px;
-  left: 105px;
-  filter: brightness(30%)opacity(30%)blur(20.0px)!important;
-  background-color: rgba(0, 0, 0, 0)!important;
-}
-a:not(.avatar):not(.user):not(.link):not(.primary-link){z-index:222}
-/*Reply Avatar Hover*/
-#app > div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div.reply > div.header > a.avatar:hover,    
-#app > div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-manga_list > div.reply-wrap > div > div > div.header > a.avatar:hover,
-#app > div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-anime_list > div.reply-wrap > div > div > div.header > a.avatar:hover,
-    #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div > div.header > a.avatar:hover,
-    #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-message > div.reply-wrap > div > div.reply > div.header > a.avatar.router-link-exact-active.router-link-active:hover,
-#app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div > div.reply-wrap > div > div > div.header > a.avatar:hover{
-  transition: all 1s;
-  position: relative;
-  display: flex;
-  background-size: contain;
-  height: calc(180px - 45px);
-  width: calc(180px - 45px);
-  animation: fadeIn;
-  filter: none;
-  animation-duration: 0.11s;
-  z-index: 2;
-  margin-left:5px;
-  margin-top: 15px;
-  margin-bottom:-20px
-}
-div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div.reply > div.header > a.avatar:hover+ a.name,
-div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-manga_list > div.reply-wrap > div > div > div.header > a.avatar:hover + a.name,
-div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-anime_list > div.reply-wrap > div > div > div.header > a.avatar:hover + a.name,
-div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div > div.header > a.avatar:hover + a.name,
-div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-message > div.reply-wrap > div > div.reply > div.header > a.avatar.router-link-exact-active.router-link-active:hover + a.name.router-link-exact-active.router-link-active,
-#app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div > div.reply-wrap > div > div > div.header > a.avatar:hover+ a.name{
-  position: relative;
-  transition: all 1s;
-  animation:fadeIn;
-  top:-50px;
-  animation-duration: 3s;
-  left:130px;
-  margin-left:50px;
-  font-size: 25px;
-  background:rgba(255, 255, 255, .08);
-  border-radius:10px;
-  padding: 8px;
-  padding-bottom: 25px;
-  font-family: Overpass,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-  font-weight: 600;
-  color: #ffffffba;
-}
+  div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover,
+  div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover {
+    position: relative;
+    background-size: contain;
+    height: calc(300px - 25px);
+    width: calc(220px - 25px);
+    animation: slideInLeft;
+    z-index: 34;
+    animation-duration: 1.01s;
+    background-color: rgb(21, 31, 46)
+  }
+  div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover:before,
+  div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover:before {
+    background-color: rgb(21, 31, 46) !important;
+    content: ""!important;
+    background-size: 90% 300%!important;
+    width: 310%!important;
+    height: 110%!important;
+    z-index: 2;
+    position: absolute;
+    top: -5px;
+    left: 190px
+  }
+  div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover:after,
+  div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover:after {
+    content: ""!important;
+    background: inherit!important;
+    background-size: 90% 300%!important;
+    width: 310%!important;
+    height: 110%!important;
+    z-index: 2;
+    position: absolute;
+    top: -5px;
+    left: 155px;
+    filter: brightness(30%) opacity(50%) blur(8.0px) !important;
+    background-color: rgba(0, 0, 0, 0) !important
+  }
+  div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover +.details[data-v-b584a8de] {
+    left: 150px!important;
+    z-index: 40;
+    position: relative;
+    max-width: 400px;
+    font-size: 15px;
+    animation: slideInRight!important;
+    animation-duration: 1.5s!important
+  }
+  div.entry-dropdown.el-dropdown {
+    display: none!important
+  }
+  div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar:hover+ a.name,
+  div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar.router-link-exact-active.router-link-active:hover + a.name.router-link-exact-active.router-link-active,
+  div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar:hover +.name[data-v-b584a8de],
+  div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar.router-link-exact-active.router-link-active:hover +.name[data-v-b584a8de] {
+    position: relative;
+    transition: all 1s;
+    animation: fadeIn;
+    animation-duration: 3s;
+    margin-left: 10px;
+    font-size: 25px;
+    background: rgba(255, 255, 255, .05);
+    border-radius: 5px;
+    padding: 8px;
+    font-family: Overpass,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-weight: 600;
+    color: #ffffffba
+  }
+  div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover+.details[data-v-b584a8de] {
+    left: 100px!important;
+    z-index: 40;
+    position: relative;
+    margin: auto;
+    max-width: 360px;
+    font-size: 15px;
+    animation: slideInRight!important;
+    animation-duration: 1.5s!important
+  }
+  div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div> div.wrap > div.text > div.header > a.avatar:hover +.name[data-v-b584a8de] {
+    margin-left: auto;
+    margin-right: auto
+  }
+  div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > div > a.avatar:hover {
+    transition: all 1s;
+    position: relative;
+    display: flex;
+    background-size: contain;
+    height: calc(180px - 45px);
+    width: calc(180px - 45px);
+    filter: none;
+    z-index: 2;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: -10px;
+    margin-top: 25px;
+    background-color: rgb(21, 31, 46)
+  }
+  div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover,
+  div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover {
+    transition: all 1s;
+    position: relative;
+    display: flex;
+    background-size: contain;
+    height: calc(180px - 45px);
+    width: calc(180px - 45px);
+    animation: fadeIn;
+    filter: none;
+    animation-duration: 0.11s;
+    z-index: 2;
+    margin-bottom: 10px;
+    margin-right: -10px;
+    margin-top: 15px;
+    background-color: rgb(21, 31, 46)
+  }
+  div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover:before {
+    transition: all 1s;
+    background-color: rgb(21, 31, 46) !important;
+    animation: slideInLeft;
+    animation-duration: 1s;
+    content: "";
+    background-image: inherit;
+    background-size: contain;
+    margin-top: -15px!important;
+    background-repeat: no-repeat;
+    border-bottom: solid 1px rgba(var(--hachi-gray),.5);
+    width: 400%!important;
+    height: 151px;
+    position: absolute
+  }
+  div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover:after {
+    transition: all 1s;
+    content: ""!important;
+    background: inherit!important;
+    background-size: 550% 200%!important;
+    width: 310%!important;
+    height: 110%!important;
+    z-index: 2;
+    position: absolute;
+    top: -15px;
+    left: 105px;
+    filter: brightness(30%) opacity(30%) blur(20.0px) !important;
+    background-color: rgba(0, 0, 0, 0) !important
+  }
+  a:not(.avatar):not(.user):not(.link):not(.primary-link) {
+    z-index: 222
+  }
+  #app > div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div.reply > div.header > a.avatar:hover,
+  #app > div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-manga_list > div.reply-wrap > div > div > div.header > a.avatar:hover,
+  #app > div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-anime_list > div.reply-wrap > div > div > div.header > a.avatar:hover,
+  #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div > div.header > a.avatar:hover,
+  #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-message > div.reply-wrap > div > div.reply > div.header > a.avatar.router-link-exact-active.router-link-active:hover,
+  #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div > div.reply-wrap > div > div > div.header > a.avatar:hover {
+    transition: all 1s;
+    position: relative;
+    display: flex;
+    background-size: contain;
+    height: calc(180px - 45px);
+    width: calc(180px - 45px);
+    animation: fadeIn;
+    filter: none;
+    animation-duration: 0.11s;
+    z-index: 2;
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: -20px
+  }
+  div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div.reply > div.header > a.avatar:hover+ a.name,
+  div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-manga_list > div.reply-wrap > div > div > div.header > a.avatar:hover + a.name,
+  div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-anime_list > div.reply-wrap > div > div > div.header > a.avatar:hover + a.name,
+  div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-text > div.reply-wrap > div > div > div.header > a.avatar:hover + a.name,
+  div.activity-feed-wrap > div.activity-feed > div.activity-entry.full-width.activity-message > div.reply-wrap > div > div.reply > div.header > a.avatar.router-link-exact-active.router-link-active:hover + a.name.router-link-exact-active.router-link-active,
+  #app > div.page-content > div > div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div > div.reply-wrap > div > div > div.header > a.avatar:hover+ a.name {
+    position: relative;
+    transition: all 1s;
+    animation: fadeIn;
+    top: -50px;
+    animation-duration: 3s;
+    left: 130px;
+    margin-left: 50px;
+    font-size: 25px;
+    background: rgba(255, 255, 255, .08);
+    border-radius: 10px;
+    padding: 8px;
+    padding-bottom: 25px;
+    font-family: Overpass,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-weight: 600;
+    color: #ffffffba
+  }
 }
