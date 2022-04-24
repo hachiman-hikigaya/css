@@ -1340,3 +1340,7 @@ div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.f
   overflow: hidden;
   text-overflow: ellipsis
 }
+div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child > div.markdown-editor:first-child {
+  border-top-left-radius: 5px!important;
+  border-top-right-radius: 5px!important
+}
