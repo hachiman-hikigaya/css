@@ -177,14 +177,23 @@ img[rel=badges] {
     padding: 0 60px!important
   }
 }
-@media (max-width:430px) {
+@media (max-width:470px) {
   .stat[data-v-815ccddc]:nth-child(1) {
     padding: 0 20px!important
   }
+  .stat[data-v-815ccddc]:nth-child(2),
+  .stat[data-v-815ccddc]:nth-child(3) {
+    padding: 0 0 0 20px!important;
+    margin-right: -25px
+  }
 }
-@media (max-width:360px) {
+@media (max-width:380px) {
   .stat[data-v-815ccddc]:nth-child(1) {
     padding: 0 15px!important
+  }
+  .stat[data-v-815ccddc]:nth-child(2),
+  .stat[data-v-815ccddc]:nth-child(3) {
+    margin-right: -20px
   }
 }
 .stat .value[data-v-815ccddc] {
@@ -530,13 +539,10 @@ div.lists:last-child > div.actions:first-child > div.theme-switch {
   }
   div.lists:last-child > div.actions:first-child > div.theme-switch {
     position: relative;
-    justify-content: center;
-    align-items: center;
-    grid-gap: 10px 12px;
     top: -40px;
     left: -10px;
-    height: 26px;
-    width: 90px
+    width: 90px;
+    background: rgba(23, 35, 53, .92)
   }
   #hohDraw3x3 {
     padding: 0 10px
@@ -581,6 +587,9 @@ div.menu.visible:last-child > :hover {
 .option.active[data-v-05bb5e72] {
   background: #303b4f;
   color: #dfdfdf
+}
+.hohButton {
+  color: #ffffffbf
 }
 .dropdown[data-v-a679b1ba],
 .el-scrollbar,
