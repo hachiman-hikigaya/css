@@ -414,6 +414,34 @@ div.genres:first-child > div.genre > div.name:first-child:hover {
 div.genres:first-child > div.genre > div {
   color: rgba(var(--color-text-light),.9)!important
 }
+.history-day.lv-5,
+.history-day.lv-6,
+.history-day.lv-7,
+.history-day.lv-8,
+.history-day.lv-9,
+.tooltip .circle.lv-5,
+.tooltip .circle.lv-6,
+.tooltip .circle.lv-7,
+.tooltip .circle.lv-8,
+.tooltip .circle.lv-9 {
+  background: rgba(171, 186, 205, .9)!important
+}
+.history-day.lv-4,
+.tooltip .circle.lv-4 {
+  background: rgba(171, 186, 205, .7)!important
+}
+.history-day.lv-3,
+.tooltip .circle.lv-3 {
+  background: rgba(171, 186, 205, .5)!important
+}
+.history-day.lv-2,
+.tooltip .circle.lv-2 {
+  background: rgba(171, 186, 205, .3)!important
+}
+.history-day.lv-1,
+.tooltip .circle.lv-1 {
+  background: rgba(171, 186, 205, .2)!important
+}
 .medialist .filters .filter-group:first-child > span .count {
   margin-right: 10px
 }
@@ -516,7 +544,7 @@ div.menu.visible:last-child > :hover {
 .options[data-v-e3e1e202],
 .site-theme-dark .el-dropdown-menu,
 div.el-message-box > div.el-message-box__btns:last-child > button.el-button.el-button--default.el-button--small:first-child {
-  background: rgba(17,29,45)
+  background: rgba(17,29,45)!important
 }
 a.el-dropdown-menu__item:focus,
 a.el-dropdown-menu__item:hover,
@@ -545,6 +573,7 @@ div.percentage-bar:last-child {
 .signup[data-v-4fbac4e1] {
   background: rgba(40, 56, 77)!important
 }
+.button.cancel[data-v-c574a71c],
 .button[data-v-c93e1c70],
 .el-input-group__append,
 .el-input-group__prepend,
@@ -553,7 +582,7 @@ div.percentage-bar:last-child {
 .filter-group .active[data-v-170179fc],
 .filter-toggle.active[data-v-170179fc],
 .filter-toggle[data-v-1e00b9da] {
-  background: rgb(23, 35, 53)
+  background: rgb(23, 35, 53)!important
 }
 .bar-chart-wrap[data-v-46edc0ca],
 .button[data-v-1c97ba07],
@@ -592,7 +621,7 @@ div.percentage-bar:last-child {
 div.filters-wrap.primary-filters > div > div.open-btn,
 div.filters-wrap.primary-filters > div > div.search-wrap,
 div.filters-wrap.primary-filters > div.filters > div:nth-child(1) > div.search-wrap {
-  background: rgb(29, 41, 57);
+  background: rgb(29, 41, 57)!important;
   color: #b0b0b0
 }
 .feed-type-toggle > div.active[data-v-8209bd04] {
