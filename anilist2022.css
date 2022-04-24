@@ -98,7 +98,8 @@ img[rel=badges] {
   color: #ffffffba;
   padding-left: 10px;
   align-items: center;
-  pointer-events: none
+  pointer-events: none;
+  filter: drop-shadow(-2px 1px 0.25rem #0000003b)
 }
 .header-wrap .nav-wrap {
   background-color: rgb(var(--color-foreground));
