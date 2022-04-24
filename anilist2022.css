@@ -55,6 +55,10 @@ body {
 .nav::-webkit-scrollbar {
   display: none
 }
+.text .markdown::-webkit-scrollbar {
+  width: 3px!important;
+  background: rgb(0 0 0 / 0%)
+}
 body {
   overflow: overlay
 }
@@ -81,8 +85,11 @@ img[rel=badges] {
   transition: 0.5s ease-in-out
 }
 .activity-replies,
+.banner .avatar,
+.banner .name,
 .favourites[data-v-ddf96a3c],
 .medialist[data-v-0567dd85],
+.nav,
 .overview[data-v-5c30286e],
 .reply,
 .stats[data-v-1e00b9da],
@@ -99,6 +106,9 @@ img[rel=badges] {
   padding-left: 10px;
   align-items: center;
   pointer-events: none;
+  filter: drop-shadow(-2px 1px 0.25rem #0000003b)
+}
+.header-wrap > div.banner > div.container > div > img {
   filter: drop-shadow(-2px 1px 0.25rem #0000003b)
 }
 .header-wrap .nav-wrap {
@@ -139,30 +149,59 @@ img[rel=badges] {
   color: #dbdbdb
 }
 .banner-content > .avatar {
-  max-height: 270px;
-  min-width: 190px
+  max-height: 269px;
+  max-width: 188px
+}
+.stats-wrap[data-v-5c30286e] {
+  grid-column-gap: 7px;
+  grid-row-gap: 5px
+}
+.stat:nth-child(1) .value[data-v-815ccddc] {
+  font-size: 5.5rem
+}
+.stats-wrap[data-v-815ccddc] {
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 10px;
+  grid-template-columns: auto auto;
+  padding: 20px 50px;
+  text-align: left
+}
+.stat[data-v-815ccddc]:nth-child(1) {
+  grid-row-start: span 2;
+  padding: 0 60px;
+  overflow: hidden
+}
+@media (max-width:760px) {
+  .stat[data-v-815ccddc]:nth-child(1) {
+    padding: 0 60px!important
+  }
+}
+@media (max-width:430px) {
+  .stat[data-v-815ccddc]:nth-child(1) {
+    padding: 0 20px!important
+  }
+}
+@media (max-width:360px) {
+  .stat[data-v-815ccddc]:nth-child(1) {
+    padding: 0 15px!important
+  }
 }
 .stat .value[data-v-815ccddc] {
   font-size: 2rem;
   padding-bottom: 0
 }
 .stat .label[data-v-815ccddc] {
-  font-size: 1.2rem
+  font-size: 1.2rem;
+  min-width: 67px
 }
 .list-stats[data-v-815ccddc]:nth-child(1) .stat[data-v-815ccddc]:nth-child(1) .label,
 .list-stats[data-v-815ccddc]:nth-child(2) .stat[data-v-815ccddc]:nth-child(1) .label {
   display: flex;
   align-items: center;
   color: rgb(var(--color-text-light));
-  margin-left: 9px;
-  width: max-content
-}
-.stat[data-v-815ccddc]:nth-child(1) {
-  grid-row-start: span 2;
-  padding: 0;
-  display: grid;
-  justify-content: center;
-  overflow: hidden
+  margin-right: 33px;
+  margin-left: 9px
 }
 .list-stats:nth-child(1),
 .list-stats:nth-child(2) {
@@ -196,6 +235,8 @@ img[rel=badges] {
 .stat[data-v-815ccddc]:nth-child(1) {
   grid-row-start: span 2;
   padding: 0 65px;
+  display: grid;
+  justify-content: center;
   overflow: hidden
 }
 .progress .bar[data-v-815ccddc] {
@@ -229,7 +270,8 @@ div.container > div.home > div.activity-feed-wrap:first-child > h2.section-heade
 }
 .medialist.table .section-name,
 .overview[data-v-5c30286e] .section-header,
-.section-header[data-v-ddf96a3c] {
+.section-header[data-v-ddf96a3c],
+div.quick-search.visible:first-child > div.results:last-child > div.result-col > h3.title:first-child {
   background: rgba(var(--color-foreground));
   width: 100%;
   height: 40px;
@@ -390,6 +432,7 @@ div.overview > div.section:first-child > div.desktop:nth-child(3) > h2.section-h
   text-indent: 0;
   content: "Genres"
 }
+[data-v-17620a08] .result .open-list-editor,
 div.genres:first-child > div.genre > div.name:first-child {
   background: #41597747!important;
   color: #c4c4c4!important
@@ -476,6 +519,11 @@ div.lists:last-child > div.actions:first-child > div.theme-switch {
   width: 90px
 }
 @media (max-width:760px) {
+  .banner-content > .avatar {
+    min-width: 0;
+    max-height: 219px;
+    max-width: 150px
+  }
   div.list-head.row > div.format,
   div.list-head.row > div.score {
     display: none
@@ -567,19 +615,22 @@ div.percentage-bar:last-child {
 .button.comment[data-v-07b321a7],
 .button[data-v-c574a71c],
 .hohButton,
+.list[data-v-5776f768],
 .list[data-v-aef58af4],
 .reset-btn,
 .save-btn,
-.signup[data-v-4fbac4e1] {
+.signup[data-v-4fbac4e1],
+[data-v-17620a08] .result:hover {
   background: rgba(40, 56, 77)!important
 }
-.button.cancel[data-v-c574a71c],
+.button.cancel,
 .button[data-v-c93e1c70],
 .el-input-group__append,
 .el-input-group__prepend,
 .el-input__inner,
 .filter-group .active[data-v-119352f9],
 .filter-group .active[data-v-170179fc],
+.filter-toggle,
 .filter-toggle.active[data-v-170179fc],
 .filter-toggle[data-v-1e00b9da] {
   background: rgb(23, 35, 53)!important
@@ -624,8 +675,17 @@ div.filters-wrap.primary-filters > div.filters > div:nth-child(1) > div.search-w
   background: rgb(29, 41, 57)!important;
   color: #b0b0b0
 }
+.feed-type-toggle[data-v-8209bd04] {
+  color: #ffffff6b
+}
 .feed-type-toggle > div.active[data-v-8209bd04] {
   background: rgb(46, 63, 83)
+}
+.behind-accent[data-v-2fd80e52] {
+  height: 12px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: linear-gradient(rgba(255, 255, 255, 0),rgba(232, 93, 117, .49))
 }
 #nav > div.wrap:last-child > div.links:nth-child(2) {
   grid-gap: 15px;
@@ -645,6 +705,10 @@ div.filters-wrap.primary-filters > div.filters > div:nth-child(1) > div.search-w
 }
 .markdown {
   overflow-y: scroll!important
+}
+.markdown hr {
+  border: solid 1px rgba(40, 56, 77,.5);
+  border-radius: 5px
 }
 .wrap > div.text > div.activity-markdown {
   border-bottom: 1px solid rgba(40, 56, 77,.2)
@@ -727,7 +791,7 @@ div.donator-badge.private-badge.has-label {
   padding: 4px;
   padding-bottom: 2px
 }
-div.filters-wrap:first-child,
+.medialist > div.filters-wrap:first-child,
 div.notifications-feed.container > div.filters:first-child,
 div.settings.container > div.nav:first-child,
 div.stats > div.filters:first-child {
@@ -768,27 +832,36 @@ div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
 @media (max-width:460px) {
   .banner-content .name {
     font-size: 2.55rem;
-    top: -10px;
-    position: relative;
-    overflow: hidden
-  }
-}
-@media (max-width:400px) {
-  .banner-content .name {
-    font-size: 2.55rem;
-    top: -10px;
+    top: -5px;
     padding: 65px 0 0 10px;
     position: relative;
     overflow: hidden
   }
 }
 @media(max-width:760px) {
+  div.notifications-feed.container > div.filters:first-child,
+  div.stats > div.filters:first-child {
+    margin-bottom: 15px;
+    padding: 15px
+  }
   div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
     margin-top: 20px
   }
   .list-stats:nth-child(1):hover,
   .list-stats:nth-child(2):hover {
-    height: 180px
+    height: 173px
+  }
+  .stats-wrap[data-v-815ccddc] {
+    margin-top: -5px;
+    margin-right: 25px
+  }
+  .follower-badge[data-v-1cc2919e] {
+    top: 60%;
+    left: auto;
+    right: 0
+  }
+  .donator-badge[data-v-1cc2919e] {
+    right: 15px
   }
 }
 .content.container,
@@ -797,9 +870,6 @@ div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
 }
 div.page-content:nth-child(3) div.content.container:last-child > div.user-social.user-social-unscoped > div.hohSocialContent.user-follow:last-child {
   background: 0 0
-}
-.user-social[data-v-e4963b98] {
-  margin-top: 20px
 }
 div.user-social.user-social-unscoped > div.filters:first-child > div.theme-switch.hohThemeSwitch:last-child {
   position: relative;
@@ -877,8 +947,10 @@ div.wrap .markdown-spoiler:before {
 .footer[data-v-04b245e6] a:nth-child(3),
 .header-wrap .nav-wrap .nav .link:nth-child(7),
 .header-wrap .nav-wrap .nav .link:nth-child(8),
+.hohNoSequelSetting,
 .overview .favourite.studio::after,
 .percentage-bar[data-v-63cd3b41],
+div.banner-content > div.actions:last-child > div.dropdown.el-dropdown:last-child,
 div.footer > div.container > div.links:last-child > section:first-child > a:first-child,
 div.footer > div.container > div.links:last-child > section:first-child > a:nth-child(2),
 div.footer > div.container > div.links:last-child > section:first-child > a:nth-child(3),
@@ -903,7 +975,8 @@ img[rel=badges]:hover {
   animation: fadeOut;
   animation-duration: 0.01s
 }
-.favourites.preview .favourites-wrap.studios[data-v-ddf96a3c] {
+.favourites.preview .favourites-wrap.studios[data-v-ddf96a3c],
+.favourites.preview .favourites-wrap[data-v-ddf96a3c] {
   background: rgba(var(--color-foreground))!important
 }
 @media (max-width:1040px) {
@@ -916,6 +989,9 @@ img[rel=badges]:hover {
   }
   .media-preview-card meter {
     width: 140px
+  }
+  div.info:last-child > meter:first-child {
+    filter: saturate(40%) hue-rotate(25deg) brightness(100%)
   }
   div.home > div:last-child > div.list-previews > div.list-preview-wrap:first-child > div.list-preview:last-child > div.media-preview-card > div.content:last-child > div.info-header:first-child {
     color: #a1a1a19c;
@@ -1134,25 +1210,123 @@ img[rel=badges]:hover {
     font-weight: 600;
     color: #ffffffba
   }
-  .about a > img,
-  .activity-entry .like-wrap .users {
-    transition: .5s
-  }
-  .button.liked > svg {
-    animation: rubberBand;
-    animation-duration: 1s
-  }
-  .markdown .markdown-spoiler.spoiler-visible,
-  .markdown .markdown-spoiler.spoiler-visible .hide-spoiler,
-  .medialist.cards .entry-card {
-    animation: zoomIn;
-    animation-duration: 1s
-  }
-  a[class="avatar router-link-exact-active router-link-active"],
-  a[class=avatar] {
-    transform: scale(1.25);
-    filter: drop-shadow(0 0 .05rem #0909094f)
-  }
-  .progress[data-v-5d42c114] {
-    background-color: #2a2f47
-  }
+}
+.about a > img,
+.activity-entry .like-wrap .users {
+  transition: .5s
+}
+.button.liked > svg {
+  animation: rubberBand;
+  animation-duration: 1s
+}
+.markdown .markdown-spoiler.spoiler-visible,
+.markdown .markdown-spoiler.spoiler-visible .hide-spoiler,
+.medialist.cards .entry-card {
+  animation: zoomIn;
+  animation-duration: 1s
+}
+a[class="avatar router-link-exact-active router-link-active"],
+a[class=avatar] {
+  transform: scale(1.25);
+  filter: drop-shadow(0 0 .05rem #0909094f)
+}
+.progress[data-v-5d42c114] {
+  background-color: #2a2f47
+}
+.el-dropdown-menu__item.active,
+.feed-filter[data-v-8209bd04]:hover,
+.feed-type-toggle > div[data-v-8209bd04]:hover {
+  color: #ffffffb3
+}
+div.content.container > div.social > div.activity-feed > div.hohSocialFeed > div:nth-child(1),
+div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following > #statusList {
+  top: 14px!important;
+  padding-right: 10px;
+  font-size: 1.2rem
+}
+div.content.container > div.social > div.activity-feed > h2,
+div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > h2,
+div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > h2 {
+  background: rgba(var(--color-foreground));
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  overflow: hidden;
+  align-items: start;
+  padding: 12px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid #4b4b4b1f
+}
+div.content.container > div.social > div:nth-child(2) > div:nth-child(1) > h2,
+div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline h2,
+div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div {
+  border-bottom: 1px solid #4b4b4b1f;
+  padding-bottom: 5px
+}
+div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline > div.hohTimelineGap {
+  background: none;
+  padding: 10px;
+  padding-bottom: 0
+}
+div.content.container > div.social > div.activity-feed > .activity-entry[data-v-b584a8de],
+div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3),
+div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following,
+div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) {
+  padding: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  background: rgba(var(--color-foreground))
+}
+div.content.container > div > div:nth-child(2) > div.activity-feed-wrap > div.activity-feed > div {
+  margin-bottom: 15px
+}
+div.content.container > div.social > div.activity-feed > div.scroller > div {
+  margin-top: 0;
+  padding: 10px
+}
+div.content.container > div.social > div.activity-feed > div.scroller,
+div.content.container > div.social > div:nth-child(2) > div:nth-child(1),
+div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline {
+  padding: 10px;
+  background: rgba(var(--color-foreground));
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px
+}
+div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline {
+  margin-top: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px
+}
+div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3),
+div.content.container > div.social > div.activity-feed:after,
+div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px
+}
+div.content.container > div.social > div.activity-feed > div.activity-entry.activity-anime_list > div.wrap,
+div.content.container > div.social > div.activity-feed > div.activity-entry.full-width.activity-anime_list > div.reply-wrap > div > div.activity-edit > div.input.el-textarea > textarea,
+div.content.container > div.social > div.activity-feed > div.activity-entry.full-width.activity-anime_list > div.reply-wrap > div > div.activity-edit > div.markdown-editor,
+div.content.container > div.social > div.activity-feed > div.activity-entry.full-width.activity-anime_list > div.reply-wrap > div > div.activity-edit > div.reply.preview,
+div.content.container > div.social > div.activity-feed > div.activity-entry.full-width.activity-anime_list > div.wrap,
+div.content.container > div.social > div.activity-feed > div.scroller > div,
+div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) > div > div.reply-wrap > div > div,
+div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) > div > div.wrap,
+div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) > div:nth-child(1) > div.wrap,
+div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline > div,
+div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following > div > a,
+div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > input {
+  background: rgba(11, 16, 24, .34)
+}
+div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) > div > div.reply-wrap > div > div,
+div.content.container > div.social > div:nth-child(2) > div:nth-child(1),
+div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) {
+  border-radius: 10px
+}
+div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following > div > a > div.name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
