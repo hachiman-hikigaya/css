@@ -46,10 +46,10 @@ body {
   background: rgb(0 0 0 / 0%)
 }
 ::-webkit-scrollbar-corner {
-  background: rgb(40, 56, 77)
+  background: #28384d
 }
 ::-webkit-scrollbar-thumb {
-  background: rgb(40, 56, 77);
+  background: #28384d;
   -webkit-border-radius: 1ex
 }
 .nav::-webkit-scrollbar {
@@ -179,20 +179,20 @@ img[rel=badges] {
 }
 @media (max-width:470px) {
   .stat[data-v-815ccddc]:nth-child(1) {
-    padding: 0 20px!important
+    padding: 0 40px!important
   }
-  .stat[data-v-815ccddc]:nth-child(2),
-  .stat[data-v-815ccddc]:nth-child(3) {
+  .stats-wrap > .stat:nth-child(2),
+  .stats-wrap > .stat:nth-child(3) {
     padding: 0 0 0 20px!important;
     margin-right: -25px
   }
 }
 @media (max-width:380px) {
   .stat[data-v-815ccddc]:nth-child(1) {
-    padding: 0 15px!important
+    padding: 0 30px!important
   }
-  .stat[data-v-815ccddc]:nth-child(2),
-  .stat[data-v-815ccddc]:nth-child(3) {
+  .stats-wrap > .stat:nth-child(2),
+  .stats-wrap > .stat:nth-child(3) {
     margin-right: -20px
   }
 }
@@ -249,12 +249,12 @@ img[rel=badges] {
   overflow: hidden
 }
 .progress .bar[data-v-815ccddc] {
-  background: rgb(40, 56, 77);
+  background: #28384d;
   animation: slideInLeft;
   animation-duration: 2s;
   border-radius: 0 5px 10px 0
 }
-div.stats-wrap.full-width > div > div.footer {
+.stats-wrap .footer[data-v-815ccddc] {
   background: none;
   border-top: 1px solid #5f7aa60f
 }
@@ -370,7 +370,7 @@ div.home:last-child > div:last-child > div.recent-reviews:nth-child(2) > div.rev
 }
 .review-card[data-v-0369a0cf],
 .thread-card[data-v-550f7194] {
-  background: rgba(15, 25, 40, .57)
+  background: rgba(15,25,40,.57)
 }
 .list-stats[data-v-815ccddc],
 div.section:first-child > div.about:first-child > div.content-wrap {
@@ -483,23 +483,23 @@ div.genres:first-child > div.genre > div {
 .tooltip .circle.lv-7,
 .tooltip .circle.lv-8,
 .tooltip .circle.lv-9 {
-  background: rgba(171, 186, 205, .9)!important
+  background: rgba(171,186,205,.9)!important
 }
 .history-day.lv-4,
 .tooltip .circle.lv-4 {
-  background: rgba(171, 186, 205, .7)!important
+  background: rgba(171,186,205,.7)!important
 }
 .history-day.lv-3,
 .tooltip .circle.lv-3 {
-  background: rgba(171, 186, 205, .5)!important
+  background: rgba(171,186,205,.5)!important
 }
 .history-day.lv-2,
 .tooltip .circle.lv-2 {
-  background: rgba(171, 186, 205, .3)!important
+  background: rgba(171,186,205,.3)!important
 }
 .history-day.lv-1,
 .tooltip .circle.lv-1 {
-  background: rgba(171, 186, 205, .2)!important
+  background: rgba(171,186,205,.2)!important
 }
 .medialist.cards .entry-card .title {
   backdrop-filter: blur(2px)!important;
@@ -574,14 +574,14 @@ div.lists:last-child > div.actions:first-child > div.theme-switch {
     top: -50px;
     left: -10px;
     width: 90px;
-    background: rgba(23, 35, 53, .92)
+    background: rgba(23,35,53,.92)
   }
   .medialist.cards div.lists:last-child > div.actions:first-child > div.theme-switch {
     position: relative;
     top: -70px;
     left: -10px;
     width: 90px;
-    background: rgba(23, 35, 53, .92)
+    background: rgba(23,35,53,.92)
   }
   .medialist.cards .list-section {
     margin-bottom: 20px
@@ -640,7 +640,7 @@ div.content.container:last-child > div.stats > div.stats-wrap:last-child > div.o
   margin-top: 10px
 }
 .hohTable .row {
-  grid-template-columns: 30% repeat(auto-fill, 70px);
+  grid-template-columns: 30% repeat(auto-fill,70px);
   padding: 5px;
   font-size: 15px;
   border: 1px solid #ffffff0d
@@ -654,11 +654,11 @@ div.content.container:last-child > div.stats > div.stats-wrap:last-child > div.o
 .hamburger[data-v-8aeb5e9a],
 .menu[data-v-8aeb5e9a],
 .mobile-nav[data-v-8aeb5e9a] > .menu.visible[data-v-8aeb5e9a] {
-  background: rgb(21, 29, 42)
+  background: #151d2a
 }
 .hamburger svg[data-v-8aeb5e9a]:hover,
 div.menu.visible:last-child > :hover {
-  color: rgb(40, 56, 77);
+  color: #28384d;
   transition: .2s
 }
 .option.active[data-v-05bb5e72] {
@@ -685,7 +685,7 @@ div.el-dropdown-menu__item:focus,
 div.el-dropdown-menu__item:hover,
 li.el-dropdown-menu__item:focus,
 li.el-dropdown-menu__item:hover {
-  background: rgba(125, 190, 203,.2)!important
+  background: rgba(125,190,203,.2)!important
 }
 .activity-extras-dropdown.el-popper[x-placement^=bottom][data-v-b584a8de] {
   margin-top: 0
@@ -707,7 +707,7 @@ div.percentage-bar:last-child {
 .save-btn,
 .signup[data-v-4fbac4e1],
 [data-v-17620a08] .result:hover {
-  background: rgba(40, 56, 77)!important
+  background: rgba(40,56,77)!important
 }
 .button.cancel,
 .button[data-v-c93e1c70],
@@ -719,7 +719,7 @@ div.percentage-bar:last-child {
 .filter-toggle,
 .filter-toggle.active[data-v-170179fc],
 .filter-toggle[data-v-1e00b9da] {
-  background: rgb(23, 35, 53)!important
+  background: #172335!important
 }
 .bar-chart-wrap[data-v-46edc0ca],
 .button[data-v-1c97ba07],
@@ -758,20 +758,20 @@ div.percentage-bar:last-child {
 div.filters-wrap.primary-filters > div > div.open-btn,
 div.filters-wrap.primary-filters > div > div.search-wrap,
 div.filters-wrap.primary-filters > div.filters > div:nth-child(1) > div.search-wrap {
-  background: rgb(29, 41, 57)!important;
+  background: #1d2939!important;
   color: #b0b0b0
 }
 .feed-type-toggle[data-v-8209bd04] {
   color: #ffffff6b
 }
 .feed-type-toggle > div.active[data-v-8209bd04] {
-  background: rgb(46, 63, 83)
+  background: #2e3f53
 }
 .behind-accent[data-v-2fd80e52] {
   height: 12px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background: linear-gradient(rgba(255, 255, 255, 0),rgba(232, 93, 117, .49))
+  background: linear-gradient(rgba(255,255,255,0),rgba(232,93,117,.49))
 }
 #nav > div.wrap:last-child > div.links:nth-child(2) {
   grid-gap: 15px;
@@ -793,11 +793,11 @@ div.filters-wrap.primary-filters > div.filters > div:nth-child(1) > div.search-w
   overflow-y: scroll!important
 }
 .markdown hr {
-  border: solid 1px rgba(40, 56, 77,.5);
+  border: solid 1px rgba(40,56,77,.5);
   border-radius: 5px
 }
 .wrap > div.text > div.activity-markdown {
-  border-bottom: 1px solid rgba(40, 56, 77,.2)
+  border-bottom: 1px solid rgba(40,56,77,.2)
 }
 .svg-inline--fa.fa-w-16 {
   width: 1em
@@ -881,7 +881,7 @@ div.donator-badge.private-badge.has-label {
   background: #0a141e7d!important
 }
 .embed[data-v-13cdaed6] {
-  background: rgba(11, 22, 34, .6)
+  background: rgba(11,22,34,.6)
 }
 .medialist > div.filters-wrap:first-child,
 div.notifications-feed.container > div.filters:first-child,
@@ -909,6 +909,7 @@ div.user-social.user-social-unscoped > div.filters:first-child {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px
 }
+.delete[data-v-0317d914],
 .unfollow[data-v-39573fe2] {
   background: rgb(88,88,88,.29)
 }
@@ -984,7 +985,7 @@ div.user-social.user-social-unscoped > div.filters:first-child > div.theme-switc
   top: -13px;
   height: 30px;
   width: 90px;
-  background: rgba(23, 35, 53, .92)
+  background: rgba(23,35,53,.92)
 }
 .follow-card .name,
 .follow-card.unfollow,
@@ -1042,7 +1043,7 @@ div.wrap .markdown-spoiler:before {
   padding-top: 3px;
   font-weight: 700;
   padding-bottom: 3px;
-  background: rgb(15, 24, 39);
+  background: #0f1827;
   color: rgb(var(--color-blue));
   border-radius: 5px
 }
@@ -1074,7 +1075,7 @@ div.nav.container > a.link:nth-child(3) {
   display: none
 }
 img[rel=badges] {
-  background: rgb(21, 36, 55);
+  background: #152437;
   padding: 1px
 }
 img[rel=badges]:hover {
@@ -1092,7 +1093,7 @@ img[rel=badges]:hover {
     background: 0
   }
   .list-preview[data-v-6aea970d] .media-preview-card .content {
-    background: rgba(0, 0, 0, .08)
+    background: rgba(0,0,0,.08)
   }
   .list-preview[data-v-6aea970d] {
     background: rgba(var(--color-foreground));
@@ -1144,11 +1145,11 @@ img[rel=badges]:hover {
     animation: slideInLeft;
     z-index: 34;
     animation-duration: 1.01s;
-    background-color: rgb(21, 31, 46)
+    background-color: #151f2e
   }
   div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover:before,
   div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover:before {
-    background-color: rgb(21, 31, 46)!important;
+    background-color: #151f2e!important;
     content: ""!important;
     background-size: 90% 300%!important;
     width: 310%!important;
@@ -1170,7 +1171,7 @@ img[rel=badges]:hover {
     top: -5px;
     left: 155px;
     filter: brightness(30%) opacity(50%) blur(8.0px)!important;
-    background-color: rgba(0, 0, 0, 0)!important
+    background-color: rgba(0,0,0,0)!important
   }
   div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover + .details[data-v-b584a8de] {
     left: 150px!important;
@@ -1194,7 +1195,7 @@ img[rel=badges]:hover {
     animation-duration: 3s;
     margin-left: 10px;
     font-size: 25px;
-    background: rgba(255, 255, 255, .05);
+    background: rgba(255,255,255,.05);
     border-radius: 5px;
     padding: 8px;
     z-index: 2;
@@ -1229,7 +1230,7 @@ img[rel=badges]:hover {
     margin-left: 10px;
     margin-right: -10px;
     margin-top: 25px;
-    background-color: rgb(21, 31, 46)
+    background-color: #151f2e
   }
   div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover {
     transition: all 1s;
@@ -1245,11 +1246,11 @@ img[rel=badges]:hover {
     margin-bottom: 10px;
     margin-right: -10px;
     margin-top: 15px;
-    background-color: rgb(21, 31, 46)
+    background-color: #151f2e
   }
   div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover:before {
     transition: all 1s;
-    background-color: rgb(21, 31, 46)!important;
+    background-color: #151f2e!important;
     animation: slideInLeft;
     animation-duration: 1s;
     content: "";
@@ -1257,7 +1258,7 @@ img[rel=badges]:hover {
     background-size: contain;
     margin-top: -15px!important;
     background-repeat: no-repeat;
-    border-bottom: solid 1px rgba(40, 56, 77,.5);
+    border-bottom: solid 1px rgba(40,56,77,.5);
     width: 400%!important;
     height: 151px;
     position: absolute
@@ -1274,7 +1275,7 @@ img[rel=badges]:hover {
     top: -15px;
     left: 105px;
     filter: brightness(30%) opacity(30%) blur(20.0px)!important;
-    background-color: rgba(0, 0, 0, 0)!important
+    background-color: rgba(0,0,0,0)!important
   }
   .small .cover:hover + .content[data-v-4b71d7c6],
   div.home > a:not(.avatar):not(.user):not(.link):not(.primary-link) {
@@ -1314,7 +1315,7 @@ img[rel=badges]:hover {
     left: 130px;
     margin-left: 50px;
     font-size: 25px;
-    background: rgba(255, 255, 255, .08);
+    background: rgba(255,255,255,.08);
     border-radius: 10px;
     padding: 8px;
     padding-bottom: 25px;
@@ -1431,7 +1432,7 @@ div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohS
 div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline > div,
 div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following > div > a,
 div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > input {
-  background: rgba(11, 16, 24, .34)
+  background: rgba(11,16,24,.34)
 }
 div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) > div > div.reply-wrap > div > div,
 div.content.container > div.social > div:nth-child(2) > div:nth-child(1),
