@@ -932,6 +932,9 @@ div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
   }
 }
 @media(max-width:760px) {
+  div.notifications-feed.container > div.filters > div.reset-btn {
+    margin-bottom: 0
+  }
   div.notifications-feed.container > div.filters:first-child,
   div.stats > div.filters:first-child {
     margin-bottom: 20px;
