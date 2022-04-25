@@ -531,7 +531,6 @@ div.filters-wrap:first-child span.hohStepper {
   padding: 0 15px 5px;
   border-radius: 0 0 10px 10px
 }
-,
 .medialist.table .list-wrap {
   margin-top: -20px
 }
@@ -705,6 +704,7 @@ div.percentage-bar:last-child {
 .medialist.cards .entry-card .edit,
 .reset-btn,
 .save-btn,
+.settings[data-v-3deab077] .button,
 .signup[data-v-4fbac4e1],
 [data-v-17620a08] .result:hover {
   background: rgba(40,56,77)!important
