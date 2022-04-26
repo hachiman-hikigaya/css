@@ -289,13 +289,14 @@ div.quick-search.visible:first-child > div.results:last-child > div.result-col >
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5px;
   padding-left: 0;
-  padding-right: 0;
   font-size: 130%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom: 1px solid #4b4b4b1f
+}
+.overview[data-v-5c30286e] .section-header {
+  padding-top: 5px
 }
 .home[data-v-6860dbfd] .section-header {
   background: rgba(var(--color-foreground));
@@ -318,12 +319,33 @@ div.quick-search.visible:first-child > div.results:last-child > div.result-col >
 div.page-content > div > div > div.activity-feed-wrap > h2 {
   flex-direction: unset
 }
+.content-wrap {
+  max-height: none!important
+}
 .hohNotification,
 .wrap[data-v-b584a8de],
 div.home > div:last-child > div > div > div.media-preview:last-child > div.media-preview-card.small > a.cover:first-child,
 div.home > div:last-child > div.list-previews > div.list-preview-wrap > div.list-preview > div.media-preview-card.small > a.cover,
-div.page-content > div > div:nth-child(3) > div a.cover {
+div.page-content > div > div:nth-child(3) > div a.cover,
+div.settings.container .content[data-v-3deab077] {
   border-radius: 10px!important
+}
+.list-preview[data-v-6aea970d] .media-preview-card .cover .image-text,
+.plus-progress[data-v-2fd80e52] {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px
+}
+.small[data-v-4b71d7c6] {
+  border-radius: 10px
+}
+div.info:last-child > meter:first-child {
+  filter: saturate(40%) hue-rotate(25deg) brightness(100%)
+}
+.behind-accent[data-v-2fd80e52] {
+  height: 12px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: linear-gradient(rgba(255,255,255,0),rgba(232,93,117,.49))
 }
 div.home .list-preview,
 div.home .media-preview {
@@ -552,11 +574,13 @@ div.lists:last-child > div.actions:first-child > div.theme-switch {
   justify-content: center;
   align-items: center;
   grid-gap: 10px 12px;
-  top: 23px;
-  left: -5px;
-  border: 1px solid #ffffff1a;
+  top: 24px;
+  background: rgba(59,84,123,.13);
+  left: -7px;
+  border: 1px solid #ffffff0d;
   height: 30px;
-  width: 90px
+  width: 90px;
+  z-index: 1
 }
 @media (max-width:760px) {
   .banner-content > .avatar {
@@ -573,14 +597,11 @@ div.lists:last-child > div.actions:first-child > div.theme-switch {
     top: -50px;
     left: -10px;
     width: 90px;
-    background: rgba(23,35,53,.92)
+    background: rgba(78,109,157,.13)
   }
   .medialist.cards div.lists:last-child > div.actions:first-child > div.theme-switch {
     position: relative;
-    top: -70px;
-    left: -10px;
-    width: 90px;
-    background: rgba(23,35,53,.92)
+    top: -70px
   }
   .medialist.cards .list-section {
     margin-bottom: 20px
@@ -598,10 +619,10 @@ div.lists:last-child > div.actions:first-child > div.theme-switch {
   position: relative
 }
 .medialist.table.compact .section-name {
-  margin-bottom: auto
+  margin-bottom: auto;
+  padding-left: 0
 }
 .medialist.cards .section-name {
-  width: fit-content;
   padding: 20px
 }
 .medialist.cards .entry-card .cover .image:hover,
@@ -613,6 +634,7 @@ div.lists:last-child > div.actions:first-child > div.theme-switch {
   padding: 30px 20px 30px 20px;
   border-radius: 10px;
   border-top-left-radius: 0;
+  border-top-right-radius: 0;
   justify-content: space-evenly
 }
 .highlight .circle[data-v-72dc5b51] {
@@ -909,6 +931,16 @@ div.user-social.user-social-unscoped > div.filters:first-child {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px
 }
+.follow-card .avatar {
+  border-radius: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px
+}
+.follow-card .name,
+.hohSocialContent.user-follow:last-child > div.follow-card > div.avatar > a.name {
+  font-size: 12px;
+  padding: 9px 5px 6px
+}
 .delete[data-v-0317d914],
 .unfollow[data-v-39573fe2] {
   background: rgb(88,88,88,.29)
@@ -935,7 +967,14 @@ div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
   div.notifications-feed.container > div.filters > div.reset-btn {
     margin-bottom: 0
   }
+  div.settings.container .mobile-nav[data-v-3deab077] {
+    margin-bottom: 5px
+  }
+  div.settings.container .nav .nav-group:nth-child(2) {
+    margin-top: 20px
+  }
   div.notifications-feed.container > div.filters:first-child,
+  div.settings.container > div.nav:first-child,
   div.stats > div.filters:first-child {
     margin-bottom: 20px;
     padding: 15px
@@ -992,9 +1031,9 @@ div.user-social.user-social-unscoped > div.filters:first-child > div.theme-switc
 }
 .follow-card .name,
 .follow-card.unfollow,
-div.hohSocialContent.user-follow:last-child > div.follow-card > div.avatar > a.name {
+.hohSocialContent.user-follow:last-child > div.follow-card > div.avatar > a.name {
   opacity: 100%;
-  color: #fff!important;
+  color: #fbfbfbc2!important;
   position: absolute;
   height: auto;
   top: 80px;
@@ -1107,9 +1146,6 @@ img[rel=badges]:hover {
   }
   .media-preview-card meter {
     width: 140px
-  }
-  div.info:last-child > meter:first-child {
-    filter: saturate(40%) hue-rotate(25deg) brightness(100%)
   }
   div.home > div:last-child > div.list-previews > div.list-preview-wrap:first-child > div.list-preview:last-child > div.media-preview-card > div.content:last-child > div.info-header:first-child {
     color: #99bcd969
@@ -1450,4 +1486,17 @@ div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.f
 div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child > div.markdown-editor:first-child {
   border-top-left-radius: 5px!important;
   border-top-right-radius: 5px!important
+}
+.hohCheckbox input:checked + .el-checkbox__inner {
+  background-color: #3652706b;
+  border-color: #ffffff4d
+}
+.hohDisplayBox {
+  display: inline;
+  word-break: break-all;
+  height: 400px
+}
+.hohDisplayBoxTitle {
+  background: #151f2e;
+  width: 90%
 }
