@@ -379,8 +379,8 @@ div.home > div.activity-feed-wrap:first-child > div.activity-edit > div.input.el
 div.overview > div.section:last-child > div.activity-feed-wrap:last-child > div.activity-edit > div.activity-entry.preview.activity-text .wrap,
 div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child > div.input.el-textarea > textarea.el-textarea__inner,
 div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child > div.reply.preview {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0
+  border-top-left-radius: 0!important;
+  border-top-right-radius: 0!important
 }
 .forum-wrap[data-v-60c4a343],
 div.home > div:last-child > div.recent-reviews:nth-child(3) > div.review-wrap:last-child,
@@ -583,6 +583,66 @@ div.lists:last-child > div.actions:first-child > div.theme-switch {
   z-index: 1
 }
 @media (max-width:760px) {
+  .hohComments {
+    right: 0;
+    top: -65px
+  }
+  .hohNotification {
+    overflow: hidden;
+    margin-right: 0;
+    height: 70px
+  }
+  .hohNotification:hover {
+    overflow: hidden;
+    margin-right: 0;
+    height: auto
+  }
+  .hohUserImage {
+    width: 73px!important
+  }
+  .hohCommentsArea {
+    padding-bottom: 70px;
+    top: 0
+  }
+  .hohQuickCom {
+    top: -15px;
+    border-radius: 5px;
+    padding: 8px;
+    background: #1c304485
+  }
+  .hohMessageText {
+    left: 80px;
+    display: table;
+    position: relative;
+    max-width: 75%!important;
+    margin: 0;
+    margin-top: 25px!important;
+    line-height: 1.5
+  }
+  .hohMediaImageContainer {
+    display: table;
+    position: relative;
+    padding: 30px 5px 0;
+    text-align: left;
+    width: auto;
+    left: 0;
+    margin: 0
+  }
+  .hohMediaImageContainer > a {
+    display: inline;
+    background: 0
+  }
+  .hohMediaImageContainer > a > img {
+    border-radius: 5px;
+    background-color: #1a2535!important;
+    margin: 5px 0 5px
+  }
+  .hohMediaImage {
+    height: 90px;
+    width: 70px;
+    padding: 2px;
+    background-color: #fff0!important
+  }
   .banner-content > .avatar {
     min-width: 0;
     max-height: 219px;
@@ -953,6 +1013,9 @@ div.user-social.user-social-unscoped > div.user-follow:nth-child(2) {
 }
 .stat-cards.has-images[data-v-e74f4a6a] {
   max-width: fit-content
+}
+.hohSocialFeed .details {
+  min-width: 320px
 }
 @media (max-width:460px) {
   .banner-content .name {
