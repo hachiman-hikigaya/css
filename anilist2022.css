@@ -370,7 +370,8 @@ div.home .media-preview {
   border-bottom: 1px solid #4b4b4b1f
 }
 div.activity-edit > div.input.el-textarea > textarea,
-div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner {
+div.activity-feed-wrap:last-child > div.activity-edit:nth-child(2) > .input[data-v-c574a71c] .el-textarea__inner,
+div.home > div.activity-feed-wrap:first-child > div.activity-edit:nth-child(2) > div.input.el-textarea {
   border-radius: 0 0 10px 10px;
   overflow: hidden
 }
@@ -449,7 +450,7 @@ div.section:first-child > div.about:first-child > div.content-wrap {
 div.content.container:last-child > div.favourites > div.favourites > h2.section-header:first-child > div.actions,
 div.overview > div.section:first-child > div.favourites.desktop.preview:nth-child(4) > h2.section-header:first-child > div.actions {
   right: 0;
-  margin-bottom: 5px;
+  margin-bottom: 0;
   margin-right: 15px;
   position: absolute;
   font-size: 15px
@@ -522,6 +523,25 @@ div.genres:first-child > div.genre > div {
 .history-day.lv-1,
 .tooltip .circle.lv-1 {
   background: rgba(171,186,205,.2)!important
+}
+.medialist.table .entry:hover .cover .image {
+  filter: drop-shadow(0px 2px 0.8rem #00000080);
+  animation: listSlide;
+  animation-duration: 0.6s;
+  height: 220px;
+  width: 156px;
+  margin-left: -20px
+}
+@keyframes listSlide {
+  0% {
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(20%,0,0);
+    visibility: visible
+  }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+  }
 }
 .medialist.cards .entry-card .title {
   backdrop-filter: blur(2px)!important;
@@ -962,6 +982,12 @@ div.donator-badge.private-badge.has-label {
 .home .donator-badge {
   background: #0a141e7d!important
 }
+div.content.container > div.overview > div.section > div.activity-feed-wrap > div.activity-feed > div.activity-entry.activity-message > div.wrap > div.text > div.header > div.donator-badge {
+  top: -6px;
+  padding-bottom: 2px;
+  background: #0a141e7d!important;
+  color: rgb(var(--color-text))
+}
 .embed[data-v-13cdaed6] {
   background: rgba(11,22,34,.6)
 }
@@ -995,6 +1021,9 @@ div.user-social.user-social-unscoped > div.filters:first-child {
   border-radius: 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px
+}
+.follow-card {
+  filter: drop-shadow(0px 2px 1rem #0003)
 }
 .follow-card .name,
 .hohSocialContent.user-follow:last-child > div.follow-card > div.avatar > a.name {
