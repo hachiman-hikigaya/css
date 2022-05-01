@@ -1018,9 +1018,10 @@ div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wra
 }
 div.home div.donator-badge,
 div.home div.donator-badge:last-child,
+div.overview div.donator-badge:last-child,
 div.donator-badge.private-badge.has-label {
   background: #0a141e57!important;
-  top: -4px;
+  top: -5px;
   transform: scale(0.9);
   margin: 0;
   padding: 4px;
