@@ -1016,6 +1016,8 @@ div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wra
   top: 1px;
   padding-left: 5px
 }
+div.home div.donator-badge,
+div.home div.donator-badge:last-child,
 div.donator-badge.private-badge.has-label {
   background: #0a141e57!important;
   top: -4px;
@@ -1023,9 +1025,6 @@ div.donator-badge.private-badge.has-label {
   margin: 0;
   padding: 4px;
   padding-bottom: 2px
-}
-.home .donator-badge {
-  background: #0a141e7d!important
 }
 div.content.container > div.overview > div.section > div.activity-feed-wrap > div.activity-feed > div.activity-entry.activity-message > div.wrap > div.text > div.header > div.donator-badge {
   top: -6px;
