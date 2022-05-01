@@ -62,6 +62,30 @@ body {
 body {
   overflow: overlay
 }
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none
+}
+.activity-entry[data-v-b584a8de],
+.banner-content[data-v-1cc2919e],
+.favourite.studio[data-v-0317d914],
+.footer[data-v-a5dce466],
+.genres[data-v-63cd3b41],
+.header-wrap .nav-wrap,
+.home[data-v-6860dbfd] .section-header,
+.medialist.cards .section-name,
+.medialist.table .list-head,
+.medialist.table .section-name,
+.milestones[data-v-815ccddc],
+.overview[data-v-5c30286e] .section-header,
+.section-header[data-v-ddf96a3c],
+.stats-wrap[data-v-815ccddc] {
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none
+}
 .filter-group .group-header[data-v-170179fc],
 .filter-group .group-header[data-v-1e00b9da],
 .heading h3[data-v-72dc5b51],
@@ -1609,4 +1633,16 @@ div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child 
 .hohDisplayBoxTitle {
   background: #151f2e;
   width: 90%
+}
+div.about:first-child > div.content-wrap > .markdown .youtube {
+  border-radius: 4px!important;
+  height: 300px;
+  max-width: 300px;
+  filter: drop-shadow(0 0 .2rem #0000007d)
+}
+@media (max-width:400px) {
+  div.about:first-child > div.content-wrap > .markdown .youtube {
+    height: 240px;
+    max-width: 240px
+  }
 }
