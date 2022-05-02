@@ -86,6 +86,11 @@ img {
   -ms-user-select: none;
   -webkit-user-select: none
 }
+.wrap > div.text > div.activity-markdown {
+ user-select: text;
+ -ms-user-select: text;
+ -webkit-user-select: text
+}
 .filter-group .group-header[data-v-170179fc],
 .filter-group .group-header[data-v-1e00b9da],
 .heading h3[data-v-72dc5b51],
