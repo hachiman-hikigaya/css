@@ -86,6 +86,7 @@ img {
   -ms-user-select: none;
   -webkit-user-select: none
 }
+div.reply-markdown,
 .wrap > div.text > div.activity-markdown {
  user-select: text;
  -ms-user-select: text;
