@@ -81,16 +81,18 @@ img {
 .milestones[data-v-815ccddc],
 .overview[data-v-5c30286e] .section-header,
 .section-header[data-v-ddf96a3c],
-.stats-wrap[data-v-815ccddc] {
+.stats-wrap[data-v-815ccddc],
+.wrap img {
   user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none
 }
-div.reply-markdown,
-.wrap > div.text > div.activity-markdown {
- user-select: text;
- -ms-user-select: text;
- -webkit-user-select: text
+.wrap > div.text > div.activity-markdown,
+div.reply-markdown {
+  user-select: text;
+  -ms-user-select: text;
+  -webkit-user-select: text;
+  cursor: auto
 }
 .filter-group .group-header[data-v-170179fc],
 .filter-group .group-header[data-v-1e00b9da],
@@ -112,7 +114,7 @@ div.wrap {
 .list-stats,
 div.genres:first-child > div.genre > div.name:first-child,
 img[rel=badges] {
-  transition: 0.5s ease-in-out
+  transition: .5s ease-in-out
 }
 .activity-replies,
 .banner .avatar,
@@ -136,10 +138,10 @@ img[rel=badges] {
   padding-left: 10px;
   align-items: center;
   pointer-events: none;
-  filter: drop-shadow(-2px 1px 0.25rem #0000003b)
+  filter: drop-shadow(-2px 1px .25rem #0000003b)
 }
 .header-wrap > div.banner > div.container > div > img {
-  filter: drop-shadow(-2px 1px 0.25rem #0000003b)
+  filter: drop-shadow(-2px 1px .25rem #0000003b)
 }
 .header-wrap .nav-wrap {
   background-color: rgb(var(--color-foreground));
@@ -186,7 +188,7 @@ img[rel=badges] {
   grid-column-gap: 7px;
   grid-row-gap: 5px
 }
-.stat:nth-child(1) .value[data-v-815ccddc] {
+.stat:first-child .value[data-v-815ccddc] {
   font-size: 5.5rem
 }
 .stats-wrap[data-v-815ccddc] {
@@ -197,7 +199,7 @@ img[rel=badges] {
   padding: 20px 50px;
   text-align: left
 }
-.stat[data-v-815ccddc]:nth-child(1) {
+.stat[data-v-815ccddc]:first-child {
   grid-row-start: span 2;
   padding: 0 60px;
   overflow: hidden
@@ -210,8 +212,8 @@ img[rel=badges] {
   font-size: 1.2rem;
   min-width: 67px
 }
-.list-stats[data-v-815ccddc]:nth-child(1) .stat[data-v-815ccddc]:nth-child(1) .label,
-.list-stats[data-v-815ccddc]:nth-child(2) .stat[data-v-815ccddc]:nth-child(1) .label {
+.list-stats[data-v-815ccddc]:first-child .stat[data-v-815ccddc]:nth-child(1) .label,
+.list-stats[data-v-815ccddc]:nth-child(2) .stat[data-v-815ccddc]:first-child .label {
   display: flex;
   align-items: center;
   color: rgb(var(--color-text-light));
@@ -222,11 +224,11 @@ img[rel=badges] {
   grid-column-gap: 7px;
   grid-row-gap: 5px
 }
-.stat:nth-child(1) .value[data-v-815ccddc] {
+.stat:first-child .value[data-v-815ccddc] {
   font-size: 5.5rem;
   margin-bottom: -20px
 }
-.stat:nth-child(1) {
+.stat:first-child {
   left: -30px;
   position: relative;
   margin-left: auto;
@@ -239,7 +241,7 @@ img[rel=badges] {
   grid-template-columns: auto auto;
   text-align: left
 }
-.stat[data-v-815ccddc]:nth-child(1) {
+.stat[data-v-815ccddc]:first-child {
   grid-row-start: span 2;
   padding: 0 60px;
   display: grid;
@@ -259,23 +261,23 @@ img[rel=badges] {
 .milestones .milestone[data-v-815ccddc]:after {
   color: rgba(var(--color-text))
 }
-.list-stats:nth-child(1),
+.list-stats:first-child,
 .list-stats:nth-child(2) {
   height: calc(169px - 45px)
 }
-.list-stats:nth-child(1):hover,
+.list-stats:first-child:hover,
 .list-stats:nth-child(2):hover {
   height: 169px
 }
 @media (max-width:760px) {
-  .stat[data-v-815ccddc]:nth-child(1) {
+  .stat[data-v-815ccddc]:first-child {
     padding: 0 60px!important
   }
-  .list-stats:nth-child(1),
+  .list-stats:first-child,
   .list-stats:nth-child(2) {
     height: calc(170px - 45px)
   }
-  .list-stats:nth-child(1):hover,
+  .list-stats:first-child:hover,
   .list-stats:nth-child(2):hover {
     height: 174px
   }
@@ -284,7 +286,7 @@ img[rel=badges] {
   }
 }
 @media (max-width:470px) {
-  .stat[data-v-815ccddc]:nth-child(1) {
+  .stat[data-v-815ccddc]:first-child {
     padding: 0 40px!important
   }
   .stats-wrap > .stat:nth-child(2),
@@ -294,7 +296,7 @@ img[rel=badges] {
   }
 }
 @media (max-width:380px) {
-  .stat[data-v-815ccddc]:nth-child(1) {
+  .stat[data-v-815ccddc]:first-child {
     padding: 0 30px!important
   }
   .stats-wrap > .stat:nth-child(2),
@@ -342,6 +344,12 @@ div.quick-search.visible:first-child > div.results:last-child > div.result-col >
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom: 1px solid #4b4b4b1f
+}
+.result-col {
+  margin-top: 20px
+}
+.result-col .title[data-v-17620a08] {
+  top: -40px
 }
 .overview[data-v-5c30286e] .section-header {
   padding-top: 5px
@@ -573,9 +581,9 @@ div.genres:first-child > div.genre > div {
   background: rgba(171,186,205,.2)!important
 }
 .medialist.table .entry:hover .cover .image {
-  filter: drop-shadow(0px 2px 0.8rem #00000080);
+  filter: drop-shadow(0px 2px .8rem #00000080);
   animation: listSlide;
-  animation-duration: 0.6s;
+  animation-duration: .6s;
   height: 220px;
   width: 156px;
   margin-left: -20px
@@ -908,7 +916,7 @@ div.percentage-bar:last-child {
 .user-social .filter-group span.active,
 div.filters-wrap.primary-filters > div > div.open-btn,
 div.filters-wrap.primary-filters > div > div.search-wrap,
-div.filters-wrap.primary-filters > div.filters > div:nth-child(1) > div.search-wrap {
+div.filters-wrap.primary-filters > div.filters > div:first-child > div.search-wrap {
   background: #1d2939!important;
   color: #b0b0b0
 }
@@ -992,13 +1000,13 @@ div.filters-wrap.primary-filters > div.filters > div:nth-child(1) > div.search-w
 .svg-inline--fa {
   display: inline-block;
   height: 1em;
-  vertical-align: -0.125em
+  vertical-align: -.125em
 }
 .fa-sm {
-  font-size: 0.875em
+  font-size: .875em
 }
 .svg-inline--fa.fa-w-14 {
-  width: 0.875em
+  width: .875em
 }
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.time > span > svg {
   transform: scale(.8);
@@ -1007,7 +1015,7 @@ div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.time > span > 
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.time > div > span > svg {
   transform: scale(.88)
 }
-div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-message > div.wrap:first-child > div.time:nth-child(2) > span:nth-child(1) {
+div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div.activity-entry.activity-message > div.wrap:first-child > div.time:nth-child(2) > span:first-child {
   height: 1.2em
 }
 div.activity-feed-wrap:last-child > div.activity-feed:nth-child(3) > div > div.wrap:first-child > div.time:nth-child(2) > div.extras-dropdown.el-dropdown:nth-child(2),
@@ -1022,13 +1030,13 @@ div.page-content:nth-child(3) > div.container > div.home > div.activity-feed-wra
   top: 1px;
   padding-left: 5px
 }
+div.donator-badge.private-badge.has-label,
 div.home div.donator-badge,
 div.home div.donator-badge:last-child,
-div.overview div.donator-badge:last-child,
-div.donator-badge.private-badge.has-label {
+div.overview div.donator-badge:last-child {
   background: #0a141e57!important;
   top: -5px;
-  transform: scale(0.9);
+  transform: scale(.9);
   margin: 0;
   padding: 4px;
   padding-bottom: 2px
@@ -1232,7 +1240,7 @@ div.wrap .markdown-spoiler:before {
 .markdown .markdown-spoiler.spoiler-visible span {
   background: none
 }
-.footer[data-v-04b245e6] a:nth-child(1),
+.footer[data-v-04b245e6] a:first-child,
 .footer[data-v-04b245e6] a:nth-child(2),
 .footer[data-v-04b245e6] a:nth-child(3),
 .header-wrap .nav-wrap .nav .link:nth-child(7),
@@ -1264,7 +1272,7 @@ img[rel=badges]:hover {
   transform: scale(4.5)!important;
   margin: 75px;
   animation: fadeOut;
-  animation-duration: 0.01s
+  animation-duration: 10ms
 }
 .favourites.preview .favourites-wrap.studios[data-v-ddf96a3c],
 .favourites.preview .favourites-wrap[data-v-ddf96a3c] {
@@ -1313,6 +1321,16 @@ img[rel=badges]:hover {
   div.home > div:last-child > div.list-previews:first-child > div.list-preview-wrap [data-v-2fd80e52] .countdown > span span:first-of-type:before {
     height: 0
   }
+  .list-preview-wrap {
+    height: 43px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 1s ease-in-out
+  }
+  .list-preview-wrap:hover {
+    height: 210px;
+    overflow: hidden
+  }
 }
 @media (min-width:1040px) and (max-width:1540px) {
   div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover,
@@ -1349,7 +1367,7 @@ img[rel=badges]:hover {
     position: absolute;
     top: -5px;
     left: 155px;
-    filter: brightness(30%) opacity(50%) blur(8.0px)!important;
+    filter: brightness(30%) opacity(50%) blur(8px)!important;
     background-color: rgba(0,0,0,0)!important
   }
   div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover + .details[data-v-b584a8de] {
@@ -1420,11 +1438,12 @@ img[rel=badges]:hover {
     width: calc(180px - 45px);
     animation: fadeIn;
     filter: none;
-    animation-duration: 0.11s;
+    animation-duration: .11s;
     z-index: 2;
     margin-bottom: 10px;
-    margin-right: -10px;
+    margin-right: 10px;
     margin-top: 15px;
+    margin-left: -3px;
     background-color: #151f2e
   }
   div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover:before {
@@ -1453,7 +1472,7 @@ img[rel=badges]:hover {
     position: absolute;
     top: -15px;
     left: 105px;
-    filter: brightness(30%) opacity(30%) blur(20.0px)!important;
+    filter: brightness(30%) opacity(30%) blur(20px)!important;
     background-color: rgba(0,0,0,0)!important
   }
   .small .cover:hover + .content[data-v-4b71d7c6],
@@ -1474,7 +1493,7 @@ img[rel=badges]:hover {
     width: calc(180px - 45px);
     animation: fadeIn;
     filter: none;
-    animation-duration: 0.11s;
+    animation-duration: .11s;
     z-index: 2;
     margin-left: 5px;
     margin-top: 15px;
@@ -1530,7 +1549,7 @@ a[class=avatar] {
 .feed-type-toggle > div[data-v-8209bd04]:hover {
   color: #ffffffb3
 }
-div.content.container > div.social > div.activity-feed > div.hohSocialFeed > div:nth-child(1),
+div.content.container > div.social > div.activity-feed > div.hohSocialFeed > div:first-child,
 div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following > #statusList {
   top: 14px!important;
   padding-right: 10px;
@@ -1552,7 +1571,7 @@ div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > h2 {
   border-top-right-radius: 10px;
   border-bottom: 1px solid #4b4b4b1f
 }
-div.content.container > div.social > div:nth-child(2) > div:nth-child(1) > h2,
+div.content.container > div.social > div:nth-child(2) > div:first-child > h2,
 div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline h2,
 div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div {
   border-bottom: 1px solid #4b4b4b1f;
@@ -1580,7 +1599,7 @@ div.content.container > div.social > div.activity-feed > div.scroller > div {
   padding: 10px
 }
 div.content.container > div.social > div.activity-feed > div.scroller,
-div.content.container > div.social > div:nth-child(2) > div:nth-child(1),
+div.content.container > div.social > div:nth-child(2) > div:first-child,
 div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline {
   padding: 10px;
   background: rgba(var(--color-foreground));
@@ -1607,14 +1626,14 @@ div.content.container > div.social > div.activity-feed > div.activity-entry.full
 div.content.container > div.social > div.activity-feed > div.scroller > div,
 div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) > div > div.reply-wrap > div > div,
 div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) > div > div.wrap,
-div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) > div:nth-child(1) > div.wrap,
+div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) > div:first-child > div.wrap,
 div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > #activityTimeline > div,
 div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div.following > div > a,
 div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > input {
   background: rgba(11,16,24,.34)
 }
 div.content.container > div.social > div.activity-feed.hohReplaceFeed > div.hohSocialFeed > div:nth-child(3) > div > div.reply-wrap > div > div,
-div.content.container > div.social > div:nth-child(2) > div:nth-child(1),
+div.content.container > div.social > div:nth-child(2) > div:first-child,
 div.content.container > div.social > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) {
   border-radius: 10px
 }
