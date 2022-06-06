@@ -109,6 +109,9 @@ div.overview > div.section:first-child > div.about:first-child > div.content-wra
 div.wrap {
   cursor: default
 }
+div.embed > div.wrap > div.title {
+  cursor: pointer
+}
 .favourites .favourite,
 .history-day,
 .list-stats,
@@ -1336,7 +1339,7 @@ img[rel=badges]:hover {
   div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list > a:hover,
   div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover {
     position: relative;
-    background-size: contain;
+    background-size: cover;
     height: calc(300px - 25px);
     width: calc(220px - 25px);
     animation: slideInLeft;
@@ -1375,9 +1378,11 @@ img[rel=badges]:hover {
     z-index: 40;
     position: relative;
     max-width: 400px;
-    font-size: 15px;
     animation: slideInRight!important;
-    animation-duration: 1.5s!important
+    animation-duration: 1.5s!important;
+    filter: drop-shadow(0 0 .05rem #0909094f);
+    font-weight: 500;
+    font-size: 15px
   }
   div.entry-dropdown.el-dropdown {
     display: none!important
@@ -1408,7 +1413,8 @@ img[rel=badges]:hover {
     max-width: 360px;
     font-size: 15px;
     animation: slideInRight!important;
-    animation-duration: 1.5s!important
+    animation-duration: 1.5s!important;
+    filter: drop-shadow(0 0 .05rem #0909094f)
   }
   div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover + .name[data-v-b584a8de] {
     margin-left: auto;
@@ -1426,8 +1432,7 @@ img[rel=badges]:hover {
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: -10px;
-    margin-top: 25px;
-    background-color: #151f2e
+    margin-top: 25px
   }
   div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.text > div.header > a.avatar:hover {
     transition: all 1s;
