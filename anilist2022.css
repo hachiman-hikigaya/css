@@ -1542,6 +1542,10 @@ img[rel=badges]:hover {
   animation: zoomIn;
   animation-duration: 1s
 }
+.markdown .markdown-spoiler.spoiler-visible i.hide-spoiler {
+  right: 6px;
+  top: 3px
+}
 a[class="avatar router-link-exact-active router-link-active"],
 a[class=avatar] {
   transform: scale(1.25);
