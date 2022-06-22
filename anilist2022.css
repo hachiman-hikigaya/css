@@ -494,9 +494,11 @@ div.section:first-child > div.about:first-child > div.content-wrap {
   font-size: 1.4rem;
   font-weight: 600;
   height: auto;
-  width: auto;
+  width: 85px;
   display: grid;
-  align-content: center
+  align-content: center;
+  justify-content: center;
+  text-align: center
 }
 .favourites-wrap.studios {
   display: grid!important;
