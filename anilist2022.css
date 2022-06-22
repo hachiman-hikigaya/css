@@ -474,9 +474,9 @@ div.section:first-child > div.about:first-child > div.content-wrap {
 }
 .favourites.preview .favourites-wrap[data-v-ddf96a3c] {
   display: grid!important;
-  grid-gap: 10px 10px!important;
+  grid-gap: 10px 15px!important;
   padding: 15px!important;
-  grid-template-columns: repeat(auto-fill,90px)!important;
+  grid-template-columns: repeat(auto-fill,85px)!important;
   justify-content: space-evenly!important;
   padding-top: 22px!important;
   padding-bottom: 10px!important
