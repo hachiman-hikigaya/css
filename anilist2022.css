@@ -1667,9 +1667,38 @@ div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child 
   border-top-left-radius: 5px!important;
   border-top-right-radius: 5px!important
 }
+.el-checkbox .el-checkbox__inner,
+.el-checkbox__input.is-focus .el-checkbox__inner,
+.el-checkbox__input.is-checked .el-checkbox__inner,
 .hohCheckbox input:checked + .el-checkbox__inner {
   background-color: #3652706b;
   border-color: #ffffff4d
+}
+.checkbox .el-checkbox__label {
+  color: rgba(var(--color-text-lighter))
+}
+.el-checkbox__input.is-checked+.el-checkbox__label {
+  color: rgba(var(--color-text))!important
+}
+.el-picker-panel {
+  background: rgba(var(--color-background-100));
+  border-color: #ffffff4d;
+  color: #acacac
+}
+.el-date-table td.current:not(.disabled) span {
+  background: rgba(var(--color-background-400))
+}
+.el-date-picker__header-label,
+.el-picker-panel__icon-btn,
+.el-date-table th {
+  color: #acacac
+}
+.el-date-table th {
+  border-bottom-color: #5d5d5d
+}
+.el-date-table td.next-month,
+.el-date-table td.prev-month {
+  color: #666
 }
 .hohDisplayBox {
   display: inline;
