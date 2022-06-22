@@ -117,7 +117,7 @@ div.embed > div.wrap > div.title {
 .list-stats,
 div.genres:first-child > div.genre > div.name:first-child,
 img[rel=badges] {
-  transition: .5s ease-in-out
+  transition: 0.5s ease-in-out
 }
 .activity-replies,
 .banner .avatar,
@@ -141,10 +141,10 @@ img[rel=badges] {
   padding-left: 10px;
   align-items: center;
   pointer-events: none;
-  filter: drop-shadow(-2px 1px .25rem #0000003b)
+  filter: drop-shadow(-2px 1px 0.25rem #0000003b)
 }
 .header-wrap > div.banner > div.container > div > img {
-  filter: drop-shadow(-2px 1px .25rem #0000003b)
+  filter: drop-shadow(-2px 1px 0.25rem #0000003b)
 }
 .header-wrap .nav-wrap {
   background-color: rgb(var(--color-foreground));
@@ -307,6 +307,7 @@ img[rel=badges] {
     margin-right: -20px
   }
 }
+.el-dropdown-menu__item--divided,
 .stats-wrap .footer[data-v-815ccddc] {
   background: none;
   border-top: 1px solid #5f7aa60f
@@ -584,9 +585,9 @@ div.genres:first-child > div.genre > div {
   background: rgba(171,186,205,.2)!important
 }
 .medialist.table .entry:hover .cover .image {
-  filter: drop-shadow(0px 2px .8rem #00000080);
+  filter: drop-shadow(0px 2px 0.8rem #00000080);
   animation: listSlide;
-  animation-duration: .6s;
+  animation-duration: 0.6s;
   height: 220px;
   width: 156px;
   margin-left: -20px
@@ -677,8 +678,15 @@ div.lists:last-child > div.actions:first-child > div.theme-switch {
     margin-right: 0;
     height: auto
   }
+  a.hohMessageText {
+    pointer-events: none
+  }
+  #hohNotifications > div > a.hohMessageText > span:nth-child(3) {
+    pointer-events: auto!important
+  }
   .hohUserImage {
-    width: 73px!important
+    width: 73px!important;
+    z-index: 1
   }
   .hohCommentsArea {
     padding-bottom: 70px;
@@ -1003,13 +1011,13 @@ div.filters-wrap.primary-filters > div.filters > div:first-child > div.search-wr
 .svg-inline--fa {
   display: inline-block;
   height: 1em;
-  vertical-align: -.125em
+  vertical-align: -0.125em
 }
 .fa-sm {
-  font-size: .875em
+  font-size: 0.875em
 }
 .svg-inline--fa.fa-w-14 {
-  width: .875em
+  width: 0.875em
 }
 div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.time > span > svg {
   transform: scale(.8);
@@ -1039,7 +1047,7 @@ div.home div.donator-badge:last-child,
 div.overview div.donator-badge:last-child {
   background: #0a141e57!important;
   top: -5px;
-  transform: scale(.9);
+  transform: scale(0.9);
   margin: 0;
   padding: 4px;
   padding-bottom: 2px
@@ -1248,6 +1256,7 @@ div.wrap .markdown-spoiler:before {
 .footer[data-v-04b245e6] a:nth-child(3),
 .header-wrap .nav-wrap .nav .link:nth-child(7),
 .header-wrap .nav-wrap .nav .link:nth-child(8),
+.hohDownload,
 .hohNoSequelSetting,
 .hohSeparator,
 .overview .favourite.studio::after,
@@ -1275,7 +1284,7 @@ img[rel=badges]:hover {
   transform: scale(4.5)!important;
   margin: 75px;
   animation: fadeOut;
-  animation-duration: 10ms
+  animation-duration: 0.01s
 }
 .favourites.preview .favourites-wrap.studios[data-v-ddf96a3c],
 .favourites.preview .favourites-wrap[data-v-ddf96a3c] {
@@ -1370,7 +1379,7 @@ img[rel=badges]:hover {
     position: absolute;
     top: -5px;
     left: 155px;
-    filter: brightness(30%) opacity(50%) blur(8px)!important;
+    filter: brightness(30%) opacity(50%) blur(8.0px)!important;
     background-color: rgba(0,0,0,0)!important
   }
   div.activity-feed-wrap > div.activity-feed > div > div.wrap > div.list.small > a:hover + .details[data-v-b584a8de] {
@@ -1426,7 +1435,7 @@ img[rel=badges]:hover {
     display: flex;
     background-size: contain;
     height: calc(180px - 45px);
-    width: calc(180px - 45px);
+    width: calc(190px - 45px);
     filter: none;
     z-index: 2;
     margin-bottom: 10px;
@@ -1439,13 +1448,13 @@ img[rel=badges]:hover {
     position: relative;
     display: flex;
     background-size: contain;
-    transform: scale(1);
     height: calc(180px - 45px);
     width: calc(190px - 45px);
-    animation: fadeIn;
     filter: none;
-    animation-duration: .11s;
+    animation: fadeIn!important;
+    animation-duration: 0.1s;
     z-index: 2;
+    transform: scale(1);
     margin-bottom: -5px;
     margin-right: 10px;
     margin-top: -5px;
@@ -1472,7 +1481,7 @@ img[rel=badges]:hover {
     content: ""!important;
     background: inherit!important;
     background-size: 550% 200%!important;
-    width: 320%!important;
+    width: 310%!important;
     height: 110%!important;
     z-index: 2;
     position: absolute;
@@ -1496,10 +1505,10 @@ img[rel=badges]:hover {
     display: flex;
     background-size: contain;
     height: calc(180px - 45px);
-    width: calc(180px - 45px);
-    animation: fadeIn;
+    width: calc(190px - 45px);
+    animation: fadeIn!important;
     filter: none;
-    animation-duration: .11s;
+    animation-duration: 0.01s;
     z-index: 2;
     margin-left: 5px;
     margin-top: 15px;
@@ -1522,7 +1531,7 @@ img[rel=badges]:hover {
     background: rgba(255,255,255,.08);
     border-radius: 10px;
     padding: 8px;
-    padding-bottom: 25px;
+    padding-bottom: 26px;
     font-family: Overpass,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
     font-weight: 600;
     color: #ffffffba
