@@ -1749,7 +1749,7 @@ div.about:first-child > div.content-wrap > .markdown .youtube {
 div.overview > div.section:first-child > div.about:first-child:after {
   border-radius: 10px;
   content: "";
-  background: url("https://vps5.minzkraut.com/spotify/embed.png?key=317viwutdq4eqqp6xb5rtvx5s4f4&color=9fadbd&border=hidden&header=hidden&font=RocknRoll+One") no-repeat 0 0;
+  background: url("https://vps5.minzkraut.com/spotify/embed.png?key=317viwutdq4eqqp6xb5rtvx5s4f4&color=95A2B2&border=hidden&header=hidden&font=RocknRoll+One") no-repeat 0 0;
   background-color: rgba(var(--color-foreground));
   background-size: 90%;
   padding: 0;
