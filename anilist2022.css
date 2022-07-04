@@ -266,7 +266,7 @@ img[rel=badges] {
 }
 .list-stats:first-child,
 .list-stats:nth-child(2) {
-  height: calc(169px - 45px)
+  height: calc(168px - 45px)
 }
 .list-stats:first-child:hover,
 .list-stats:nth-child(2):hover {
