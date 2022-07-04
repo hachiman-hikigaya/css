@@ -1667,9 +1667,34 @@ div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child 
   border-top-left-radius: 5px!important;
   border-top-right-radius: 5px!important
 }
+.actions > div[data-v-ddf96a3c],
+.compare-btn[data-v-170179fc],
+.feed-type-toggle > div.active[data-v-8209bd04],
+.filter[data-v-cd1dc2b6] {
+  color: #d0d0d0
+}
+.category[data-v-51e37344] {
+  filter: grayscale(0.3) brightness(0.9) saturate(1.1)
+}
+.filter.clear-all[data-v-cd1dc2b6] {
+  background-color: #38404a
+}
+.range-wrap .handle {
+  background-color: #365270;
+  border-radius: 5px 5px 5px 5px;
+  top: -4px;
+  transform: none
+}
+.range-wrap .handle:hover {
+  transform: none;
+  background-color: #527091
+}
+.active-region[data-v-94c49b6c],
+.compare-btn[data-v-170179fc],
 .el-checkbox .el-checkbox__inner,
-.el-checkbox__input.is-focus .el-checkbox__inner,
 .el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-focus .el-checkbox__inner,
+.filter[data-v-cd1dc2b6],
 .hohCheckbox input:checked + .el-checkbox__inner {
   background-color: #3652706b;
   border-color: #ffffff4d
@@ -1677,7 +1702,7 @@ div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child 
 .checkbox .el-checkbox__label {
   color: rgba(var(--color-text-lighter))
 }
-.el-checkbox__input.is-checked+.el-checkbox__label {
+.el-checkbox__input.is-checked + .el-checkbox__label {
   color: rgba(var(--color-text))!important
 }
 .el-picker-panel {
@@ -1689,8 +1714,8 @@ div.reply-wrap:last-child > div.activity-replies > div.activity-edit:last-child 
   background: rgba(var(--color-background-400))
 }
 .el-date-picker__header-label,
-.el-picker-panel__icon-btn,
-.el-date-table th {
+.el-date-table th,
+.el-picker-panel__icon-btn {
   color: #acacac
 }
 .el-date-table th {
@@ -1721,7 +1746,7 @@ div.about:first-child > div.content-wrap > .markdown .youtube {
     max-width: 240px
   }
 }
-div.overview > div.section:first-child > div.about:nth-child(1):after {
+div.overview > div.section:first-child > div.about:first-child:after {
   border-radius: 10px;
   content: "";
   background: url("https://vps5.minzkraut.com/spotify/embed.png?key=317viwutdq4eqqp6xb5rtvx5s4f4&color=fffffba&border=hidden&header=hidden&font=RocknRoll+One") no-repeat 0 0;
@@ -1729,32 +1754,33 @@ div.overview > div.section:first-child > div.about:nth-child(1):after {
   background-size: 99%;
   padding: 8px 18px 8px;
   height: 108px;
-  margin: 0px 0px 25px 0px;
+  margin: 0 0 25px 0;
   display: block;
   overflow: hidden;
   position: relative;
   transition: 1s
-} 
-div.overview > div.section:first-child > div.about:nth-child(1):hover:after {
+}
+div.overview > div.section:first-child > div.about:first-child:hover:after {
   height: 425px
-}   
-@media (max-width: 1040px) {
-div.overview > div.section:first-child > div.about:nth-child(1):after {
-  display: none
+}
+@media (max-width:1040px) {
+  div.overview > div.section:first-child > div.about:first-child:after {
+    display: none
   }
 }
-@media (min-width: 1041px) and (max-width: 1135px){
-div.overview > div.section:first-child > div.about:nth-child(1):after {
-  height: 9.2vw
-}
-div.overview > div.section:first-child > div.about:nth-child(1):hover:after {
-  height: 37vw
+@media (min-width:1041px) and (max-width:1135px) {
+  div.overview > div.section:first-child > div.about:first-child:after {
+    height: 9.2vw
+  }
+  div.overview > div.section:first-child > div.about:first-child:hover:after {
+    height: 37vw
   }
 }
-@media (min-width: 1541px) {div.overview > div.section:first-child > div.about:nth-child(1):after {
-  height: 140px
-}
-div.overview > div.section:first-child > div.about:nth-child(1):hover:after {
-  height: 550px
+@media (min-width:1541px) {
+  div.overview > div.section:first-child > div.about:first-child:after {
+    height: 140px
+  }
+  div.overview > div.section:first-child > div.about:first-child:hover:after {
+    height: 550px
   }
 }
