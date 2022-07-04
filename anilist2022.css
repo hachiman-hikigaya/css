@@ -1751,17 +1751,18 @@ div.overview > div.section:first-child > div.about:first-child:after {
   content: "";
   background: url("https://vps5.minzkraut.com/spotify/embed.png?key=317viwutdq4eqqp6xb5rtvx5s4f4&color=fffffba&border=hidden&header=hidden&font=RocknRoll+One") no-repeat 0 0;
   background-color: rgba(var(--color-foreground));
-  background-size: 99%;
-  padding: 8px 18px 8px;
-  height: 108px;
+  background-size: 90%;
+  padding: 0;
+  height: 95px;
   margin: 0 0 25px 0;
   display: block;
   overflow: hidden;
   position: relative;
-  transition: 1s
+  transition: 0.8s all
 }
 div.overview > div.section:first-child > div.about:first-child:hover:after {
-  height: 425px
+  height: 390px;
+  background-position-x: 17.5px
 }
 @media (max-width:1040px) {
   div.overview > div.section:first-child > div.about:first-child:after {
@@ -1770,17 +1771,19 @@ div.overview > div.section:first-child > div.about:first-child:hover:after {
 }
 @media (min-width:1041px) and (max-width:1135px) {
   div.overview > div.section:first-child > div.about:first-child:after {
-    height: 9.2vw
+    height: 8.5vw
   }
   div.overview > div.section:first-child > div.about:first-child:hover:after {
-    height: 37vw
+    height: 33.3vw
   }
 }
 @media (min-width:1541px) {
   div.overview > div.section:first-child > div.about:first-child:after {
-    height: 140px
+    height: 120px;
+    background-size: 85%
   }
   div.overview > div.section:first-child > div.about:first-child:hover:after {
-    height: 550px
+    height: 470px;
+    background-position-x: 35px
   }
 }
