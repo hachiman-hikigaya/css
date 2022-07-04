@@ -1769,7 +1769,7 @@ div.overview > div.section:first-child > div.about:first-child:hover:after {
     display: none
   }
 }
-@media (min-width:1041px) and (max-width:1135px) {
+@media (min-width:1041px) and (max-width:1138px) {
   div.overview > div.section:first-child > div.about:first-child:after {
     height: 8.5vw
   }
