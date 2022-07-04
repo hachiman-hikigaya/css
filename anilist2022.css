@@ -1721,3 +1721,40 @@ div.about:first-child > div.content-wrap > .markdown .youtube {
     max-width: 240px
   }
 }
+div.overview > div.section:first-child > div.about:nth-child(1):after {
+  border-radius: 10px;
+  content: "";
+  background: url("https://vps5.minzkraut.com/spotify/embed.png?key=317viwutdq4eqqp6xb5rtvx5s4f4&color=fffffba&border=hidden&header=hidden&font=RocknRoll+One") no-repeat 0 0;
+  background-color: rgba(var(--color-foreground));
+  background-size: 99%;
+  padding: 8px 18px 8px;
+  height: 108px;
+  margin: 0px 0px 25px 0px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  transition: 1s
+} 
+div.overview > div.section:first-child > div.about:nth-child(1):hover:after {
+  height: 425px
+}   
+@media (max-width: 1040px) {
+div.overview > div.section:first-child > div.about:nth-child(1):after {
+  display: none
+  }
+}
+@media (min-width: 1041px) and (max-width: 1135px){
+div.overview > div.section:first-child > div.about:nth-child(1):after {
+  height: 9.2vw
+}
+div.overview > div.section:first-child > div.about:nth-child(1):hover:after {
+  height: 37vw
+  }
+}
+@media (min-width: 1541px) {div.overview > div.section:first-child > div.about:nth-child(1):after {
+  height: 140px
+}
+div.overview > div.section:first-child > div.about:nth-child(1):hover:after {
+  height: 550px
+  }
+}
