@@ -613,8 +613,7 @@ div.genres:first-child > div.genre > div {
 .medialist.cards .entry-card,
 .medialist.cards .entry-card .cover,
 .medialist.cards .entry-card .cover .image {
-  border-radius: 4px;
-  overflow: hidden
+  border-radius: 4px
 }
 .medialist .filters .filter-group:first-child > span .count {
   margin-right: 10px
