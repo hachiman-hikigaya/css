@@ -1745,6 +1745,9 @@ div.about:first-child > div.content-wrap > .markdown .youtube {
     max-width: 240px
   }
 }
+div.overview > div.section:first-child > div.about {
+   pointer-events: none
+}
 div.overview > div.section:first-child > div.about:first-child:after {
   border-radius: 10px;
   content: "";
@@ -1757,6 +1760,7 @@ div.overview > div.section:first-child > div.about:first-child:after {
   display: block;
   overflow: hidden;
   position: relative;
+  pointer-events: auto;
   transition: 0.8s all
 }
 div.overview > div.section:first-child > div.about:first-child:hover:after {
