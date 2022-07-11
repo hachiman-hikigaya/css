@@ -1763,6 +1763,18 @@ div.overview > div.section:first-child > div.about:first-child:hover:after {
   height: 390px;
   background-position-x: 17.5px
 }
+.overview > .section > .about > .content-wrap > .markdown b[href=Spotify] > a::after {
+  content: "‎";
+  width: 220px;
+  height: 80px;
+  position: absolute;
+  font-family: 'FontAwesome';
+  font-size: 1.4rem;
+  display: block;
+  font-weight: normal;
+  transform: translate(10px,70px);
+  z-index: 2
+}
 @media (max-width:1040px) {
   div.overview > div.section:first-child > div.about:first-child:after {
     display: none
@@ -1771,6 +1783,10 @@ div.overview > div.section:first-child > div.about:first-child:hover:after {
 @media (min-width:1041px) and (max-width:1138px) {
   div.overview > div.section:first-child > div.about:first-child:after {
     height: 8.5vw
+  }
+  .overview > .section > .about > .content-wrap > .markdown b[href=Spotify] > a::after {
+    width: 180px;
+    height: 100px
   }
   div.overview > div.section:first-child > div.about:first-child:hover:after {
     height: 33.3vw
@@ -1784,5 +1800,10 @@ div.overview > div.section:first-child > div.about:first-child:hover:after {
   div.overview > div.section:first-child > div.about:first-child:hover:after {
     height: 470px;
     background-position-x: 35px
+  }
+  .overview > .section > .about > .content-wrap > .markdown b[href=Spotify] > a::after {
+    width: 270px;
+    height: 100px;
+    transform: translate(30px,70px)
   }
 }
