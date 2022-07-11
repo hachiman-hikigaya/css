@@ -1785,6 +1785,7 @@ div.overview > div.section:first-child > div.about:first-child:hover:after {
   display: block;
   transition: all 0s;
   transform: translate(0,150px);
+  z-index: 2;
   pointer-events: auto
 }
 .overview > .section > .about > .content-wrap > .markdown b[href=Spotify-Recent] > a:hover:before {
