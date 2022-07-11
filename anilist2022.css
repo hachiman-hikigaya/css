@@ -1746,7 +1746,7 @@ div.about:first-child > div.content-wrap > .markdown .youtube {
   }
 }
 div.overview > div.section:first-child > div.about {
-   pointer-events: none
+  pointer-events: none
 }
 div.overview > div.section:first-child > div.about:first-child:after {
   border-radius: 10px;
@@ -1760,8 +1760,8 @@ div.overview > div.section:first-child > div.about:first-child:after {
   display: block;
   overflow: hidden;
   position: relative;
-  pointer-events: auto;
-  transition: 0.8s all
+  transition: 0.8s all;
+  pointer-events: all
 }
 div.overview > div.section:first-child > div.about:first-child:hover:after {
   height: 390px;
@@ -1770,21 +1770,22 @@ div.overview > div.section:first-child > div.about:first-child:hover:after {
 .overview > .section > .about > .content-wrap > .markdown b[href=Spotify] > a::after {
   content: "‎";
   width: 220px;
-  height: 80px;
+  height: 75px;
   position: absolute;
   display: block;
   transform: translate(10px,70px);
   z-index: 2;
+  border: 1px solid;
   pointer-events: auto
 }
 .overview > .section > .about > .content-wrap > .markdown b[href=Spotify-Recent] > a:before {
   content: "‎";
   width: 400px;
-  height: 20px;
+  height: 15px;
   position: absolute;
   display: block;
-  transform: translate(10px,160px);
-  z-index: 2;
+  transition: all 0s;
+  transform: translate(0,150px);
   pointer-events: auto
 }
 .overview > .section > .about > .content-wrap > .markdown b[href=Spotify-Recent] > a:hover:before {
@@ -1802,8 +1803,7 @@ div.overview > div.section:first-child > div.about:first-child:hover:after {
     height: 8.5vw
   }
   .overview > .section > .about > .content-wrap > .markdown b[href=Spotify] > a::after {
-    width: 180px;
-    height: 100px
+    transform: translate(10px,65px)
   }
   div.overview > div.section:first-child > div.about:first-child:hover:after {
     height: 33.3vw
@@ -1821,7 +1821,7 @@ div.overview > div.section:first-child > div.about:first-child:hover:after {
   .overview > .section > .about > .content-wrap > .markdown b[href=Spotify] > a::after {
     width: 270px;
     height: 100px;
-    transform: translate(30px,70px)
+    transform: translate(30px,65px)
   }
   .overview > .section > .about > .content-wrap > .markdown b[href=Spotify-Recent] > a:before {
     transform: translate(10px,180px);
