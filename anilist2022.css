@@ -1774,7 +1774,8 @@ div.overview > div.section:first-child > div.about:first-child:hover:after {
   position: absolute;
   display: block;
   transform: translate(10px,70px);
-  z-index: 2
+  z-index: 2;
+  pointer-events: auto
 }
 .overview > .section > .about > .content-wrap > .markdown b[href=Spotify-Recent] > a:before {
   content: "‎";
@@ -1783,7 +1784,8 @@ div.overview > div.section:first-child > div.about:first-child:hover:after {
   position: absolute;
   display: block;
   transform: translate(10px,160px);
-  z-index: 2
+  z-index: 2;
+  pointer-events: auto
 }
 .overview > .section > .about > .content-wrap > .markdown b[href=Spotify-Recent] > a:hover:before {
   height: 290px
